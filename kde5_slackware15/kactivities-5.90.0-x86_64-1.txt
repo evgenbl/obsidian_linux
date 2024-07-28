@@ -1,0 +1,11 @@
+kactivities-5.90.0-x86_64-1
+
+kactivities (API for using Activities)
+
+API for using and interacting with Activities as a consumer, application adding information to them, or as an activity manager.
+
+kactivities (API для использования Activities)
+
+kactivities - Библиотека для доступа к данным об использовании, собранным системой действий.
+
+API для использования Activities и взаимодействия с ними в качестве пользователя, приложения, добавляющего к ним информацию, или в качестве менеджера activities.

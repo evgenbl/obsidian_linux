@@ -1,0 +1,9 @@
+kdeedu-data-21.12.1-x86_64-1
+
+kdeedu-data (icons, artwork and data files for KDE edu)
+
+Shared icons, artwork and data files for educational applications.
+
+kdeedu-data (иконки, иллюстрации и файлы данных для KDE edu)
+
+Общие иконки, иллюстрации и файлы данных для образовательных приложений.

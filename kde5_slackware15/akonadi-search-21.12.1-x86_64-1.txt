@@ -1,0 +1,10 @@
+akonadi-search-21.12.1-x86_64-1
+
+akonadi-search (search support for Akonadi)
+
+Akonadi Search contains libraries and daemons to implement Xapian based indexing and query infrastructure for Akonadi.
+
+
+akonadi-search (поддержка поиска в Akonadi)
+
+Akonadi Search содержит библиотеки и демоны для реализации инфраструктуры индексации и запросов на основе Xapian для Akonadi.

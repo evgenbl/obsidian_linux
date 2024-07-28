@@ -1,0 +1,9 @@
+knotifications-5.90.0-x86_64-1
+
+knotifications (Desktop notifications)
+
+KNotifications is used to notify the user of an event. It covers feedback and persistent events.
+
+knotifications (Уведомления на рабочем столе)
+
+KNotifications используются для уведомления пользователя о событии. Они охватывают обратную связь и постоянные события.

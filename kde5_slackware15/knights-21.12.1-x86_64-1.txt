@@ -1,0 +1,11 @@
+knights-21.12.1-x86_64-1
+
+knights (Chess board with XBoard protocol support)
+
+KNights is a chess game. As a player, your goal is to defeat your opponent by checkmating their king.
+
+knights (шахматная доска с поддержкой протокола XBoard)
+
+KNights - это игра в шахматы. Ваша цель как игрока - победить противника, поставив мат его королю.
+
+Homepage: https://www.kde.org/applications/games/knights/

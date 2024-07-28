@@ -1,0 +1,9 @@
+layer-shell-qt-5.23.5-x86_64-1
+
+layer-shell-qt (Wayland layer surface support)
+
+This component is meant for applications to be able to easily use clients based on wlr-layer-shell.
+
+layer-shell-qt (поддержка Wayland layer surface)
+
+Этот компонент предназначен для того, чтобы приложения могли легко использовать клиенты, основанные на wlr-layer-shell.

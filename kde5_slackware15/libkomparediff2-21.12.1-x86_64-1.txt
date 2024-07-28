@@ -1,0 +1,9 @@
+libkomparediff2-21.12.1-x86_64-1
+
+libkomparediff2 (file comparison library)
+
+libkomparediff2 is a shared library to compare files and strings using kdelibs and GNU diff, used in Kompare and KDevelop.
+
+libkomparediff2 (библиотека сравнения файлов)
+
+libkomparediff2 - это общая библиотека для сравнения файлов и строк с использованием kdelibs и GNU diff, используемых в Kompare и KDevelop.

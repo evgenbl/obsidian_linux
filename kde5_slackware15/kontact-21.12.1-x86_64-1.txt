@@ -1,0 +1,9 @@
+kontact-21.12.1-x86_64-1
+
+kontact (KDE Personal Information Manager)
+
+KDE Personal Information Manager.
+
+kontact (Менеджер персональной информации KDE)
+
+Менеджер персональной информации KDE.

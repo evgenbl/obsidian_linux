@@ -1,0 +1,10 @@
+kde-cli-tools-5.23.5-x86_64-1
+
+kde-cli-tools (KDE command-line tools)
+
+Tools based on KDE Frameworks 5 to better interact with the system.
+
+kde-cli-tools (инструменты командной строки KDE)
+
+Инструменты, основанные на KDE Frameworks 5 для улучшения взаимодействия с системой.
+

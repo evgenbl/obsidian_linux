@@ -1,0 +1,9 @@
+kcolorchooser-21.12.1-x86_64-1
+
+kcolorchooser (color chooser)
+
+A color chooser application for KDE.
+
+kcolorchooser (средство выбора цвета)
+
+Приложение для выбора цвета для KDE.

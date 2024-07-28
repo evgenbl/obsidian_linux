@@ -1,0 +1,9 @@
+kjsembed-5.90.0-x86_64-1
+
+kjsembed (Binding Javascript to QObjects)
+
+KSJEmbed provides a method of binding JavaScript objects to QObjects so you can script your applications.
+
+kjsembed (Привязка Javascript к объектам)
+
+KSJEmbed предоставляет метод привязки объектов JavaScript к QObjects, чтобы вы могли создавать сценарии для своего приложения

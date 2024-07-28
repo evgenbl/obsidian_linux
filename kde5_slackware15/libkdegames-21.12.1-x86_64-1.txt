@@ -1,0 +1,9 @@
+libkdegames-21.12.1-x86_64-1
+
+libkdegames (KDE game library)
+
+Libkdegames contains common code and data for many KDE games.
+
+libkdegames (библиотека игр KDE)
+
+Libkdegames содержит общий код и данные для многих игр KDE.

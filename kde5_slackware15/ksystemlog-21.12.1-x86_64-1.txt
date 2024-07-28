@@ -1,0 +1,16 @@
+ksystemlog-21.12.1-x86_64-1
+
+ksystemlog (system log viewer)
+
+KSystemLog is a system log viewer tool. This program is developed for beginner users, who don't know how to find information about their Linux system, and don't know where log files are. It is also of course designed for advanced users, who quickly want to understand problems of their machine with a more powerful and graphical tool than 'tail -f' and 'less' commands ;-)
+
+ksystemlog (средство просмотра системных журналов)
+
+KSystemLog - это инструмент для просмотра системных журналов. Эта программа разработана для начинающих пользователей, которые не знают, как найти информацию о своей системе Linux, и не знают, где находятся файлы журналов. Он также, конечно, предназначен для продвинутых пользователей, которые хотят быстро разобраться в проблемах своей машины с помощью более мощного графического инструмента, чем команды "tail -f" и "less" ;-)
+
+Команда Tail, как следует из названия, печатает последние N чисел данного ввода. По умолчанию он печатает последние 10 строк указанных файлов. Если указано более одного имени файла, то данным из каждого файла предшествует его имя файла.
+
+Команда less позволяет перематывать текст не только вперёд, но и назад, осуществлять поиск в обоих направлениях, переходить сразу в конец или в начало файла. Особенность less заключается в том, что команда не считывает текст полностью, а загружает его небольшими фрагментами
+
+Homepage: https://www.kde.org/applications/system/ksystemlog/
+

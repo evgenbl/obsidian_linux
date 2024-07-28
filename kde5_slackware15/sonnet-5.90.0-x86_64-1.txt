@@ -1,0 +1,10 @@
+sonnet-5.90.0-x86_64-1
+
+sonnet (Multi-language spell checker)
+
+Sonnet is a plugin-based spell checking library for Qt-based applications. It supports several different plugins, including HSpell, Enchant, ASpell and HUNSPELL. It also supports automated language detection, based on a combination of different algorithms.
+
+
+sonnet (средство проверки орфографии на нескольких языках)
+
+Sonnet - это библиотека проверки орфографии на основе плагинов для приложений на базе Qt. Она поддерживает несколько различных плагинов, включая Spell, Enchant, ASpell и HUNSPELL. Он также поддерживает автоматическое определение языка, основанное на комбинации различных алгоритмов.

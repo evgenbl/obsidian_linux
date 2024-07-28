@@ -1,0 +1,10 @@
+picmi-21.12.1-x86_64-1
+
+picmi (logic puzzle game)
+
+Picmi is a single player logic-based puzzle game. The goal is to color cells according to numbers given at the side of the board in order to uncover a hidden pattern or picture.
+
+
+picmi (логическая игра-головоломка)
+
+Picmi - это логическая игра-головоломка для одного игрока. Цель состоит в том, чтобы раскрасить ячейки в соответствии с номерами, указанными сбоку от игрового поля, чтобы обнаружить скрытый узор или картинку.

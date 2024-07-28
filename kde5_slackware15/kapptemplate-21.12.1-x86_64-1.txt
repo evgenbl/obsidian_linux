@@ -1,0 +1,9 @@
+kapptemplate-21.12.1-x86_64-1
+
+kapptemplate (application template generator)
+
+KAppTemplate is a shell script to create the necessary framework to develop KDE applications.
+
+kapptemplate (генератор шаблонов приложений)
+
+KAppTemplate - это сценарий оболочки для создания необходимой платформы для разработки приложений KDE.

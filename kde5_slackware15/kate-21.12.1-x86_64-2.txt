@@ -1,0 +1,12 @@
+kate-21.12.1-x86_64-2
+
+kate (an advanced text editor for KDE)
+
+The Kate project develops two main products: KatePart, the advanced editor component which is used in numerous KDE applications requiring a text editing component, and Kate, a MDI text editor application. In addition, it provides KWrite, a simple SDI editor shell which allows the user to select his/her favorite editor component.
+
+kate (расширенный текстовый редактор для KDE)
+
+Проект Kate разрабатывает два основных продукта: KatePart, расширенный редактор, который используется во многих приложениях KDE, требующих компонента редактирования текста, и Kate, текстовый редактор MDI. Кроме того, он предоставляет KWrite, простую оболочку SDI-редактора, которая позволяет пользователю выбрать свой любимый компонент редактора.
+
+Homepage: http://kate-editor.org
+

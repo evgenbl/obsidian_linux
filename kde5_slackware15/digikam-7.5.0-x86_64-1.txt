@@ -1,0 +1,14 @@
+digikam-7.5.0-x86_64-1
+
+digikam (KDE Photo Management Application)
+
+digiKam is a simple digital photo management application for KDE, which makes importing and organizing digital photos a snap. The photos can be organized in albums which can be sorted chronologically, by directory layout, or by custom collections. An easy to use interface
+enables you to connect to your camera and preview, download, and/or delete your images.
+
+digikam (Приложение для управления фотографиями KDE)
+
+digiKam - это простое приложение для управления цифровыми фотографиями для KDE, которое упрощает импорт и систематизацию цифровых фотографий. Фотографии могут быть организованы в альбомы, которые могут быть отсортированы в хронологическом порядке, по расположению каталога или по пользовательским коллекциям. Простой в использовании интерфейс
+позволяет подключаться к камере и просматривать, загружать и / или удалять изображения.
+
+Homepage: http://www.digikam.org/
+

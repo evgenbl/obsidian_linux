@@ -1,0 +1,12 @@
+sc-im-20210927_64b1a41-x86_64-1
+
+sc-im (A curses based spreadsheet calculator)
+
+SC-IM is a spreadsheet program that is based on SC. SC original authors are James Gosling and Mark Weiser, and mods were later added by Chuck Martin. SC-IM is developed by Andrés Martinell. SC-IM extends the feature set to include undo/redo, larger possible speadsheets, better support for common file formats, vim-like key mappings, Unicode support, and more.
+
+sc-im (калькулятор электронных таблиц на основе curses)
+
+SCIM - это программа для работы с электронными таблицами, основанная на SC. Авторами SC являются Джеймс Гослинг и Марк Вайзер, а модификации были добавлены позже Чаком Мартином. SC-IM разработан Андресом Мартинеллом. SCHEME расширяет набор функций, включая отмену / повтор, возможность создания электронных таблиц большего размера, улучшенную поддержку распространенных форматов файлов, сопоставление ключей, подобное vim, поддержку Unicode и многое другое.
+
+Homepage: https://github.com/andmarti1424/sc-im
+

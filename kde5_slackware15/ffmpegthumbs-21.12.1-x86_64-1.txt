@@ -1,0 +1,10 @@
+ffmpegthumbs-21.12.1-x86_64-1
+
+ffmpegthumbs (video thumbnail generator using ffmpeg)
+
+FFMpegThumbs is a video thumbnail generator for KDE file managers like Dolphin and Konqueror. It enables them to show preview images of video files using FFMpeg.
+
+
+ffmpegthumbs (генератор миниатюр видео с использованием ffmpeg)
+
+FFMpegThumbs - это генератор миниатюр видео для файловых менеджеров KDE, таких как Dolphin и Konqueror. Он позволяет им показывать изображения предварительного просмотра видеофайлов с использованием FFMpeg.

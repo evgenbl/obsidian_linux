@@ -1,0 +1,10 @@
+ark-21.12.1-x86_64-1
+
+ark (KDE archiver tool)
+
+This is KDE's application to work with compressed archives.
+
+ark (инструмент-архиватор KDE)
+
+Это приложение KDE для работы со сжатыми архивами.
+

@@ -1,0 +1,9 @@
+kdev-php-21.12.1-x86_64-1
+
+kdev-php (PHP language plugin for KDevelop)
+
+This is a KDevelop plugin that provides support for the PHP language.
+
+kdev-php (языковой плагин PHP для KDevelop)
+
+Это плагин для KDevelop, который обеспечивает поддержку языка PHP.

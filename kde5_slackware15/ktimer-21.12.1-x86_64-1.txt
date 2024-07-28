@@ -1,0 +1,12 @@
+ktimer-21.12.1-x86_64-1
+
+ktimer (program scheduler)
+
+KTimer is a little tool to execute programs after some time.
+
+ktimer (планировщик программ)
+
+KTimer - это небольшой инструмент для выполнения программ через некоторое время.
+
+Homepage: http://utils.kde.org/projects/ktimer
+

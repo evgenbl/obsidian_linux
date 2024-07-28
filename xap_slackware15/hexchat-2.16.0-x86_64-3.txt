@@ -1,0 +1,12 @@
+hexchat-2.16.0-x86_64-3
+
+hexchat (GTK+ IRC client)
+
+HexChat is an IRC client for Windows and UNIX-like operating systems.
+
+hexchat (GTK+ IRC-клиент)
+
+HexChat - это IRC-клиент для Windows и UNIX-подобных операционных систем
+
+Website: https://hexchat.github.io/
+

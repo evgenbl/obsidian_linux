@@ -1,0 +1,9 @@
+fluxbox-1.3.7-x86_64-6
+
+fluxbox (Fluxbox window manager)
+
+Fluxbox is yet another windowmanager for X that is based on blackbox but with many new features.
+
+fluxbox (оконный менеджер Fluxbox)
+
+Fluxbox - это еще один оконный менеджер для X, основанный на blackbox, но с множеством новых функций.

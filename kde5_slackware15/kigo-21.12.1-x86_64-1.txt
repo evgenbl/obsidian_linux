@@ -1,0 +1,9 @@
+kigo-21.12.1-x86_64-1
+
+kigo (Go board game for KDE)
+
+Kigo is an open-source implementation of the popular Go game. Go is a strategic board game for two players. It is also known as igo (Japanese), weiqi or wei ch'i (Chinese) or baduk (Korean). Go is noted for being rich in strategic complexity despite its simple rules. The game is played by two players who alternately place black and white pieces on the vacant intersections of a grid of 19x19 lines (9x9 or 13x13 for easier games).
+
+kigo (настольная игра Go для KDE)
+
+Kigo - это реализация популярной игры Go с открытым исходным кодом. Go - стратегическая настольная игра для двух игроков. Он также известен как igo (по-японски), weiqi или wei ch'i (по-китайски) или baduk (по-корейски). Го известен своей стратегической сложностью, несмотря на простые правила. В игре участвуют два игрока, которые поочередно расставляют черные и белые фигуры на свободных местах пересечения линий сетки размером 19х19 (9х9 или 13х13 для более простых игр).

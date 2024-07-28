@@ -1,0 +1,9 @@
+lskat-21.12.1-x86_64-1
+
+lskat (Lieutenant Skat card game)
+
+Lieutenant Skat (from German "Offiziersskat") is a fun and engaging card game for two players, where the second player is either live opponent, or a built in artificial intelligence.
+
+lskat (Карточная игра "Лейтенантский скат")
+
+Лейтенантский скат (от немецкого "Offiziersskat") - это веселая и увлекательная карточная игра для двух игроков, в которой вторым игроком является либо живой противник, либо встроенный искусственный интеллект.

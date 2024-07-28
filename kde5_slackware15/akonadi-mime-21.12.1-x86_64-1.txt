@@ -1,0 +1,9 @@
+akonadi-mime-21.12.1-x86_64-1
+
+akonadi-mime (akonadi MIME support library)
+
+akonadi-mime contains libraries and daemons that provide jobs, models and other helpers to make working with emails through Akonadi easier.
+
+akonadi-mime (библиотека поддержки akonadi MIME)
+
+akonadi-mime содержит библиотеки и демоны, которые предоставляют задания, модели и других помощников, упрощающих работу с электронной почтой через Akonadi.

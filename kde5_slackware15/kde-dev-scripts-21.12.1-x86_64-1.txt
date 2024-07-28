@@ -1,0 +1,10 @@
+kde-dev-scripts-21.12.1-x86_64-1
+
+kde-dev-scripts (scripts for development of KDE software)
+
+Scripts and setting files useful during development of KDE software.
+
+kde-dev-scripts (скрипты для разработки программного обеспечения KDE)
+
+Скрипты и файлы настроек, полезные при разработке программного обеспечения KDE.
+

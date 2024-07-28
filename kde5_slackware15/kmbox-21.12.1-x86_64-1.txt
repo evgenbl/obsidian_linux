@@ -1,0 +1,9 @@
+kmbox-21.12.1-x86_64-1
+
+kmbox (access mail storage in mbox format)
+
+kmbox contains a library for accessing mail storage in MBox format.
+
+kmbox (доступ к почтовому хранилищу в формате mbox)
+
+kmbox содержит библиотеку для доступа к почтовому хранилищу в формате MBox.

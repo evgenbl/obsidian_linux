@@ -1,0 +1,10 @@
+kspaceduel-21.12.1-x86_64-1
+
+kspaceduel (space arcade game)
+
+In KSpaceduel each of two possible players controls a satellite spaceship orbiting the sun. As the game progresses players have to eliminate the opponent's spacecraft.
+
+kspaceduel (космическая аркада-игра)
+
+В KSpaceduel каждый из двух возможных игроков управляет космическим кораблем-спутником, вращающимся вокруг Солнца. По ходу игры игроки должны уничтожить космический корабль противника.
+

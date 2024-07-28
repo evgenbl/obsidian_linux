@@ -1,0 +1,9 @@
+kidletime-5.90.0-x86_64-1
+
+kidletime (report system/user idle time)
+
+KIdleTime is a singleton reporting information on idle time. It is useful not only for finding out about the current idle time of the system, but also for getting notified upon idle time events, such as custom timeouts or user activity.
+
+kidletime (отчет о времени простоя системы/пользователя)
+
+KIdleTime - это одноэлементный отчет о времени простоя. Он полезен не только для получения информации о текущем времени простоя системы, но и для получения уведомлений о событиях времени простоя, таких как пользовательские тайм-ауты или действия пользователя.

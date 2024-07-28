@@ -1,0 +1,12 @@
+kscreenlocker-5.23.5-x86_64-1
+
+kscreenlocker (secure lock screen architecture)
+
+Library and components for secure lock screen architecture.
+
+kscreenlocker (архитектура защищенного экрана блокировки)
+
+Библиотека и компоненты для архитектуры защищенного экрана блокировки.
+
+Homepage: https://projects.kde.org/kscreenlocker
+

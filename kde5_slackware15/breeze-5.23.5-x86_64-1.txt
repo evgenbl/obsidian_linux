@@ -1,0 +1,9 @@
+breeze-5.23.5-x86_64-1
+
+breeze (artwork for Plasma)
+
+Artwork, styles and assets for the Breeze visual style for the Plasma Desktop.
+
+breeze (стиль для Plasma)
+
+Иллюстрации, стили и ресурсы для визуального стиля Breeze для рабочего стола Plasma.

@@ -1,0 +1,10 @@
+kauth-5.90.0-x86_64-1
+
+kauth (Execute actions as privileged user)
+
+KAuth provides a convenient, system-integrated way to offload actions that need to be performed as a privileged user (root, for example) to small (hopefully secure) helper utilities.
+
+kauth (Выполнение действий от имени привилегированного пользователя)
+
+KAuth предоставляет удобный, интегрированный в систему способ передачи действий, которые необходимо выполнять от имени привилегированного пользователя (например, root), небольшими (надеюсь, безопасными) вспомогательными утилитами.
+

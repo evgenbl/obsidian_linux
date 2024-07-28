@@ -1,0 +1,9 @@
+kgamma5-5.23.5-x86_64-1
+
+kgamma5 (display gamma configuration)
+
+A KDE system settings module to configure display gamma.
+
+kgamma5 (настройка гаммы дисплея)
+
+Модуль системных настроек KDE для настройки гаммы дисплея.

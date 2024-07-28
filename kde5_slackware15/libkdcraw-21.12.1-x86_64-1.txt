@@ -1,0 +1,9 @@
+libkdcraw-21.12.1-x86_64-1
+
+libkdcraw (library wrapper around dcraw)
+
+Libkdcraw is a C++ interface around the dcraw binary program, used to decode RAW picture files.
+
+libkdcraw (библиотечная оболочка для dcraw)
+
+Libkdcraw - это интерфейс на C++ для двоичной программы dcraw, используемый для декодирования файлов изображений RAW.

@@ -1,0 +1,9 @@
+cdparanoia-III_10.2-x86_64-5
+
+cdparanoia (digital audio extraction tool)
+
+cdparanoia is a Compact Disc Digital Audio (CDDA) extraction tool, commonly known on the net as a 'ripper'. It reads digital audio data from a Compact Disc and saves it to sound files. cdparanoia has been designed to read correct audio data even using cheap CD-ROM drives prone to misalignment, frame jitter and loss of streaming. cdparanoia will also read and repair data from CDs that have been damaged in some way.
+
+cdparanoia (инструмент для извлечения цифрового аудио)
+
+cdparanoia - это инструмент для извлечения цифрового аудио с компакт-дисков (CDDA), широко известный в Сети как "риппер". Он считывает цифровые аудиоданные с компакт-диска и сохраняет их в звуковые файлы. Программа cdparanoia была разработана для корректного считывания аудиоданных даже при использовании дешевых приводов CD-ROM, подверженных смещению, дрожанию кадров и потере потоковой передачи. cdparanoia также считывает и восстанавливает данные с компакт-дисков, которые были каким-либо образом повреждены.

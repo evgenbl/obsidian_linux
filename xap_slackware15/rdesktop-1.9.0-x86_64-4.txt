@@ -1,0 +1,12 @@
+rdesktop-1.9.0-x86_64-4
+
+rdesktop (Remote Desktop Protocol client)
+
+rdesktop is a client for Remote Desktop Protocol (RDP), used in a number of Microsoft products including Windows NT Terminal Server, Windows 2000 Server, Windows XP, and Windows 2003 Server.
+
+rdesktop (клиент протокола удаленного рабочего стола)
+
+rdesktop - это клиент для протокола удаленного рабочего стола (RDP), используемый в ряде продуктов Microsoft, включая сервер терминалов Windows NT, Windows 2000 Server, Windows XP и Windows 2003 Server
+
+Homepage: https://www.rdesktop.org
+

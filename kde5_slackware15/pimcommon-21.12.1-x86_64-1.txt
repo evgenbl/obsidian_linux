@@ -1,0 +1,10 @@
+pimcommon-21.12.1-x86_64-1
+
+pimcommon (common libraries for KDE PIM)
+
+pimcommon contains common libraries for KDE PIM.
+
+
+pimcommon (общие библиотеки для KDE PIM)
+
+pimcommon содержит общие библиотеки для KDE PIM.

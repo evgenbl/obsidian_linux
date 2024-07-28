@@ -1,0 +1,9 @@
+kwrited-5.23.5-x86_64-1
+
+kwrited (write daemon)
+
+Watch for messages from local users sent with write(1) or wall(1).
+
+kwrited (демон записи)
+
+Следите за сообщениями от локальных пользователей, отправленными с помощью write(1) или wall(1).

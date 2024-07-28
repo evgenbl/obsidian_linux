@@ -1,0 +1,10 @@
+ddd-3.3.12-x86_64-8
+
+ddd (Data Display Debugger)
+
+GNU DDD is a graphical front-end for command-line debuggers such as GDB, DBX, WDB, Ladebug, JDB, XDB, the Perl debugger, the bash debugger, or the Python debugger. Besides "usual" front-end features such as viewing source texts, DDD has become famous through its interactive graphical data display, where data structures are displayed as graphs.
+
+ddd (отладчик отображения данных)
+
+GNU DDD - это графический интерфейс для отладчиков командной строки, таких как GDB, DBX, WDB, Ladebug, JDB, XDB, отладчик Perl, отладчик bash или отладчик Python. Помимо "обычных" интерфейсных функций, таких как просмотр исходных текстов, DDD стал известен благодаря интерактивному графическому отображению данных, где структуры данных отображаются в виде графиков.
+

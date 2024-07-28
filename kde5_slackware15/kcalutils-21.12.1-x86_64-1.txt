@@ -1,0 +1,9 @@
+kcalutils-21.12.1-x86_64-1
+
+kcalutils (calendar data utilities)
+
+This library provides a set of utility functions that help applications access and use calendar data via the KCalCore library.
+
+kcalutils (утилиты для обработки календарных данных)
+
+Эта библиотека предоставляет набор служебных функций, которые помогают приложениям получать доступ к данным календаря и использовать их с помощью библиотеки KCalCore.

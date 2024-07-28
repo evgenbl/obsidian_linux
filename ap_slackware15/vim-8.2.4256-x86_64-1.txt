@@ -1,0 +1,17 @@
+vim-8.2.4256-x86_64-1
+
+vim (Vi IMproved)
+
+Vim is an almost compatible version of the UNIX editor vi. Many new features have been added: multi level undo, command line history, filename completion, block operations, and more.
+
+Vim's development is led by Bram Moolenaar.
+
+This package also contains the Exuberant Ctags program written by Darren Hiebert.
+
+vim (улучшеный Vi)
+
+Vim - это почти совместимая версия редактора vi для UNIX. Добавлено много новых функций: многоуровневая отмена, история командной строки, заполнение имени файла, блокирование операций и многое другое.
+
+Разработкой Vim руководит Брэм Муленар.
+
+Этот пакет также содержит программу Exuberant Ctags, написанную Дарреном Хибертом.

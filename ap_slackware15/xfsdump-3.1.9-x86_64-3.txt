@@ -1,0 +1,9 @@
+xfsdump-3.1.9-x86_64-3
+
+xfsdump (backup tools for the XFS filesystem)
+
+The xfsdump package contains the xfsdump and xfsrestore utilities for backing up and restoring XFS partitions. xfsdump examines files in a filesystem, determines which need to be backed up, and copies those files to a specified disk, tape or other storage medium. xfsrestore performs the inverse function of xfsdump; it can restore a full or incremental backup of a filesystem.
+
+xfsdump (инструменты резервного копирования для файловой системы XFS)
+
+Пакет xfsdump содержит утилиты xfsdump и xfsrestore для резервного копирования и восстановления разделов XFS. xfsdump проверяет файлы в файловой системе, определяет, какие из них нуждаются в резервном копировании, и копирует эти файлы на указанный диск, ленту или другой носитель информации. xfsrestore выполняет функцию, обратную функции xfsdump; он может восстанавливать полную или инкрементальную резервную копию файловой системы.

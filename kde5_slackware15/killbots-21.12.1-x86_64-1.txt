@@ -1,0 +1,10 @@
+killbots-21.12.1-x86_64-1
+
+killbots (Robots-like game for KDE)
+
+Killbots is a simple game of evading killer robots.
+
+killbots (Роботизированная игра для KDE)
+
+Killbots - это простая игра, в которой нужно уклоняться от роботов-убийц.
+

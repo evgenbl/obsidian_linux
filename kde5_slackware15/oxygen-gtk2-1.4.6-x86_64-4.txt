@@ -1,0 +1,13 @@
+oxygen-gtk2-1.4.6-x86_64-4
+
+oxygen-gtk2 (Oxygen GTK+ engine)
+
+Oxygen-Gtk2 is a port of the KDE widget theme Oxygen, to GTK+. Its primary goal is to ensure visual consistency between GTK+ and qt-based applications running under KDE. A secondary objective is to also have a stand-alone nice looking GTK+ theme that would behave well on other desktop environments. Unlike other attempts made to port the KDE oxygen theme to GTK+, this attempt does not depend on Qt.
+
+
+oxygen-gtk2 (движок Oxygen GTK+)
+
+Oxygen-Gtk2 - это порт темы виджета KDE Oxygen на GTK+. Его основная цель - обеспечить визуальную согласованность между приложениями на основе GTK+ и qt, работающими под управлением KDE. Вторая цель состоит в том, чтобы создать отдельную привлекательную тему GTK +, которая бы хорошо работала в других средах рабочего стола. В отличие от других попыток переноса темы KDE oxygen на GTK+, эта попытка не зависит от Qt.
+
+See: http://projects.kde.org/projects/playground/artwork/oxygen-gtk
+

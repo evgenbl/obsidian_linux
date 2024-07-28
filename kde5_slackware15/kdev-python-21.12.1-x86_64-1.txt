@@ -1,0 +1,9 @@
+kdev-python-21.12.1-x86_64-1
+
+kdev-python (Python language plugin for KDevelop)
+
+This KDevelop plugin provides support for the Python language.
+
+kdev-python (языковой плагин Python для KDevelop)
+
+Этот плагин для KDevelop обеспечивает поддержку языка Python.

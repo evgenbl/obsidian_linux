@@ -1,0 +1,12 @@
+filelight-21.12.1-x86_64-1
+
+filelight (file system monitor)
+
+Filelight allows you to quickly understand exactly where your diskspace is being used by graphically representing your file system.
+
+filelight (монитор файловой системы)
+
+Filelight позволяет вам быстро понять, где именно используется ваше дисковое пространство, путем графического представления вашей файловой системы
+
+Homepage: http://utils.kde.org/projects/filelight
+

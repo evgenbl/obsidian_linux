@@ -1,0 +1,9 @@
+kdebugsettings-21.12.1-x86_64-1
+
+kdebugsettings (An application to enable/disable qCDebug)
+
+kdebugsettings is an application to enable/disable qCDebug.
+
+kdebugsettings (Приложение для включения/ выключения qCDebug)
+
+kdebugsettings - это приложение для включения/выключения qCDebug.

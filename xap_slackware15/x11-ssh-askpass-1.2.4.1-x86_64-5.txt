@@ -1,0 +1,10 @@
+x11-ssh-askpass-1.2.4.1-x86_64-5
+
+x11-ssh-askpass (an X11-based passphrase dialog)
+
+x11-ssh-askpass is an X11-based passphrase dialog for use with OpenSSH.
+
+x11-ssh-askpass (диалоговое окно ввода парольной фразы на основе X11)
+
+x11-ssh-askpass - это диалоговое окно ввода парольной фразы на основе X11 для использования с OpenSSH.
+

@@ -1,0 +1,9 @@
+kactivities-stats-5.90.0-x86_64-1
+
+kactivities-stats (component of KDE Activities)
+
+kactivities-stats is library for accessing the usage data collected by the Activities system.
+
+kactivities-stats (компонент KDE Activities)
+
+kactivities-stats - это библиотека для доступа к данным об использовании, собранным системой Activities.

@@ -1,0 +1,10 @@
+plasma-systemmonitor-5.23.5-x86_64-1
+
+plasma-systemmonitor (system resource monitor)
+
+plasma-systemmonitor provides an interface for monitoring system sensors, process information and other system resources. It is built on top of the faces system also used to provide widgets for plasma-desktop and makes use of the ksystemstats daemon to provide sensor information.
+
+
+plasma-systemmonitor (монитор системных ресурсов)
+
+plasma-systemmonitor предоставляет интерфейс для мониторинга системных датчиков, информации о процессе и других системных ресурсов. Он построен поверх системы faces, которая также используется для предоставления виджетов для plasma-desktop, и использует демон состояния системы K для предоставления информации с датчиков.

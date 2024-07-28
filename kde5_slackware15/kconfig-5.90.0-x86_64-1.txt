@@ -1,0 +1,9 @@
+kconfig-5.90.0-x86_64-1
+
+kconfig (Persistent application settings)
+
+KConfig provides an advanced configuration system. It is made of two parts: KConfigCore and KConfigGui. KConfigCore provides access to the configuration files themselves. KConfigGui provides a way to hook widgets to the configuration so that they are automatically initialized from the configuration and automatically propagate their changes to their respective configuration files.
+
+kconfig (Постоянные настройки приложения)
+
+KConfig предоставляет расширенную систему настройки. Она состоит из двух частей: KConfigCore и KConfigGui. KConfigCore предоставляет доступ к самим файлам конфигурации. KConfigGui предоставляет способ привязать виджеты к конфигурации, чтобы они автоматически инициализировались из конфигурации и автоматически распространяли свои изменения в соответствующие файлы конфигурации.

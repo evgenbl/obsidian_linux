@@ -1,0 +1,10 @@
+plasma-sdk-5.23.5-x86_64-1
+
+plasma-sdk (Plasma development applications)
+
+Applications useful for Plasma Development.
+
+
+plasma-sdk (Приложения для разработки плазмы)
+
+Приложения, полезные для разработки плазмы.

@@ -1,0 +1,10 @@
+modemmanager-qt-5.90.0-x86_64-1
+
+modemmanager-qt (ModemManager Qt bindings)
+
+modemmanager-qt is a Tier 1 KDE Frameworks module wrapping the ModemManager DBus API.
+
+
+modemmanager-qt (привязки ModemManager Qt)
+
+modemmanager-qt - это модуль KDE Frameworks 1-го уровня, реализующий интерфейс ModemManager DBus API.

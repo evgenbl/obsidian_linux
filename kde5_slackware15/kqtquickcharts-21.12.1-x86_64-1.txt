@@ -1,0 +1,9 @@
+kqtquickcharts-21.12.1-x86_64-1
+
+kqtquickcharts (chart rendering plugin)
+
+kqtquickcharts is a QtQuick plugin to render beautiful and interactive charts.
+
+kqtquickcharts (плагин для рендеринга диаграмм)
+
+kqtquickcharts - это плагин QtQuick для рендеринга красивых и интерактивных диаграмм.

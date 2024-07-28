@@ -1,0 +1,14 @@
+incidenceeditor-21.12.1-x86_64-1
+
+incidenceeditor (KDE PIM incidence editor)
+
+KDE PIM incidence editor for korganizer.
+
+incidenceeditor (KDE PIM редактор инцидентов)
+
+KDE PIM редактор инцидентов для korganizer.
+
+KDEPIM (KDE personal information management) — персональный информационный менеджер для KDE, позволяющий организовать свою жизнь (расписание, будильник, новости и т. д.)
+
+
+

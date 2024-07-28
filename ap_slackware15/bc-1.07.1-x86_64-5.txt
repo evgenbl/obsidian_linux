@@ -1,0 +1,13 @@
+bc-1.07.1-x86_64-5
+
+bc (An arbitrary precision calculator language)
+
+bc is an arbitrary precision numeric processing language. Syntax is similar to C, but differs in many substantial areas. It supports interactive execution of statements. bc is a utility included in the POSIX P1003.2/D11 draft standard.
+
+The GNU version of bc was written by Philip A. Nelson.
+
+bc (Язык вычислений произвольной точности)
+
+bc - это язык числовой обработки с произвольной точностью. Синтаксис похож на C, но отличается во многих существенных областях. Он поддерживает интерактивное выполнение инструкций. bc - это утилита, включенная в проект стандарта POSIX P1003.2/D11.
+
+Версия bc для GNU была написана Филипом А. Нельсоном.

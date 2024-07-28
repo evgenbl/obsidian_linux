@@ -1,0 +1,10 @@
+eventviews-21.12.1-x86_64-1
+
+eventviews (library for creating events)
+
+KDE PIM library for creating events.
+
+eventviews - представления событий (библиотека для создания событий)
+
+Библиотека KDE PIM для создания событий.
+

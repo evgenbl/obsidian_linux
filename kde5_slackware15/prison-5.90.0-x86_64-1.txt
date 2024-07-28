@@ -1,0 +1,9 @@
+prison-5.90.0-x86_64-1
+
+prison (Qt based Barcode API)
+
+Prison is a barcode API currently offering a Qt API to produce QRCode barcodes and DotMatrix barcodes.
+
+Prison - это API штрих-кодов, который в настоящее время предлагает Qt API для создания штрих-кодов QRCode и Datamatrix.
+
+Homepage: http://anongit.kde.org/prison

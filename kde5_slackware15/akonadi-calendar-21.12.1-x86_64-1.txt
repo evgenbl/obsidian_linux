@@ -1,0 +1,10 @@
+akonadi-calendar-21.12.1-x86_64-1
+
+
+akonadi-calendar (Akonadi calendar integration)
+
+Akonadi Calendar provides jobs, models and other helpers to make working with events and calendars through Akonadi easier.
+
+akonadi-calendar (интеграция с календарем Akonadi)
+
+Akonadi Calendar предоставляет задания, модели и других помощников, которые упрощают работу с событиями и календарями через Akonadi.

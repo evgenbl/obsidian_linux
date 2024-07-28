@@ -1,0 +1,11 @@
+libgravatar-21.12.1-x86_64-1
+
+libgravatar (Gravatar support library)
+
+libgravatar is a KDE PIM library providing Gravatar support.
+
+libgravatar (библиотека поддержки Gravatar)
+
+libgravatar - это библиотека KDE PIM, предоставляющая поддержку Gravatar.
+
+Gravatar - (от англ. globally recognized avatar — глобально распознаваемый аватар) — Web 2.0 сервис компании Automattic, позволяющий интернет-пользователям хранить свой аватар на специальном сервере. Пользователь регистрируется на центральном сервере и сохраняет там свой аватар и адрес электронной почты.

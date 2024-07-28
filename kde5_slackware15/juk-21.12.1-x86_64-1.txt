@@ -1,0 +1,10 @@
+juk-21.12.1-x86_64-1
+
+juk (audio jukebox application)
+
+JuK is an audio jukebox application, supporting collections of MP3, Ogg Vorbis, and FLAC audio files. It allows you to edit the tags of your audio files and manage your collection and playlists. In fact, its main focus is on music management.
+
+juk (приложение для музыкальных проигрывателей)
+
+JuK - это приложение для музыкальных проигрывателей, поддерживающее коллекции аудиофайлов в форматах MP3, Ogg Vorbis и FLAC. Оно позволяет редактировать теги ваших аудиофайлов и управлять вашей коллекцией и списками воспроизведения. На самом деле, его основное внимание сосредоточено на музыкальном менеджменте.
+

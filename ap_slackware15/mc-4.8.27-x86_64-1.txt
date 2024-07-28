@@ -1,0 +1,15 @@
+mc-4.8.27-x86_64-1
+
+mc (Midnight Commander file manager)
+
+The Midnight Commander is a Norton Commander clone, a program that manipulates and manages files and directories. Useful, fast, and has color displays on the Linux console. Mouse support is provided through the gpm mouse server. This is a lightweight compilation of mc for use on the text console or in an xterm.
+
+mc was written by Miguel de Icaza and Mauricio Plaza.
+
+mc (файловый менеджер Midnight Commander)
+
+Midnight Commander - это клон Norton Commander, программа, которая обрабатывает файлы и каталоги и управляет ими. Удобная, быстрая и имеет цветные дисплеи на консоли Linux. Поддержка мыши обеспечивается через сервер gpm mouse server. Это упрощенная компиляция mc для использования в текстовой консоли или в xterm.
+
+mc был написана Мигелем де Икасой и Маурисио Плаза.
+
+Homepage: https://midnight-commander.org

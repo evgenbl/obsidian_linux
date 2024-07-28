@@ -1,0 +1,9 @@
+gucharmap-12.0.1-x86_64-3
+
+gucharmap (character map utility)
+
+gucharmap is a Unicode character map and font viewer.
+
+gucharmap (утилита для отображения символов)
+
+gucharmap - это программа для просмотра символов и шрифтов в Юникоде

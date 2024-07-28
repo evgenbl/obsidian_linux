@@ -1,0 +1,9 @@
+ispell-3.4.04-x86_64-1
+
+ispell (spelling checker)
+
+Ispell is a fast screen-oriented spelling checker that shows you your errors in the context of the original file, and suggests possible corrections when it can figure them out. Compared to UNIX spell, it is faster and much easier to use. Ispell can also handle languages other than English. Ispell has a long history, and many people have contributed to the current version -- some of the major contributors include R. E. Gorin, Pace Willisson, Walt Buehring, and Geoff Kuenning.
+
+ispell (программа проверки орфографии)
+
+Ispell - это быстрая программа проверки орфографии, ориентированная на экран, которая показывает вам ваши ошибки в контексте исходного файла и предлагает возможные исправления, когда сможет их обнаружить. По сравнению с оболочкой UNIX, она работает быстрее и намного проще в использовании. Ispell также может работать с языками, отличными от английского. Ispell имеет долгую историю, и многие люди внесли свой вклад в создание текущей версии - среди основных авторов - Р. Э. Горин, Пейс Уиллиссон, Уолт Бюринг и Джефф Кюннинг

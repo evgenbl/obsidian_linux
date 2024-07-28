@@ -1,0 +1,9 @@
+kjs-5.90.0-x86_64-1
+
+kjs (Javascript engine)
+
+The KJS library provides an ECMAScript compatible interpreter. The ECMA standard is based on well known scripting languages such as Mozilla's JavaScript and Microsoft's JScript.
+
+kjs (движок Javascript)
+
+Библиотека KJS предоставляет интерпретатор, совместимый с ECMAScript. Стандарт ECMA основан на хорошо известных скриптовых языках, таких как Mozilla JavaScript и Microsoft JScript.

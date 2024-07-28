@@ -1,0 +1,12 @@
+alkimia-8.1.0-x86_64-3
+
+alkimia (KDE Finance library)
+
+Alkimia is a library used by KDE Finance applications, like Kmymoney.
+
+
+alkimia (финансовая библиотека KDE)
+
+Alkimia - это библиотека, используемая финансовыми приложениями KDE, такими как Kmymoney.
+
+KMyMoney — программа финансового учёта (доходы, расходы, банковские счета, акции). Предназначена для частных лиц и малых предприятий. Программа доступна бесплатно для Linux, Solaris и др. ОС со средой рабочего стола KDE (или хотя бы с её основными библиотеками, такими как KDELibs). Распространяется на условиях GNU General Public License.

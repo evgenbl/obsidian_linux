@@ -1,0 +1,9 @@
+khtml-5.90.0-x86_64-1
+
+khtml (HTML rendering engine)
+
+KHTML is a web rendering engine based on the KParts technology and using KJS for JavaScript support.
+
+khtml (движок рендеринга HTML)
+
+KHTML - это движок веб-рендеринга, основанный на технологии KParts и использующий KJS для поддержки JavaScript.

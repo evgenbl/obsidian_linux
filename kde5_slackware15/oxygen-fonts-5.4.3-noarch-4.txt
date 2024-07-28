@@ -1,0 +1,9 @@
+oxygen-fonts-5.4.3-noarch-4
+
+oxygen-fonts (KDE desktop fonts)
+
+Desktop/GUI font family for integrated use with the KDE desktop.
+
+oxygen-fonts (Шрифты для настольных компьютеров KDE)
+
+Семейство шрифтов для настольных компьютеров и графического интерфейса пользователя для интегрированного использования с KDE desktop.

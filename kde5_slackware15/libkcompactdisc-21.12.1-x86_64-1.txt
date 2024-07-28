@@ -1,0 +1,9 @@
+libkcompactdisc-21.12.1-x86_64-1
+
+libkcompactdisc (CD playing/ripping library)
+
+A KDE library for playing and ripping CDs.
+
+libkcompactdisc (Библиотека воспроизведения и копирования компакт-дисков)
+
+Библиотека KDE для воспроизведения и копирования компакт-дисков.

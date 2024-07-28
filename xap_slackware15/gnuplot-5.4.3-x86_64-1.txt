@@ -1,0 +1,9 @@
+gnuplot-5.4.3-x86_64-1
+
+gnuplot (plotting utility)
+
+Gnuplot is a command-line driven interactive function plotting utility for UNIX, MSDOS, and VMS platforms. The software is copyrighted but freely distributed (i.e., you don't have to pay for it). It was originally intended as graphical program which would allow scientists and students to visualize mathematical functions and data. Gnuplot supports many different types of terminals, plotters, and printers (including many color devices, and pseudo-devices like LaTeX) and is easily extensible to include new devices.
+
+gnuplot (утилита для построения графиков)
+
+Gnuplot - это интерактивная утилита для построения графиков с функцией командной строки для платформ UNIX, MSDOS и VMS. Программное обеспечение защищено авторским правом, но распространяется свободно (то есть вам не нужно за него платить). Изначально он был задуман как графическая программа, которая позволила бы ученым и студентам визуализировать математические функции и данные. Gnuplot поддерживает множество различных типов терминалов, плоттеров и принтеров (включая множество цветных устройств и псевдоустройств, таких как LaTeX) и легко расширяется для включения новых устройств.

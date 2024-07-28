@@ -1,0 +1,12 @@
+kipi-plugins-21.12.1-x86_64-1
+
+kipi-plugins (graphics and image plugins)
+
+A collection of plugins extending the KDE graphics and image applications.
+
+kipi-plugins (плагины для графики и изображений)
+
+Набор плагинов, расширяющих возможности графических и графических приложений KDE.
+
+Homepage: https://userbase.kde.org/KIPI
+

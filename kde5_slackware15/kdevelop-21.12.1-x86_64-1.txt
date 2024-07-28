@@ -1,0 +1,9 @@
+kdevelop-21.12.1-x86_64-1
+
+kdevelop (development environment for KDE)
+
+The KDevelop integrated C/C++ application development environment.
+
+kdevelop (среда разработки для KDE)
+
+Интегрированная среда разработки приложений на C/C++ от KDevelop.

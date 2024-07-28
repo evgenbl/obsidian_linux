@@ -1,0 +1,11 @@
+libkgapi-21.12.1-x86_64-1
+
+libkgapi (Google service API library)
+
+A KDE-based library for accessing various Google services via their
+public API.
+
+libkgapi (библиотека API сервисов Google)
+
+Библиотека на основе KDE для доступа к различным сервисам Google через их
+общедоступный API.

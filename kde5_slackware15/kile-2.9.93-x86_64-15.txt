@@ -1,0 +1,12 @@
+kile-2.9.93-x86_64-15
+
+kile (TeX/LaTeX frontend for Plasma5)
+
+kile is a user-friendly TeX/LaTeX editor for the KDE desktop environment.
+
+kile (интерфейс TeX/LaTeX для Plasma5)
+
+kile - это удобный редактор TeX/LaTeX для среды рабочего стола KDE.
+
+Homepage: https://kile.sourceforge.io
+

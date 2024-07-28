@@ -1,0 +1,12 @@
+analitza-21.12.1-x86_64-1
+
+analitza (KDE mathematical library)
+
+The analitza library will let you add mathematical features to your program.
+
+analitza (математическая библиотека KDE)
+
+Библиотека analitza позволит вам добавлять математические функции в вашу программу.
+
+Homepage: https://projects.kde.org/projects/kde/kdeedu/analitza
+

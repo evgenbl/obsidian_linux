@@ -1,0 +1,14 @@
+calligra-3.2.1-x86_64-15
+
+calligra (KDE office productivity suite)
+
+Calligra office productivity applications. Included are a word processor, spreadsheet, presentation program, chart and graph creator, vector graphics tool, database report creator, flowcharting program, integrated data management program, a pixel graphics editor, a mathematical formula editor, and Calligra Workspace (a combination of all of the above).
+
+calligra (офисный пакет для KDE )
+
+Приложения для повышения производительности Calligra office.
+
+В комплект входят текстовый редактор, электронные таблицы, программа для создания презентаций, инструмент для создания диаграмм и графиков, инструмент для создания векторной графики, инструмент для создания отчетов базы данных, программа для создания блок-схем, интегрированная программа управления данными, редактор пиксельной графики, редактор математических формул и Calligra Workspace (сочетание всего вышеперечисленного).
+
+Homepage: http://calligra-suite.org/
+

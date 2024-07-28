@@ -1,0 +1,9 @@
+kollision-21.12.1-x86_64-1
+
+kollision (simple ball dodging game)
+
+Kollision is a simple ball dodging game.
+
+kollision (простая игра на уклонение от мяча)
+
+Kollision - это простая игра на уклонение от мяча.

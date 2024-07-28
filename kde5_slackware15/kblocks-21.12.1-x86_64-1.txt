@@ -1,0 +1,7 @@
+kblocks (falling blocks game for KDE)
+
+KBlocks is the KDE version of the classic falling blocks game.
+
+KBlocks - это версия классической игры falling blocks для KDE.
+
+KBlocks — клон игры Тетрис. Нужно складывать падающий блоки так, чтобы получались горизонтальные ряды без пропусков. Когда ряд заполнен, он удаляется, освобождая место на игровом поле. Игра заканчивается, когда блоку негде упасть.

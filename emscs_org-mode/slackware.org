@@ -1,0 +1,549 @@
+
+#+STARTUP: content
+
+* slackware
+
+** MATE версии 1.18.2
+Хочу отметить, что MATE в официальных репозиториях нет. Его нужно скачивать и устанавливать вручную. Делается это так:
+1. Вводим в терминал: lftp -c 'open http://slackware.uk/msb/14.2/latest/; mirror x86_64'
+2. После завершения скачивания заходим в папку x86_64 и выполняем следующую команду: upgradepkg --install-new deps/*.t?z && upgradepkg --install-new base/*.t?z && upgradepkg --install-new extra/*.t?z
+3. Далее вводим xwmconfig и выбираем MATE-Session. Вуаля!
+** Добавление KDE в существующую установку
+Если KDE не была выбрана в процессе установки, она может быть установленна позднее:
+
+darkstar~# slackpkg install kde; deleted slackpkg remove kde
+
+Все пакеты из раздела KDE будут выбраны для установки, вы можете выбрать какие из них будут установленны.
+** Slackware(настройка сразу после установки)
+1.При первой загрузке вводим имя пользователя(доступен только root)
+2.Пароль,который задали при установке
+3.И наконец вводим startx > Enter.Все загружается система.
+4.После загрузки добавляем пользователя и пароль пользователя: 
+adduser > Enter > name user
+5.Если нужно добавляем sudo:
+nano /etc/sudoers
+В указанном файле отыскивается строка
+ # WHEEL_USERS ALL=(ALL) ALL
+С коей и снимается символ комментария. При желании совсем облегчить себе жизнь та же процедура проделывается со строкой
+ # WHEEL_USERS ALL=(ALL) ALL NOPASSWD: ALL
+6.Перезагрузка:
+Вводим имя пользователя,пароль и startx
+7.После загрузки системы добовляем репозиторий для обновлений:
+nano /etc/slackpkg/mirrors
+Раскомментируем ОДНО зеркало в nano /etc/slackpkg/mirrors
+(к примеру: http://mirrors.skackware.com/slackware/slackware-14.2/
+Сохраняем:Ctrl+O > Enter > Ctrl+X
+Далее обновлямся под рутом: slackpkg update и slackpkg upgrade-all(снимаем галочки в пунктах,где первым идет слово kernel - их 6 пункта.Иначе могут быть ошибки.
+8.Далее кому нужно русифицируем:
+nano /etc/profile.d/lang.sh
+Пример как должно быть:
+#!/bin/sh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+# export LANG=en_US
+export LANG=ru_RU.UTF-8
+
+Сохраняем:Ctrl+O > Enter > Ctrl+X
+
+и еще:
+nano /etc/profile.d/lang.csh
+должно быть:
+#!/bin/csh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+#setenv LANG en_US
+setenv LANG ru_RU.UTF-8
+
+Сохраняем:Ctrl+O > Enter > Ctrl+X
+
+Reoot(перезагрузка)
+** Русификация
+если вы установили дистрибутив полностью, то вам необходимо поменять всего лишь пару строк. А именно, файлы в директории /etc/rc.d/
+
+Изменение локали делают внутри файла /etc/profile.d/lang.sh
+
+Пример содежимого. Коментируется строчка импортирующая Английский язык и добавляется строчка для импорта Русского языка
+
+**************************************
+
+#!/bin/sh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+
+/etc/profile.d/lang.sh
+# export LANG=en_US
+export LANG=ru_RU.UTF-8
+
+**************************************
+
+Далее, меняем содержимое файла /etc/profile.d/lang.csh
+
+Тут всё так же, как и в примере выше.
+
+***********************************
+
+#!/bin/csh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+
+#   locale -a
+
+# en_US is the Slackware default locale:
+#setenv LANG en_US
+setenv LANG ru_RU.UTF-8
+
+**********************************
+** Как исправить показ кирилицы в анг.интерфейсе
+1) /etc/rc.d/rc.font
+#!/bin/sh
+setfont -v Cyr_a8x16.psfu.gz
+for i in 1 2 3 4 5 6;do
+echo -ne "\033%G" >/dev/tty$i
+done
+
+1
+chmod +x rc.font
+
+2) /etc/profile.d/lang.sh
+#!/bin/sh
+export LANG=ru_RU.UTF-8
+export LC_COLLATE=C
+
+chmod +x lang.sh
+
+3) /etc/profile.d/lang.csh
+#!/bin/csh
+setenv LANG=ru_RU.UTF-8
+setenv LC_CTYPE=ru_RU.UTF-8
+setenv LC_NUMERIC=ru_RU.UTF-8
+setenv LC_TIME=ru_RU.UTF-8
+setenv LC_COLLATE=C
+setenv LC_MONETARY=ru_RU.UTF-8
+setenv LC_MESSAGES=ru_RU.UTF-8
+setenv LC_PAPER=ru_RU.UTF-8
+setenv LC_NAME=ru_RU.UTF-8
+setenv LC_ADDRESS=ru_RU.UTF-8
+setenv LC_TELEPHONE=ru_RU.UTF-8
+setenv LC_MEASUREMENT=ru_RU.UTF-8
+setenv LC_IDENTIFICATION=ru_RU.UTF-8
+setenv LESSCHARSET=UTF-8
+setenv LC_COLLATE C
+
+chmod +x lang.csh
+** slackdoc  (https://docs.slackware.com/)
+Логин: jenit777
+Пароль: fekbabnar88!
+** Для про­сто­го и быст­ро­го об­нов­ле­ния Ва­ше­го Slackware:
+Ре­ко­мен­ду­ет­ся от­клю­чить об­нов­ле­ние ком­по­нен­тов ядра и са­мо­го ядра:
+
+По­правь­те в кон­со­ли с по­мо­щью # nano /etc/slackpkg/blacklist вы­клю­чив нуж­ное (убрать перед име­нем груп­пы па­ке­та '#' ).
+
+По­правь­те в кон­со­ли с по­мо­щью # nano /etc/slackpkg/mirrors вклю­чив нуж­ное Вам зер­ка­ло па­ке­тов (на­при­мер mirror.​yandex.​ru).
+
+slackpkg update
+
+slackpkg update gpg
+
+slackpkg install-new
+
+slackpkg upgrade-all
+
+lilo
+
+Вы об­но­ви­лись ! 
+** rus_slack
+https://blog.ibice.ru/rusifikaciya-slackware-141-za-pyat-minut
+or 
+те, кто пользуется данным дистрибутивом достаточно долго, знают, что он любит только ручную настройку. Изменение системного языка тоже не в стороне. По факту же, если вы установили дистрибутив полностью, то вам необходимо поменять всего лишь пару строк. А именно, файлы в директории /etc/rc.d/
+Изменение локали делают внутри файла /etc/profile.d/lang.sh
+
+Пример содежимого. Коментируется строчка импортирующая Английский язык и добавляется строчка для импорта Русского языка
+**************************************
+#!/bin/sh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+# export LANG=en_US
+export LANG=ru_RU.UTF-8
+**************************************
+Далее, меняем содержимое файла /etc/profile.d/lang.csh
+Тут всё так же, как и в примере выше.
+***********************************
+#!/bin/csh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+#setenv LANG en_US
+setenv LANG ru_RU.UTF-8
+**********************************
+Далее необходимо перезагрузить иксы (CTRL+alt+BACKSPACE) или компьютер (по желанию).Если вы используете XFCE то Русский язык будет загружен сразу, если KDE, то придётся доустановить пакет с Русской локализацией.
+
+Далее, переключение расскладки. Тут можно пойти двумя способами. Начнём с классического, правки конфига :)
+
+По факту, нам нужен файл /etc/X11/xorg.conf.d/keyboard-layout.conf . Если такого нет, создайте:
+touch /etc/X11/xorg.conf.d/keyboard-layout.conf
+
+Внутри него поместите следующее содержимое:
+Section "InputClass"
+	Identifier "keyboard-all"
+	MatchIsKeyboard "on"
+	Driver "evdev"
+	Option "XkbLayout" "us,ru(winkeys)"
+	Option "XkbOptions" "terminate:ctrl_alt_bksp,grp:ctrl_shift_toggle,grp_led:scroll"
+EndSection
+
+и перезапустите ваш икс.
+
+Второй способ:
+
+через мененджер настроек KDE, там есть специальный раздел для раскладки. А в XFCE нужно собрать специальный плагин для панели XKB.
+** sbopkg
+ Достаточно:
+# sqg -p shutter ; sbopkg -i shutter.sqf
+
+во-первых, первую команду целиком: "sqg -p shutter", она сформирует очередь сборки зависимостей shutter.sqf,
+во-вторых, ".sqf" во второй команде, "sbopkg -i shutter.sqf" соберет очередь целиком.
+
+В очередь будут поставлены все 70 необходимых пакетов:
+$ wc -l /var/lib/sbopkg/queues/shutter.sqf
+70 /var/lib/sbopkg/queues/shutter.sqf
+
+добавлю, если уж используется Mate, часть пакетов уже может быть собранными и установленными. Поэтому, имеет смысл добавлять ключик -k, чтобы уже установленное не пыталось пересобираться:
+# sbopkg -ki shutter.sqf
+
+https://sbopkg.org/downloads.php - homepage
+** slackbuilds.org
+https://slackbuilds.org/
+** slackware_prog
+slackpkg+ + sbopkg+pkgtool   slackpkg+
+
+slackbuilds.org
+
+slackpkg update && slackpkg upgrade-all
+
+генерируем новый список зеркал для slackpkg
+slackpkg new-config
+­ В /etc/slackpkg/mirrors раскомментируем одно зеркало (не подошло
+выбираем другое)
+­ Обновляем базу пакетов
+slackpkg update
+­ Обновляем сами пакеты
+slackpkg upgrade-all
+
+Для свежего софта есть git clone && src2pkg
+
+ Я, например, не ставлю akonadi, php, метапакет kde, метапакет xap... 
+
+Для автоматизации обновления подходит slackpkg (руководство http://www.slackpkg.org/documentation.html) в частности,
+slackpkg check-updates — проверка факта наличия обновлений
+slackpkg update — обновление описаний пакетов
+slackpkg upgrade-all — обновление обновленных пакетов
+
+slackpkg upgrade-all  # обновить установленное
+slackpkg install myrepo  # выбрать и поставить отсутствующее
+
+    быстро что-то установить, обновить, удалить
+
+slackpkg install|upgrade|remove что
+
+installpkg /путь/пакеты/*t?z /путь/еще_пакеты/*t?z
+upgradepkf /путь/пакеты/*t?z /путь/еще_пакеты/*t?z
+removepkg /путь/пакеты/*t?z пакет2 пакет7
+
+     #процедура обновления Slackware
+#slackpkg install-new
+#slackpkg upgrade-all
+#slackpkg clean-distro
+#reboot
+** xfce4-...-plugin
+xfce4-xkb-plugin
+xfce4-netload-plugin
+xfce4-screenshooter
+** выбор оконного менеджера
+Чтобы упростить выбор оконного менеджера, в Slackware есть программа под названием xwmconfig, которую можно использовать для выбора рабочего стола или оконного менеджера. Запускается она так:
+
+% xwmconfig
+
+Вам будет представлен список всех установленных рабочих столов и оконных менеджеров. Просто выберите из этого списка то, что вам нужно. Каждому из пользователей вашей системы понадобится запустить эту программу, т.к. разные пользователи могу использовать разные рабочие столы, и не все захотят использовать тот, который вы выбрали как стандартный во время установки системы.
+
+Затем просто запустите X'ы, и вы готовы к дальнейшей работе.
+
+или так:
+ Можно руками: cd /etc/X11/xinit; ln -sf xinitrc.kde xinitrc
+** Установка программ из архивов(txz)
+Пример:
+    Download texmaker-5.0.3-x86_64-4_slonly.txz
+    Install texmaker txz package:
+
+    # texmaker-5.0.3-x86_64-4_slonly.txz
+** Обновление slackware сразу после установки
+Рекомендуется отключить обновление компонентов ядра и самого ядра:
+
+Поправьте в консоли с помощью # nano /etc/slackpkg/blacklist выключив нужное (поставив перед именем группы пакета '#' ).
+
+Поправьте в консоли с помощью # nano /etc/slackpkg/mirrors включив нужное Вам зеркало пакетов (например mirror.yandex.ru).
+
+slackpkg update
+
+slackpkg update gpg
+
+slackpkg install-new
+
+slackpkg upgrade-all
+
+lilo
+
+Вы обновились !
+
+Программы управления пакетами Slackware находятся в пакете pkgtools используются для индивидуальной установки пакетов. 
+** Обновление slackware
+Собственно поставил Slackware 14.2.
+Обновил:
+slackpkg update
+slackpkg install-new
+slackpkg upgrade-all
+slackpkg clean-system
+** для настройки KDE5 под администратором
+'kdesu systemsettings5'
+** Как избавиться от тиринга при использовании видеокарты INTEL
+"Видеокарты Intel по-умолчанию используют ускорение SNA и DRI2. Для решения проблем с тирингом рекомендуется использовать опцию TearFree, либо включить DRI3. Нельзя TearFree и DRI3 использовать одновременно, ибо у вас начнут виснуть иксы или рабочее окружение. Напомню, что TearFree немного снижает производительность графики.  
+Необходимо создать файл /etc/X11/xorg.conf.d/20-intel.conf и вставить в него один из предложенных вариантов (метод uxa считается устаревшим). 
+
+1 вариант
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver "intel"
+   Option "AccelMethod" "sna"
+   Option "TearFree" "true"
+EndSection
+
+2 вариант
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver "intel"
+   Option "AccelMethod" "sna"
+   Option "DRI" "3"
+EndSection
+
+3 вариант
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver "intel"
+   Option "AccelMethod" "uxa"
+   Option "DRI" "3"
+EndSection "
+** Вменяемое отображение шрифтов в Java-приложениях
+В файл ~.bashrc добавить строку 'export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"'
+** Если тиринг только в firefox
+"1) Откройте about:config 
+2) Найдите layers.acceleration.force-enabled
+3) Измените значение (Value) на true.
+4) Перезагрузите браузер"
+** Восстановление загрузчика lilo
+1)  Загрузить машину с помощью установочного носителя Slackware
+
+2) Смонтировать основной раздел
+ # mount /dev/sda2 /mnt
+
+3) Смонтировать раздел 'boot' (если есть)
+ # mount /dev/sda1 /mnt/boot
+
+4)  # chroot /mnt
+
+5)  Перейти в смонтированный раздел
+ # cd /mnt
+
+6)  # lilo -v
+
+** выключение,перезагрузка
+выключение   /sbin/shutdown -h -P now
+перезагрузка /sbin/shutdown -r now
+* Чтобы нашему юзеру не было грустно, по инерции редактируем /etc/sudoers.
+# nano /etc/sudoers
+ Раскомментируем строку %wheel All=(ALL) ALL в /etc/sudoers 
+* Теперь самое время научиться стартовать сессию Xorg от имени пользователя и делать это автоматически.
+# nano /etc/inittab
+id:4:initdefault   вместо   id:3:initdefault 
+* slackpkg
+Окей, в слакваре есть некоторые подобия пакетных менеджеров. Только ни один из них пока что не научился притягивать нужные зависимости, как это делают другие пакетные менеждеры типа pacman, emerge. Зато они умеют распаковывать и собирать пакеты.
+
+Один из них, slackpkg, я буду настраивать ниже:
+
+Раскомментируем ОДНО зеркало в /etc/slackpkg/mirrors и обновим его.
+
+nano /etc/slackpkg/mirrors 
+* Руссификация Slackware 14
+Те, кто пользуется данным дистрибутивом достаточно долго, знают, что он любит только ручную настройку. Изменение системного языка тоже не в стороне. По факту же, если вы установили дистрибутив полностью, то вам необходимо поменять всего лишь пару строк. А именно, файлы в директории /etc/rc.d/
+
+Изменение локали делают внутри файла nano /etc/profile.d/lang.sh
+
+Пример содежимого. Коментируется строчка импортирующая Английский язык и добавляется строчка для импорта Русского языка
+
+**************************************
+
+#!/bin/sh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+# export LANG=en_US
+export LANG=ru_RU.UTF-8
+
+**************************************
+
+Далее, меняем содержимое файла nano /etc/profile.d/lang.csh
+
+Тут всё так же, как и в примере выше.
+
+***********************************
+
+#!/bin/csh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+#setenv LANG en_US
+setenv LANG ru_RU.UTF-8
+
+**********************************
+
+Далее необходимо перезагрузить иксы (CTRL+alt+BACKSPACE) или компьютер (по желанию).
+* Локализация KDE 4.14.3 (slackware 14.2)-KDE 4.12.5(slackware 14.1)
+локализация kde4 in slackware 14.1
+
+Если ранее использовались локализации, отличные от английской, соответствующие пакеты также надо обновить, например, для русской — такой командой:
+
+# upgradepkg x86_64/kdei/kde-l10n-ru-4.12.5-noarch-1alien.txz
+
+Если никаких пакетов локализации не было установлено, но теперь потребовались, их надо установить:
+
+# upgradepkg --install-new x86_64/kdei/kde-l10n-ru-4.12.5-noarch-1alien.txz
+
+локализация kde4 in slackware 14.2
+
+Если ранее использовались локализации, отличные от английской, соответствующие пакеты также надо обновить, например, для русской — такой командой:
+
+# upgradepkg x86_64/kdei/kde-l10n-ru-4.14.3-noarch-1alien.txz
+
+Если никаких пакетов локализации не было установлено, но теперь потребовались, их надо установить:
+
+# upgradepkg --install-new x86_64/kdei/kde-l10n-ru-4.14.3-noarch-1alien.txz
+* Как установить пакет *.txz
+                  install Howto
+
+    Download mozilla-firefox-78.11.0esr-x86_64-1gv.txz
+    Install mozilla-firefox txz package:
+
+    # upgradepkg --install-new mozilla-firefox-78.11.0esr-x86_64-1gv.txz
+* Обновление ядра в Slackware
+Обновление ядра в Slackware проходит автоматически при выполнении команды 
+slackpkg upgrade-all и ядро по умолчанию даже не добавлено в blacklist пакетного 
+менеджера. Что может доставить изрядно проблем после обновления.
+
+Дело в том, что ядро корректно устанавливается и даже обновляются символические 
+ссылки в папке /boot для lilo. Но при этом не собирается новое initrd.
+
+initrd это образ файловой системы с некоторым набором программ и модулями ядра, 
+например, таким как ext4 для доступа к файловой системе. initrd запускается 
+самой первой, монтирует корень и долее запускает основное ядро и всю систему.
+
+Так вот, со старым initrd не получится подмонтировать корневой раздел диска и вы 
+получите ошибку при запуске Slackware
+
+Чтобы такого не произошло, достаточно выполнить одну команду для сборки нового 
+initrd. Нужно перейти в папку /boot и выполнить команду. В моем случае она будет 
+следующей:
+
+# mkinitrd -c -k 5.13.4 -r /dev/sda1 -f ext4 -m ext4
+
+OK: /lib/modules/5.13.4/kernel/fs/jbd2/jbd2.ko added.
+OK: /lib/modules/5.13.4/kernel/fs/mbcache.ko added.
+OK: /lib/modules/5.13.4/kernel/fs/ext4/ext4.ko added.
+56144 blocks
+/boot/initrd.gz created.
+Be sure to run lilo again if you use it.
+
+
+С учетом того, что у меня Slackware установлен на /dev/sda1 и используется в 
+качестве файловой системы ext4. У вас параметры могут отличатся. Данная команда 
+соберет новый initrd и можно будет смело перезагрузится.
+
+Так же, чтобы не писать эту команду можно создать специальный конфигурационный 
+файл /etc/mkinitrd.conf следующего содержания:
+
+KERNEL_VERSION=$(readlink /boot/vmlinuz-generic | cut -d- -f3)
+MODULE_LIST="ext4"
+ROOTDEV="/dev/sda1"
+ROOTFS="ext4"
+
+
+После этого достаточно будет выполнять команду со следующими параметрами:
+
+mkinitrd -c -F
+
+Но есть ещё один способ от самого Патрика. Это скрипт:
+
+/usr/share/mkinitrd/mkinitrd_command_generator.sh
+
+Он позволяет в автоматическом режиме сгенерировать команду для запуска сборки 
+initrd. У него есть помощь, а также можно запросить текущие настройки выполнив:
+
+# /usr/share/mkinitrd/mkinitrd_command_generator.sh -c
+
+SOURCE_TREE="/boot/initrd-tree"
+CLEAR_TREE="1"
+OUTPUT_IMAGE="/boot/initrd.gz"
+KERNEL_VERSION="5.13.4"
+KEYMAP="us"
+MODULE_LIST="xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:
+i2c-hid:hid_generic:hid-asus:hid-cherry:hid-logitech:hid-logitech-dj:hid-
+logitech-hidpp:hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:crc32c_intel
+:crc32c_generic:ext4"
+LUKSDEV=""
+ROOTDEV="/dev/sda1"
+ROOTFS="ext4"
+RESUMEDEV=""
+RAID=""
+LVM=""
+UDEV="1"
+WAIT="1"
+
+Если выполнить скрипт с ключом -i
+
+# /usr/share/mkinitrd/mkinitrd_command_generator.sh -i
+
+Будет вызван интерактивный режим пошаговыми с запросами параметров. После 
+выполнения будет выдана команда для выполнения. Например, такая:
+
+mkinitrd -c -k 5.13.4 -f ext4 -r /dev/sda1 -m 
+xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:hid:usbhid:i2c-hid:
+hid_generic:hid-asus:hid-cherry:hid-logitech:hid-logitech-dj:hid-logitech-hidpp:
+hid-lenovo:hid-microsoft:hid_multitouch:jbd2:mbcache:crc32c_intel:crc32c_generic
+:ext4 -u -o /boot/initrd.gz
+
+Либо новое ядро можно указать непосредственно через ключь:
+
+/usr/share/mkinitrd/mkinitrd_command_generator.sh -k 5.13.4
+
+Остается только выполнять её.
+
+Надеюсь теперь проблем с обновлением ядра будет меньше.
+
+* inittab - графическая загрузка
+** # nano /etc/inittab >> id:4:initdefault   вместо   id:3:initdefault
+**  https://vc.ru/dev/162155-kak-podruzhitsya-so-slackware-linux

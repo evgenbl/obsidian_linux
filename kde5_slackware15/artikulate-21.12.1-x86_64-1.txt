@@ -1,0 +1,12 @@
+artikulate-21.12.1-x86_64-1
+
+artikulate (pronunciation trainer)
+
+Artikulate is a pronunciation trainer, which helps in improving and perfecting pronunciation skills. Learners train their pronunciation by recording their own voices and comparing them to native speaker recordings. Artikulate is part of the KDE Education Project.
+
+
+artikulate (тренажер по произношению)
+
+Articulate - это тренажер по произношению, который помогает улучшить навыки произношения. Учащиеся тренируют свое произношение, записывая свои голоса и сравнивая их с записями носителей языка.
+
+Articulate является частью образовательного проекта KDE.

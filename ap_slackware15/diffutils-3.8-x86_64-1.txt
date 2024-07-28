@@ -1,0 +1,9 @@
+diffutils-3.8-x86_64-1
+
+diffutils (finds differences between files)
+
+The GNU diff utilities finds differences between files. A major use for this package is to make source code patches.
+
+diffutils (находит различия между файлами)
+
+Утилита GNU diff utilities находит различия между файлами. Основное применение этого пакета - внесение исправлений в исходный код

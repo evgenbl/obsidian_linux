@@ -1,0 +1,10 @@
+kunitconversion-5.90.0-x86_64-1
+
+kunitconversion (convert physical units)
+
+KUnitConversion provides functions to convert values in different physical units. It supports converting different prefixes (e.g. kilo, mega, giga) as well as converting between different unit systems (e.g. liters, gallons).
+
+kunitconversion (преобразование физических единиц измерения)
+
+KUnitConversion предоставляет функции для преобразования значений в различных физических единицах измерения. Он поддерживает преобразование различных префиксов (например, килограмм, мега, гига), а также преобразование между различными системами единиц измерения (например, литрами, галлонами).
+

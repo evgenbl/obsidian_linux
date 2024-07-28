@@ -1,0 +1,9 @@
+kruler-21.12.1-x86_64-1
+
+kruler (a screen ruler for KDE)
+
+A screen ruler and color measurement tool for KDE.
+
+kruler (экранная линейка для KDE)
+
+Экранная линейка и инструмент для измерения цвета в KDE.

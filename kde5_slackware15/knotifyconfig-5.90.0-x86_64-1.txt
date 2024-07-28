@@ -1,0 +1,9 @@
+knotifyconfig-5.90.0-x86_64-1
+
+knotifyconfig (configure notifications)
+
+KNotifyConfig provides a configuration dialog for desktop notifications which can be embedded in your application.
+
+knotifyconfig (настройка уведомлений)
+
+KNotifyConfig предоставляет диалоговое окно настройки уведомлений на рабочем столе, которое может быть встроено в ваше приложение.

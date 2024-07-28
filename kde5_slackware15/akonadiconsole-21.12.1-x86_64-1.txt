@@ -1,0 +1,11 @@
+akonadiconsole-21.12.1-x86_64-1
+
+akonadiconsole (Akonadi management and debugging console)
+
+Akonadi Console is a tool for developers working with Akonadi or on Akonadi itself. It provides a GUI for managing agents and resources, retrieving, checking and even manipulating data, monitoring communication between Akonadi server and its clients, as well as convenience access to the database used by the server.
+
+
+akonadiconsole (консоль управления и отладки Akonadi)
+
+Консоль Akonadi - это инструмент для разработчиков, работающих с Akonadi или сам Аконади. Он предоставляет графический интерфейс для управления агентами и ресурсами, извлечения, проверки и даже манипулирования данными, мониторинга связи между сервером Akonadi и его клиентами, а также
+удобного доступа к базе данных, используемой сервером.

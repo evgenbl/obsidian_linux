@@ -1,0 +1,9 @@
+kwin-5.23.5-x86_64-2
+
+kwin (KDE window manager)
+
+KWin is a window manager for the X Window System. It is an integral part, and the default window manager of the Plasma Workspaces, but it can also be used on its own or with other desktop environments.
+
+kwin (KDE window manager)
+
+KWin - это оконный менеджер для X Window System. Он является неотъемлемой частью и оконным менеджером по умолчанию для рабочих сред Plasma, но его также можно использовать отдельно или с другими средами рабочего стола.

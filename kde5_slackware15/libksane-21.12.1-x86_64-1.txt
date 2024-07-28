@@ -1,0 +1,10 @@
+libksane-21.12.1-x86_64-1
+
+libksane (KDE scanner library)
+
+Libksane is a library to add scan support to KDE applications.
+
+
+libksane (библиотека сканеров KDE)
+
+Libksane - это библиотека, добавляющая поддержку сканирования в приложения KDE.

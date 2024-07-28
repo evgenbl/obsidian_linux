@@ -1,0 +1,11 @@
+kpmcore-21.12.1-x86_64-1
+
+kpmcore (KDE partitionmanager libraries)
+
+kpmcore is a library for managing partitions. It contains common code for KDE Partition Manager and other projects.
+
+kpmcore (библиотеки Менеджера разделов KDE)
+
+kpmcore - это библиотека для управления разделами. Она содержит общий код для KDE Partition Manager и других проектов.
+
+Смотрите также: https://www.kde.org/applications/system/kdepartitionmanager

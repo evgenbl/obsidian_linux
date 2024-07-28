@@ -1,0 +1,9 @@
+kpat-21.12.1-x86_64-1
+
+kpat (patience card game for KDE)
+
+KPat (aka KPatience) is a relaxing card sorting game. To win the game a player has to arrange a single deck of cards in certain order amongst each other.
+
+kpat (карточная игра на терпение для KDE)
+
+KPat (она же "Терпение") - это расслабляющая игра для сортировки карт. Чтобы выиграть игру, игрок должен разложить одну колоду карт в определенном порядке между собой.

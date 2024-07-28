@@ -1,0 +1,9 @@
+kompare-21.12.1-x86_64-1
+
+kompare (graphical diff utility)
+
+kompare is a graphical file differences tool.
+
+kompare (утилита графического анализа различий)
+
+kompare - это инструмент для определения различий в файлах, в графическом виде.

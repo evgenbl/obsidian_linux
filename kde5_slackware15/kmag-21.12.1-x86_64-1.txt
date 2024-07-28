@@ -1,0 +1,12 @@
+kmag-21.12.1-x86_64-1
+
+kmag (Screen magnifier)
+
+KMag is a small utility for Linux to magnify a part of the screen. KMag is very useful for people with visual disabilities and for those working in the fields of image analysis, web development etc.
+
+kmag (Экранная лупа)
+
+KMag - это небольшая утилита для Linux, позволяющая увеличивать часть экрана. KMag очень полезна для людей с нарушениями зрения и для тех, кто работает в области анализа изображений, веб-разработки и т.д.
+
+Homepage: https://kde.org/applications/utilities/org.kde.kmag
+

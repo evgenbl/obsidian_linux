@@ -1,0 +1,9 @@
+libkcddb-21.12.1-x86_64-1
+
+libkcddb (KDE CDDB retrieval library)
+
+A KDE CDDB retrieval library.
+
+libkcddb (Поисковая библиотека KDE CDDB)
+
+Библиотека поиска KDE CDDB.

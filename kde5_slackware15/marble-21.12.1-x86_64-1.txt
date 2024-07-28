@@ -1,0 +1,10 @@
+marble-21.12.1-x86_64-1
+
+marble (virtual globe)
+
+Marble is a virtual globe with advanced routing capabilities. You can download maps from a variety of themes and explore the surroundings. Record your trip and share it with your friends. Features online and offline routing, GPS tracking and recording, themable maps (OpenStreetMap, Satellite Map and more), support for different projections (globe, flat map, ...) and other planets, and download of maps and route data for offline usage.
+
+
+marble (виртуальный глобус)
+
+Marble - это виртуальный глобус с расширенными возможностями маршрутизации. Вы можете загружать карты различных тематик и исследовать окрестности. Запишите свое путешествие и поделитесь им с друзьями. Функции онлайн- и оффлайн-маршрутизации, GPS-слежения и записи, тематические карты (OpenStreetMap, спутниковая карта и другие), поддержка различных проекций (глобус, плоская карта, ...) и других планет, а также загрузка карт и данных о маршрутах для использования в автономном режиме.

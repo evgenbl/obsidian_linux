@@ -1,0 +1,12 @@
+xsnow-3.4.3-x86_64-1
+
+xsnow (let it snow on your desktop)
+
+XSnow brings snow, trees, reindeer, Santa, and birds to your desktop.
+
+snow (пусть на вашем рабочем столе идет снег)
+
+X Snow перенесет снег, деревья, северных оленей, Санту и птиц на ваш рабочий стол.
+
+Homepage: http://ratrabbit.nl/ratrabbit/xsnow/
+

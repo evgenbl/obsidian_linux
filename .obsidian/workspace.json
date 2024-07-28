@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "110f108917055bb7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e31440bd1e8ef2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0258efd302a1ace0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2023-12-08 - Win 11 + office(активация).md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7201b1c76fa74f74",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfa653bfe33e3fff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48f49305ddad6a2e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54687b1ec117cde2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "25628e505240c563",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "right": {
+    "id": "46d166c857f705b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "64964acee5c07273",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "179359690e025954",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Daily/2023-12-08 - Win 11 + office(активация).md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d76417e6f29b5bd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Daily/2023-12-08 - Win 11 + office(активация).md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "43177b2660276502",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "717fb6ee55f88a02",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Daily/2023-12-08 - Win 11 + office(активация).md"
+              }
+            }
+          },
+          {
+            "id": "8c5a04867d685c8c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "756afd054726427b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "markdown-importer:Импорт Markdown-файлов": false,
+      "audio-recorder:Начать/остановить запись": false
+    }
+  },
+  "active": "48f49305ddad6a2e",
+  "lastOpenFiles": [
+    "Daily/2023-11-15-Как настроить OpenVPN и подключиться к асболютно бесплатным VPN-серверам..md",
+    "Daily/2023-12-08 - Win 11 + office(активация).md",
+    "Daily/2023-11-26-кулинария.md",
+    "Daily/2023-11-11-Клавиша prior.md",
+    "Daily/2023-08-21-PowerPoint  LibreOffice Impress.md",
+    "Win/2023-09-14-Как убрать учетную запись Майкрософт.md",
+    "Win/2024-01-08 - Удаление Microsoft 365 вручную с помощью Windows PowerShell.md",
+    "Daily/2024-01-08 - linux && windows.md",
+    "Daily/2024-01-15 - 14.1 Ноутбук DEXP Aquilon.md",
+    "Daily/2024-01-15 - Чем различаются стандарты 802.11 b, g, a, n, ac, ax.md",
+    "Daily/2024-01-18 - Лучшие инструменты и библиотеки для преобразования HTML в Markdown.md",
+    "Daily/2024-04-02 - Переключение раскладки.md",
+    "Daily/2024-04-02 - strftime.md",
+    "Daily/2024-04-13 - Каталог proc в Linux.md",
+    "Win/2023-11-23-Как перейти на другой рабочий стол Windows 11.md",
+    "Win",
+    "Win/2024-04-15 - Немного про консоль.md",
+    "Win/2024-04-15 - Шпаргалка по CMD.md",
+    "English/2024-04-13 - English links.md",
+    "arch+dwm/1.4.st - terminal in dwm.md",
+    "arch+dwm/1.3.arch_dwm_install.md",
+    "arch+dwm/1.2.Arch-dwm_install !!!!!!.md",
+    "arch+dwm/xinitrc_dwm.md",
+    "arch+dwm/lf.md",
+    "arch+dwm/st.md",
+    "arch+dwm/Arch.md",
+    "arch+dwm/1.5.st - terminal in dwm.md",
+    "Quarto/Markdown2.pdf",
+    "Quarto/Использование_Markdown2.pdf",
+    "Quarto/Quarto.pdf",
+    "Quarto/data-visualization-blog.netlify.app-.pdf",
+    "GitHub/Настройка_Git_GitHub.txt",
+    "Vim/NERDTree - HotKey.txt",
+    "Vim/vim_NERDTree - HotKey.txt",
+    "Vim/vim отключить проверку орфографии.txt",
+    "Vim",
+    "Личнные/Ремонт по дому/катридж_d-40.jpg",
+    "Files/Pasted image 20240121185932.png",
+    "Files/функции_elisp.png",
+    "Files/Снимок экрана 2024-01-20 203043.png",
+    "Files/Pasted image 20240119154758.png",
+    "Files/Pasted image 20240119154732.png",
+    "Files/Pasted image 20240119154650.png",
+    "Files/Pasted image 20240119154558.png",
+    "Files/Pasted image 20240119153516.png",
+    "Files/arch_install 2.png",
+    "Без названия.canvas"
+  ]
+}

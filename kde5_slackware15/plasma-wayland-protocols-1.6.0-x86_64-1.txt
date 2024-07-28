@@ -1,0 +1,10 @@
+plasma-wayland-protocols-1.6.0-x86_64-1
+
+plasma-wayland-protocols (Plasma protocols for Wayland)
+
+This project contains xml files of non-standard Wayland protocols used by Plasma.
+
+
+plasma-wayland-protocols (Протоколы Plasma для Wayland)
+
+Этот проект содержит xml-файлы нестандартных протоколов Wayland, используемых Plasma.

@@ -1,0 +1,9 @@
+cups-2.3.3op2-x86_64-1
+
+cups (Common UNIX Printing System)
+
+The Common UNIX Printing System provides a portable printing layer for UNIX(R)-like operating systems. It has been developed by Easy Software Products to promote a standard printing solution for all UNIX vendors and users. CUPS uses the Internet Printing Protocol ("IPP") as the basis for managing print jobs and queues. The CUPS package includes System V and Berkeley command-line interfaces, a PostScript RIP package for supporting non-PostScript printer drivers, and tools for creating additional printer drivers and other CUPS services.
+
+cups (Common UNIX Printing System)
+
+Common UNIX Printing System предоставляет переносной уровень печати для UNIX(R)-подобных операционных систем. Она была разработана компанией Easy Software Products для продвижения стандартного решения для печати для всех поставщиков и пользователей UNIX. CUPS использует протокол интернет-печати ("IPP") в качестве основы для управления заданиями на печать и очередями. Пакет CUPS включает в себя интерфейсы командной строки System V и Berkeley, пакет PostScript RIP для поддержки драйверов принтеров, отличных от PostScript, а также инструменты для создания дополнительных драйверов принтеров и других сервисов CUPS.

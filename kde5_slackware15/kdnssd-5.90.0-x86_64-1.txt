@@ -1,0 +1,9 @@
+kdnssd-5.90.0-x86_64-1
+
+kdnssd (network monitor for zeroconf)
+
+A network monitor for DNS-SD services (Zeroconf).
+
+kdnssd (Сетевой монитор для zeroconf)
+
+Сетевой монитор для служб DNS-SD (Zeroconf).

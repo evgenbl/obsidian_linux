@@ -1,0 +1,12 @@
+kscreen-5.23.5-x86_64-1
+
+kscreen (KDE screen management)
+
+KScreen is the new screen management software for KDE Plasma Workspaces which tries to be as magic and automatic as possible for users with basic needs and easy to configure for those who want special setups.
+
+kscreen (управление экраном KDE)
+
+KScreen - это новое программное обеспечение для управления экраном для KDE Plasma Workspaces, которое стремится быть как можно более эффективным и автоматическим для пользователей с базовыми потребностями и простым в настройке для тех, кому нужны специальные настройки.
+
+Homepage: http://community.kde.org/Solid/Projects/ScreenManagement
+

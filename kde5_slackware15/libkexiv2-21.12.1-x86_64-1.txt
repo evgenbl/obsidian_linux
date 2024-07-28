@@ -1,0 +1,9 @@
+libkexiv2-21.12.1-x86_64-1
+
+libkexiv2 (wrapper library for exiv2)
+
+Libkexiv2 is a KDE wrapper around the Exiv2 library to manipulate image metadata.
+
+libkexiv2 (библиотека-оболочка для exiv2)
+
+Libkexiv2 - это оболочка KDE для библиотеки Exiv2 для управления метаданными изображений.

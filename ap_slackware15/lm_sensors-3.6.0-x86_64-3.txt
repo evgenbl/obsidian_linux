@@ -1,0 +1,12 @@
+lm_sensors-3.6.0-x86_64-3
+
+lm_sensors (hardware monitoring package)
+
+lm_sensors provides tools for monitoring the temperatures, voltages, and fans of Linux systems with hardware monitoring devices. Included are text-based tools for sensor reporting, and a library for sensors access called libsensors. It also contains tools for sensor hardware identification and I2C bus probing.
+
+lm_sensors (пакет аппаратного мониторинга)
+
+lm_sensors предоставляет инструменты для мониторинга температуры, напряжения и вентиляторов в системах Linux с помощью устройств аппаратного мониторинга. В комплект входят текстовые инструменты для создания отчетов о датчиках и библиотека для доступа к датчикам под названием libsensors. Он также содержит инструменты для идентификации аппаратного обеспечения датчиков и тестирования шины I2C.
+
+Homepage: https://github.com/groeck/lm-sensors
+

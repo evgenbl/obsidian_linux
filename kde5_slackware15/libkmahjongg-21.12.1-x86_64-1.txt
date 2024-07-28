@@ -1,0 +1,9 @@
+libkmahjongg-21.12.1-x86_64-1
+
+libkmahjongg (Mahjongg tilesets library)
+
+libkmahjongg is a library used by several KDE games for loading and rendering of Mahjongg tilesets.
+
+libkmahjongg (библиотека наборов элементов маджонга)
+
+libkmahjongg - это библиотека, используемая в нескольких играх на KDE для загрузки и отображения наборов элементов маджонга.

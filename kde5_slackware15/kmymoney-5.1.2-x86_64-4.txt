@@ -1,0 +1,12 @@
+kmymoney-5.1.2-x86_64-4
+
+kmymoney (personal finance manager)
+
+KMymoney is a personal finance manager for KDE which operates similarly to Microsoft Money or Quicken.
+
+kmymoney (менеджер по персональным финансам)
+
+KMyMoney - это менеджер по персональным финансам для KDE, который работает аналогично Microsoft Money или Quicken.
+
+Homepage: https://kmymoney.org/
+

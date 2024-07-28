@@ -1,0 +1,16 @@
+k3b-21.12.1-x86_64-1
+
+k3b (The CD Creator)
+
+K3b makes writing cds under Linux easy. It has an easy to use interface and supports CD burning (including on-the-fly), copying, erasing, ripping, and more.
+
+K3b was written by Sebastian Trueg, Thomas Froescher, Christian Kvasny, and Klaus-Dieter Krannich.
+
+k3b (Программа для создания компакт-дисков)
+
+Программа K3b упрощает запись компакт-дисков под управлением Linux. Она имеет простой в использовании интерфейс и поддерживает запись компакт-дисков (в том числе "на лету"), копирование, стирание, риппинг и многое другое.
+
+K3b был написан Себастьяном Труэгом, Томасом Фрешером, Кристианом Квасни и Клаусом-Дитером Краннихом.
+
+Homepage: http://www.k3b.org
+

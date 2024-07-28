@@ -1,0 +1,12 @@
+dolphin-21.12.1-x86_64-1
+
+dolphin (KDE file manager)
+
+Dolphin is a lightweight file manager. It has been designed with ease of use and simplicity in mind, while still allowing flexibility and customization.
+
+dolphin (файловый менеджер KDE)
+
+Dolphin - это легкий файловый менеджер. Он был разработан с учетом удобства использования и простоты, но при этом обеспечивает гибкость и индивидуальную настройку.
+
+Homepage: https://www.kde.org/applications/system/dolphin/
+

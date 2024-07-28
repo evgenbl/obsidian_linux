@@ -1,0 +1,1798 @@
+#+STARTUP: content
+
+* arch
+** install arch scripts бойко порунцова
+https://github.com/poruncov/archlinux-script-install
+1 curl -OL https://git.io/arch-rus.sh
+2 chmod +x arch-rus.sh
+3 ./arch-rus.sh
+
+https://github.com/ordanax/arch
+wget git.io/archuefi1.sh && sh archuefi1.sh
+curl -OL git.io/archuefi1.sh && sh archuefi1.sh
+
+
+Для востановления загрузчика Grub-legacy Grub-UEFI Systemd-boot(UEFI) выполните для запуска скрипта следующее:
+
+curl -OL bit.do/arch-boot
+
+chmod +x arch-boot
+** Обновление системы Arch
+sudo pacman -Syu
+** ОБНОВЛЕНИЕ И ОЧИСТКА СИСТЕМЫ ОДНОЙ КОМАНДОЙ
+Ранее я писал команду для обновление системы с yaourt
+После перехода на aurman обнаружил, что не все команды работают и перекомбинировал команду для aurman
+
+Вот сама команда
+aurman -Syu && sudo pacman -Scc && sudo pacman -Rsn $(pacman -Qdtq) && sudo rm -rf ~/.cache/thumbnails/*
+
+yay -Syu && sudo pacman -Scc && sudo pacman -Rsn $(pacman -Qdtq) && sudo rm -rf ~/.cache/thumbnails/*
+
+Пояснения:
+aurman -Syu - обновляет ядро, программы в pacman и в aur
+sudo pacman -Scc - очищает кеш пакетов, высвобождая место на диске
+sudo pacman -Rsn $(pacman -Qdtq) - удаляет пакеты-сироты (которые не используются ни одной программой)
+sudo rm -rf ~/.cache/thumbnails/* - удаляет миниатюры фото, которые накапливаются в системе.
+** Arch_обновления и очистки системы
+Альтернативная команда для обновления и очистки системы
+yay -Syu && sudo pacman -Scc && sudo pacman -Rsn $(pacman -Qdtq) && sudo rm -rf ~/.cache/thumbnails/*
+
+Пояснения:
+yay -Syu - обновляет ядро, программы в pacman и в aur
+sudo pacman -Scc - очищает кеш пакетов, высвобождая место на диске
+sudo pacman -Rsn $(pacman -Qdtq) - удаляет пакеты-сироты (которые не используются ни одной программой)
+sudo rm -rf ~/.cache/thumbnails/* - удаляет миниатюры фото, которые накапливаются в системе.
+** 1.разбивки диска fdisk 
+#Создаем MBR таблицу (Для UEFI - GPT командой g)
+o
+
+# Создаем новый диск
+n
+Жмем enter
+
+# Выбираем primary (основной)  или extented (расширенный)
+По умолчанию стоит primary (основной) поэтому просто жмем enter
+
+# Выбор номера диска, по умолчанию подставляется следующий номер
+Просто жмем enter
+
+# Запрос на первый сектор диска
+Просто жмем enter
+
+# Запрос на последний сектор диска (Ставим + и объем памяти. Пример: +100M)
++100M
+
+Повторяем все шаги снова для всех нужных разделов диска
+
+(LEGACY) Для /boot не забываем указать a и поставить 1 для установки его
+загрузочным
+
+(UEFI) Для efi не забываем указать, что это efi раздел t и поставить 1
+
+Как все разметили не забываем все записать командой w
+** 2.Форматирование и монтирование разделов
+Разделы с BIOS
+
+mkfs.ext2  /dev/sda1 -L boot
+mkfs.ext4  /dev/sda2 -L root
+mkswap /dev/sda3 -L swap
+mkfs.ext4  /dev/sda4 -L home
+
+#Монтируем /
+mount /dev/sda2 /mnt
+
+#Создаем директорию boot и home в mnt
+mkdir /mnt/{boot,home}
+
+#Монтируем boot
+mount /dev/sda1 /mnt/boot
+
+#Монтируем swap
+swapon /dev/sda3
+
+#Монтируем /home
+mount /dev/sda4 /mnt/home
+
+Разделы с UEFI
+
+#Форматирование дисков
+
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4  /dev/sda2
+mkfs.ext4  /dev/sda3
+
+#Монтирование дисков
+
+mount /dev/sda2 /mnt
+mkdir /mnt/home
+mkdir -p /mnt/boot/efi
+mount /dev/sda1 /mnt/boot/efi
+mount /dev/sda3 /mnt/home
+** 3.установка
+Выбор зеркал для загрузки
+
+#Для более быстрой загрузки пакетов настроим зеркала. Поставим российское
+зеркало Яндекса выше всех остальных
+
+nano /etc/pacman.d/mirrorlist
+#Найдите строку с русским зеркалом (если вы из России) и переместите его в самый
+верх. Ctrl+K вырезать строку и Ctrl+U вставить. Зеркало может отличаться.
+Ставьте то, которое в вашем mirrorlist
+
+Server = http://mirrors.prok.pw/archlinux/$repo/os/$arch
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Альтернативный вариант - это поставить рефлектор, который проверит зеркала на
+актуальность и  скорость и установит лучшие
+
+pacman -S reflector && reflector --verbose  -l 5 -p https --sort rate --save
+/etc/pacman.d/mirrorlist && pacman -Syyu
+
+Установка основных пакетов
+#Устанавливаем базовую систему + необходимые пакеты
+pacstrap /mnt base base-devel linux linux-firmware nano netctl dhcpcd
+
+Настройка системы
+
+Генерируем fstab, для этого используем следующую команду
+genfstab -pU /mnt >> /mnt/etc/fstab
+
+#Перейдём в установленную систему
+arch-chroot /mnt
+
+#Прописываем имя компьютера. Вместо ArchLinux впишите свое название
+echo "ArchLinux" > /etc/hostname
+#Настроим часы (Для Москвы)
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+#Настроим часы (Для Екатеринбурга)
+ln -sf /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime
+
+Добавляем русскую локаль системы
+
+#Добавим русскую локаль в систему
+echo -e "en_US.UTF-8 UTF-8\nru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+Обновим текущую локаль системы
+locale-gen
+
+#Указываем язык системы
+echo 'LANG="ru_RU.UTF-8"' > /etc/locale.conf
+
+#Указываем keymap для console + прописываем шрифт
+echo 'KEYMAP=ru' >> /etc/vconsole.conf
+echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
+
+#Создадим загрузочный RAM диск
+mkinitcpio -p linux
+
+#Изменим пароль root
+passwd
+
+Установка загрузчика
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+
+
+#Устанавливаем загрузчик  (для BIOS)
+
+pacman -S grub
+grub-install /dev/sda
+
+#Устанавливаем загрузчик  (для UEFI)
+pacman -S grub efibootmgr
+
+grub-install /dev/sda
+
+#Если в системе будут несколько ОС, то это также ставим
+pacman -S os-prober mtools fuse
+#Обновляем grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
+
+#Ставим программу для Wi-fi
+pacman -S dialog wpa_supplicant
+
+#Выходим
+exit
+
+Перезагрузка
+reboot
+** 4.после установки
+После установки
+
+#Логинимся
+логин root
+пароль тот, что установили
+
+#Подключаем wifi
+wifi-menu
+
+#Или если у вас проводной интернет, то подключаем его
+dhcpcd
+
+Добавляем пользователя
+
+#Добавим нового пользователя. Вместо MYUSERNAME пишем имя пользователя без спец
+символов, только маленькие лат. буквы
+useradd -m -g users -G wheel -s /bin/bash MYUSERNAME
+Устанавливаем пароль пользователя
+#Установим пароль для нового пользователя. Вместо MYUSERNAME пишем имя
+пользователя
+passwd MYUSERNAME
+
+Устанавливаем SUDO
+
+#Заходим в файл sudoers
+nano /etc/sudoers
+
+#В файле /etc/sudoers находим строчку # %wheel ALL=(ALL) ALL и раскомментируем
+ее убрав символ #
+
+Так было: ## Uncomment to allow members of group wheel to execute any command
+#%wheel ALL=(ALL) ALL
+
+Так должно быть:
+## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL
+
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Теперь мы можем использовать sudo для выполнения команд администратора.
+
+Настройка pacman
+
+#Настроим pacman (только для x86_64):
+nano /etc/pacman.conf
+
+#Для работы 32-битных приложений в 64-битной системе необходимо
+раскомментировать репозиторий multilib:
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+
+Ставим иксы и драйвера
+
+#Установим  Х (Иксы) и свободные драйвера + читаем зависимости при необходимости
+ставим их тоже
+pacman -S xorg-server xorg-drivers
+
+Ставим Xfce, LXDM и сеть
+#Ставим Xfce + менеджер входа lxdm (или sddm)
+pacman -S xfce4 xfce4-goodies lxdm
+
+#Ставим шрифты, чтобы можно было читать, что написано. Иначе будут просто
+квадратики.
+pacman -S ttf-liberation ttf-dejavu
+
+Ставим менеджер сети
+pacman -S networkmanager network-manager-applet ppp
+
+#Подключаем автозагрузку менеджера входа и интернет (с соблюдением регистра для
+NetworkManager)
+systemctl enable lxdm NetworkManager
+
+Перезагрузка
+#Выбираем Xfce Session или просто “Сеанс”!!!!! Это важно иначе не войдете!
+** Восстановление Grub в Arch
+1. Загружаемся с установочной флешки
+2. Чтобы найти имя раздела, выполните:
+# lsblk
+3. Затем создайте каталог для монтирования корневого раздела (root) и смонтируйте его:
+# mkdir /mnt/arch
+# mount /dev/sdx1 /mnt/arch
+4. Если отдельные системные каталоги были вынесены на отдельные разделы, их также нужно смонтировать в файловую систему корневого раздела:
+# mount /dev/sdx2 /mnt/arch/boot/
+# mount /dev/sdx3 /mnt/arch/home/
+5. Запустите arch-chroot с указанием нового корневого каталога:
+# arch-chroot /mnt/arch
+6. Установим загрузчик (для BIOS)
+# grub-install /dev/sda
+7. Обновляем grub.cfg
+# grub-mkconfig -o /boot/grub/grub.cfg
+** Чек лист по установке и настройке Arch Linux Xfce
+Чек лист по установке и настройке Arch Linux Xfce
+#########################################################################ЕСТЬ ВОПРОСЫ? 
+ВСТУПАЙ В ГРУППУ ПО ARCH LINUX 
+И ПОЛУЧИ БЕСПЛАТНУЮ ПОДДЕРЖКУ
+https://vk.com/arch4u 
+Линукс Телеграм Чат https://t.me/linux4at 
+#########################################################################Подпишись на Linux канал: https://www.youtube.com/arch4u 
+Вы можете помочь и поддержать автора!
+Яндекс деньги: https://yasobe.ru/na/linux4all 
+PayPal: https://www.paypal.me/ordanax 
+Яндекс кошелек: 410011742905486
+WebMoney: R823965535328
+#########################################################################
+ВАЖНО!
+ВИДЕО БОЛЕЕ НЕ АКТУАЛЬНЫ! ЧЕКЛИСТ В АКТУАЛЬНОМ СОСТОЯНИИ С УЧЕТОМ ВСЕХ ПОСЛЕДНИХ ИЗМЕНЕНИЙ!
+#########################################################################
+https://vk.cc/7S7LO5  - Ручная установка Arch Linux
+https://vk.cc/7S7LCV  - Установка Arch Linux Xfce от А до Я июнь 2017
+https://vk.cc/7S7LeJ  - Установка Arch Linux с удаленного компьютера 
+Как подключиться по SSH смотрите здесь https://vk.cc/78fmtH 
+https://vk.cc/7S7KCf  - XFCE. Настройка после установки (Arch Linux)
+#########################################################################Трудности? Вопросы? Пишите в группу по Arch Linux https://vk.com/arch4u или в телеграм чат https://t.me/linux4at 
+##############################################
+Актуальность установки проверяйте на англоязычной Wiki https://vk.cc/5NRgaB
+Дополнительные настройки и любые изменения к чек листу буду вносить именно здесь и нигде в другом месте!
+##############################################
+Если при установке Arch Linux у кого-то нет второго телефона или компа, то можно прям на этом же компе набрать команду less install.txt и вы получите актуальную версию установки Arch Linux (Копию Arch Wiki на англ.)
+Окно можно не закрывать и открыть второй терминал сочетанием клавиш Alt+F2 для установки Arch Linux и вернуться к Arch Wiki можно сочетанием клавиш Alt+F1.
+##############################################
+Для удаленной установки по SSH
+Запускаем службу на компьютере на который ставим Arch Linux 
+systemctl start sshd.service
+
+Узнаем IP компьютера, на который будем ставить Arch Linux 
+ip a
+На компе, на который будем производить установку подключаем wi-fi https://docs.google.com/document/d/1IsTwkhYvYde9y3zTD1EscqockzdtdUYcItnAglYfZdU/edit#heading=h.l46257y8p7ek 
+
+и устанавливаем пароль для root командой 
+passwd
+Заходим на комп по ssh командой 
+ssh root@000.000.0.000 
+вместо нулей подставляем ip компьютера
+                                 
+##############################################
+1. Загрузка
+#Скачиваем дистрибутив с офф сайта
+https://www.archlinux.org/download/
+
+#Проверяем целостность образа
+1) Открываем папку со скаченных архивом
+2) Жмем, правую кнопку мышки выбираем “Открыть в терминале”
+3) Вбиваем в терминале команду md5sum (+название файла)
+
+Пример: md5sum archlinux-2019.06.01-dual.iso
+Контрольная сумма 97537db63e61d20a5cb71d29145b2937 должна совпадать см. видео https://vk.cc/7S7N3o 
+
+Актуальную контрольную сумму смотрите на оффициальном сайте https://www.archlinux.org/download/ 
+
+Для Windows можно воспользоваться вот этой программой для проверки суммы http://hashtab.ru 
+
+#Запишем его на флешку
+sudo dd if=X of=/dev/sdY
+Где X - это название ISO файла, Y - буква диска
+
+Пример: sudo dd if=archlinux-2019.06.01-dual.iso of=/dev/sdb && sync
+
+В Winfows лучше записывать программой Rufus https://rufus.ie 
+Чтобы избежать ошибок при разметке диска, предварительно перезапишите его нулями, например программой Disks загрузившись с USB в любом дистрибутиве Linux
+
+#Загружаемся с флешки
+
+ВАЖНО!
+Если вы ставите с UEFI и при загрузки получаете ошибку “security Boot Fail”, то нужно зайти в BIOS  в разделе установить пароль в разделе Set Supervisor Password и в boot вкладке отключить security Boot см. https://i.imgur.com/jFLlrm0.png 
+2. Перед установкой
+   1. Установка раскладки клавиатуры
+#После загрузки настроим русский язык для удобства работы
+loadkeys ru
+#Изменим консольный шрифт на тот, который поддерживает кириллицу
+setfont cyr-sun16
+   2. Соединение с Интернетом
+#Подключаем проводной интернет
+dhcpcd
+
+#Если не знаете название вашего устройства (device), то пишем:
+ip link
+
+#Подключение через Wi-fi
+iwctl
+
+station device connect SSID
+
+#Где SSID = название вашей сети
+#Где device = wlp5s0 или wlan0 (у вас будет свое)
+После этого вам будет предложено ввести пароль
+
+Подробнее https://wiki.archlinux.org/index.php/Iwd#iwctl 
+   3. Синхронизация системных часов
+timedatectl set-ntp true
+   4. Создание разделов
+#Смотрим какие диски есть
+fdisk -l
+
+#Разбиваем диски (для ручной разметки используем fdisk, для псевдографической разбивки можно использовать команду cfdisk)
+
+fdisk /dev/sda
+
+Можно вызвать подсказки нажатием на клавишу “m”
+
+#Разделяем диски (подробно в видео)
+Видео, которые могут вам помочь https://www.youtube.com/watch?v=PemucgRrdPk  Ручная разметка дисков начинается на 5:14
+Если есть желание использовать файловую систему Btrfs, то стаим вот так https://vk.com/@arch4u-ustanovka-arch-linux-na-btrfs 
+
+Создание разделов с BIOS
+# /boot 100M - выставить флаг boot командой a
+# / 20G
+# swap 1024M
+# /home весь остаток
+
+Создание разделов с UEFI
+cfdisk /dev/sda
+
+/dev/sda1 - 500M EFI - выставить флаг EFI командой t
+/dev/sda2 - 30G root Linux File System
+/dev/sda3 - Весь остаток home Linux file System
+
+
+      1. Процесс разбивки диска по шагам
+См. видео https://vk.cc/7S7OMg 
+
+#Создаем MBR таблицу (Для UEFI - GPT командой g)
+o
+
+#Создаем новый диск
+n
+Жмем enter
+
+# Выбираем primary (основной)  или extented (расширенный)
+По умолчанию стоит primary (основной) поэтому просто жмем enter
+
+# Выбор номера диска, по умолчанию подставляется следующий номер
+Просто жмем enter
+
+# Запрос на первый сектор диска
+Просто жмем enter
+
+# Запрос на последний сектор диска (Ставим + и объем памяти. Пример: +100M)
++100M
+
+Повторяем все шаги снова для всех нужных разделов диска
+
+(LEGACY) Для /boot не забываем указать a и поставить 1 для установки его загрузочным 
+
+(UEFI) Для efi не забываем указать, что это efi раздел t и поставить 1 
+
+Как все разметили не забываем все записать командой w
+
+В итоге можете проверить, что у вас получилось командой fdisk -l
+Должно получиться примерно так:
+Legacy разметка  http://i.imgur.com/pgej0Nt.png 
+UEFI разметка https://i.imgur.com/O7Yn0MK.png 
+      2. Форматирование и монтирование разделов
+Разделы с BIOS
+mkfs.ext2  /dev/sda1 -L boot
+mkfs.ext4  /dev/sda2 -L root
+mkswap /dev/sda3 -L swap
+mkfs.ext4  /dev/sda4 -L home
+
+#Монтируем /
+mount /dev/sda2 /mnt
+
+#Создаем директорию boot и home в mnt 
+mkdir /mnt/{boot,home}
+
+#Монтируем boot
+mount /dev/sda1 /mnt/boot
+
+#Монтируем swap
+swapon /dev/sda3
+
+#Монтируем /home
+mount /dev/sda4 /mnt/home
+Разделы с UEFI
+#Форматирование дисков
+
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4  /dev/sda2
+mkfs.ext4  /dev/sda3
+
+#Монтирование дисков
+
+mount /dev/sda2 /mnt
+mkdir /mnt/home
+mkdir -p /mnt/boot/efi
+mount /dev/sda1 /mnt/boot/efi
+mount /dev/sda3 /mnt/home
+
+3. Установка
+   1. Выбор зеркал для загрузки
+#Для более быстрой загрузки пакетов настроим зеркала. Поставим российское зеркало Яндекса выше всех остальных
+
+nano /etc/pacman.d/mirrorlist
+
+#Найдите строку с русским зеркалом (если вы из России) и переместите его в самый верх. Ctrl+K вырезать строку и Ctrl+U вставить. Зеркало может отличаться. Ставьте то, которое в вашем mirrorlist
+
+Server = http://mirrors.prok.pw/archlinux/$repo/os/$arch
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Альтернативный вариант - это поставить рефлектор, который проверит зеркала на актуальность и  скорость и установит лучшие
+
+pacman -S reflector && reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && pacman -Syyu
+
+   2. Установка основных пакетов
+#Устанавливаем базовую систему + необходимые пакеты
+pacstrap /mnt base base-devel linux linux-firmware nano netctl dhcpcd
+   3. Настройка системы
+Генерируем fstab, для этого используем следующую команду
+genfstab -pU /mnt >> /mnt/etc/fstab
+
+#Перейдём в установленную систему
+arch-chroot /mnt
+
+#Прописываем имя компьютера. Вместо ArchLinux впишите свое название
+echo "ArchLinux" > /etc/hostname
+#Настроим часы (Для Москвы)
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+#Настроим часы (Для Екатеринбурга)
+ln -sf /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime
+
+   4. Добавляем русскую локаль системы
+
+#Добавим русскую локаль в систему
+echo -e "en_US.UTF-8 UTF-8\nru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+ Обновим текущую локаль системы
+locale-gen
+
+#Указываем язык системы
+echo 'LANG="ru_RU.UTF-8"' > /etc/locale.conf
+
+#Указываем keymap для console + прописываем шрифт
+echo 'KEYMAP=ru' >> /etc/vconsole.conf
+echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
+
+
+#Создадим загрузочный RAM диск
+mkinitcpio -p linux
+#Изменим пароль root
+passwd
+
+   5. Установка загрузчика
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+
+#Устанавливаем загрузчик  (для BIOS)
+pacman -S grub
+grub-install /dev/sda
+
+#Устанавливаем загрузчик  (для UEFI)
+pacman -S grub efibootmgr
+grub-install /dev/sda
+
+#Если в системе будут несколько ОС, то это также ставим
+pacman -S os-prober mtools fuse
+#Обновляем grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
+
+#Ставим программу для Wi-fi
+pacman -S dialog wpa_supplicant
+
+#Выходим 
+exit
+
+   6. Перезагрузка
+reboot
+
+После установки
+#Логинимся
+логин root
+пароль тот, что установили
+
+#Подключаем wifi
+wifi-menu
+
+#Или если у вас проводной интернет, то подключаем его
+dhcpcd
+
+   7. Добавляем пользователя
+#Добавим нового пользователя. Вместо MYUSERNAME пишем имя пользователя без спец символов, только маленькие лат. буквы
+useradd -m -g users -G wheel -s /bin/bash MYUSERNAME
+   8. Устанавливаем пароль пользователя
+#Установим пароль для нового пользователя. Вместо MYUSERNAME пишем имя пользователя
+passwd MYUSERNAME
+
+   9. Устанавливаем SUDO
+#Заходим в файл sudoers
+nano /etc/sudoers
+
+#В файле /etc/sudoers находим строчку # %wheel ALL=(ALL) ALL и раскомментируем ее убрав символ #
+
+Так было: 
+## Uncomment to allow members of group wheel to execute any command
+#%wheel ALL=(ALL) ALL
+
+Так должно быть:
+## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL
+
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Теперь мы можем использовать sudo для выполнения команд администратора.
+
+   10. Настройка pacman
+#Настроим pacman (только для x86_64):
+nano /etc/pacman.conf
+
+#Для работы 32-битных приложений в 64-битной системе необходимо раскомментировать репозиторий multilib:
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+   11. Ставим иксы и драйвера
+
+#Установим  Х (Иксы) и свободные драйвера + читаем зависимости при необходимости ставим их тоже
+pacman -S xorg-server xorg-drivers
+
+   12. Ставим Xfce, LXDM и сеть 
+#Ставим Xfce + менеджер входа lxdm (или sddm)
+pacman -S xfce4 xfce4-goodies lxdm
+
+#Ставим шрифты, чтобы можно было читать, что написано. Иначе будут просто квадратики. 
+pacman -S ttf-liberation ttf-dejavu
+
+Ставим менеджер сети
+pacman -S networkmanager network-manager-applet ppp
+
+#Подключаем автозагрузку менеджера входа и интернет (с соблюдением регистра для NetworkManager)
+systemctl enable lxdm NetworkManager
+4. Перезагрузка
+#Выбираем Xfce Session или просто “Сеанс”!!!!! Это важно иначе не войдете!
+________________
+5. Дополнительные настройки
+   1. Проприетарные драйвера для видеокарт (Условный пункт)
+Если все работает нормально, то можете этот пункт пропустить.
+
+Установим драйвер для видеокарты:
+
+Пакеты lib32-* нужно устанавливать только на x86_64 системы.
+
+Intel:
+sudo pacman -S xf86-video-intel lib32-intel-dri
+
+Nvidia:
+sudo pacman -S nvidia  nvidia-utils  lib32-nvidia-utils
+
+AMD:
+sudo pacman -S xf86-video-ati lib32-ati-dri
+Если вы устанавливаете систему на виртуальную машину:
+sudo pacman -S xf86-video-vesa
+   2. Подключаем Wi-Fi
+#Идем в меню - настройки - сетевые соединения. Сюда http://i.imgur.com/9fIT56r.png 
+Если Wi-fi нет, то жмем сюда http://i.imgur.com/GUwknhy.png и добавляем Wi-fi
+Выбираем сеть, жмем изменить, вводим пароль
+________________
+   3. Установка AUR
+
+# yaourt и aurman более не обновляются разработчиками поэтому рекомендую к использованию именно yay. (См. таблицу https://vk.cc/88yr8q и голосование https://vk.cc/8YQdqI )
+
+# Обновляем систему
+sudo pacman -Syu
+
+# Создаём yay_install директорию и переходим в неё
+mkdir -p /tmp/yay_install
+cd /tmp/yay_install
+
+# Установка "yay" из AUR
+sudo pacman -S git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -sir --needed --noconfirm --skippgpcheck
+rm -rf yay_install
+
+Если вы предпочитаете работать с графическим интерфейсом, а не с терминалом то как альтернативу yay можно использовать pamac (установщик пакетов из AUR c GUI)
+
+# Обновляем систему
+sudo pacman -Syu
+
+# Создаём pamac-aur_install директорию и переходим в неё
+mkdir -p /tmp/pamac-aur_install
+cd /tmp/pamac-aur_install
+
+# Установка "pamac-aur" из AUR
+sudo pacman -S git
+git clone https://aur.archlinux.org/pamac-aur.git
+cd pamac-aur
+makepkg -si --needed --noconfirm --skippgpcheck
+rm -rf pamac-aur_install
+
+   4. Установка программ
+#Установка пакетов, которые решают большинство проблем, с которыми вы можете столкнуться
+sudo pacman -S f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio 
+
+#Установка программ
+sudo pacman -S firefox doublecmd-gtk2 filezilla gimp gnome-calculator libreoffice libreoffice-fresh-ru kdenlive screenfetch vlc ufw qbittorrent obs-studio veracrypt freemind flameshot
+
+Если нужно русифицировать firefox добавляем еще и  firefox-i18n-ru 
+Если русификация не вступила в силу, тогда сбросьте насройки FF https://vk.cc/9n7uLx 
+
+#Установка AUR программ
+yay -S sublime-text-dev cherrytree timeshift google-talkplugin hunspell-ru pamac-aur xflux xflux-gui-git osx-arc-shadow papirus-maia-icon-theme-git breeze-obsidian-cursor-theme xflux xflux-gui-git flameshot-git megasync
+
+Рекомендуемые и используемые мной программы можете посмотреть здесь https://vk.cc/5XjUqt .
+   5. Установка тем
+Темы Gtk+ для Xfce
+yay -S x-arc-shadow
+или
+yay -S vertex-themes
+
+Темы иконок 
+papirus-maia-icon-theme-git
+Faenza https://goo.gl/rE1rMi 
+Paper Icons https://www.xfce-look.org/p/1099618/ 
+Revival Icon Theme https://www.xfce-look.org/p/1099769/ 
+Moka Icon Theme https://www.xfce-look.org/p/1012513/ 
+
+Темы курсора 
+sudo pacman -S capitaine-cursors
+yay -S xcursor-breeze-serie-obsidian
+yay -S breeze-obsidian-cursor-theme
+
+Oxygen Neon http://vk.cc/5AcWC7 
+
+Теперь можно менять тему для курсора в настройках. Для этого открываем «Меню» -> «Настройки» -> «Мышь и тачпад»
+
+#Ставим тему на LXDM
+yay -S lxdm-themes
+
+#Меняем тему в настройках 
+sudo nano /etc/lxdm/lxdm.conf
+
+# Находим строку с  theme=Industrial  и заменяем на название нашей темы theme=ArchlinuxTop
+ArchlinuxTop
+
+   6. Настройки Xfce
+Смотрите видео по настройке Xfce https://vk.cc/7qwQ8L 
+Настройка прозрачного терминала см. в видео https://vk.cc/9afFih Время в видео 39:36
+
+Настройки моих горячих клавиш по ссылке https://github.com/ordanax/dots/blob/master/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 
+
+#Настраиваем горячие клавиши на запуск терминала
+#Перейдите в Settings (Настройки) > Keyboard (Клавиатура) > Application Shortcuts (Комбинации клавиш)
+xfce4-terminal
+Клавиши Ctrl+Alt+T
+
+#Настраиваем горячие клавиши на скриншот
+Назначьте команду 
+xfce4-screenshooter -f 
+на клавишу Ctrl + Print Screen, которая будет делать скриншоты всего экрана.
+
+На клавишу Print Screen
+flameshot gui, создание скриншота при помощи программы flameshot 
+
+#Настраиваем горячие клавиши на системный монитор
+Назначьте команду 
+xfce4-taskmanager
+на клавиши Ctrl+Alt+M
+
+#Запуск проигрывателя VLC
+Ставим на клавиши Super+V
+vlc
+
+#Быстрое выключение компьютера клавишами
+Ставим на клавиши Super+S
+shutdown -h now
+
+#Если нужно установить время для Екатеринбурга
+timedatectl set-timezone Asia/Yekaterinburg
+
+#Настраиваем раскладку клавиатуры
+Настройки - клавиатура - раскладка выбираем Shift+Alt
+
+#Включить з
+sudo amixer sset Master unmut
+
+#Включить обнаружение съемных устройств
+Настройки - съемные устройства и носители данных
+
+# Настраиваем временную зону
+ПКМ на времени - свойства - ставим вашу временную зону. Например Asia/Yekaterinburg
+# Управление звуком на клавиатуре
+https://wiki.archlinux.org/index.php/Xfce#Keyboard_volume_buttons 
+
+#Дополнительные настройки по Xfce
+https://wiki.archlinux.org/index.php/Xfce_(Русский) 
+
+#Установка директорий по умолчанию home, music, doсuments и т.д.
+Установите xdg-user-dirs,
+sudo pacman -S xdg-user-dirs
+
+а затем выполните:
+$ xdg-user-dirs-update
+   7. Настройка тайлинга в Xfce
+Заходим в меню - диспетчер окон - клавиатура
+Находим “Разместить в левой/правой половине” и выбираете для этого действия например клавиши SUPER + Left/Rigth
+
+   8. Настройка сетевого экрана
+Если UFW не установлен то устанавливаем его
+sudo pacman -S ufw
+
+Запускаем его:
+sudo ufw enable
+
+Добавляем в автозагрузку:
+sudo systemctl enable ufw
+
+Команда "ufw enable" включает UFW и устанавливает базовые правила. Вы можете проверить статус работы UFW следующей командой:
+sudo ufw status verbose
+
+В результате увидите подобное:
+
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+Если нужно выключить, то используйте команду:
+sudo ufw disable
+
+Добавить локальную сеть в исключения (если нужно)
+Пропишите ip вашей сети, вместо цифр в примере. Узнать ip сети можно командой ip a
+sudo ufw allow from 15.15.15.0/24
+   9. Настройка авто входа c DМ
+Если есть необходимость можно включить авто вход в систему.
+sudo nano /etc/lxdm/lxdm.conf
+
+Находим строчку #autologin= 
+Раскомментируем его убрав # и после = пишем ваш логин в системе
+________________
+   10. Настройка авто входа без DМ
+Ставим пакет xorg-xinit
+sudo pacman -S xorg-xinit
+
+Копируем файл .xserverrc в каталог пользователя
+cp /etc/X11/xinit/xserverrc ~/.xserverrc
+
+Создаем в домашнем каталоге файл .xinitrc с заданным текстом
+
+Открываем
+sudo nano ~/.xinitrc
+
+Вставляем
+
+#!/bin/sh
+# Xfce передаётся по умолчанию
+
+if [ -f $HOME/.Xresources ]; then
+        xrdb -merge $HOME/.Xresources
+fi
+
+#session=${1:-openbox}
+session=${1:-xfce}
+
+case $session in
+awesome ) exec awesome;;
+bspwm ) exec bspwm;;
+catwm ) exec catwm;;
+cinnamon ) exec cinnamon-session;;
+dwm ) exec dwm;;
+enlightenment ) exec enlightenment_start;;
+ede ) exec startede;;
+evilwm ) exec evilwm;;
+fluxbox ) exec startfluxbox;;
+gnome ) exec gnome-session;;
+gnome-classic ) exec gnome-session --session=gnome-classic;;
+i3 ) exec i3;;
+icewm ) exec icewm-session;;
+jwm ) exec jwm;;
+kde ) exec startkde;;
+mate ) exec mate-session;;
+monster ) exec monsterwm;;
+notion ) exec notion;;
+openbox ) exec openbox;;
+openbox ) exec openbox-session;;
+lxde ) exec startlxde;;
+swm ) exec swm;;
+unity ) exec unity;;
+xfce ) exec startxfce4;;
+xmonad ) exec xmonad;;
+# No known session, try to run it as command
+*) exec $1;;
+esac
+
+Открываем
+sudo nano ~/.bashrc
+
+Вставляем
+# ~/.bashrc
+
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+exec startx
+fi
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+alias tb="nc termbin.com 9999"
+
+alias up="sudo reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu &&  yay -Syu --noconfirm && sudo pacman -Rsn $(pacman -Qdtq)"
+________________
+
+Вводим команду:
+sudo systemctl edit getty@tty1
+
+Вставляем текст:
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin Username --noclear %I $TERM
+
+Вместо Username пишем свой логин
+
+Отключаем DM (в моем примере это lxdm, у вас может быть свой DM)
+sudo systemctl disable lxdm
+
+Перезагружаемся, если все работает, то удаляем DM
+sudo pacman -R lxdm
+
+Внимание: Еcли у вас не запускается dbus (есть ошибки) то в ~/.xinitrc добавляем следующий блок перед строкой запуска окружения (например перед exec startkde):
+# Dbus fix
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+   eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+Источник https://vk.cc/8g9T5s 
+См. видео https://www.youtube.com/watch?v=s-Kjh6s0Is4 
+   11. Делаем BackUp системы
+Программа для BackUp - TimeShift (Если установка с ошибкой см. https://vk.cc/6JjPS4 )
+yay -S timeshift
+
+Видео по BackUp:
+Восстановление системы Linux https://www.youtube.com/watch?v=GlwHLnVRSBQ 
+Как восстановить образ, когда система умерла https://www.youtube.com/watch?v=SU8YdmCPrBQ 
+Самая частая ошибка пользователей Arch Linux https://www.youtube.com/watch?v=3UnRTAB0uLA 
+
+Удобрый и быстрый BackUp для файловой системы BTRFS см. https://vk.cc/88ygxM 
+
+   12. Убираем меню граб для выбора системы
+Если у вас нет второй системы, как у меня, то вы можете ускорить загрузку системы и удрать это граб меню. Делается это следующим образом.
+sudo nano /etc/default/grub 
+
+GRUB_TIMEOUT=5 меняем на GRUB_TIMEOUT=0
+#Обновляем grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+   13. Обновление системы
+Обновление всей системы (самого ядра, окружения рабочего стола, программ из pacman и из AUR) производится одной командой:
+yay -Syu
+
+Альтернативная команда для обновления и очистки системы
+yay -Syu && sudo pacman -Scc && sudo pacman -Rsn $(pacman -Qdtq) && sudo rm -rf ~/.cache/thumbnails/*
+
+Пояснения:
+yay -Syu - обновляет ядро, программы в pacman и в aur
+sudo pacman -Scc - очищает кеш пакетов, высвобождая место на диске
+sudo pacman -Rsn $(pacman -Qdtq) - удаляет пакеты-сироты (которые не используются ни одной программой)
+sudo rm -rf ~/.cache/thumbnails/* - удаляет миниатюры фото, которые накапливаются в системе.
+
+Обновление системы вместе с проверкой зеркал (должен стоять рефлектор)
+sudo reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu &&  yay -Syu --noconfirm && sudo pacman -Rsn $(pacman -Qdtq)
+
+   14. Cтавим conky
+sudo pacman -S conky conky-manager
+
+Конфиги можно скачать в группе и добавить свои https://vk.cc/89e28X 
+   15. Ставим курсор по умолчанию
+sudo nano /usr/share/icons/default/index.theme
+Меняем тему по курсора на нужную, например  Breeze Obsidian
+---------------------------------------------------------------
+Дополнительные видео уроки по Arch Linux 
+►► https://vk.cc/7S7S7h ◄◄
+---------------------------------------------------------------
+##############################################
+ЕСТЬ ВОПРОСЫ? 
+ПОДПИШИСЬ НА РАССЫЛКИ https://vk.cc/83lAm3
+ВСТУПИ В ГРУППУ https://vk.com/arch4u 
+ЛИНУКС ЧАТ В ТЕЛЕГРАМ https://t.me/linux4at 
+##############################################
+Все решенные проблемы смотрите тут https://vk.cc/5RCfPo 
+Вопросы, проблемы кидайте на стену группы.
+
+Автор чек листа Бойко Алексей
+https://vk.com/arch4u - Моя группа по Arch Linux
+https://vk.com/linux4u - Моя группа по Linux
+https://www.youtube.com/arch4u - канал на YouTube
+Ответьте на небольшой опрос по Linux https://vk.cc/5YF81r 
+© 2016-2020 Автор чеклиста Бойко Алексей https://ordanax.github.io  Канал на YouTube https://www.youtube.com/arch4u 
+Группа Вконтакте “Arch Linux” https://vk.com/arch4u Все о Linux Mint | Debian | Ubuntu https://vk.com/linux4u
+Линукс чат в телеграм https://t.me/linux4at 
+** Чистый Arch Linux Xfce
+1. Установка раскладки клавиатуры
+#После загрузки настроим русский язык для удобства работы
+loadkeys ru
+#Изменим консольный шрифт на тот, который поддерживает кириллицу
+setfont cyr-sun16
+   2. Соединение с Интернетом
+#Подключаем проводной интернет
+dhcpcd
+
+#Если не знаете название вашего устройства (device), то пишем:
+ip link
+
+#Подключение через Wi-fi
+iwctl
+
+station device connect SSID
+
+#Где SSID = название вашей сети
+#Где device = wlp5s0 или wlan0 (у вас будет свое)
+После этого вам будет предложено ввести пароль
+
+   3. Синхронизация системных часов
+timedatectl set-ntp true
+  
+      2. Форматирование и монтирование разделов
+      
+Разделы с BIOS
+
+mkfs.ext2  /dev/sda1 -L boot
+mkfs.ext4  /dev/sda2 -L root
+mkfs.ext4  /dev/sda3 -L home
+
+#Монтируем /
+mount /dev/sda2 /mnt
+
+#Создаем директорию boot и home в mnt 
+mkdir /mnt/{boot,home}
+
+
+#Монтируем boot
+mount /dev/sda1 /mnt/boot
+
+#Монтируем /home
+mount /dev/sda3 /mnt/home
+
+3. Установка
+   1. Выбор зеркал для загрузки
+#Для более быстрой загрузки пакетов настроим зеркала. Поставим российское зеркало Яндекса выше всех остальных
+
+nano /etc/pacman.d/mirrorlist
+
+#Найдите строку с русским зеркалом (если вы из России) и переместите его в самый верх. Ctrl+K вырезать строку и Ctrl+U вставить. Зеркало может отличаться. Ставьте то, которое в вашем mirrorlist
+
+Server = http://mirrors.prok.pw/archlinux/$repo/os/$arch
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Альтернативный вариант - это поставить рефлектор, который проверит зеркала на актуальность и  скорость и установит лучшие
+
+pacman -S reflector && reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && pacman -Syyu
+
+   2. Установка основных пакетов
+#Устанавливаем базовую систему + необходимые пакеты
+pacstrap /mnt base base-devel linux linux-firmware nano netctl dhcpcd
+   3. Настройка системы
+Генерируем fstab, для этого используем следующую команду
+genfstab -pU /mnt >> /mnt/etc/fstab
+
+
+#Перейдём в установленную систему
+arch-chroot /mnt
+
+#Прописываем имя компьютера. Вместо ArchLinux впишите свое название
+echo "ArchLinux" > /etc/hostname
+#Настроим часы (Для Москвы)
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+#Настроим часы (Для Екатеринбурга)
+ln -sf /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime
+
+   4. Добавляем русскую локаль системы
+
+#Добавим русскую локаль в систему
+echo -e "en_US.UTF-8 UTF-8\nru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+ Обновим текущую локаль системы
+locale-gen
+
+#Указываем язык системы
+echo 'LANG="ru_RU.UTF-8"' > /etc/locale.conf
+
+#Указываем keymap для console + прописываем шрифт
+echo 'KEYMAP=ru' >> /etc/vconsole.conf
+echo 'FONT=cyr-sun16' >> /etc/vconsole.conf
+
+#Создадим загрузочный RAM диск
+mkinitcpio -p linux
+#Изменим пароль root
+passwd
+
+   5. Установка загрузчика
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+
+#Устанавливаем загрузчик  (для BIOS)
+pacman -S grub
+grub-install /dev/sda
+
+#Выходим 
+exit
+
+   6. Перезагрузка
+reboot
+
+После установки
+#Логинимся
+логин root
+пароль тот, что установили
+
+# если у вас проводной интернет, то подключаем его
+dhcpcd
+
+   7. Добавляем пользователя
+#Добавим нового пользователя. Вместо MYUSERNAME пишем имя пользователя без спец символов, только маленькие лат. буквы
+useradd -m -g users -G wheel -s /bin/bash MYUSERNAME
+   8. Устанавливаем пароль пользователя
+#Установим пароль для нового пользователя. Вместо MYUSERNAME пишем имя пользователя
+passwd MYUSERNAME
+
+   9. Устанавливаем SUDO
+#Заходим в файл sudoers
+nano /etc/sudoers
+
+#В файле /etc/sudoers находим строчку # %wheel ALL=(ALL) ALL и раскомментируем ее убрав символ #
+
+Так было: 
+## Uncomment to allow members of group wheel to execute any command
+#%wheel ALL=(ALL) ALL
+
+Так должно быть:
+## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL
+
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+Теперь мы можем использовать sudo для выполнения команд администратора.
+
+   10. Настройка pacman
+#Настроим pacman (только для x86_64):
+nano /etc/pacman.conf
+
+#Для работы 32-битных приложений в 64-битной системе необходимо раскомментировать репозиторий multilib:
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+#Сохраняем Ctr+O (Enter)
+#Выходим Ctr+X
+
+#Обновляем базы данных пакетов:
+pacman -Syy
+   11. Ставим иксы и драйвера
+
+#Установим  Х (Иксы) и свободные драйвера + читаем зависимости при необходимости ставим их тоже
+pacman -S xorg-server xorg-drivers
+
+   12. Ставим Xfce, LXDM и сеть
+    
+#Ставим Xfce + менеджер входа lxdm (или sddm)
+pacman -S xfce4 xfce4-goodies lxdm
+
+#Ставим шрифты, чтобы можно было читать, что написано. Иначе будут просто квадратики. 
+pacman -S ttf-liberation ttf-dejavu
+
+Ставим менеджер сети
+pacman -S networkmanager network-manager-applet ppp
+
+#Подключаем автозагрузку менеджера входа и интернет (с соблюдением регистра для NetworkManager)
+systemctl enable lxdm NetworkManager
+4. Перезагрузка
+#Выбираем Xfce Session или просто “Сеанс”!!!!! Это важно иначе не войдете!
+
+   3. Установка AUR
+
+# Обновляем систему
+sudo pacman -Syu
+
+# Создаём yay_install директорию и переходим в неё
+mkdir -p /tmp/yay_install
+cd /tmp/yay_install
+
+# Установка "yay" из AUR
+sudo pacman -S git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -sir --needed --noconfirm --skippgpcheck
+rm -rf yay_install
+
+Если вы предпочитаете работать с графическим интерфейсом, а не с терминалом то как альтернативу yay можно использовать pamac (установщик пакетов из AUR c GUI)
+
+# Обновляем систему
+sudo pacman -Syu
+
+# Создаём pamac-aur_install директорию и переходим в неё
+mkdir -p /tmp/pamac-aur_install
+cd /tmp/pamac-aur_install
+
+# Установка "pamac-aur" из AUR
+sudo pacman -S git
+git clone https://aur.archlinux.org/pamac-aur.git
+cd pamac-aur
+makepkg -si --needed --noconfirm --skippgpcheck
+rm -rf pamac-aur_install
+
+   4. Установка программ
+#Установка пакетов, которые решают большинство проблем, с которыми вы можете столкнуться
+sudo pacman -S f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio 
+
+#Установка программ
+sudo pacman -S firefox doublecmd-gtk2 filezilla gimp gnome-calculator libreoffice libreoffice-fresh-ru kdenlive screenfetch vlc ufw qbittorrent obs-studio veracrypt freemind flameshot
+
+Если нужно русифицировать firefox добавляем еще и  firefox-i18n-ru 
+Если русификация не вступила в силу, тогда сбросьте насройки FF https://vk.cc/9n7uLx 
+
+#Установка AUR программ
+yay -S sublime-text-dev cherrytree timeshift google-talkplugin hunspell-ru pamac-aur xflux xflux-gui-git osx-arc-shadow papirus-maia-icon-theme-git breeze-obsidian-cursor-theme xflux xflux-gui-git flameshot-git megasync
+
+#Ставим тему на LXDM
+yay -S lxdm-themes
+
+#Меняем тему в настройках 
+sudo nano /etc/lxdm/lxdm.conf
+
+# Находим строку с  theme=Industrial  и заменяем на название нашей темы theme=ArchlinuxTop
+ArchlinuxTop
+
+   6. Настройки Xfce
+
+#Настраиваем горячие клавиши на запуск терминала
+#Перейдите в Settings (Настройки) > Keyboard (Клавиатура) > Application Shortcuts (Комбинации клавиш)
+xfce4-terminal
+Клавиши Ctrl+Alt+T
+
+#Настраиваем горячие клавиши на скриншот
+Назначьте команду 
+xfce4-screenshooter -f 
+на клавишу Ctrl + Print Screen, которая будет делать скриншоты всего экрана.
+
+На клавишу Print Screen
+flameshot gui, создание скриншота при помощи программы flameshot 
+
+#Настраиваем горячие клавиши на системный монитор
+Назначьте команду 
+xfce4-taskmanager
+на клавиши Ctrl+Alt+M
+
+#Запуск проигрывателя VLC
+Ставим на клавиши Super+V
+vlc
+
+#Быстрое выключение компьютера клавишами
+Ставим на клавиши Super+S
+shutdown -h now
+
+#Если нужно установить время для Екатеринбурга
+timedatectl set-timezone Asia/Yekaterinburg
+
+#Настраиваем раскладку клавиатуры
+Настройки - клавиатура - раскладка выбираем Shift+Alt
+
+#Включить звук
+sudo amixer sset Master unmut
+
+#Включить обнаружение съемных устройств
+Настройки - съемные устройства и носители данных
+
+
+# Настраиваем временную зону
+ПКМ на времени - свойства - ставим вашу временную зону. Например Asia/Yekaterinburg
+# Управление звуком на клавиатуре
+https://wiki.archlinux.org/index.php/Xfce#Keyboard_volume_buttons 
+
+#Установка директорий по умолчанию home, music, doсuments и т.д.
+Установите xdg-user-dirs,
+sudo pacman -S xdg-user-dirs
+
+а затем выполните:
+$ xdg-user-dirs-update
+
+   7. Настройка тайлинга в Xfce
+Заходим в меню - диспетчер окон - клавиатура
+Находим “Разместить в левой/правой половине” и выбираете для этого действия например клавиши SUPER + Left/Rigth
+
+   8. Настройка сетевого экрана
+Если UFW не установлен то устанавливаем его
+sudo pacman -S ufw
+
+Запускаем его:
+sudo ufw enable
+
+Добавляем в автозагрузку:
+sudo systemctl enable ufw
+
+Команда "ufw enable" включает UFW и устанавливает базовые правила. Вы можете проверить статус работы UFW следующей командой:
+sudo ufw status verbose
+
+В результате увидите подобное:
+
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+Если нужно выключить, то используйте команду:
+sudo ufw disable
+
+   9. Настройка авто входа c DМ
+Если есть необходимость можно включить авто вход в систему.
+sudo nano /etc/lxdm/lxdm.conf
+
+
+Находим строчку #autologin= 
+Раскомментируем его убрав # и после = пишем ваш логин в системе
+________________
+   10. Настройка авто входа без DМ
+Ставим пакет xorg-xinit
+sudo pacman -S xorg-xinit
+
+Копируем файл .xserverrc в каталог пользователя
+cp /etc/X11/xinit/xserverrc ~/.xserverrc
+
+Создаем в домашнем каталоге файл .xinitrc с заданным текстом
+
+Открываем
+sudo nano ~/.xinitrc
+
+Вставляем
+
+#!/bin/sh
+# Xfce передаётся по умолчанию
+
+if [ -f $HOME/.Xresources ]; then
+        xrdb -merge $HOME/.Xresources
+fi
+
+#session=${1:-openbox}
+session=${1:-xfce}
+
+case $session in
+awesome ) exec awesome;;
+bspwm ) exec bspwm;;
+catwm ) exec catwm;;
+cinnamon ) exec cinnamon-session;;
+dwm ) exec dwm;;
+enlightenment ) exec enlightenment_start;;
+ede ) exec startede;;
+evilwm ) exec evilwm;;
+fluxbox ) exec startfluxbox;;
+gnome ) exec gnome-session;;
+gnome-classic ) exec gnome-session --session=gnome-classic;;
+i3 ) exec i3;;
+icewm ) exec icewm-session;;
+jwm ) exec jwm;;
+kde ) exec startkde;;
+mate ) exec mate-session;;
+monster ) exec monsterwm;;
+notion ) exec notion;;
+openbox ) exec openbox;;
+openbox ) exec openbox-session;;
+lxde ) exec startlxde;;
+swm ) exec swm;;
+unity ) exec unity;;
+xfce ) exec startxfce4;;
+xmonad ) exec xmonad;;
+# No known session, try to run it as command
+*) exec $1;;
+esac
+
+Открываем
+sudo nano ~/.bashrc
+
+Вставляем
+
+#
+# ~/.bashrc
+#
+
+if [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+exec startx
+fi
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+alias tb="nc termbin.com 9999"
+
+alias up="sudo reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu &&  yay -Syu --noconfirm && sudo pacman -Rsn $(pacman -Qdtq)"
+________________
+
+Вводим команду:
+sudo systemctl edit getty@tty1
+
+Вставляем текст:
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin Username --noclear %I $TERM
+
+Вместо Username пишем свой логин
+
+Отключаем DM (в моем примере это lxdm, у вас может быть свой DM)
+sudo systemctl disable lxdm
+
+Перезагружаемся, если все работает, то удаляем DM
+sudo pacman -R lxdm
+
+Внимание: Еcли у вас не запускается dbus (есть ошибки) то в ~/.xinitrc добавляем следующий блок перед строкой запуска окружения (например перед exec startkde):
+# Dbus fix
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+   eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+   11. Делаем BackUp системы
+Программа для BackUp - TimeShift
+yay -S timeshift
+
+   12. Убираем меню граб для выбора системы
+Если у вас нет второй системы, как у меня, то вы можете ускорить загрузку системы и удрать это граб меню. Делается это следующим образом.
+sudo nano /etc/default/grub 
+
+
+GRUB_TIMEOUT=5 меняем на GRUB_TIMEOUT=0
+#Обновляем grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+   13. Обновление системы
+Обновление всей системы (самого ядра, окружения рабочего стола, программ из pacman и из AUR) производится одной командой:
+yay -Syu
+
+Альтернативная команда для обновления и очистки системы
+yay -Syu && sudo pacman -Scc && sudo pacman -Rsn $(pacman -Qdtq) && sudo rm -rf ~/.cache/thumbnails/*
+
+Пояснения:
+yay -Syu - обновляет ядро, программы в pacman и в aur
+sudo pacman -Scc - очищает кеш пакетов, высвобождая место на диске
+sudo pacman -Rsn $(pacman -Qdtq) - удаляет пакеты-сироты (которые не используются ни одной программой)
+sudo rm -rf ~/.cache/thumbnails/* - удаляет миниатюры фото, которые накапливаются в системе.
+
+Обновление системы вместе с проверкой зеркал (должен стоять рефлектор)
+sudo reflector --verbose  -l 5 -p https --sort rate --save /etc/pacman.d/mirrorlist && sudo pacman -Syyu &&  yay -Syu --noconfirm && sudo pacman -Rsn $(pacman -Qdtq)
+
+   14. Cтавим conky
+sudo pacman -S conky conky-manager
+Конфиги можно скачать в группе и добавить свои https://vk.cc/89e28X 
+** Чистый Arch Linux Mate
+Ставим Mate, LXDM и сеть
+    
+#Ставим Mate + менеджер входа lxdm (или sddm)
+pacman -S mate mate-extra lxdm
+** Arch-Установка i3wm
+Сначала давайте установим все, что нам понадобится. При этом помним, что это вариант минимализма. Чтобы понять, что к чему, а далее уже будем делать рюшечки :)
+
+Нам понадобится:
+
+i3wm - оконный менеджер и его форк (ответвление) i3-gaps
+i3status - вывода строки статуса в i3bar
+dmenu - утилита для запуска программ
+ttf-font-awesome - шрифтовые иконки
+feh - установка обоины на рабочий стол
+lxappearance - установка тем для окон, иконок, курсора
+pcmanfm - файловый менеджер
+gvfs и udiskie - для авто монтирования внешних дисков
+xorg-xbacklight - для управлением яркостью экрана
+ristretto и tumbler - для просмотра фото
+compton - для прозрачности окон и для устранения тиринга 
+mousapad - блокнот
+abiword - текст,офис
+gnumeric - таблицы
+lx-terminal(xfce4-terminal) - терминал
+flameshot - скриншот экрана,редактирование 
+
+Можно еще поставить sbxkb - индикатор раскладки и переключения клавиатуры, но можно и без этого! Когда вы последний раз смотрели на раскладку? Уверены, что это вам нужно? Еслитакой вариант переклюения клавиатуры вам не нравтся, а хотите тектовой, то есть другой вариант, но для этого вам уже нужно будет ставить polibar. Если нужно то пишите в комментах. Будет много желающих напишу как это делать.
+
+Ставим пакеты из pacman:
+
+# pacman -S i3-wm i3-gaps i3status dmenu pcmanfm ttf-font-awesome lxappearance xorg-xbacklight compton lx-terminal mousapad abiword gnumeric flameshot moc mc vlc testdisk feh vim ranger
+** ArchOpenBox
+делаешь все до момента установки раб.окружения потом:
+
+sudo apt install xserver-xorg-video-vesa x11-xserver-utils x11-utils xinit
+
+sudo pacman -S openbox obconf obmenu lxappearance
+
+((Пакеты, начальная установка:
+openbox - оконный менеджер
+obconf - настройка openbox
+openbox-menu - меню openbox
+obmenu - графический интерфейс редактирования меню openbox
+lxappearance - настройка интерфейса gtk
+lxappearance-obconf - вкладка настроек интерфейса obconf в lxappearance
+tint2 - панель
+volti - регулятор громкости
+pulseaudio - звуковая система
+pavucontrol - утилита управления звуком для pulseaudio
+obsession - управление сессией openbox
+wicd(network-manager-gnome) - управление сетевыми подключениями/настройками
+xxkb - индикатор, переключатель раскладки
+xdm, slim, lightdm(рекомендую) - менеджер дисплея
+lxterminal(можно другой) - терминал
+pcmanfm - файловый менеджер
+feh(nitrogen) - обои на рабочий стол
+mousepad - текстовый редактор(leafpad сдох)
+gmrun - графическая программа для запуска приложений))
+
+в файле ~/.xinitrc вписываешь строчку exec openbox-session
+копируешь из /etc/xdg/openbox все файлы в ~/.config/openbox
+rc.xml - основной файл настроек
+menu.xml - настройки меню можно настраивать через obmenu
+autostart - файл со списком программ которые должны загружаться автоматом(строчки вида: программа &)
+с помощью obmenu редактируешь меню openbox
+с помощью lxappearance выбираешь тему, иконки, курсор мыши
+с помощью obconf выбираешь тему окна, кол-во рабочих столов и т.д.
+sudo pacman -S tint2 -устанавливаем панель.
+с помощью tint2conf редактируешь панель
+sudo pacman -S nitrogen программа для обоев рабочего стола можно использовать feh
+остальное на свое усмотрение.
+Вроде бы все.
+
+
+Кстати забыл упомянуть, про менеджер дисплея(логин и пароль при входе). Я им не пользуюсь, использую эту инструкцию http://archlinux.org.ru/forum/topic/16498/
+но при желании можно использовать к примеру slim тогда
+$sudo pacman -S slim -устанавливаем DM
+$sudo systemctl enable slim.service - перезагружаемся или
+$sudo systemctl start slim.service -запускаем
+https://wiki.archlinux.org/index.php/SLiM настройка автологин и т.д.
+** kde in arch
+ Вы можете установить вышеперечисленное с помощью следующей команды:
+
+pacman -S xorg plasma plasma-wayland-session kde-applications or:
+pacman -S  xorg plasma-desktop
+После установки включите службы Дисплей менеджер и диспетчера сети:
+
+systemctl enable sddm.service
+systemctl enable NetworkManager.service
+
+Почти всё готово. Выключите вашу систему:
+
+shutdown now
+** setup_arch_ctlos
+Подготовка к установке
+cfdisk
+
+Установка и настройка
+Установка базовой системы и необходимых пакетов.
+
+pacstrap /mnt base base-devel linux linux-headers linux-firmware lvm2 nano networkmanager bash-completion reflector htop openssh curl wget git rsync unzip unrar p7zip gnu-netcat pv
+
+Генерируем и правим, если нужно fstab, выполняем chroot.
+
+genfstab -pU /mnt >> /mnt/etc/fstab
+cat /mnt/etc/fstab
+
+arch-chroot /mnt
+
+Включаем multilib и сортируем зеркала.
+
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+
+reflector -c "Russia" -c "Belarus" -c "Ukraine" -c "Poland" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate
+
+Пароль root.
+
+passwd
+
+Создаем пользователя st в нужных группах, назначаем пароль и включаем sudo.
+
+useradd -m -g users -G "adm,audio,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash -c "Alex Creio" st
+
+passwd st
+
+echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
+
+Назначаем hostname: имя машины и часовой пояс, время.
+
+echo "ctlos" > /etc/hostname
+ln -svf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+timedatectl set-ntp true
+
+Генерируем локали и включаем русский язык системы.
+
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+locale-gen
+echo "LANG=ru_RU.UTF-8" > /etc/locale.conf
+
+Добавляем поддержку ru в консоле.
+
+echo "KEYMAP=ru" >> /etc/vconsole.conf
+echo "FONT=cyr-sun16" >> /etc/vconsole.conf
+
+Добавляем хуки (порядок важен) и создаем загрузочный образ.
+
+### добавить keyboard keymap encrypt lvm2
+# HOOKS=(base udev autodetect keyboard keymap modconf block encrypt lvm2 filesystems fsck)
+nano /etc/mkinitcpio.conf
+
+mkinitcpio -p linux
+
+Устанавливаем Grub.
+
+pacman -S --noconfirm --needed grub
+grub-install /dev/sda
+
+Настраиваем и конфигурируем grub.
+
+## узнаём UUID
+blkid /dev/sda1
+# /dev/sda1: UUID="c0868972-f314-48e1-9be5-3584826dbd64" TYPE="crypto_LUKS" PARTUUID="bbb93e39-01"
+
+nano /etc/default/grub
+
+## Прописываем команду для старта и включаем.
+GRUB_CMDLINE_LINUX="cryptdevice=UUID=c0868972-f314-48e1-9be5-3584826dbd64:cryptlvm root=/dev/lvarch/root"
+GRUB_ENABLE_CRYPTODISK=y
+
+## конфигурируем
+grub-mkconfig -o /boot/grub/grub.cfg
+
+Включаем необходимые сервисы.
+
+systemctl enable NetworkManager
+systemctl enable sshd
+
+Выходим из chroot, отмонтируем разделы и закроем контейнер.
+
+exit
+umount -Rf /mnt
+vgchange -a n lvarch
+cryptsetup close cryptlvm
+** Arch-Установка программ
+#Установка пакетов, которые решают большинство проблем, с которыми вы можете столкнуться
+sudo pacman -S f2fs-tools dosfstools ntfs-3g alsa-lib alsa-utils file-roller p7zip unrar gvfs aspell-ru pulseaudio 
+
+#Установка программ
+sudo pacman -S firefox doublecmd-gtk2 filezilla gimp gnome-calculator libreoffice libreoffice-fresh-ru kdenlive screenfetch vlc ufw qbittorrent obs-studio veracrypt freemind flameshot
+
+Если нужно русифицировать firefox добавляем еще и  firefox-i18n-ru 
+Если русификация не вступила в силу, тогда сбросьте насройки FF https://vk.cc/9n7uLx 
+
+#Установка AUR программ
+yay -S sublime-text-dev cherrytree timeshift google-talkplugin hunspell-ru pamac-aur xflux xflux-gui-git osx-arc-shadow papirus-maia-icon-theme-git breeze-obsidian-cursor-theme xflux xflux-gui-git flameshot-git megasync
+
+Рекомендуемые и используемые мной программы можете посмотреть здесь https://vk.cc/5XjUqt
+** user_commands_pacman
+pacman -Sy##Cинхронизация репозиториев
+pacman -Su##Обновление системы
+pacman -Syu##Синхронизация репозиториев и обновление системы
+pacman -Ss##<keyword> — Поиск пакета по ключевому слову
+pacman -Sw##<package_name> — Скачает пакет с репозиториев, но не установит его
+pacman -S##<package_name> — Установить пакет
+pacman -Sc##— Очистка кэша неустановленных пакетов
+pacman -Scc##— Очистка кэша пакетов
+pacman -Sqi##— Информация о пакете с репозиториев (не установленом в системе)
+pacman -U##<path_to_package> — Установить пакет локально или через URL
+pacman -Qqe | grep -v "$(pacman -Qmq)"##Просмотреть список установленных пакетов в системе
+pacman -Qdt##Выводит список "сирот" - пакетов, не требуемых кому-либо из установленных пакетов
+pacman -Qi##<package_name> — Информация о пакете (об установленом)
+pacman -Ql##<package_name> — Информация о файлах, поставляющихся вместе с пакетом
+pacman -R##<package_name> — Удаление пакета
+pacman -Rs##<package_name> — Удалить пакет с зависимостями (не используемыми другими пакетами)
+pacman -Rsc##<package_name> — Удалить пакет с зависимыми и зависящими пакетами
+pacman -Rsn $(pacman -Qdtq)##Удалить пакеты "сироты"
+pacman -Rdd##<package_name> — Удалить пакет, игнорируя зависимости
+pikaur -S##(сборка пакетов AUR, --needed , --ignore и --noconfirm поддерживаются, как в pacman, другие аргументы просто обойдены)
+pikaur -Sw##(сборка пакетов AUR, но не установка)
+pikaur -Ss##(поиск или список всех пакетов AUR, -q также поддерживается)
+pikaur -Si##(информация о пакете)
+pikaur -Su##(sysupgrade)
+pikaur -Syu##(sysupgrade)
+pikaur -Scc##(сборка dir / сборка пакетов очищает кеш)
+pikaur -Sc /##(сборка dir /)
+pikaur -Qu##(запрос обновляемый, -q поддерживается)
+** pacman_удаление_установка
+pacman удаляется тем же пакманом. Как удалось-то? Но и тут решение имеется. Для любого ремонта системы (и не только) просто необходимо уметь загружаться с загрузочного образа и переходить в корень с помощью chroot. В общем, грузимся с образа. Монтируем корневой раздел (это куда собственно систему ставили). Допустим, корневой раздел у Вас - sda1. Тогда:
+1. mount /dev/sda1 /mnt
+2. настройте доступ к интернету так же, как делали при установке.
+dhcpcd or wifi-menu
+1. arch-chroot /mnt /bin/bash
+2. pacman -S pacman
+3. exit
+4. reboot
+5. 
+** команды арч-синхронизация
+ естественно синхронизирую:
+yay - Syyuu
+** crontab
+перезапуск crontab
+
+sudo /etc/init.d/cron restart
+
+Запуск и добавление в автозагрузку cron в Arch Linux / BlackArch
+
+sudo systemctl start cronie.service
+sudo systemctl enable cronie.service
+
+Удаление из автозагрукзи
+
+sudo systemctl disable cronie.service
+** Timeshift
+yay -S downgrade
+downgrade vala
+sudo pacman -S cronie
+yay -S timeshift
+** Звук в Arch
+pacman -Sy alsa-utils pulseaudio-equalizer-ladspa pavucontrol --noconfirm
+
+Видимость всех разделов в Arch Linux победил командой:
+# pacman -S dosfstools ntfs-3g gvfs
+звук - командой:
+# pacman -S alsa-lib alsa-utils
+# pacman -S pulseaudio
+pacman -Syu alsa-utils pavucontrol pulseaudio-alsa
+** gvfs в archlinux
+sudo pacman -S gvfs-afc gvfs-goa gvfs-google gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb
+** video_miniaturs
+sudo pacman -S ffmpegthumbnailer 
+** Имя пользователя OpenVPN
+Имя пользователя OpenVPN / IKEv2  AJu6YFWomFD.xnht.fzOATx0        
+Пароль OpenVPN / IKEv2            qGfarDOJn4zkxh70mqE9c860
+** ProtonVPNСписок всех команд
+protonvpn init - Инициализировать профиль ProtonVPN.
+protonvpn connect - Выбрать сервер ProtonVPN и подключиться к нему.
+protonvpn c [servername] - Поключиться к указанному серверу.
+protonvpn c -r - Подключитесь к случайному серверу.
+protonvpn c -f - Поключиться к самому быстрому серверу.
+protonvpn c --p2p - Поключиться к самому быстрому серверу P2P.
+protonvpn c --cc [countrycode] - Поключиться к самому быстрому серверу в указанной стране.
+protonvpn c --sc - Поключиться к самому быстрому серверу Secure Core.
+protonvpn reconnect - Поключиться повторно или Поключиться к последнему используемому серверу.
+protonvpn disconnect - Отключить текущий сеанс.
+protonvpn status - Состояние подключения.
+protonvpn configure - Изменить конфигурацию CLI.
+protonvpn refresh - Обновить конфигурацию OpenVPN и данные сервера.
+protonvpn examples - Вывести примеры команд.
+protonvpn --version - Показать версию.
+protonvpn --help - Показать справку.
+** ставим_иксы
+sudo pacman -S xorg-server xorg-drivers  >>>>>for arch
+sudo pacman -S xorg-server xorg-xinit xorg-apps mesa-libgl
+
+sudo apt install xinit x11-utils >>>>>for debian
+
+Добавим sddm, network manager и bluetooth(если требуется) в загрузку:
+sudo systemctl enable sddm NetworkManager bluetooth
+** virtualbox in arch
+Не заводилась VirtualBox
+Скрин ошибки прилагаю.
+Решилось следующим образом:
+sudo pacman -S linux-headers
+sudo modprobe vboxdrv
+** Расшифровка сокращений для pacman
+pacman {-h —help}
+pacman {-V —version}
+pacman {-D —database} <параметры> <пакет(ы)>
+pacman {-F —files} [параметры] [пакет(ы)]
+pacman {-Q —query} [параметры] [пакет(ы)]
+pacman {-R —remove} [параметры] <пакет(ы)>
+pacman {-S —sync} [параметры] [пакет(ы)]
+pacman {-T —deptest} [параметры] [пакет(ы)]
+pacman {-U —upgrade} [параметры] <файл(ы)>
+** Сборка пакетов из исходников
+Создать кваталог ~/.build и перейти в него.
+	
+mkdir ~/.build && cd ~/.build
+
+Найти нужный пакет на сайте aur.archlinux.org и загрузить snapshot.
+
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/gtk3-mushrooms.tar.gz
+
+Распаковываем, переходим в каталог, собираем пакет и устанавливаем.
+
+tar -xvzf gtk3-mushrooms.tar.gz
+cd gtk3-mushrooms
+makepkg -sri
+
+Если вылазят ошибки ключей, можно проигнорировать.
+
+makepkg -s --skippgpcheck
+
+После сборки появится пакет с расширением имя.pkg.tar.xz Установить командой.
+
+sudo pacman -U имя.pkg.tar.xz
+
+выкл/перез.
+shutdown -h now
+shutdown -r 0

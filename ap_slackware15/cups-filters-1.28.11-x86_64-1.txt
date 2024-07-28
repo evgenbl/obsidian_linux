@@ -1,0 +1,9 @@
+cups-filters-1.28.11-x86_64-1
+
+cups-filters (backends and filters for CUPS)
+
+This package provides backends, filters, and other software that was once part of the core CUPS distribution but is no longer included. In addition it contains additional filters and software developed independently.
+
+cups-фильтры (серверные части и фильтры для CUPS)
+
+Этот пакет предоставляет серверные части, фильтры и другое программное обеспечение, которое когда-то входило в основной дистрибутив CUPS, но больше не входит в него. Кроме того, он содержит дополнительные фильтры и программное обеспечение, разработанные независимо.

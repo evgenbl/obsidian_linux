@@ -1,0 +1,9 @@
+kmahjongg-21.12.1-x86_64-1
+
+kmahjongg (KDE port of Mahjongg game)
+
+KMahjongg is a clone of the well known tile based patience game of the same name. In the game you have to empty a game board filled with pieces, by pairwise removal of pieces of the same type.
+
+kmahjongg (портирование маджонга на KDE)
+
+KMahjongg - это клон хорошо известной настольной игры с одноименным названием. В игре вам нужно очистить игровое поле, заполненное фигурами, путем попарного удаления фигур одного типа.

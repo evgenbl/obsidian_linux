@@ -1,0 +1,9 @@
+kcoreaddons-5.90.0-x86_64-1
+
+kcoreaddons (QtCore addon library)
+
+KCoreAddons provides classes built on top of QtCore to perform various tasks such as manipulating mime types, autosaving files, creating backup files, generating random sequences, performing text manipulations such as macro replacement, accessing user information and many more.
+
+kcoreaddons (библиотека дополнений QtCore)
+
+KCoreAddons предоставляет классы, созданные поверх QtCore, для выполнения различных задач, таких как манипулирование mime-типами, автоматическое сохранение файлов, создание резервных копий файлов, генерация случайных последовательностей, выполнение текстовых манипуляций, таких как замена макросов, доступ к пользовательской информации и многое другое.

@@ -1,0 +1,10 @@
+messagelib-21.12.1-x86_64-1
+
+messagelib (KDE PIM messaging library)
+
+KDE PIM messaging library.
+
+
+messagelib (Библиотека обмена сообщениями KDE PIM)
+
+Библиотека сообщений KDE PIM

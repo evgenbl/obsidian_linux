@@ -1,0 +1,15 @@
+lxc-4.0.11-x86_64-3
+
+lxc (Linux Containers)
+
+Linux Containers (LXC) are an operating system-level virtualization method for running multiple isolated server installs (containers) on a single control host. LXC does not provide a virtual machine, but rather provides a virtual environment that has its own process and network space. It is similar to a chroot, but offers more isolation.
+
+Daniel Lezcano is the primary developer of lxc.
+
+lxc (контейнеры Linux)
+
+Контейнеры Linux (LXC) - это метод виртуализации на уровне операционной системы для запуска нескольких изолированных серверных установок (контейнеров) на одном управляющем узле. LXC не предоставляет виртуальную машину, а скорее предоставляет виртуальную среду с собственным процессом и сетевым пространством. Она похожа на chroot, но обеспечивает большую изоляцию.
+
+Дэниел Лезкано является основным разработчиком lxc.
+
+Homepage: https://linuxcontainers.org

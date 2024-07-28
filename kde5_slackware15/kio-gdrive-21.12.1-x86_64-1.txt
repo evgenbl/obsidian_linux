@@ -1,0 +1,13 @@
+kio-gdrive-21.12.1-x86_64-1
+
+kio-gdrive (Google Drive KIO helper)
+
+KIO GDrive is a KIO helper that enables KIO-aware applications (such as Dolphin, Kate or Gwenview) to access and edit Google Drive files in the cloud.
+
+
+kgio-gdrive (Google Drive KIO helper)
+
+GIO GDrive - это хороший помощник, который позволяет приложениям, поддерживающим KIO (таким как Dolphin, Kate или Gwenview), получать доступ к файлам Google Drive в облаке и редактировать их.
+
+Homepage: https://community.kde.org/KIO_GDrive
+

@@ -1,0 +1,12 @@
+kopete-21.12.1-x86_64-1
+
+kopete (multi-protocol instant messaging system)
+
+The goals of Kopete are to provide users with a standard and easy to use interface between all of their instant messaging systems, but at the same time also providing developers with the ease of writing plugins to support a new protocol.
+
+kopete (мультипротоколная система обмена мгновенными сообщениями)
+
+Цель Kopete - предоставить пользователям стандартный и простой в использовании интерфейс между всеми их системами обмена мгновенными сообщениями, но в то же время облегчить разработчикам написание плагинов для поддержки нового протокола.
+
+Homepage: http://userbase.kde.org/Kopete
+

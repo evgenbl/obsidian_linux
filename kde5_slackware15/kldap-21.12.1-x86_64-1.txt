@@ -1,0 +1,9 @@
+kldap-21.12.1-x86_64-1
+
+kldap (LDAP access API for KDE)
+
+kldap allows LDAP accessing with a convenient Qt style C++ API.
+
+kldap (LDAP access API для KDE)
+
+kldap обеспечивает доступ к LDAP с помощью удобного C++ API в стиле Qt.

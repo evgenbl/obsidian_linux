@@ -1,0 +1,691 @@
+#+STARTUP: content 
+
+* Prog.
+
+** Компиляция и установка программ из исходников
+./configure
+make
+ Для установки необходимо выполнить
+
+sudo make install
+ Для удаления пакета, установленного данным способом необходимо выполнить в корневой директории исходников программы (там где вы запускали make install).
+
+sudo make uninstall
+** libreofficerus
+sudo apt-get install libreoffice-l10n-ru libreoffice-help-ru
+** yandex-disk_install
+sudo yandex-disk
+setup yandex-disk
+** vokoscreen
+Vokoscreen, это простое приложение, скринкастер для записи видео с экрана, основанное на ffmpeg. Vokoscreen может записывать видео неограниченной длины с хорошим качеством. Есть опция для выбора частоты кадров видео, а также поддерживается звуковое сопровождение. Vokoscreen может записывать весь экран, отдельное окно или выборочную область с возможностью паузы и возобновления записи.
+Приложение работает в любом окружениями рабочего стола Linux: Unity, Gnome Shell, Cinnamon, Mate, KDE, Xfce и др. Этот скринкастер отлично подходит, чтобы записывать видео с компьютерных игр.
+
+Некоторые возможности Vokoscreen:
+
+    Запись всего экрана, отдельного окона или выделенной области
+    Опция магнификации (лупа)
+    Запись видео с вебкамеры
+    Запись видео в формате avi и mkv
+    Запись аудио в формат mp3
+    Опция скрытия/отображения курсора при записи
+** avidemux-qt
+Установка в ArchLinux (Manjaro)
+sudo pacman -S avidemux-qt
+** Cherrytree в Debian 10
+Скачиваем python-gtksourceview2_2.10.1-3_amd64.deb и cherrytree_0.38.8-0_all.deb. Из синаптика ставим. Затем ставим python-gtksourceview2_2.10.1-3_amd64.deb. Последним ставим cherrytree_0.38.8-0_all.deb.
+** Краткий справочник по командам MPlayer_
+    Пробел Воспроизведение/Пауза
+    Стрелка вверх/вниз Переход на 1 минуту вперед/назад
+    Стрелка вправо/влево Переход на 10 секунд вперед/назад
+    Page Up / Page Down Переход на 10 минут вперед/назад
+    Воспроизвести DVD $ mplayer dvd://1
+    Воспроизвести CD $ mplayer cdda://
+    1 и 2 Контрастность
+    3 и 4 Яркость
+    5 и 6 Цветность
+    7 и 8 Насыщенность
+    9 и 0 Вторичный регулятор громкости
+    F Полноэкранный режим
+    Enter Закрыть текущий файл
+    Q Закрыть MPlayer
+    O Индикация на экране
+    V Показать субтитры
+    * Увеличить громкость
+    / Уменьшить громкость
+** Состав Xpdf
+В состав Xpdf входит целый набор утилит:
+
+    xpdf/XpdfReader — основная программа для просмотра PDF-файлов
+    pdftotext — утилита для конвертации PDF в обычный текст
+    pdftops — утилита для конвертации PDF в PostScript
+    pdftoppm — утилита для конвертации PDF страниц в файлы изображений PPM/PGM/PBM
+    pdftopng — утилита для конвертации PDF страниц в PNG
+    pdftohtml — утилита для конвертации PDF в HTML-формат
+    pdfinfo — утилита для выборки мета-данных
+    pdfimages — утилита для извлечения изображений из PDF файлов
+    pdffonts — выводит список шрифтов, используемых в PDF файле
+    pdfdetach — извлекает прикрепленные файлы из PDF файлов
+** рисовать на экране
+Gromit - рисования на рабочем столе и/или поверх окон. Установка yaourt -S gromit-mpx-git
+** Parom.TV для Linux
+Как запустить файл AppImage
+
+Для запуска файла в формате AppImage его сначала нужно сделать исполняемым. Для этого можно щелкнуть правой кнопкой мыши по файлу и открыть окно Свойства, в окне Свойств установить опцию — Разрешить выполнение (название опции может отличаться). Так же можно воспользоваться командной строкой и выполнить команду chmod:
+
+chmod +x Parom.TV.AppImage
+
+После этого достаточно просто запустить файл — дважды щелкнуть по файлу или же запустить файл из командной строки:
+
+./Parom.TV.AppImage
+** browser_tor
+Этот браузер известен каждому, интересующемуся интернет-безопасностью и тому, кто хоть раз пытался обойти различные блокировки, будь то rutracker, или любые другие заблокированные сервисы.
+
+Первая вкладка, которая нам понадобится это «Приватность браузера». Поставим всегда работать в режиме приватного просмотра, защиту от отслеживания – всегда, поддельное и обманное содержимое — включаем все.
+
+Теперь нажимаем на TorButton, эта кнопка слева от строки поиска. Тут выбираем максимальный уровень защиты.
+
+Самый сильный защитник браузера, это конечно же, «Дополнения», они защититят вас от слежения при серфинге интернета, вредоносные сайты будут заблокированы. Некторые из них уже установлены в TOR заранее, разработчиками, но они необеспечивают полную защиту
+
+Disconnect — Конфиденциальный Блокировщик Рекламы: Блокирует трекеры google analytics/яндекс статистика и т.д. — основные средства слежения за вашей историей посещения сайтов, местонахождению и многих других данных.
+Adblock Plus — Блокирует трекеры, майнинг, рекламу, и т.п.
+User-Agent Switcher — Автоматически меняет Ваш fingerprint компьютера\браузера.
+Man in the Middle — Защищает от перехвата интернет-траффика\MITM атаки. Это расширение можно скрыть с панели расширений.
+Disable WebRTC — Протокол WebRTC выдает настоящий ip, цепь соединений TOR и другие данные, даже если Вы используете другие средства защиты, так что отключим этот протокол.
+
+Теперь следует настроить эти расширения.
+
+NoScript — это расширение надо настраивать в зависимости от уровня защиты который Вы хотите иметь. Но важно помнить, что если вы поставите галочки везде, большинство сайтов будут некорректно работать.
+Https Everywhere — нажимаем на кнопку этого дополнения и ставим в обоих пунктах галочки.
+AdBlock Plus — Заходим в настройки и в «сторонних фильтрах» желательно выбрать дополнительные базы.
+User-Agent Switcher — Здесь мы выбираем разброс 25%, и все UserAgents.
+** Установка XFCE
+Для установки XFCE введите apt install xfce4
+
+Рекомендую сразу ставить xfce4 xfce4-goodies network-manager-gnome одной командой то есть:
+
+apt install xfce4 xfce4-goodies network-manager-gnome
+** Установка и запуск tor
+sudo pacman -S tor torsocks
+Запуск, остановка сервиса tor
+sudo systemctl start tor
+sudo systemctl stop tor
+Запуск через tor.
+torify zsh
+torify ssh user@blabla -p 22
+Проверка ip.
+curl --max-time 10 -w '\n' http://ident.me
+В firefox используйте расширение FoxyProxy.
+В настройках расширения, Добавить новый SOCKS4, ip: 127.0.0.1, port: 9050
+Chromium запустите с флагом.
+chromium --proxy-server='socks://127.0.0.1:9050' &
+Если нужно отредактируйте сервис.
+sudo nano /usr/lib/systemd/system/tor.service
+[Service]
+User=root
+Group=root
+Type=simple
+sudo chown -R root:root /var/lib/tor/
+sudo systemctl daemon-reload
+sudo systemctl restart tor
+** Список плагинов XFCE
+xfce4-battery-plugin - модуль наблюдения за состоянием батареи для панели Xfce4
+
+xfce4-clipman-plugin - история буфера обмена, модуль панели Xfce
+
+xfce4-cpufreq-plugin - отображание частоты процессора, модуль панели Xfce4
+
+xfce4-cpugraph-plugin - Плагин графика загрузки процессора для панели Xfce4
+
+xfce4-datetime-plugin - модуль отображения даты и времени для панели Xfce4
+
+xfce4-diskperf-plugin - плагин отображения производительности диска для панели Xfce4
+
+xfce4-fsguard-plugin - модуль панели Xfce4 для наблюдения за файловой системой
+
+xfce4-genmon-plugin - система базового наблюдения для панели Xfce4
+
+xfce4-goodies - улучшения для среды рабочего стола Xfce4
+
+xfce4-mailwatch-plugin - плагин для отслеживания почты для панели Xfce4
+
+xfce4-netload-plugin - отображение параметров сетевого трафика, модуль панели Xfce4
+
+xfce4-notes-plugin - расширение Notes — записки для рабочего стола Xfce4
+
+xfce4-panel - панель для рабочего стола Xfce4
+
+xfce4-places-plugin - быстрый доступ к каталогам, документам и подключаемым носителям
+
+xfce4-power-manager-plugins - расширения менеджера управления электропитанием для панели Xfce
+
+xfce4-pulseaudio-plugin - Плагин Xfce4 для управления звуком
+
+xfce4-sensors-plugin - показания аппаратных датчиков, модуль панели Xfce4
+
+xfce4-smartbookmark-plugin - модуль панели Xfce4 для поиска в веб-ресурсах
+
+xfce4-systemload-plugin - монитор загрузки системы, расширние панели Xfce4
+
+xfce4-timer-plugin - модуль отображения времени для панели Xfce
+
+xfce4-verve-plugin - модуль Verve (командная строка) для панели Xfce
+
+xfce4-wavelan-plugin - состояние радиосети, расширение для панели Xfce4
+
+xfce4-weather-plugin - информация о погоде, расширение панели Xfce4
+
+xfce4-whiskermenu-plugin - альтернативный модуль меню для окружения рабочего стола Xfce
+
+xfce4-xkb-plugin - модуль переключения раскладок клавиатуры для панели Xfce4
+
+ayatana-indicator-session - Индикатор Ayatana, показывающий управление сеансом, статус и переключение пользователей
+
+budgie-sntray-plugin - плагин для xfce4-панели для отображения статуса NotifierItems - Budgie
+
+libxfce4panel-2.0-dev - Библиотеки панелей Xfce4 (вариант GTK3)
+
+mate-sntray-plugin - плагин для xfce4-панели для отображения StatusNotifierItems - MATE
+
+vala-sntray-plugin - плагин для xfce4-панели для отображения StatusNotifierItems - Vala
+
+xfce4-appmenu-plugin - Плагин меню приложений для xfce4-панели
+
+xfce4-equake-plugin - Плагин панели Xfce, который отслеживает землетрясения
+
+xfce4-eyes-plugin - глаза, которые следуют за вашей мышью для панели Xfce4
+
+xfce4-indicator-plugin - модуль отображения информации от приложений на панели Xfce4
+
+xfce4-mount-plugin - монтирование файловых систем, модуль панели Xfce4
+
+xfce4-mpc-plugin - модуль панели Xfce — клиент к музыкальному проигрывателю MPD
+
+xfce4-sntray-plugin - плагин для xfce4-панели для отображения StatusNotifierItems - Xfce
+
+xfce4-sntray-plugin-common - плагин для xfce4-панели для отображения StatusNotifierItems - обычный
+
+xfce4-statusnotifier-plugin - плагин для отображения уведомлений о состоянии на панели Xfce4
+
+А так же устанавливаем плагины для удобного подключения к сети и vpn:
+
+network-manager-gnome - управление сетевыми подключениями
+network-manager-openvpn-gnome - Подключение VPN
+
+Ну и конечно же bluetooth:
+blueman
+** Использование screenfetch
+sudo apt install screenfetch
+
+Откройте терминал, введите и выполните команду:
+
+screenfetch
+
+После выполнения команды, вы должны увидеть в терминале подобную информацию о вашей системе
+
+Чтобы сделать автозапуск screenFetch, перейдите от имени root к папке /etc и найдите bash.bashrc файл. Откройте bash.bashrc файл и добавьте в самый низ screenfetch
+** Информация о системе_neofetch
+Установка в Debian/Ubuntu/Mint
+$ sudo add-apt-repository ppa:dawidd0811/neofetch
+$ sudo apt-get update
+$ sudo apt-get install neofetch
+** ОПТИМИЗАЦИЯ_ИЗОБРАЖЕНИЙ_LINUX
+jpegoptim - утилита для оптимизации и сжатия изображений без потери качества в формате JPEG;
+optipng - это небольшая программа, которая позволяет уменьшить размер PNG изображений без потери качества.
+** debian-openbox
+Debian-openbox
+1)устанавливаем голый дебиан(без рабочего стола)
+2)apt update
+3)apt install sudo
+  adduser jenit sudo
+4)EDITOE=nano vi sudo
+5)sudo apt install x11-utils xinit
+6)sudo apt install openbox openbox-menu obconf obmenu obsession lxappearance lxappearance-obconf lightdm tint2 volti pulseaudio pavucontrol gmrun network-manager feh lx-terminal mousepad abiword gnumeric flameshot moc mc vlc testdisk 
+7)mkdir -p .config/openbox
+  sudo cp /etc/xbg/openbox/* .config/openbox/
+8)sudo chown jenit:jenit config/openbox/*
+9)nano /config/openbox/autostart >tint2>volti
+** Openbox Debian
+Openbox №1
+
+Пакеты, X Window:
+
+   По Х-ам: Можно установить полный пакет xorg с набором утилит и драйверов.
+Либо установить драйвер для своей карты(nvidia,intel,amd...), для nvidia это:
+xserver-xorg-video-nouveau
+	x11-xserver-utils
+	x11-utils
+	xinit (это на случай: “может пригодиться”)
+Это пакеты, что устанавливал. При необходимости нужное всегда можно доустановить.
+
+  Пакеты, начальная установка:
+
+openbox - оконный менеджер
+obconf - настройка openbox
+openbox-menu - меню openbox
+obmenu - графический интерфейс редактирования меню openbox
+lxappearance - настройка интерфейса gtk
+lxappearance-obconf - вкладка настроек интерфейса obconf в lxappearance
+tint2 - панель
+volti - регулятор громкости
+pulseaudio - звуковая система
+pavucontrol - утилита управления звуком для pulseaudio
+obsession - управление сессией openbox
+wicd(network-manager-gnome) - управление сетевыми подключениями/настройками
+xxkb - индикатор, переключатель раскладки
+xdm, slim, lightdm(рекомендую) - менеджер дисплея
+lxterminal(можно другой) - терминал
+pcmanfm - файловый менеджер
+feh(nitrogen) - обои на рабочий стол
+mousepad - текстовый редактор(leafpad сдох)
+gmrun - графическая программа для запуска приложений
+.
+
+
+Первые шаги после установки:
+
+ Сооружаем скрытую директорию:
+.config/openbox (mkdir -p .config/openbox)
+копируем файлы из:
+/etc/xdg/openbox
+в:
+.config/openbox (sudo cp /etc/xdg/openbox/* ~/.config/openbox/)
+ Должны появится файлы:
+autostart
+environment
+rc.xml
+menu.xml
+ Далее нужно сменить владельца этих файлов:
+sudo chown имя:имя .config/openbox/*
+Теперь эти файлы можно редактировать без “sudo”
+.
+
+
+Настраиваем “выход”:
+
+ В файл menu.xml (.config/openbox/menu.xml) добавляем:
+<item label="Shutdown">
+      	<action name="Execute">
+              	<execute>obsession-logout</execute>
+      	</action>
+  </item>
+** debian XFCE 10-подключение смартфона
+Что за DE? Может gvfs-backends надо поставить?
+
+устновить чтобы подключался и был определен(виден) смартфон
+
+Install gvfs-backends
+
+Installing gvfs-backends package on Debian 9 (Stretch) is as easy as running the following command on terminal:
+
+sudo apt-get update
+sudo apt-get install gvfs-backends
+** How To Install VirtualBox 6.0 on Debian 10
+Step 1 – Prerequsities
+
+sudo apt update
+sudo apt upgrade
+
+Step 2 – Setup Apt Repository
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+Then configure the apt repository on your Debian 10 Buster system. This command will add an entry to /etc/apt/sources.list file at end of the file.
+
+sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib"
+
+Step 3 – Install VirtualBox on Debian 10
+
+sudo apt update
+sudo apt install virtualbox-6.0
+
+Step 4 – Launch VirtualBox
+
+$ virtualbox
+** Gnumeric
+редактор таблиц - Gnumeric
+
+sudo apt-get install gnumeric
+
+текстовой редактор - Abiword
+** scrot
+В linux сделать скриншот можно несколькими различными способами. Одним из них является scrot - очень полезная утилита, которая позволяет делать это непосредственно из командной строки.
+scrot предустановлен в большинстве дистрибутивов Linux. Если у вас он не установлен, просто введите соответствующую команду в терминале.
+
+Для Ubuntu:
+
+$ sudo apt-get install scrot
+Как ним пользоваться? scrot позволяет делать скриншоты быстро и без лишних усилий.
+Для создания скриншота всего рабочего стола откройте терминал, введите команду scrot и нажмите Enter:
+
+For Arch:
+sudo pacman -S scrot:
+$ scrot
+
+Изображение будет сохранено в текущей директории с именем, которое по умолчанию имеет формат filename_date_and_time_screen resolution_scrot.png
+
+Вы можете задать свое имя и тип изображения с помощью команды:
+
+$ scrot ~/Photos/unixmen.jpg
+Вышеприведенная команда делает скриншот всего рабочего стола и сохраняет его в папке Photos под именем unixmen, тип файла - jpg.
+
+Создание скриншота выделенной области рабочего стола
+scrot также позволяет создавать скриншоты выделенной области экрана. Это просто потрясающе.
+Введите приведенную ниже команду в терминале и нажмите Enter:
+
+$ scrot -s
+После нажатия enter выделите область, скриншот которой вы хотите сделать, и кликните.
+
+Задержка во времени
+Чтобы сделать скриншот всего экрана с помощью scrot через определенное время, необходимо добавить аргумент "-d" (delay) к команде scrot со временем в секундах. Таким образом, чтобы сделать скриншот через 7 секунд, используйте команду:
+
+$ scrot -d 7 unixmen.jpg
+При этом через 7 секунд будет сделан скриншот всего экрана и сохранен в домашней директории под именем unixmen.jpg.
+В добавление к "-d" вы можете использовать параметр "-c", чтобы вывести обратный отсчет до снятия скриншота в терминале. Пример:
+
+$ scrot -d 7 -c unixmen.jpg
+При этом стартует отсчет 8.. 7.. 6.. 5.. 4.. 3.. 2.. 1.. 0.. (как показано ниже), немедленно после достижения 0 делается скриншот и сохраняется в домашней директории под именем unixmen.jpg.
+С помощью аргумента "-q" можно также задать качество изображения.
+
+Вы можете также сделать скриншот, открыть и отредактировать его в GIMP, с помощью комбинации команд:
+
+$ scrot -q 90 -d 7 unixmen.png && gimp unixmen.png &
+Более подробную информацию об использовании scrot можно получить из его man-страницы:
+
+$ man scrot
+** ripgrep
+grep -inr whofind
+ripgrep-установка:sudo pacman -S ripgrep
+сам поиск:rg -i "что ищем" .
+точка означает что ищем в текущей папке.
+без точки-поиск по всему компу.
+** pdf
+convert *.jpg file.pdf
+
+Объединить Несколько PDF в Один
+
+Объединить два PDF файла FILE1.pdf и FILE2.pdf в новый файл OUTPUT.pdf:
+
+$ convert FILE1.pdf FILE2.pdf OUTPUT.pdf
+** запись образа(программа)
+BalenaEtcher
+** moc
+H - показать справку по клавишам управления. Запомнив эту клавишу, про все остальное можно иногда забывать :-)
+Tab - переключиться между обозревателем файлов и плейлистом
+↑, ↓, PgUp/PgDn, Home/End - навигация по списку файлов/плейлисту
+Enter:
+в обозревателе файлов - войти в папку или начать воспроизведение выбранного файла (без изменения плейлиста)
+в плейлисте - переключиться на выбранный трек
+A (в обозревателе) - добавить файл или папку в плейлист
+Shift+A - добавить папку рекурсивно (со всеми подкаталогами и их содержимым)
+D (в плейлисте) - удалить файл из плейлиста
+Shift+C - очистить плейлист
+N - следующий трек
+B - предыдущий трек
+Shift+S - включить/выключить воспроизведение в случайном порядке (Shuffle)
+Shift+R - включить/выключить повтор плейлиста
+S - остановить воспроизведение
+Q - выйти из интерфейса (проигрыватель при этом продолжит воспроизведение), по команде mocp можно вернуться к интерфейсу
+Shift+Q - выйти и завершить работу проигрывателя
+Shift+< - уменьшить громкость на 1%
+Shift+> - увеличить громкость на 1%
+Управление из командной строки:
+Проигрывателем можно управлять и без использования псевдографического интерфейса, напрямую из командной строки. Обо всех опциях можно почитать в:
+man mocp
+
+Здесь мы лишь рассмотрим основные команды:
+mocp -G - пауза/воспроизведение
+mocp -f, mocp -r - следующий/предыдущий трек
+mocp -a «путь/к/файлу» - добавить файл или папку (рекурсивно) в плейлист
+mocp -c - очистить плейлист
+mocp -s - остановить воспроизведение
+mocp -p - начать воспроизведение с первого файла в плейлисте
+mocp -t s - включить/выключить воспроизведение в случайном порядке (Shuffle)
+mocp -x - завершить работу проигрывателя
+mocp -i - показать подробную информацию о текущем треке
+mocp -v 40 - установить громкость в 40%. -v +10, -v -3 - увеличить/уменьшить на n%
+** mc
+F1 – Help! (помощь, подсказка)
+
+F2 – вызов пользовательского меню
+
+F3 – просмотр содержимого файла
+
+F4 – редактирование содержимого файла (в сочетании с кнопкой «shift» - создание нового файла)
+
+F5 – копирование файла/директории
+
+F6 – перенос или переименование файла/директории
+
+F7 – создание новой директории
+
+F8 – удаление файла/директории
+
+F9 – переход в основное меню Midnight Commander
+
+F10 – выход (завершение работы mc)
+
+TAB, Ctrl+I – переход между панелями
+
+Insert, Ctrl+t – выделение файла/директории для каких либо операций над ними (повторное нажатие на выделенном объекте снимает выделение)
+
+Дополнительные команды:
+
+Ctrl+o – убрать панели с экрана (полезно для выполнения в консоли какой либо команды не выходя из mc, повторное нажатие комбинации вернёт панели на место)
+
+Ctrl+Space – подсчёт размера каталога
+
+Ctrl+r – перечитать содержимое каталога
+
+Ctrl+l – перерисовать экран
+
+Ctrl+u – поменять панели местами
+
+Ctrl+ – меню часто используемых каталогов (настаивается пользователем, см. Ctrl+x h)
+
++ – отметить группу файлов с использованием регулярных выражений
+
+– снять отметку с группы файлов
+
+Ctrl+s, Alt+s – быстрый поиск файлов (после нажатия сочетания набираем искомый файл по первым символам наименования)
+
+Ctrl+Enter, Alt+Enter – копирует имя файла находящийся под указателем в командную строку
+
+Ctrl+x c – вызов окна для редактирования прав доступа к отмеченным файлам/директорий (chmod)
+
+Ctrl+x o – вызов окна смены владельца для отмеченных файлов/директорий (chown)
+
+Ctrl+x q – перевод пассивной панели в режим просмотра содержимого файла под указателем
+
+Ctrl+x h – добавление каталога под указателем в меню часто используемых каталогов (см. Ctrl+)
+
+Ctrl+x I – просмотр детальной информации об объекте под указателем в соседней панели
+
+Alt+t – переключить режим отображения текущей панели (стандартный, укороченный, расширенный)
+
+Alt+h – отобразить историю перемещения по каталогам
+
+Alt+a, Ctrl+x p – копирует полный путь к объекту текущей панели в командную строку
+
+Alt+, – переключает положение панелей (вертикально, горизонтально)
+
+Alt+. – показать/скрыть скрытые файлы или каталоги (имена которых начинаются на точку)
+
+Alt+Shift+? – вызов окна расширенного поиска
+
+Alt+o – показать содержимое каталога под указателем в соседней панели
+
+Alt+e – смена кодировки текущей панели
+** inxi(сведения о системе)
+Для этого нам достаточно ввести в Терминале команду inxi -F, и в итоге мы получим примерно такой вывод:
+
+inxi -F
+System: Host: mintdewdrop-desktop Kernel: 3.8.0-19-generic x86_64 (64 bit) Desktop: KDE 4.10.2 Distro: Ubuntu 13.04 raring
+Machine: Mobo: MSI model: MS-7309 version: 1.0 Bios: American Megatrends version: V9.5 date: 04/09/2009
+CPU: Dual core AMD Athlon 64 X2 5000+ (-MCP-) cache: 1024 KB flags: (lm nx sse sse2 sse3 svm)
+Clock Speeds: 1: 2612.127 MHz 2: 2612.127 MHz
+Graphics: Card: NVIDIA NV43 [GeForce 6600]
+X.Org: 1.13.3 drivers: nvidia (unloaded: fbdev,vesa,nouveau) Resolution: 1360x768@60.0hz
+GLX Renderer: GeForce 6600/PCIe/SSE2 GLX Version: 2.1.2 NVIDIA 304.88
+Audio: Card-1: NVIDIA MCP61 High Definition Audio driver: snd_hda_intel Sound: ALSA ver: k3.8.0-19-generic
+Card-2: Logitech Webcam C210 driver: USB Audio
+Network: Card: NVIDIA MCP61 Ethernet driver: forcedeth
+IF: eth0 state: up speed: 100 Mbps duplex: full mac: f3:7a:86:c1:q7:e9
+Drives: HDD Total Size: 320.1GB (48.8% used) 1: id: /dev/sda model: WDC_WD3200AAJS size: 320.1GB
+Partition: ID: / size: 20G used: 5.6G (30%) fs: ext4 ID: /home size: 240G used: 141G (62%) fs: ext4
+ID: swap-1 size: 3.36GB used: 0.00GB (0%) fs: swap
+RAID: No RAID devices detected - /proc/mdstat and md_mod kernel raid module present
+Sensors: System Temperatures: cpu: 44.0C mobo: N/A
+Fan Speeds (in rpm): cpu: N/A
+Info: Processes: 150 Uptime: 19:27 Memory: 1207.4/2002.6MB Client: Shell inxi: 1.8.4
+
+Как видим, вывод inxi c ключом -F предоставил нам почти полную информацию о системе и железе, причем в довольно сжатом виде — только все самое необходимое!
+
+Если же нам нужно получить эту информацию в еще более сжатом виде, то выполняем в Терминале команду inxi с ключом -b:
+
+inxi -b
+System: Host: mintdewdrop-desktop Kernel: 3.8.0-19-generic x86_64 (64 bit) Desktop: KDE 4.10.2 Distro: Ubuntu 13.04 raring
+Machine: Mobo: MSI model: MS-7309 version: 1.0 Bios: American Megatrends version: V9.5 date: 04/09/2009
+CPU: Dual core AMD Athlon 64 X2 5000+ (-MCP-) clocked at 2612.127 MHz
+Graphics: Card: NVIDIA NV43 [GeForce 6600]
+X.Org: 1.13.3 drivers: nvidia (unloaded: fbdev,vesa,nouveau) Resolution: 1360x768@60.0hz
+GLX Renderer: GeForce 6600/PCIe/SSE2 GLX Version: 2.1.2 NVIDIA 304.88
+Network: Card: NVIDIA MCP61 Ethernet driver: forcedeth
+Drives: HDD Total Size: 320.1GB (48.9% used)
+Info: Processes: 151 Uptime: 19:40 Memory: 1373.4/2002.6MB Client: Shell inxi: 1.8.4
+
+Если вся информация о системе или железе нам не нужна, а нужно узнать только данные о графической подсистеме, или дистрибутиве, ядре и DE, или же о подключенных разделах жесткого диска, например, то просто меняем ключи этой команды и получаем только то, что нам нужно:
+
+inxi -G
+Graphics: Card: NVIDIA NV43 [GeForce 6600]
+X.Org: 1.13.3 drivers: nvidia (unloaded: fbdev,vesa,nouveau) Resolution: 1360x768@60.0hz
+GLX Renderer: GeForce 6600/PCIe/SSE2 GLX Version: 2.1.2 NVIDIA 304.88
+
+inxi -S
+System: Host: mintdewdrop-desktop Kernel: 3.8.0-19-generic x86_64 (64 bit) Desktop: KDE 4.10.2 Distro: Ubuntu 13.04 raring
+
+inxi -P
+Partition: ID: / size: 20G used: 5.6G (30%) fs: ext4 ID: /home size: 240G used: 141G (62%) fs: ext4
+ID: swap-1 size: 3.36GB used: 0.00GB (0%) fs: swap
+
+(здесь, пожалуй, стоит обратить внимание, что ключ -P дает нам посмотреть только примонтированные разделы жесткого диска, для того, чтобы увидеть не подключенные разделы, нужно выполнить inxi с ключом -o)
+
+Ну и так далее… Полную справку по утилите Inxi можно получить, выполнив команду inxi -h — советую внимательно ознакомиться c ней, там есть еще много чего интересного
+** fm nnn
+Двухпанельный файловый менеджер не всегда удобен, когда необходимо просто пройтись по каталогам и найти/открыть нужный файл. В этом случае гораздо лучше подойдет nnn — простой и быстрый как молния файловый менеджер без лишних обвесок и со всей необходимой функциональностью для навигации по файловой системе.
+
+Nnn представляет файловое дерево в виде списка с указанием даты модификации и размера файлов. Навигация крайне простая — стрелки вверх/вниз для перемещения по списку, вперед/назад для перехода между каталогами (клавиши h, j, k, l, как в Vim, тоже поддерживаются). Клавиши & и - возвращают к начальному и последнему посещенному каталогу, D открывает подробную информацию о файле, Ctrl + R — для переименования.
+
+В nnn есть система поиска в реальном времени, вызываемая по клавише /, и система закладок. Просто нажми b в нужном каталоге, введи имя закладки и возвращайся к нему когда вздумается с помощью Ctrl + V.
+** Micro
+Micro — легкий, гибкий, интуитивно понятный текстовый редактор, которым вы с лёгкостью можете пользоваться в своём любимом терминале. Создатель микро был вдохновлен nano, но используя Micro вам не нужно переучиваться и запоминать новые комбинации клавиш для работы, как в том же nano или еще более сложном vim. В микро используются практически те же горячие клавиши как и в любом другом GUI тестовом редакторе, кроме того по дефолту имеет отличную поддержку мыши с прокруткой, выделением текста и сменой позиции курсора. Имеет поддержку буфера обмена системы, для этого требуется утилита xclip или xsel.
+Monokai colorscheme -- this is the default colorscheme
+
+Горячие клавиши
+ctrl-Q выход
+ctrl-S сохранить
+ctrl-С копировать
+ctrl-X вырезать
+ctrl-K вырезать строчку
+ctrl-V вставить
+ctrl-Z отмена
+ctrl-F поиск (ctrl-N дальше, ctrl-P предыдущий)
+ctrl-A выбрать всё
+ctrl-E командная строка
+ctrl-T новая вкладка
+ctrl-G помощь
+alt-G горячие клавиши
+При желании горячие клавиши можно поменять, подробнее узнать об этом можно здесь: https://github.com/zyedidia/micro/blob/master/runtime/help/keybindings.md
+
+Рассмотрим его установку и настройку в Arch linux
+В Arch Linux, micro находится в пользовательском репозитории AUR
+Установка с помощью aur помощника YAY:
+$ yay -S micro --noconfirm
+
+Основной конфигурационный файл по умолчанию находится:
+~/.config/micro/settings.json
+Через этот файл производится основная настройка micro например можно отключить подсветку синтаксиса или изменить тему оформления
+
+Micro поддерживает подсветку синтаксиса для более чем 90 языков, + можно создавать свои правила подсветки к примеру подсветка комментариев в обычных текстовых файлах.
+
+    Создаём подсветку комментариев для обычных текстовых файлов с конкретным именем:
+    $ mkdir ~/.config/micro/syntax
+    $ micro ~/.config/micro/syntax/text.yaml
+
+    Вставляем в файл ctrl-V следующее:
+
+    filetype: text/plain
+
+    detect:
+    filename: "config"
+
+    rules:
+    - constant.string:
+    start: "\""
+    end: "\""
+    skip: "\\\\."
+    rules: []
+
+    - comment:
+    start: "#"
+    end: "$"
+    rules: []
+
+    ctrl-S сохранить
+    ctrl-Q выход
+
+По умолчанию micro поставляется с темами на 16 и 256 цветов
+Изменить оформление можно в файле ~/.config/micro/settings.json
+Указываем свою тему в строчке: "colorscheme": "default",
+
+Темы 256 цветов:
+• monokai -default цветовая гамма.
+• zenburn
+• gruvbox
+• darcula
+• twilight
+• railscast
+
+Темы 16 цветов
+• simple - использует 16 цветовую схему вашего терминала
+• cmc-16
+• cmc-paper - cmc-16, только на белом фоне
+• geany
+
+Рассмотрим некоторые опции из файла настроек ~/.config/micro/settings.json
+
+Включить перенос строк (по умолчанию false):
+"softwrap": true,
+
+Количество строк, которые отображаются выше и ниже курсора.
+"scrollmargin": 3,
+
+Указываем скорость прокрутки (количество строк)
+"scrollspeed": 4
+
+Показывать полосу прокрутки
+"scrollbar": true,
+
+Включаем поиск по файлу без учета регистра
+"ignorecase": true,
+
+Включить/выключить проверку синтаксиса
+"syntax": true,
+
+Подробней о каждой опции файла настроек:
+https://github.com/zyedidia/micro/blob/master/runtime/help/options.md
+
+Мнение АВТОРА:
+Если вы хотите больше пользоваться консолью/терминалом, но по каким либо причинам вам не нравится nano, или вы не хотите и у вас нет времени изучать vim, то Micro отлично подойдет как альтернатива, особенно для редактирования каких либо конфиг файлов. Отлично работает в связке с консольным файловым менеджером Ranger.
+
+Официальная страничка проeта Micro на github: https://github.com/zyedidia/micro
+На github вы можете более подробно ознакомиться с Micro, его настройкой и 
+** i3 prog
+flameshot xfce4-power-manager simplescreenrecorder feh mousepad pcmanfm vlc 
+terminator ranger mc moc ristretto atool w3m ffmpegthumbnailer youtube-dl nano 
+wget evince mediainfo vim ripgrep scrot abiword gnumeric paromtv ripgrep
+** Выпадающий терминал в XFCE
+для создания выпадающего терминала:
+настройки>клавиатура>комбинации клавиш>добавить>xfce4-terminal --drop-down> я назначил F12
+** мультизагрузочная флешка
+sudo ventoy -i -I -u /dev/sdXXX 

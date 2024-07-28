@@ -1,0 +1,9 @@
+kdecoration-5.23.5-x86_64-1
+
+kdecoration (library to create themes for kwin)
+
+This library makes it easier and more reliable to make themes for KWin, Plasma's window manager. It has impressive memory, performance and stability improvements.
+
+kdecoration (библиотека для создания тем для kwin)
+
+Эта библиотека упрощает и повышает надежность создания тем для KWin, оконного менеджера Plasma. Она обладает впечатляющими улучшениями памяти, производительности и стабильности

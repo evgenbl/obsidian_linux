@@ -1,0 +1,16 @@
+mpg123-1.29.3-x86_64-1
+
+mpg123 (a command-line mp3 player)
+
+mpg123 is a real time MPEG 1.0/2.0/2.5 audio player/decoder for layers 1, 2, and 3 (MPEG 1.0 layer 3 aka MP3 most commonly tested). 
+
+It is free software licensed under LGPL 2.1.
+
+mpg123 (mp3-плеер командной строки)
+
+mpg123 - это аудиоплеер в формате MPEG в реальном времени 1.0/2.0/2.5 аудиоплеер/декодер для уровней 1, 2 и 3 (наиболее часто тестируемый MPEG 1.0 layer 3, он же MP3). 
+
+Это свободное программное обеспечение, лицензированное в соответствии с LGPL 2.1.
+
+Homepage: http://mpg123.org/
+

@@ -1,0 +1,12 @@
+kmail-21.12.1-x86_64-1
+
+kmail (KDE mail client)
+
+KMail is a state-of-the-art email client that integrates well with widely used email providers like GMail. It provides many tools and features to maximize your productivity and makes working with large email accounts easy and fast. KMail supports a large variety of email protocols - POP3, IMAP, Microsoft Exchange (EWS) and more.
+
+kmail (почтовый клиент KDE)
+
+KMail - это современный почтовый клиент, который хорошо интегрируется с широко используемыми почтовыми сервисами, такими как GMail. Он предоставляет множество инструментов и функций для повышения производительности и упрощает работу с большими учетными записями электронной почты. KMail поддерживает большое разнообразие протоколов электронной почты - POP3, IMAP, Microsoft Exchange (EWS) и другие.
+
+Homepage: https://kde.org/applications/en/internet/org.kde.kmail2
+

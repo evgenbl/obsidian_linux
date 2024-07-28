@@ -1,0 +1,9 @@
+kdewebkit-5.90.0-x86_64-1
+
+kdewebkit (WebKit rendering engine for KDE)
+
+This library provides KDE integration of the QtWebKit library. If you are using QtWebKit in your KDE application, you are encouraged to use this layer instead of using the QtWebKit classes directly. In particular, you should use KWebView in place of QWebView, KGraphicsWebView in place of QGraphicsWebView and KWebPage in place ofQWebPage. See the documentation for more information.
+
+kdewebkit (механизм рендеринга WebKit для KDE)
+
+Эта библиотека обеспечивает интеграцию KDE с библиотекой QtWebKit. Если вы используете QtWebKit в своем приложении KDE, рекомендуется использовать этот уровень вместо непосредственного использования классов QtWebKit. В частности, вам следует использовать Wkwebview вместо QWebView, KGraphicsWebView вместо QGraphicsWebView и KWebPage вместо QWebPage. Дополнительную информацию смотрите в документации.

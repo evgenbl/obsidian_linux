@@ -1,0 +1,9 @@
+kdeplasma-addons-5.23.5-x86_64-1
+
+kdeplasma-addons (Plasma addons for KDE)
+
+Plasmoids (or widgets) for the KDE Plasma Desktop shell.
+
+kdeplasma-addons (Plasma addons - дополнения for KDE)
+
+Плазмоиды (дополнения или виджеты) для оболочки рабочего стола KDE Plasma.

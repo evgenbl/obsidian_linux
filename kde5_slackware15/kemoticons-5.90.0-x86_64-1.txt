@@ -1,0 +1,9 @@
+kemoticons-5.90.0-x86_64-1
+
+kemoticons (Convert text emoticons to graphical emoticons)
+
+KEmoticons converts emoticons from text to a graphical representation with images in HTML. It supports setting different themes for emoticons coming from different providers.
+
+kemoticons (Преобразование текстовых смайликов в графические)
+
+KEmoticons преобразует текстовые смайлики в графическое представление с изображениями в формате HTML. Он поддерживает настройку различных тем для смайликов, поступающих от разных поставщиков.

@@ -1,0 +1,16 @@
+kwallet-pam-5.23.5-x86_64-1
+
+kwallet-pam (KWallet PAM integration)
+
+KWallet PAM integration.
+
+kwallet-pam (интеграция с KWallet PAM)
+
+Интеграция с KWallet PAM.
+
+Как работает kwallet-pam:
+
+kwallet-pam — это то, что автоматически разблокирует ваш кошелек по умолчанию, если у него тот же пароль, что и у вашего пользователя.
+
+
+

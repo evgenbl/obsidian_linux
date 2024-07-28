@@ -1,0 +1,10 @@
+syndication-5.90.0-x86_64-1
+
+syndication (RSS/Atom parser library)
+
+Syndication is a RSS/Atom parser library supporting RSS (0.9/1.0, 0.91..2.0) and Atom (0.3 and 1.0) feeds. Syndication offers a unified, format-agnostic view on the parsed feed, so that the using application does not need to distinguish between feed formats.
+
+
+syndication (библиотека синтаксического анализа RSS/Atom)
+
+Syndication - это библиотека синтаксического анализа RSS / Atom, поддерживающая каналы RSS (0.9/1.0, 0.91..2.0) и Atom (0.3 и 1.0). Синдикация предлагает унифицированный, не зависящий от формата просмотр проанализированной ленты, так что используемому приложению не нужно различать форматы лент.

@@ -1,0 +1,13 @@
+flac-1.3.3-x86_64-3
+
+flac (Free Lossless Audio Codec)
+
+FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is similar to MP3, but lossless. "Free" means that the specification of the stream format is in the public domain, and that neither the FLAC format nor any of the implemented encoding/decoding methods are covered by any patent. It also means that the sources for libFLAC and libFLAC++ are available under the LGPL and the sources for flac, metaflac, and the plugins are available under the GPL.
+
+FLAC was developed by Josh Coalson.
+
+flac (Бесплатный аудиокодек без потерь)
+
+FLAC расшифровывается как Free Lossless Audio Codec. Если сильно упростить, то FLAC похож на MP3, но без потерь. "Свободный" означает, что спецификация формата потоковой передачи находится в открытом доступе и что ни формат FLAC, ни какие-либо из реализованных методов кодирования/декодирования не защищены никакими патентами. Это также означает, что исходные тексты для libFLAC и libFLAC++ доступны под лицензией LGPL, а исходные тексты для flac, metaflac и плагинов доступны под лицензией GPL.
+
+FLAC был разработан Джошем Коулсоном.

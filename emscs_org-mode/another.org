@@ -1,0 +1,1171 @@
+#+STARTUP: content
+
+* another
+** термин ''linux''
+На самом деле, термин ''linux'' относится только к ядру - центру операционной системы. Ядро ответственно за управление процессором, памятью, жёсткими дисками и периферийными устройствами. Это на самом деле всё, делает что Linux. Он контролирует работу компьютера, и следит за тем, чтобы все программы работали. Все те программы, которые делают Linux пригодным к использованию, разработаны независимыми группами. Ядро и программы связываются вместе различными компаниями и людьми, чтобы организовать операционную систему. Мы называем это дистрибутивом Linux. 
+** убрать кнопки ждущий и спящий режимы в меню Выход из системы в xfce4
+$ xfce4-about -V
+xfce4-about 4.13.4 (Xfce 4.12)
+
+Удаляем, проделанное нужно делать из-под того пользователя у которого хотите убрать режимы не нужные в меню.
+
+Ждущий режим.
+bagas@serv1 ~ $ xfconf-query -c xfce4-session -np '/shutdown/ShowSuspend' -t 'bool' -s 'false'
+Спящий режим.
+bagas@serv1 ~ $ xfconf-query -c xfce4-session -np '/shutdown/ShowHibernate' -t 'bool' -s 'false'
+Гибридный спящий режим.
+bagas@serv1 ~ $  xfconf-query -c xfce4-session -np '/shutdown/ShowHybridSleep' -t 'bool' -s 'false'
+
+Если нужно будит вернуть эти режимы, то false меняем на true.
+** Изменение владельца и группы файла или каталога
+
+Используется следующий шаблон выполнения данной команды chown:
+sudo chown имя_нового_владельца:имя_новой_группы имя_файла_или_директории
+
+Если хотим изменить только группу, то шаблон следующий:
+sudo chown :имя_новой_группы имя_файла_или_директории
+
+Если хотим изменить только владельца, то шаблон следующий:
+sudo chown имя_нового_владельца имя_файла_или_директории
+
+Если рекурсивно:
+sudo chown -R имя_нового_владельца:имя_новой_группы имя_директории
+
+В принципе, ничего сложного.
+
+Чтобы узнать имя текущего пользователя, используется команда:
+whoami
+
+Чтобы узнать в каких группах состоит текущий пользователь:
+groups
+
+Получить список пользователей:
+users
+
+Получить группы конкретного пользователя (вместо user_name ввести имя пользователя):
+groups user_name
+
+Давайте сменим владельца у файла на root:
+sudo chown root file1
+** chown
+chown — Программа изменяющая владельца и/или группу для указанных файлов. В качестве имени владельца/группы берётся первый аргумент, не являющийся опцией. Если задано только имя пользователя (или числовой идентификатор пользователя), то данный пользователь становится владельцем каждого из указанных файлов, а группа этих файлов не изменяется. Если за именем пользователя через двоеточие следует имя группы (или числовой идентификатор группы), без пробелов между ними, то изменяется также и группа файла. Для работы программе требуются права суперпользователя (root).
+
+Примеры:
+Изменить владельца filename на user:
+chown user /var/run/filename
+
+Изменить владельца для myfile на myuser и идентификатор группы на mygroup:
+chown myuser:mygroup myfile
+
+Изменить идентификатор группы для /home на 111:
+chown :111 /home
+
+** Изменение прав доступа на файлы и каталоги
+1. Убираем права для группы на изменение файла:
+chmod g-w file1
+
+2. Убираем права на чтение у группы и всех остальных:
+chmod go-r file1
+
+3. Добавим для группы права на чтение и изменение:
+chmod g+rw file1
+
+4. Изменим рекурсивно права на файлы и директории внутри нужной директории. Отменим, к примеру, все права у остальных пользователей и групп:
+chmod -R o-rwx ~/linuxrussia.com/
+
+Дополнительно.
+
+Вы, наверное, зачастую видели команду:
+
+chmod +x имя_файла.sh
+
+Это значит, что мы даём права на выполнение данного файла как программы всем.
+
+Это аналогично следующим командам:
+
+chmod ugo+x имя_файла.sh  
+chmod a+x имя_файла.sh
+
+Это изменение прав доступа в числовом представлении.
+
+chmod 775 имя_файла
+chmod -R 775 имя_каталога
+
+Если хотим выдать полные права только владельцу файла, а остальным убрать все:
+chmod 700 имя_файла
+** chmod
+    chmod - Изменяет права доступа к файлу
+    chown - Изменяет владельца файла
+    chgrp - Изменяет группу владельца файла
+    chcon - Изменяет контекст безопасности файла (SELinux)
+
+Варианты записи прав с расшифровкой:
+bin	hex	char	права на файл	права на директорию
+000 	0 	--- 	нет 	нет
+001 	1 	--x 	выполнение 	чтение файлов и их свойств
+010 	2 	-w- 	запись 	нет
+011 	3 	-wx 	запись и выполнение 	всё, кроме чтения списка файлов
+100 	4 	r-- 	чтение 	чтение имён файлов
+101 	5 	r-x 	чтение и выполнение 	доступ на чтение
+110 	6 	rw- 	чтение и запись 	чтение имён файлов
+111 	7 	rwx 	все права 	все права
+** Установка загрузчика Grub в MBR для BIOS
+Начнем с самого просто и привычного. Данная инструкция как установить загрузчик Grub подойдет для любого дистрибутива, поскольку команды везде почти одинаковые. Здесь не нужно устанавливать никаких дополнительных пакетов или создавать разделов. Установка Grub на жесткий диск выполняется командой:
+
+sudo grub-install /dev/sda
+
+Или:
+
+sudo grub2-install /dev/sda
+
+Утилиты grub в разных дистрибутивах могут включать двойку, а могут и не включать. Здесь /dev/sda - ваш жесткий диск. Теперь генерируем конфигурационный файл, чтобы автоматически определились установленные операционные системы:
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+Или:
+
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+Готово. По поводу двойки здесь такое же замечание. Если вы хотите установить Grub на флешку в MBR, то тут тоже нет проблем просто примонтируйте флешку и выполните такую команду:
+
+sudo grub-install --root-directory=/mnt/USB/ /dev/sdb
+
+Здесь /mnt/USB - папка, куда была смотирована ваша флешка, а /seb/sdb - сама флешка. Только здесь есть одна проблема, конфигурационный файл придется делать вручную.
+** grub ручками
+GRUB_DISABLE_OS_PROBER - не искать другие операционные системы;
+GRUB_BACKGROUND - адрес картинки для фона, должна находиться в той же папке что и файлы grub;
+GRUB_THEME - устанавливает тему Grub.
+---------------------------------------------------------------------------
+Изменяем цвет меню Grub (цвет шрифта)
+установим две опции color_highlight и color_normal:
+grub_color_highlight — цвет текущего выбранного пункта меню;
+grub_color_normal — цвет остальных пунктов меню.
+
+Цвет задается в виде 2 цветов, разделенных косой чертой — color1/color2:
+color1 — это цвет шрифта;
+color2 — это цвет фона.
+
+В качестве значений необходимо указать название цвета.
+Поддерживаются следующие значения:
+black, blue, brown, cyan, dark-gray, green, light-cyan, light-blue, light-green, light-gray, light-magenta,
+light-red, magenta, red, white, yellow.
+Если в качестве параметра color2 вы используете black, то Grub трактует это, как прозрачный цвет.
+
+например
+не выбранное GRUB_COLOR_NORMAL="light-red/black" - светло-красный/прозразный
+выбанный пункт GRUB_COLOR_HIGHLIGHT="light-green/black" - светло-зеленый/прозрачный
+---------------------------------------------------------------------------------
+Установить картинку в качестве фона можно несколькими способами, опишем два из них.
+Самый простой - скопировать картинку в /boot/grub/ и как всегда не забыть запустить update-grub.
+Второй способ (и он является для GRUB'а более приоритетным) - установить параметр:
+GRUB_BACKGROUND="/path/to/.......picture.jpeg".
+и т.д. ........
+и все работает без Grub Customizer
+** sudo in kde
+1. Войдите под рутом. Введите команду su и пароль рута:
+
+su -
+
+2. Откройте на редактирование sudoers файл (я использую vi, вы можете любой другой редактор):
+
+vi /etc/sudoers
+
+3. Добавьте строчку, которая выделена жирным, заменив sergey на имя вашего пользователя:
+
+root    ALL=(ALL:ALL) ALL
+sergey  ALL=(ALL:ALL) ALL
+
+ Сохрание sudoers файл, выйдите из-под рута.
+** файл памяти
+ Платон Рыжиков
+Потому что одни утилиты показывают как свободную только свободную, а другие всю доступную. Самые точные данные о памяти находятся в файле /proc/meminfo
+** Asia_Petropavlovsk-Kamchatsky
+Asia/Petropavlovsk-Kamchatskiy
+** Часовой пояс
+Изменение часового пояса с помощью команды timedatectl
+Перед изменением часового пояса вам нужно узнать длинное имя часового пояса, которое вы хотите использовать. Соглашение об именовании часовых поясов обычно использует формат «Регион/Город».
+Чтобы получить список всех доступных часовых поясов, вы можете либо перечислить файлы в каталоге /usr/share/zoneinfo, либо использовать команду timedatectl.
+timedatectl list-timezones
+...
+Europe/Oslo
+Europe/Paris
+Europe/Podgorica
+Europe/Prague
+Europe/Riga
+Europe/Moscow
+Europe/Samara
+...
+ 
+Как только вы определите, какой часовой пояс соответствует вашему местоположению, введите в качестве пользователя sudo следующую команду:
+sudo timedatectl set-timezone your_time_zone
+ 
+Например, чтобы изменить часовой пояс системы на Europe/Moscow:
+sudo timedatectl set-timezone Europe/Moscow
+ 
+Запустите команду timedatectl, чтобы проверить изменения:
+timedatectl
+      Local time: Fri 2019-01-25 22:12:14 MSK                                                                                                                 
+  Universal time: Fri 2019-01-25 19:12:14 UTC                                                                                                                 
+        RTC time: Fri 2019-01-25 19:12:14                                                                                                                     
+       Time zone: Europe/Moscow (MSK, +0300)                                                                                                                  
+ Network time on: yes                                                                                                                                         
+NTP synchronized: yes                                                                                                                                         
+ RTC in local TZ: no
+** Как_сменить_часовой_пояс
+sudo cp /usr/share/zoneinfo/Asia/Kamchatka /etc/localtime сменить часовой пояс.txt
+** Запуск Dolphin for root
+gksu dolphin
+kdesu dolphin
+** Thunar запуск от Root
+Настраиваем автомонтирование разделов и добавляем строку в Thunar запуск от Root.
+• ﻿Автомонтирование разделов и Thunar от RootАвтомонтирование разделов.Установить пакетsudo apt-get install ntfs-3g ntfs-configНеобходимы для работы с разделами NTFSАвтомонтирование разделов настроить программой Диски.
+﻿Добавляем строку в Thunar запуск от Root
+﻿Если не установлена, то установить утилиту  gksu - sudo apt install gksu
+﻿В Thunar кликаем Правка-Особые действия-+(добавить)
+﻿1 для запуска самого Thunar от root во вкладке Основное Имя пишем - Открыть каталог от администратора. Описание тоже - Открыть каталог с правами администратораКоманда gksu thunar %fВо вкладке Условия появления отмечаем Каталоги
+﻿2 для редактирования конфигов во вкладке Основное Имя пишем - Редактировать от администратора. Описание тоже - Редактировать от администратора.Команда gksu gedit %fИли вместо  gedit (его нужно до установить) вписать любой другой текстовой редактор, по умолчанию в Дебиане это Mousepad. Команда gksu mousepad %f  Во вкладке Условия появления отмечаем Текстовые файлы и Другие файлы.
+﻿Теперь через правую клавишу мыши можно открыть конфиг для правки с правами администратора.                            
+** Контестное меню Thunar
+В Thunar кликаем Правка-Особые действия-+(добавить)
+1 Для запуска самого Thunar от root во вкладке Основное Имя пишем -
+Открыть каталог от администратора. Описание не обязательно, можно - Открыть каталог с
+правами администратора.
+Прописываем там команду pkexec thunar %f
+Во вкладке Условия появления отмечаем Каталоги
+2 Для редактирования конфигов во вкладке Основное Имя пишем -
+Редактировать от администратора. Описание можно тоже - Редактировать от администратора.
+Прописываем там команду pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY gedit %f
+Или вместо gedit (его нужно до установить по желанию) вписать любой другой текстовой редактор, по
+умолчанию в Дебиане это Mousepad.
+В этом случае команда pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY mousepad %f
+Во вкладке Условия появления отмечаем Текстовые файлы и Другие файлы.
+Теперь через правую клавишу мыши можно открыть конфиг для правки с правами администратора.
+4 Еще полезная иногда команда для особых действий -
+"Копировать полное имя файла". Все аналогично.
+Нужен пакет
+sudo apt install xcel
+
+Команда выглядит так :
+echo -n %f | xsel -b -i
+Во вкладке "Условия появления" отмечаем ВСЕ пункты.
+Правой клавишей мышки на файл и его полное имя от корня - в буфере объмена
+5 Копировать в...
+команда-  cp -r %F $(zenity --file-selection --directory)
+6 Переместить в...
+команда mv %F $(zenity --file-selection --directory)
+7 Поиск файлов
+команда /usr/bin/mate-search-tool
+нужна устанвленная программа mate-search-tool(sudo apt-get install mate-search-tool) 
+в archlinux /usr/bin/catfish --path=%f
+Для использования этого действия необходим catfish
+8 Сохранение списка файлов (с маской) в текстовый файл
+команда - find . -name "*.mp4" -type f > list.txt
+** меню gnome shell
+Gnome-shell генерирует меню из /usr/share/applications и ~/.local/share/applications ("иконки" пользователя).
+Но фишка в том, что удалять что-то из /usr/share/applications не поможет - при следующем обновлении всё может восстановиться (это системные файлы).
+Вам требуется нужные .desktop копировать в ~/.local/share/applications и отредактировать, добавив:
+NoDisplay=true
+Кроме того, подобные вопросы лучше задавать на Linux.org.ru. Я там бываю чаще, а сюда зашёл первый раз за полгода. Если что - заходи туда и кастуй меня (merhalak)
+** PCManFM
+1. Создаём каталог (если вы не сделали это ранее) ~/.local/share/file-manager/actions/
+
+mkdir -pv ~/.local/share/file-manager/actions/
+
+2. Переходим в этот каталог и создаём файл:
+
+open-as-root.desktop
+
+3. Вставляем следующий текст:
+
+[Desktop Entry]
+Type=Action
+Profiles=profile-zero;profile-1;profile-2;
+Name[en_US]=Open As Root
+Name[en]=Open As Root
+Name[C]=Open As Root
+Tooltip[en_US]=Open As Root
+Tooltip[en]=Open As Root
+Tooltip[C]=Open As Root
+ToolbarLabel[en_US]=Open As Root
+ToolbarLabel[en]=Open As Root
+ToolbarLabel[C]=Open As Root
+
+Icon[en_US]=stop
+Icon[en]=stop
+Icon[C]=stop
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=/usr/bin/gksu /usr/bin/pcmanfm %u
+Name[en_US]=Open Folder As Root
+Name[en]=Open Folder As Root
+Name[C]=Open Folder As Root
+
+[X-Action-Profile profile-1]
+MimeTypes=all/allfiles;!text/plain;
+Exec=/usr/bin/gksu /usr/bin/pcmanfm %d
+Name[en_US]=Open Folder As Root
+Name[en]=Open Folder As Root
+Name[C]=Open Folder As Root
+
+[X-Action-Profile profile-2]
+MimeTypes=text/plain;
+Exec=/usr/bin/gksu /usr/bin/leafpad %f
+Name[en_US]=Edit File As Root
+Name[en]=Edit File As Root
+Name[C]=Edit File As Root 
+
+ Сохраняем файл, перезапускаем pcmanfm ( выходим-заходим из сессии или перезагружаемся) и проверяем новый пункт в контекстном меню pcmanfm.
+** Xorg_XFCE_Gentoo
+Установка Xorg
+	
+emerge --ask x11-base/xorg-server
+
+Установка XFCE
+
+emerge --ask xfce-base/xfce4-meta xfce-extra/xfce4-notifyd
+
+Мы явно про­сим ука­зать xfce4-notifyd, по­то­му что в про­тив­ном слу­чае virtual/notification-daemon ста­нет ис­поль­зо­вать x11-misc/notification-daemon от GNOME, а нам ни­че­го гномье­го не надо! По­сле окон­ча­ния уста­нов­ки мож­но убрать этот па­кет из вы­бран­ных:
+
+emerge --ask --deselect=y xfce-extra/xfce4-notifyd
+
+Об­но­вим пе­ре­мен­ные окру­же­ния:
+
+env-update && source /etc/profile
+
+** Install_Gentoo_English_script
+wget goo.gl/5Y2Gj -O install.sh && sh install.sh
+** Programm_Gentoo
+Мож­но уста­но­вить несколь­ко од­ним ма­хом
+
+emerge --ask xfce-extra/xfce4-mixer xfce-extra/xfce4-volumed \
+xfce-extra/xfce4-power-manager xfce-extra/xfce4-battery-plugin \
+x11-terms/xfce4-terminal xfce-extra/thunar-volman \
+xfce-extra/thunar-archive-plugin xfce-base/xfce4-appfinder \
+app-editors/mousepad xfce4-xkb-plugin
+
+Это при­го­дит­ся боль­шин­ству. По по­ряд­ку: ре­гу­ля­тор гром­ко­сти, управ­ле­ние гром­ко­стью с кла­ви­а­ту­ры, кон­троль энер­го­по­треб­ле­ния и яр­ко­сти (если но­ут­бук), по­каз па­ра­мет­ров ба­та­реи (про­цен­ты, остав­ше­е­ся вре­мя и т.п.), гра­фи­че­ский тер­ми­нал, ме­не­джер под­клю­ча­е­мых CD и USB, ар­хи­ва­тор для обо­зре­ва­те­ля фай­лов thunar, быст­рый вы­зов про­грамм по Alt+F2 и Alt+F3, лёг­кий гра­фи­че­ский блок­нот (тек­сто­вый ре­дак­тор), ин­ди­ка­тор те­ку­щей рас­клад­ки. Бо­лее об­шир­ный спи­сок смот­ри­те на wiki.gentoo.org/wiki/Xfce.
+** inet
+order += "ethernet enp1s0"
+ethernet enp1s0 {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+** mkdir_folder_time
+mkdir 2020-02-27
+создать папку с именем числа и даты
+mkdir $(date "+%Y-%m-%d")
+** display manager
+slim=Независимый от рабочей среды лёгкий графический экранный менеджер
+KDM=kde
+GDM (Gnome Display Manager)
+
+Графические
+
+    GDM — экранный менеджер GNOME.
+
+    https://wiki.gnome.org/Projects/GDM || gdm
+
+    LightDM — независимый от среды рабочего стола экранный менеджер, основанный
+на WebKit.
+
+    https://www.freedesktop.org/wiki/Software/LightDM/ || lightdm
+
+    LXDM — экранный менеджер LXDE. Может быть использован отдельно от среды
+рабочего стола LXDE.
+
+    https://sourceforge.net/projects/lxdm/ || lxdm
+
+    SDDM — экранный менеджер, основанный на QML. Продолжение KDE4 kdm,
+рекомендуется для Plasma 5 и LXQt.
+
+    https://github.com/sddm/sddm || sddm
+
+    XDM — экранный менеджер с поддержкой XDMCP.
+
+    Консольные
+
+    CDM — ультра-минималистичный, но полностью функциональный менеджер входа,
+написанный на Bash.
+
+    https://github.com/ghost1227/cdm || cdm-gitAUR
+
+    Console TDM — расширение для xinit, также написанное на Bash.
+
+    https://github.com/dopsi/console-tdm || console-tdmAUR
+
+    Nodm — минималистичный экранный менеджер для автоматического входа.
+
+    https://github.com/spanezz/nodm || nodm
+
+    Ly — экспериментальный менеджер входа.
+
+    https://github.com/cylgom/ly || ly-gitAUR
+** ТОП вопросов о Linux «В чем разница»
+1. В чем разница между символической и жесткой ссылкой
+
+Как вы знаете команда ln позволяет создавать ссылки в Linux. Она может создавать два типа ссылок - обычные (жесткие) и символические если передать опцию -s. Обе они указывают на файл. Разница лишь в виде этого указателя.
+
+Символическая ссылка указывает на файл по имени. В файле ссылки устанавливается специальный бит, с помощью которого система определяет, что этот файл нужно открывать прочитав имя и запросив нужный файл. Вы можете менять содержимое файла, но не его имя. Если изменить имя, ссылка станет нерабочей, ведь она будет указывать на имя файла которого уже не существует. Такой вид ссылок можно сравнить с ярлыками Windows, но это сравнение условное.
+
+Жесткая ссылка основана на файловой системе. Она указывает на место на диске, где расположены данные файла (номер иноды). Вы можете полностью изменять файл включая его имя. По сути во время создания файла создается одна ссылка не него, если вы создаете жесткую ссылку с помощью ln, то их становится уже две. И даже если вы удалите первую, вторая все равно будет указывать на тот же файл, потому что эти ссылки равноправны и место на диске может быть очищено только если ссылок не осталось вовсе.
+
+2. В чем разница между adduser и useradd
+
+Обе команды создают нового пользователя в системе. Но они очень сильно отличаются.
+
+Adduser - утилита для добавления пользователей и групп с систему. Программа учитывает политики дистрибутива по желаемому UID и GID, создает домашний каталог, копирует туда файлы по умолчанию и запускает специальные сценарии.
+
+Useradd- это низкоуровневая утилита для добавления пользователей. Создается только пользователь без каких либо дополнительных настроек, вам придется все делать вручную в том числе создавать домашний каталог.
+
+Рекомендуется использовать adduser.
+
+3. В чем разница между /etc/init и /etc/init.d
+
+Папка /etc/init.d содержит скрипты, используемые системой инициализации SysVinit. Это стандартная система инициализации для многих дистрибутивов Linux. Обычно, это сценарии оболочки, используемые для запуска, остановки и перезапуска сервисов.
+
+Папка /etc/init содержит файлы конфигурации системы инициализации Upstart используемой в ubuntu. Поскольку Ubuntu постепенно переходит на Upstart, в системе есть и те и другие скрипты, многие /etc/init.d скрипты выполняются как слой совместимости с Upstart
+
+4. В чем разница между /bin, /sbin, /usr/bin, /usr/sbin, /usr/local/bin, /usr/local/sbin
+
+/bin - каталог для бинарных файлов, которые используются системой еще до того как cмонтирован раздел /usr на самом раннем этапе загрузки. Также здесь содержаться те команды, которые вы используете при запуске в одно-пользовательском режиме и режиме восстановления.
+
+/sbin - то же самое, только для бинарных файлов, для выполнения которых требуются права суперпользователя.
+
+/usr/bin - для обще-системных бинарных файлов
+
+/usr/sbin - то же самое, только для запуска которых нужны права суперпользователя.
+
+/usr/local/bin и /usr/local/sbin - аналогично двум предыдущим, только для ваших собственных сценариев и программ, которые не устанавливаются с помощью менеджера пакетов.
+
+5. В чем разница между sudo su, sudo -i, sudo /bin/bash
+
+Команда su позволяет изменить текущего пользователя терминала на другого. Команда sudo выполняет команду от имени root пользователя. Теперь разберем сам вопрос.
+
+sudo su - выполняет команду su от имени суперпользователя. Таким образом сначала используется sudo чтобы получить права суперпользователя, а затем пользователь меняется на root с помощью su. При этом вы останетесь в той же директории потому что выполняется ваш .bashrc. А также .profile пользователя root поэтому вы окажетесь в окружении root.
+
+sudo -i - похожая команда, опция -i указывает утилите что нужно переключится в консоль от имени суперпользователя. На этот раз вы уже окажетесь в домашней папке root, и будет выполнен его .bashrc и .profile.
+
+sudo /bin/bash - запускает еще одну оболочку bash от имени суперпользователя. Файлы конфигурации не читаются, но выполняется только .bashrc вашего пользователя. Вы не окажетесь в окружении root, а просто останетесь в своем окружении с правами суперпользователя.
+
+6. В чем разница между терминами консоль, терминал, командная строка
+
+Понятия консоль и терминал тесно связанны между собой. Первоначально под ними подразумевалось оборудование с помощью которого можно взаимодействовать с компьютером. Это было устройство, очень похожее на телетайп или печатную машинку.
+
+В терминологии UNIX, терминал - это любой файл устройства, который реализует ряд специальных команд для чтения и записи. Под эмуляторами терминалов подразумеваются программы, обеспечивающие доступ к этим Unix терминалам через некоторую прослойку ядра. Это могут быть такие программы как Xterm, Terminator, программы обеспечивающие изоляцию между приложениями - screen, tmux, программы удаленного доступа - ssh и т д.
+
+Консоль - это как правило терминал в физическом смысле. Главный терминал, реализуемый ядром, находящийся непосредственно на машине. В Linux консолью называют несколько терминалов TTY, между которыми можно переключатся с помощью сочетаний клавиш Ctrl+Alt+F(n)
+
+Командная строка - это интерфейс, где пользователь вводит свою команду и нажимает Enter чтобы ее выполнить.
+
+7. В чем разница между dpkg и apt-get
+
+dpkg - это утилита для установки deb пакетов. То есть при выполнении команды dpkg -i file.deb, этот пакет будет установлен, если ему нужны какие либо зависимости, утилита уведомит вас об этом. Но сами зависимости установлены не будут и пакет не будет установлен если зависимости не разрешены.
+
+apt-get - это система управления пакетами, для дистрибутивов на базе Debian. Вы можете очень просто устанавливать, обновлять и удалять пакеты.
+
+Здесь есть еще один инструмент - gdebi, это как бы среднее звено между dpkg и apt-get. Во время установки deb пакета утилита может разрешать и сама устанавливать зависимости.
+
+8. В чем разница между service и /etc/init.d
+
+Как мы уже говорили, /etc/init.d - содержит скрипты инициализации SysVinit. Это старый способ запускать сервисы. Эти сервисы запускаются в определенной последовательности и не могут быть настроены более сложные зависимости.
+
+Upstart была разработана с целью заменить все /etc/init.d скрпты на более совершенные конфигурационные файлы /etc/init.
+
+service позволяет плавно перейти от скриптов /etc/init.d к конфигурационным файлам upstart. Эта утилита позволяет работать с обоими типами сервисов.
+
+9. В чем разница между #!/bin/bash и #!/bin/sh
+
+bash и sh это две разные оболочки. Bash - более новая и функциональная, с расширенными возможностями синтаксиса. Большинство команд работают одинаково, но они разные.
+
+В современных системах чаще всего /bin/sh, это всего лишь ссылка на /bin/bash.
+
+10. В чем разница между пакетами i386 и amd64
+
+Эти пакеты собраны для разных архитектур. i386 - для 32 битной версии, а amd64 (x86_64) - для 64 разрядной версии процессора Intel или AMD
+
+Intel 80386, еще известный как i386, это 32 битный процессор выпущенный компанией Intel в 1985 году. Эта архитектура еще называется x86, IA-32 или просто i386.
+
+x86-64 - расширение набора инструкций для x86. Здесь поддерживаются гораздо большее адресное пространство, чем в x86, что позволяет программистам намного легче работать с большим количеством данных.
+
+Даже если у вас процессор Intel, вы будете использовать amd64 пакеты для установки 64 битной системы, здесь используются те же наборы инструкций, это стандарт.
+
+11. В чем разница между killall и pkill
+
+Обе эти утилиты делают почти то же самое - уничтожают процессы, но по разному.
+
+pkill находит процесс по разным параметрам, например pid, ppid, cmd, uid, и посылает ему сигнал завершения.
+
+killall находит процесс по имени и завершает все совпавшие процессы, есть режим регулярных выражений и интерактивный режим, которых нет в pkill.
+
+12. В чем разница между PGP и GPG
+
+PGP - формат ключей и зашифрованных сообщений, оформленный и стандартизированный как OpenPGP. А также программное обеспечение Pretty Good Privacy, для шифрования, написанное Филом Зумерманом и сейчас принадлежащее компании Symantec.
+
+GPG- независимая программная реализация стандарта OpenPGP, вы можете использовать ее для обмена сообщениями с людьми, даже теми кто использует ПО от Symantec.
+
+13. В чем разница между режимом сна и гибернации
+
+В режиме сна ваш компьютер не отключается полностью. Система оставляет все периферийные устройства в режиме энергосбережения. Если батарея разрядится или компьютер отключится по каким либо другим причинам текущая сессия и настройки будут потеряны
+
+Гибернация сохраняет состояние вашего компьютера на жесткий диск и полностью выключает. При включении сохраненное состояние восстанавливается.
+
+14 В чем разница между Ctrl+C, Ctrl+Z, Ctrl+D
+
+Сочетание клавиш Ctrl+C (intr) отправляет сигнал SIGINT приложению. Обычно после этого приложение завершает свою деятельность и закрывается.
+
+Ctrl+Z или susp, отправляет сигнал SIGSTP, приложение приостанавливает свою деятельность и сворачивается в фоновый режим. Потом его можно восстановить с помощью команды fg. Посмотреть свернутые процессы можно командой jobs.
+
+Ctrl+D - полностью завершает сеанс терминала.
+
+15. В чем разница между gksu и pkexec
+
+Обе программы позволяют выполнять графические приложения от имени супер пользователя.
+
+Pkexec работает на основе PolicyKit. PolicyKit более настраиваемая, показывает полный путь к программе, и позволяет использовать политики для настройки поведения программы, например настройки запроса пароля и т д.
+** rangerinstallprog
+1.w3m
+2.atool
+3.mediainfo
+4.ffmpegthumbnailer
+** scrot(better)
+scrot 'scrot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~;'
+scrot 'scrot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f ~ ; viewnior ~/$f' -  print
+** scrot_key_screen
+bash -c "cd '/home/jenit/scrot/'; scrot"
+** Запуск консольных программ горячими клавишами(с клавиатуры)
+название терминала+ -e+название программы-пример:
+xfce4-terminal(konsole) -e mc(mocp)
+** выпадающий терминал в xfce
+xfce4-terminal --drop-down  -  F12
+** html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/> 
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</body>
+</html>
+** html_teg
+<!DOCTYPE>
+   <body>
+   <br>
+   <h1>-<h6>
+   <head>
+   <hr>
+   <html>
+   <img>
+   <li>
+   <ol>
+   <ul>
+   <title>
+   <meta>
+   <p>
+
+   <em> или <i>
+   <!-- -->
+   <embed>
+   <div>
+   <a>
+   <address>
+   <iframe>
+   <link>
+   <s>
+   <span>
+   <style>
+   <sub>
+   <sup>
+   <table>
+   <tr>
+   <td>
+   <th>
+** проба_оборудования
+sudo -E hw-probe -all -upload  or:
+sudo hw-probe
+** создание переменной в bashrc
+Добавление каталога в ваш $PATH 
+
+Есть ситуации, когда вы можете захотеть добавить другие каталоги в $PATH переменную. Например, некоторые программы могут быть установлены в разных местах, или вы можете захотеть иметь выделенный каталог для ваших личных записей, но сможете запускать их без указания абсолютного пути к исполняемым файлам. Для этого вам просто нужно добавить каталог в свой $PATH .
+
+Допустим, у вас есть каталог с именем, bin расположенный в вашем домашнем каталоге, в котором вы храните свои сценарии оболочки. Чтобы добавить каталог к ​​вашему $PATH типу в:
+
+export PATH="$HOME/bin:$PATH" 
+
+Команда export экспортирует измененную переменную в дочерние среды процессов оболочки.
+
+Теперь вы можете запускать свои скрипты, просто набрав имя исполняемого скрипта без указания полного пути к исполняемому файлу.
+
+Однако это изменение носит временный характер и действует только в текущем сеансе оболочки.
+
+Чтобы сделать изменение постоянным, вам нужно определить $PATH переменную в файлах конфигурации оболочки. В большинстве дистрибутивов Linux при запуске нового сеанса переменные среды считываются из следующих файлов:
+
+    Конфигурационные файлы глобальной оболочки, такие как /etc/environment и /etc/profile . Используйте этот файл, если вы хотите, чтобы новый каталог был добавлен всем системным пользователям $PATH .
+
+    Конфигурационные файлы для отдельных пользовательских оболочек. Например, если вы используете Bash, вы можете установить $PATH переменную в ~/.bashrc файле, а если вы используете Zsh - имя файла ~/.zshrc .
+
+В этом примере мы установим переменную в ~/.bashrc файле. Откройте файл в текстовом редакторе и добавьте в конце следующую строку:
+
+nano ~/.bashrc 
+
+~ / .Bashrc
+
+export PATH="$HOME/bin:$PATH"
+ 
+
+Сохраните файл и загрузите новый $PATH в текущий сеанс оболочки, используя source команду:
+
+source ~/.bashrc 
+
+Чтобы подтвердить, что каталог был успешно добавлен, напечатайте его значение $PATH , набрав:
+echo $PATH 
+
+or:
+
+export PATH=$PATH:/opt/local/bin
+look: 
+echo $PATH 
+** bashrc
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)
+#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+#alias ll='ls -l'
+alias la='ls -A'
+#alias l='ls -CF'
+alias l='ls --color=auto'
+#alias r=ranger
+alias v=vim
+#alias n='nvim %F'
+alias t=telegram
+alias p=paromplayer
+alias w=water.sh
+alias cr=rsync.sh
+alias ch=jenit_home.sh
+#alias sc=screenrec.sh
+alias e='emacs -nw'
+export EDITOR=emacs vim nano sudo
+export PATH=$PATH:/home/jenit/bin
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+** vimrc
+syntax on "Включить подсветку синтаксиса
+
+"set nu "Включаем нумерацию строк
+set mousehide "Спрятать курсор мыши когда набираем текст
+set mouse=a "Включить поддержку мыши
+set termencoding=utf-8 "Кодировка терминала
+set novisualbell "Не мигать 
+set t_vb= "Не пищать! (Опции 'не портить текст', к сожалению, нету)
+" Удобное поведение backspace
+set backspace=indent,eol,start whichwrap+=<,>,[,]
+" Вырубаем черточки на табах
+set showtabline=1
+
+" Переносим на другую строчку, разрываем строки
+set wrap
+set linebreak
+
+" Вырубаем .swp и ~ (резервные) файлы
+set nobackup
+set noswapfile
+set encoding=utf-8 " Кодировка файлов по умолчанию
+set fileencodings=utf8,cp1251
+
+set clipboard=unnamed
+set ruler
+
+set hidden
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
+
+" Выключаем звук в Vim
+set visualbell t_vb=
+
+set clipboard=unnamedplus     
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" https://github.com/scrooloose/nerdtree
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"autocmd vimenter * NERDTree.
+map <C-n> :NERDTreeToggle<CR>
+** nanors
+#set speller "aspell -c" #использовать словарь для проверки 
+#set nohelp       #не показывать подсказки
+#set tempfile    #сохраняет без вопросов (опасно)
+set softwrap     #переносить длинные строки 
+set atblanks     #заканчивает строку пробелом 
+set smooth       #построчная прокрутка 
+#set undo        #отмена действия alt+U и alt+E (фигня)
+set linenumbers #номера строки 
+set mouse        #включает мышь 
+set positionlog  #запоминает позицию курсора
+
+#set fill -85   #делает отступ справа ctrl+j (неудобно)
+#set tabsize 10 #тоже что-то делает (непонятно) 
+
+
+#set backup      #делает бекап (полезно)
+#set backupdir "/home/oleg/.nano_back/" #Не использовать ~ 
+
+
+#set titlecolor brightyellow,blue #верхняя шапочка синяя с желтым
+set keycolor blue  #снизу экрана синии комбинации клавиш
+#set statuscolor brightblack,black #тёмный статус бар снизу
+set numbercolor yellow #цвет номеов строк
+
+#настройки автовыделения синтакиса для набора текста (для всех файлов)
+
+syntax "vse" "$" 
+
+# для txt файлов заменить "$" на "\.txt$" 
+#цвет кириллицы
+color cyan     "\<[А-Я,а-я,]{1,}\>"
+color red     "[[:space:]]+[[:space:]]+[[:space:]]+[А-Я,]"
+#цвет чисел  
+color yellow   "\<[0-9,]{1,}\>" 
+#цвет латиницы     
+color green    "\<[A-Z,a-z,]{1,}\>" 
+
+#сайт с параметрами nanorc
+# https://www.nano-editor.org/dist/v2.9/nanorc.5.html
+** zshrc
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/jenit/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="af-magic"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='vim'
+export EDITOR=nano nano sudo
+export PATH=$PATH:/home/jenit/bin
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias cdii='cd `ls -a | peco`'
+alias cdi='cd `ls | peco`'
+alias w=water.sh
+alias v=vim
+alias p=paromplayer
+alias sc=screenrec.sh
+alias e='emacs -nw'
+** zshrc.pre-oh-my-zsh
+#!/usr/bin/zsh
+
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx &> /dev/null
+# [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
+
+# zmodload zsh/zprof
+
+export PATH=$HOME/.bin:$HOME/.config/rofi/scripts:$HOME/.local/bin:/usr/local/bin:$PATH
+
+export HISTFILE=~/.zhistory
+export HISTSIZE=3000
+export SAVEHIST=3000
+
+# ### load zgen
+# ## git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+# source "${HOME}/.zgen/zgen.zsh"
+# if ! zgen saved; then
+#   echo "Creating a zgen save"
+#   zgen oh-my-zsh
+#   # plugins
+#   zgen load zsh-users/zsh-autosuggestions
+#   # zgen load zsh-users/zsh-syntax-highlighting
+#   # zgen load zsh-users/zsh-history-substring-search
+#   # zgen load zsh-users/zsh-completions src
+#   zgen load zdharma/fast-syntax-highlighting
+#   # theme
+#   zgen oh-my-zsh themes/af-magic
+#   zgen save
+# fi
+
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+# ohmyzsh
+export ZSH="/usr/share/oh-my-zsh"
+ZSH_THEME="af-magic"
+DISABLE_AUTO_UPDATE="true"
+plugins=(git npm vagrant composer sudo web-search)
+ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+[[ ! -d $ZSH_CACHE_DIR ]] && mkdir -p $ZSH_CACHE_DIR
+source $ZSH/oh-my-zsh.sh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white"
+
+# fzf & fd
+[[ -e "/usr/share/fzf/fzf-extras.zsh" ]] && source /usr/share/fzf/fzf-extras.zsh
+export FZF_DEFAULT_COMMAND="fd --type file --color=always --follow --hidden --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# export FZF_DEFAULT_OPTS="--ansi"
+export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --border --preview 'file {}' --preview-window down:1"
+export FZF_COMPLETION_TRIGGER="~~"
+
+export TERM="rxvt-256color"
+export EDITOR="$([[ -n $DISPLAY && $(command -v micro) ]] && echo 'micro' || echo 'nano')"
+export BROWSER="chromium"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+export XDG_CONFIG_HOME="$HOME/.config"
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+export MANPAGER="sh -c 'sed -e s/.\\\\x08//g | bat -l man -p'"
+
+[[ -f ~/.env ]] && . ~/.env
+[[ -f ~/.alias_zsh ]] && . ~/.alias_zsh
+
+export PATH=$HOME/.gem/ruby/2.7.0/bin:$PATH
+# export PATH="$PATH:`yarn global bin`"
+
+# export GOPATH=$HOME/.go
+# export GOBIN=$GOPATH/bin
+# export PATH="$PATH:$GOBIN"
+
+export NVM_DIR="$HOME/.config/nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Lazy load
+if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+  NODE_GLOBALS=(`find $NVM_DIR/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
+  NODE_GLOBALS+=("node")
+  NODE_GLOBALS+=("nvm")
+  # Lazy-loading nvm + npm on node globals
+  load_nvm () {
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  }
+  # Making node global trigger the lazy loading
+  for cmd in "${NODE_GLOBALS[@]}"; do
+    eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
+  done
+fi
+
+# zprof
+
+** Xresources
+! XTerm 
+!==============================================================================
+!Кириллица
+XTerm*utf8Title: true
+XTerm*faceName: Droid Sans Mono
+XTerm*faceSize: 13
+xterm*bolfFont: 
+xterm*scrollBar:        false
+xterm*geometry:         80x50
+xterm*eightBitInput:    false
+xterm*metaSendsEscape:  true
+xterm*colorBDMode:      true
+xterm*boldMode:         on
+xterm*alwaysBoldMode:   false
+xterm*dynamicColors:    on
+xterm*colorMode:        on
+xterm*saveLines:        10000
+xterm*visualBell:       false
+ 
+!==============================================================================
+! Цвета 
+!==============================================================================
+xterm*colorBD:     #e6d51d
+xterm*background:  #002B36
+xterm*foreground:  #b4b4b4
+! Чёрный
+xterm*color0:      #000000
+xterm*color8:      #555753
+! Красный
+xterm*color1:      #b6212d
+xterm*color9:      #ff6565
+! Зелёный
+xterm*color2:      #4c8d00
+xterm*color10:     #6bbe1a
+! Жёлтый
+xterm*color3:      #ff8040
+xterm*color11:     #e6d51d
+! Синий
+xterm*color4:      #0086d2
+xterm*color12:     #00d2ff
+! Маджента
+xterm*color5:      #963c59
+xterm*color13:     #d3649f
+! Циановый
+xterm*color6:      #105952
+xterm*color14:     #177f75
+! Белый
+xterm*color7:      #cdcaa9
+xterm*color15:     #ffffff
+** PATH_bash
+Для того, чтобы посмотреть содержимое переменной PATH в Linux, выполните в терминале команду:
+
+echo $PATH
+
+На экране появится перечень папок, разделённых двоеточием. Алгоритм поиска пути к требуемой программе при её запуске довольно прост. Сначала ОС ищет исполняемый файл с заданным именем в текущей папке. Если находит, запускает на выполнение, если нет, проверяет каталоги, перечисленные в переменной PATH, в установленном там порядке. Таким образом, добавив свои папки к содержимому этой переменной, вы добавляете новые места размещения исполняемых и связанных с ними файлов.
+
+Для того, чтобы добавить новый путь к переменной PATH, можно воспользоваться командой export. Например, давайте добавим к значению переменной PATH папку/opt/local/bin. Для того, чтобы не перезаписать имеющееся значение переменной PATH новым, нужно именно добавить (дописать) это новое значение к уже имеющемуся, не забыв о разделителе-двоеточии:
+
+export PATH=$PATH:/opt/local/bin
+
+Теперь мы можем убедиться, что в переменной PATH содержится также и имя этой, добавленной нами, папки:
+
+echo $PATH
+
+Вы уже знаете как в Linux добавить имя требуемой папки в переменную PATH, но есть одна проблема — после перезагрузки компьютера или открытия нового сеанса терминала все изменения пропадут, ваша переменная PATH будет иметь то же значение, что и раньше. Для того, чтобы этого не произошло, нужно закрепить новое текущее значение переменной PATH в конфигурационном системном файле.
+
+В ОС Ubuntu значение переменной PATH содержится в файле /etc/environment, в некоторых других дистрибутивах её также можно найти и в файле /etc/profile. Вы можете открыть файл /etc/environment и вручную дописать туда нужное значение:
+
+sudo vi /etc/environment
+
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/local/bin"
+
+Можно поступить и иначе. Содержимое файла .bashrc выполняется при каждом запуске оболочки Bash. Если добавить в конец файла команду export, то для каждой загружаемой оболочки будет автоматически выполняться добавление имени требуемой папки в переменную PATH, но только для текущего пользователя:
+
+vi ~/.bashrc
+** py
+ #!/usr/bin/python3
+ # -*- coding: utf-8 -*-
+** emacs
+ (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+  '(custom-enabled-themes (quote (tango-dark)))
+   '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
+  (column-number-mode)
+  (fset 'yes-or-no-p 'y-or-n-p)
+  (ido-mode)
+  (setq frame-title-format "Emacs")
+  (custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 119 :width normal)))))
+
+
+(load-theme 'tango-dark)
+(setq frame-title-format "Emacs")
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+;;(set-default 'cursor-type 'hbar)
+(column-number-mode)
+(fset 'yes-or-no-p 'y-or-n-p)
+(ido-mode)

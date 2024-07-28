@@ -1,0 +1,11 @@
+kbookmarks-5.90.0-x86_64-1
+
+kbookmarks (Bookmarks management library)
+
+KBookmarks lets you access and manipulate bookmarks stored using the XBEL format. The most common use for bookmarks is web browsers, but this can also be useful in any application where local files or URLs can be saved as bookmarks.
+
+For more information on the XBEL format, see: khttp://pyxml.sourceforge.net/topics/xbel/
+
+kbookmarks (Библиотека управления закладками)
+
+KBookmarks позволяет получать доступ к закладкам, сохраненным в формате XBEL, и управлять ими. Закладки чаще всего используются в веб-браузерах, но это также может быть полезно в любом приложении, где локальные файлы или URL-адреса могут быть сохранены в качестве закладок.

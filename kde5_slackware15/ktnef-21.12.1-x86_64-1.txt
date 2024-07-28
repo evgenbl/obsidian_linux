@@ -1,0 +1,11 @@
+ktnef-21.12.1-x86_64-1
+
+ktnef (API for the handling of TNEF data)
+
+The ktnef library contains an API for the handling of TNEF data. The API permits access to the actual attachments, the message properties (TNEF/MAPI), and allows one to view/extract message formatted text in Rich Text Format format.
+
+ktnef (API для обработки данных TNEF)
+
+Библиотека ktnef содержит API для обработки данных TNEF. API предоставляет доступ к фактическим вложениям, свойствам сообщения (/MAP) и позволяет просматривать / извлекать форматированный текст сообщения в формате Rich Text Format.
+
+Rich Text Format, RTF (англ. rich — богатый; «формат обогащённого текста») — проприетарный межплатформенный формат хранения текстовых документов с форматированием, предложенный группами программистов, основавшими компании Microsoft и Adobe, как метатеговый формат для редактора Word в 1982 году. С тех пор спецификация формата несколько раз изменялась. После разрыва отношений с Microsoft компания Adobe продолжила самостоятельное развитие метатэгового языка, заложенного в основу RTF, создав в 1985 году язык PostScript.

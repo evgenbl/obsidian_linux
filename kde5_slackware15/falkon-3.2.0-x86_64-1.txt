@@ -1,0 +1,10 @@
+falkon-3.2.0-x86_64-1
+
+falkon (KDE web browser)
+
+Falkon is a QtWebEngine based cross-platform web browser.
+
+
+falcon (веб-браузер KDE)
+
+Falcon - это кроссплатформенный веб-браузер на базе QtWebEngine

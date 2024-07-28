@@ -1,0 +1,12 @@
+ksh93-1.0_20220114_e569f23e-x86_64-1
+
+ksh93 (KornShell 93u+m)
+
+The KornShell language and interactive shell were designed byDavid G. Korn at AT&T Bell Laboratories. Besides offering a powerful interactive shell, it also offers a robust programming language with such features as associative arrays and built in integer math operations. ksh is an excellent choice for system administration scripts and for everyday interactive use.
+
+ksh93 (KornShell 93u+m)
+
+Язык программирования KornShell и интерактивная оболочка были разработаны Дэвидом Г. Корном в AT&T Bell Laboratories. Помимо мощной интерактивной оболочки, он также предлагает надежный язык программирования с такими функциями, как ассоциативные массивы и встроенные математические операции с целыми числами. ksh - отличный выбор для сценариев системного администрирования и повседневного интерактивного использования.
+
+The site for KornShell 93u+m is https://github.com/ksh93/ksh
+

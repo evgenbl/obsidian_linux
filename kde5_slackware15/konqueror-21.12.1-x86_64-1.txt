@@ -1,0 +1,12 @@
+konqueror-21.12.1-x86_64-1
+
+konqueror (web browser and file manager)
+
+Konqueror is a web browser and file manager that provides web access and file-viewer functionality for file systems (such as local files, files on a remote server, and files in a disk image).
+
+konqueror (веб-браузер и файловый менеджер)
+
+Konqueror - это веб-браузер и файловый менеджер, который предоставляет веб-доступ и функции просмотра файлов для файловых систем (таких как локальные файлы, файлы на удаленном сервере и файлы в образе диска).
+
+Homepage: https://kde.org/applications/internet/org.kde.konqueror
+

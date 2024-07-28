@@ -1,0 +1,10 @@
+libkleo-21.12.1-x86_64-1
+
+libkleo (KDE key manager library)
+
+This is libkleo, a library used by KDE PIM applications to handle cryptographic key and certificate management.
+
+
+libkleo (библиотека менеджера ключей KDE)
+
+Это библиотека libkleo, используемая приложениями KDE PIM для управления криптографическими ключами и сертификатами.

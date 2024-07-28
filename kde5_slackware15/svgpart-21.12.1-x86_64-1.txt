@@ -1,0 +1,9 @@
+svgpart-21.12.1-x86_64-1
+
+svgpart (SVG plugin for KDE)
+
+KPart for viewing SVG files in KDE.
+
+svgpart (SVG-плагин для KDE)
+
+KPart предназначен для просмотра SVG-файлов в KDE.

@@ -1,0 +1,9 @@
+kpeople-5.90.0-x86_64-1
+
+kpeople (library providing access to your contacts)
+
+KPeople Provides access to all contacts and aggregates them by person. KPeople offers unified access to our contacts from different sources, grouping them by person while still exposing all the data. The sources are plugin-based, allowing to easily extend the contacts collection.
+
+kpeople (библиотека, предоставляющая доступ к вашим контактам)
+
+KPeople предоставляет доступ ко всем контактам и объединяет их по персоналиям. KPeople предлагает единый доступ к нашим контактам из разных источников, группируя их по персоналиям и при этом предоставляя доступ ко всем данным. Исходники основаны на плагинах, что позволяет легко расширять коллекцию контактов.

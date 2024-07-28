@@ -1,0 +1,14 @@
+kanagram-21.12.1-x86_64-1
+
+kanagram (letter game)
+
+Kanagram is a replacement for KMessedWords. Kanagram mixes up the letters of a word to create an anagram, and you have to guess what the mixed up word is. Kanagram features several built-in word lists, hints, and a cheat feature which reveals the original word. Kanagram
+also has a vocabulary editor.
+
+Kanagram (игра с буквами)
+
+Kanagram - это замена KMessedWords. Канаграм смешивает буквы в слове, чтобы создать анаграмму, и вы должны угадать, что это за перепутанное слово. В Kanagram есть несколько встроенных списков слов, подсказки и функция чит-кода, которая позволяет узнать исходное слово. В Kanagram
+также есть редактор словарного запаса.
+
+KMessedWords
+Это анаграмма-игра для маленьких детей. Буквы расположены совершенно случайно. Эта игра намного сложнее, чем кажется. Оно ориентировано на детей в возрасте около 10 лет.

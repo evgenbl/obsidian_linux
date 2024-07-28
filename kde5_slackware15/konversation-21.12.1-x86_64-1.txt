@@ -1,0 +1,12 @@
+konversation-21.12.1-x86_64-1
+
+konversation (Internet Relay Chat client)
+
+Konversation is a user-friendly Internet Relay Chat (IRC) client buil on the KDE Platform.
+
+konversation (клиент интернет-ретрансляционного чата)
+
+Konversation - это удобный клиент интернет-ретрансляционного чата (IRC), созданный на платформе KDE.
+
+Homepage: https://konversation.kde.org
+

@@ -1,0 +1,9 @@
+kxmlrpcclient-5.90.0-x86_64-1
+
+kxmlrpcclient (library providing API to access XML RPC)
+
+Tier 3 KDE Frameworks 5 library providing API to access XML RPC.
+
+kxmlrpcclient (библиотека, предоставляющая API для доступа к XML RPC)
+
+Библиотека KDE Frameworks 5 уровня 3, предоставляющая API для доступа к XML RPC.

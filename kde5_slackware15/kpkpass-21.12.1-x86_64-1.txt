@@ -1,0 +1,9 @@
+kpkpass-21.12.1-x86_64-1
+
+kpkpass (Apple Wallet Pass reader)
+
+KpKPass is a library to deal with Apple Wallet pass files.
+
+kpkpass (Apple Wallet Pass reader - Устройство для считывания пропусков Apple Wallet)
+
+KpKPass - это библиотека для работы с файлами Apple Wallet pass.

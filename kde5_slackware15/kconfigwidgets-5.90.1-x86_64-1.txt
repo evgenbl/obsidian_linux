@@ -1,0 +1,9 @@
+kconfigwidgets-5.90.1-x86_64-1
+
+kconfigwidgets (Widgets for configuration dialogs)
+
+KConfigWidgets provides easy-to-use classes to create configuration dialogs, as well as a set of widgets which uses KConfig to store their settings.
+
+kconfigwidgets (Виджеты для диалоговых окон настройки)
+
+KConfigWidgets предоставляет простые в использовании классы для создания диалоговых окон настройки, а также набор виджетов, которые используют KConfig для хранения своих настроек.

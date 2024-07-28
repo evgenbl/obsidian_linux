@@ -1,0 +1,43 @@
+enscript-1.6.6-x86_64-4
+
+enscript (converts text files to PostScript and other formats)
+
+Enscript converts text files to PostScript and spools the generated output to a printer or saves it to a file. If no input files are given, enscript processes standard input. Enscript can be extended to handle different output media and it has many options for customizing printouts.
+
+enscript (преобразует текстовые файлы в PostScript и другие форматы)
+
+Enscript преобразует текстовые файлы в PostScript и отправляет сгенерированные выходные данные на принтер или сохраняет их в файл. Если входные файлы не заданы, enscript обрабатывает стандартный ввод. Enscript может быть расширен для работы с различными выходными носителями и имеет множество опций для настройки распечаток.
+
+Пример:
+
+enscript -pfoo.ps gv_key.txt
+
+enscript --font=courier14 --encoding=koi8 -pufoo.ps gv_key.txt
+
+ПРИМЕРЫ:
+
+В следующих примерах предполагается, что enscript использует конфигурацию по умолчанию. Если в файлах конфигурации были изменены действия по умолчанию, некоторые примеры будут работать по-другому.
+
+enscript foo.txt
+    Распечатайте файл foo.txt на принтере, используемом по умолчанию.
+
+enscript -Possu foo.txt
+    Print file foo.txt to printer ossu.
+
+enscript -pfoo.ps foo.txt
+    Распечатайте файл foo.txt, но оставьте вывод PostScript в файле foo.ps
+
+enscript -2 foo.txt
+    Print file foo.txt to two columns.
+
+enscript -2r foo.txt
+    Print file to two columns and rotate output 90 degrees (landscape).
+
+enscript -DDuplex:true foo.txt
+    Print file in duplex (two side) mode (printer dependant).
+
+enscript -G2rE -U2 foo.c
+    My default code printing command: gaudy header, two columns, landscape, code highlighting, 2-up printing.
+
+enscript -E --color -whtml --toc -pfoo.html *.h *.c
+    A nice HTML report of your project's C source files.

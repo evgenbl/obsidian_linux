@@ -1,0 +1,14 @@
+libkipi-21.12.1-x86_64-1
+
+libkipi (KDE Image Plugin Interface)
+
+This package provides a generic KDE Image Plug-in Interface used by some KDE image applications. Plug-ins for this interface are in the kipi-plugins package.
+
+libkipi (Интерфейс графического плагина KDE)
+
+Этот пакет предоставляет общий интерфейс подключения графических модулей KDE, используемый некоторыми приложениями для создания изображений KDE. Плагины для этого интерфейса находятся в пакете kipi-plugins.
+
+Интерфейс плагина изображений KDE — API, который позволяет создавать независимые от приложений плагины для обработки изображений в проекте KDE
+
+Homepage: https://github.com/KDE/libkipi
+

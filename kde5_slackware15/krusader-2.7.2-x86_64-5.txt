@@ -1,0 +1,12 @@
+krusader-2.7.2-x86_64-5
+
+krusader (twin panel file manager)
+
+Krusader is an advanced twin panel (commander style) file manager for KDE and other desktops, similar to Midnight Commander or Total Commander.
+
+krusader (двухпанельный файловый менеджер)
+
+Krusader - это усовершенствованный двухпанельный файловый менеджер (в стиле commander) для KDE и других настольных компьютеров, аналогичный Midnight Commander или Total Commander.
+
+Homepage: http://krusader.org
+

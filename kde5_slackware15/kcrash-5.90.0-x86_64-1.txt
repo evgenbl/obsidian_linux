@@ -1,0 +1,9 @@
+kcrash-5.90.0-x86_64-1
+
+kcrash (Crash handler)
+
+KCrash provides support for intercepting and handling application crashes.
+
+kcrash (обработчик сбоев)
+
+KCrash обеспечивает поддержку для перехвата и обработки сбоев приложений.

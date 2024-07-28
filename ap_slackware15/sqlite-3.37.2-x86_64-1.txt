@@ -1,0 +1,16 @@
+sqlite-3.37.2-x86_64-1
+
+sqlite (simple, self contained database engine)
+
+SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine.
+
+The SQLite distribution comes with a standalone command-line access program (sqlite) that can be used to administer an SQLite database and which serves as an example of how to use the SQLite library.
+
+sqlite (простое, автономное ядро базы данных)
+
+SQLite - это небольшая библиотека на языке Си, которая реализует автономное, встраиваемое ядро базы данных SQL с нулевой конфигурацией.
+
+Дистрибутив SQLite поставляется с автономной программой доступа из командной строки (sqlite), которую можно использовать для администрирования базы данных SQLite и которая служит примером использования библиотеки SQLite.
+
+sqlite: Homepage: http://www.sqlite.org/
+

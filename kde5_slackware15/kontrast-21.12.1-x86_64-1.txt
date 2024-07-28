@@ -1,0 +1,12 @@
+kontrast-21.12.1-x86_64-1
+
+kontrast (color contrast checker)
+
+Kontrast is a color contrast checker and tell you if your colo combinations are accessible for people with color vision defiencies.
+
+kontrast (средство проверки цветового контраста)
+
+Kontrast - это средство проверки цветового контраста, которое позволяет определить, доступны ли ваши цветовые сочетания людям с нарушениями цветового зрения.
+
+Homepage: https://kde.org/applications/en/kontrast
+

@@ -1,0 +1,12 @@
+attica-5.90.0-x86_64-1
+
+attica (Open Collaboration Service library)
+
+Attica is a Qt library that implements the freedesktop.org specification for the Open Collaboration Services API version 1.4. It grants easy access to the services such as querying information about persons and contents.
+
+
+attica (библиотека открытых служб совместной работы)
+
+Attica - это библиотека Qt, которая реализует freedesktop.org спецификацию API Open Collaboration Services версии 1.4. Она предоставляет простой доступ к таким сервисам, как запрос информации о лицах и содержимом.
+
+

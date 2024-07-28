@@ -1,0 +1,12 @@
+ffmpegthumbnailer-2.2.2-x86_64-3
+
+ffmpegthumbnailer (Lightweight Video Thumbnailer)
+
+FFmpegthumbnailer is a lightweight video thumbnailer that can be used by file managers to create thumbnails for your video files. The thumbnailer uses ffmpeg to decode frames from the video files, so supported videoformats depend on the configuration flags of  ffmpeg.
+
+ffmpegthumbnailer (Облегченный инструмент для создания миниатюр видео)
+
+FFmpegthumbnailer - это облегченный инструмент для создания миниатюр видео, который может использоваться файловыми менеджерами для создания миниатюр для ваших видеофайлов. Программа создания миниатюр использует ffmpeg для декодирования кадров из видеофайлов, поэтому поддерживаемые видеоформаты зависят от флагов конфигурации ffmpeg.
+
+Homepage: https://github.com/dirkvdb/ffmpegthumbnailer
+

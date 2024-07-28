@@ -1,0 +1,9 @@
+kross-interpreters-21.12.1-x86_64-1
+
+kross-interpreters (Kross interpreters)
+
+Set of interpreter plugins for the Kross archtecture in KDE.
+
+kross-interpreters (кросс-интерпретаторы)
+
+Набор плагинов-интерпретаторов для архитектуры Kross arch в KDE.

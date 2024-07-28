@@ -1,0 +1,13 @@
+slackpkg-15.0.10-noarch-1
+
+slackpkg (Slackware package upgrade manager)
+
+Slackpkg is an upgrade manager for Slackware packages. It can download, upgrade, install, and remove selected packages using an official Slackware package repository. With it, you can also search in the Slackware Package database and find which package has the selected file.
+
+Slackpkg DOES NOT replace the Slackware pkgtools; actually, Slackpkg uses pkgtools for the install/upgrade/remove functions.
+
+slackpkg (Менеджер обновления пакетов Slackware)
+
+Slackpkg - это менеджер обновлений пакетов Slackware. Он может загружать, обновлять, устанавливать и удалять выбранные пакеты, используя официальный репозиторий пакетов Slackware. С его помощью вы также можете выполнить поиск в базе данных пакетов Slackware и найти, в каком пакете находится выбранный файл.
+
+Slackpkg НЕ заменяет Slackware pkgtools; на самом деле, Slackpkg использует pkgtools для функций установки, обновления и удаления.

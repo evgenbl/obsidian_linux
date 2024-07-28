@@ -1,0 +1,9 @@
+kwayland-integration-5.23.5-x86_64-1
+
+kwayland-integration (wayland integration plugins for KDE Frameworks)
+
+Kwayland-integration provides integration plugins for various KDE Frameworks for Wayland.
+
+kwayland-integration (интеграционные плагины wayland для фреймворков KDE)
+
+Kwayland-integration предоставляет интеграционные плагины для различных фреймворков KDE для Wayland.

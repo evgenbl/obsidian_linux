@@ -1,0 +1,12 @@
+seamonkey-2.53.10.2-x86_64-1
+
+seamonkey (an open-source web browser suite)
+
+The SeaMonkey browser suite. SeaMonkey features a state-of-the-art web browser and powerful email client, as well as a WYSIWYG web page composer and a feature-rich IRC chat client.
+
+seamonkey (набор веб-браузеров с открытым исходным кодом)
+
+Набор браузеров SeaMonkey. SeaMonkey оснащен современным веб-браузером и мощным почтовым клиентом, а также компоновщиком веб-страниц в формате WYSIWYG и многофункциональным клиентом IRC-чата.
+
+Homepage: https://www.seamonkey-project.org/
+

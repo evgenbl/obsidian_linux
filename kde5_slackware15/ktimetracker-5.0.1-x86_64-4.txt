@@ -1,0 +1,9 @@
+ktimetracker-5.0.1-x86_64-4
+
+ktimetracker (personal time tracker)
+
+KTimeTracker is a personal time tracker for busy people implemented as a Qt/KF5-based desktop application.
+
+ktimetracker (персональный тайм-трекер)
+
+KTimeTracker - это персональный тайм-трекер для занятых людей, реализованный в виде настольного приложения на базе Qt / KF5.

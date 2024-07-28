@@ -1,0 +1,20 @@
+xlockmore-5.68-x86_64-1
+
+xlockmore (screen locker for X)
+
+Patrick J. Naughton's xlock screensaver/locker for X, with many more modes added by David A. Bagley.
+
+The 'Bob' bitmap has been included especially for Slackware, as well as a Linux penguin logo. (NOTE: the image of J. R. "Bob" Dobbs is a registered trademark of The Subgenius Foundation, used by permission)
+
+xlockmore (экранный шкафчик для X)
+
+Заставка Патрика Дж. Нотона xlock /шкафчик для X, с множеством дополнительных режимов, добавленных Дэвидом А. Бэгли.
+
+Растровое изображение Боба было добавлено специально для Slackware, а также логотип Linux penguin. (ПРИМЕЧАНИЕ: изображение Дж. Р. "Боба" Доббса является зарегистрированной торговой маркой Фонда Subgenius и используется с разрешения)
+
+В терминале ввести для запуска команду:
+
+- $ xlock
+
+Homepage: http://sillycycle.com/xlockmore.html
+

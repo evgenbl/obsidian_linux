@@ -1,0 +1,14 @@
+most-5.1.0-x86_64-3
+
+most (another pager, like 'more' and 'less')
+
+most is a paging program that displays, one windowful at a time,  the contents of a file on a terminal. Unlike other well-known paging programs, most supports multiple windows and can scroll left and right. Why settle for less?
+
+'most' was written by John E. Davis.
+
+most (другой пейджер, например, "more" и "less")
+
+most - это программа подкачки, которая отображает содержимое файла в терминале в одном окне за раз. В отличие от других известных программ подкачки, most поддерживает несколько окон и может прокручиваться влево и вправо. Зачем соглашаться на меньшее?
+
+Песня "most" была написана Джоном Э. Дэвисом.
+

@@ -1,0 +1,10 @@
+kinfocenter-5.23.5-x86_64-1
+
+kinfocenter (info about your computer)
+
+KInfocenter gives you a host of information about your hardware and its capabilities.
+
+
+kinfocenter (информация о вашем компьютере)
+
+KInfocenter предоставляет вам множество сведений о вашем оборудовании и его возможностях.

@@ -1,0 +1,9 @@
+kdesignerplugin-5.90.0-x86_64-1
+
+kdesignerplugin (Integrate custom widgets with Qt Designer)
+
+This framework provides a utility (kgendesignerplugin) that can be used to generate plugins for Qt Designer from ini-style description files.
+
+kdesignerplugin (Интеграция пользовательских виджетов с Qt Designer)
+
+Этот фреймворк предоставляет утилиту (kgendesignerplugin), которая может использоваться для создания плагинов для Qt Designer из файлов описания в стиле ini

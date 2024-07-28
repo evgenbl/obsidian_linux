@@ -1,0 +1,9 @@
+gwenview-21.12.1-x86_64-1
+
+gwenview (image viewer for KDE)
+
+Gwenview is a simple image viewer for KDE. It features a folder tree window and a file list window, providing easy navigation of your file hierarchy.
+
+gwenview (программа для просмотра изображений для KDE)
+
+Gwenview - это простая программа для просмотра изображений для KDE. В ней есть окно дерева папок и окно списка файлов, что обеспечивает удобную навигацию по файловой иерархии.

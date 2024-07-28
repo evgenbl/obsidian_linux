@@ -1,0 +1,10 @@
+pim-data-exporter-21.12.1-x86_64-1
+
+pim-data-exporter (export KDE PIM settings)
+
+Import and export KDE PIM settings.
+
+
+pim-data-exporter (экспорт настроек KDE PIM)
+
+Импортируйте и экспортируйте настройки KDEPIM.

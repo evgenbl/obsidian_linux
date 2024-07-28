@@ -1,0 +1,10 @@
+plasma-pa-5.23.5-x86_64-1
+
+plasma-pa (Plasma PA volume applet)
+
+Plasma applet for audio volume management using PulseAudio.
+
+
+plasma-pa (программа регулировки громкости Plasma PA - PulseAudio)
+
+Программа Plasma для управления громкостью звука с помощью PulseAudio.

@@ -1,0 +1,10 @@
+plasma-framework-5.90.0-x86_64-1
+
+plasma-framework (Plasma libraries and components)
+
+This package contains Plasma libraries and runtime components such as QML support for Plasma.
+
+
+plasma-framework (библиотеки и компоненты Plasma)
+
+Этот пакет содержит библиотеки Plasma и компоненты среды выполнения, такие как поддержка QML для Plasma.

@@ -1,0 +1,11 @@
+freerdp-2.5.0-x86_64-1
+
+freerdp (Free Remote Desktop Protocol)
+
+FreeRDP is a free implementation of the Remote Desktop Protocol (RDP), released under the Apache license.
+
+freerdp (Бесплатный протокол удаленного рабочего стола)
+
+FreeRDP - это бесплатная реализация протокола удаленного рабочего стола (RDP), выпущенная под лицензией Apache.
+
+Homepage: https://www.freerdp.com

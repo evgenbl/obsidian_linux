@@ -1,0 +1,12 @@
+opus-tools-0.2-x86_64-3
+
+opus-tools (Opus audio codec tools)
+
+Opus-tools provides command-line utilities to encode, inspect, and decode .opus files.
+
+opus-tools (инструменты для создания аудиокодеков Opus)
+
+Opus-tools предоставляет утилиты командной строки для кодирования, проверки и декодирования файлов .opus.
+
+Homepage: https://opus-codec.org/
+

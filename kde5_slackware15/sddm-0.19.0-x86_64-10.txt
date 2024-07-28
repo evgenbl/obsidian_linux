@@ -1,0 +1,12 @@
+sddm-0.19.0-x86_64-10
+
+sddm (QML based X11 display manager)
+
+SDDM is a modern display manager for X11 aiming to be fast, simple and beautiful. It uses modern technologies like QtQuick, which in turn gives the designer the ability to create smooth, animated user interfaces. SDDM is extremely themeable. There are a few sample themes distributed with SDDM. They can be used as a starting point for new themes.
+
+sddm (X11 display manager, основанный на QML)
+
+SDDM - это современный дисплейный менеджер для X11, который должен быть быстрым, простым и красивым. Он использует современные технологии, такие как QtQuick, что, в свою очередь, дает дизайнеру возможность создавать плавные анимированные пользовательские интерфейсы. SDDM чрезвычайно удобен в использовании. Есть несколько примеров тем, которые распространяются вместе с SDDM. Их можно использовать в качестве отправной точки для создания новых тем.
+
+Homepage: https://github.com/sddm/sddm
+

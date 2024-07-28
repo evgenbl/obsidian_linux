@@ -1,0 +1,9 @@
+baloo-5.90.0-x86_64-1
+
+baloo (framework for searching and managing metadata)
+
+Baloo is a framework for searching and managing metadata. Baloo focuses on providing a very small memory footprint along with extremely fast searching. It also supports storing additional file based metadata via extended attributes.
+
+Baloo - это платформа для поиска и управления метаданными.
+
+Baloo фокусируется на обеспечении очень малого объема памяти и чрезвычайно быстром поиске. Она также поддерживает хранение дополнительных файловых метаданных с помощью расширенных атрибутов.(индексация, поиск данных)

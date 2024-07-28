@@ -1,0 +1,9 @@
+kget-21.12.1-x86_64-1
+
+kget (download manager for KDE)
+
+kget is a download manager for KDE.
+
+kget (менеджер загрузок для KDE)
+
+kget - это менеджер загрузок для KDE.

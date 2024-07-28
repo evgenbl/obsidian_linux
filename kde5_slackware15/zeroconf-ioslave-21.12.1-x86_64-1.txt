@@ -1,0 +1,14 @@
+zeroconf-ioslave-21.12.1-x86_64-1
+
+zeroconf-ioslave (network monitor for zeroconf)
+
+A network monitor for DNS-SD services (Zeroconf).
+
+
+zeroconf-ioslave (Сетевой монитор для zeroconf)
+
+Сетевой монитор для служб DNS-SD (Zeroconf).
+
+Zeroconf или Zero Configuration Networking — набор технологий, которые автоматически создают IP-сеть без конфигурации или специальных серверов.
+
+Также известен как Automatic Private IP Addressing (APIPA), позволяя необученным пользователям соединять компьютеры, сетевые принтеры и другие устройства вместе и получать работающую сеть. Без Zeroconf или чего-нибудь подобного пользователь должен либо установить специальные сервисы, например DHCP и DNS, или настраивать всё вручную.

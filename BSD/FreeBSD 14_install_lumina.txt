@@ -1,0 +1,66 @@
+pkg install -y nano
+
+pkg install -y xorg
+
+pkg install -y lumina
+pkg install -y xfce
+
+---
+
+(KDE and the rest
+pkg install --quiet --yes kde5 plasma5-sddm-kcm sddm xorg
+
+sysrc dbus_enable="YES" && service dbus start
+
+sysrc sddm_enable="YES" && service sddm start)
+
+---
+
+pkg install -y slim slim-themes
+
+sysrc dbus_enable=YES
+
+dbus_enable: -> YES
+
+sysrc hald_enable=YES
+
+hald_enable: -> YES
+
+sysrc slim_enable=YES
+
+slim_enable: -> YES
+
+sysrc sound_load=YES
+
+sound_load: -> YES
+
+sysrc snd_hda_load=YES
+
+snd_hda_load: -> YES
+
+- nano /home/user/.xinitrc
+exec "start-lumina-desktop"
+exec startxfce4
+
+pkg install -y firefox
+
+reboot
+
+Источник:
+
+How to Install FreeBSD 14.0 with Step by Step Instructions on a new PC or Laptop
+https://www.youtube.com/watch?v=6LFVf6__zTU
+
+How to install freeBSD 13.0 plus XFCE desktop and basic applications
+https://www.youtube.com/watch?v=Ch_ZN6BlChA&list=PLP6cPNfnmd-qxqsrFS48up--0N0XklTtv&index=2
+
+FreeBSD/Setup - KDE Community Wiki
+https://community.kde.org/FreeBSD/Setup
+
+FreeBSD install with KDE Desktop
+https://www.youtube.com/watch?v=xWRId0eLjTo
+
+
+
+
+

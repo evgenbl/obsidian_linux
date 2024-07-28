@@ -1,0 +1,13 @@
+bluedevil-5.23.5-x86_64-1
+
+
+bluedevil (bluetooth stack for KDE)
+
+BlueDevil is the bluetooth stack for KDE.
+
+bluedevil (bluetooth-стек для KDE)
+
+Blue Devil - это стек bluetooth для KDE.
+
+Homepage: http://www.afiestas.org/
+

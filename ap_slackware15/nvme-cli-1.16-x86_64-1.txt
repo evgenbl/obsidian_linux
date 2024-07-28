@@ -1,0 +1,12 @@
+nvme-cli-1.16-x86_64-1
+
+nvme-cli (NVMe storage command line utility)
+
+The nvme program is a user space utility to provide standardscompliant tooling for NVM-Express drives. The utility has sub-commands for all admin and io commands defined in the specification and for displaying controller registers.
+
+nvme-cli (утилита командной строки хранилища NVMe)
+
+Программа nvme - это утилита для пользовательского пространства, предназначенная для предоставления инструментов, соответствующих стандартам, для дисков NVM-Express. Утилита имеет подкоманды для всех команд администрирования и ввода-вывода, определенных в спецификации, а также для отображения регистров контроллера.
+
+Homepage: https://github.com/linux-nvme/nvme-cli
+

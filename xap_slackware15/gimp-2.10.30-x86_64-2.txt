@@ -1,0 +1,11 @@
+gimp-2.10.30-x86_64-2
+
+gimp (The GNU Image Manipulation Program)
+
+The GIMP is a powerful tool for the preparation and manipulation of digital images. The GIMP provides the user with a wide variety of image manipulation, painting, processing, and rendering tools. The GIMP's open design and extensible architecture make for a very powerful end product for photo and image retouching, web graphics design, or digital illustration.
+
+gimp (Программа для работы с изображениями)
+
+GIMP - это мощный инструмент для подготовки цифровых изображений и манипулирования ими. GIMP предоставляет пользователю широкий спектр инструментов для работы с изображениями, рисования, обработки и рендеринга. Открытый дизайн и расширяемая архитектура GIMP создают очень мощный конечный продукт для ретуши фотографий и изображений, веб-дизайна или цифровой иллюстрации.
+
+GNU Image Manipulation Program или GIMP («Гимп») — свободно распространяемый растровый графический редактор, программа для создания и обработки растровой графики и частичной поддержкой работы с векторной графикой. Проект основан в 1995 году Спенсером Кимбеллом и Питером Маттисом как дипломный, в настоящий момент поддерживается группой добровольцев. Распространяется на условиях GNU General Public License.

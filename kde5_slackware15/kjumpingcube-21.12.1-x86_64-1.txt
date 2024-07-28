@@ -1,0 +1,9 @@
+kjumpingcube-21.12.1-x86_64-1
+
+kjumpingcube (territory capture game)
+
+KJumpingcube is a simple dice driven tactical game. The playing area consists of squares containing points. Players move by clicking on either a vacant square, or on one of their own squares.
+
+kjumpingcube (игра на захват территории)
+
+KJumpingcube - это простая тактическая игра с использованием кубиков. Игровое поле состоит из квадратов, содержащих очки. Игроки перемещаются, нажимая либо на свободный квадрат, либо на один из своих собственных квадратов.

@@ -1,0 +1,9 @@
+kpublictransport-21.12.1-x86_64-1
+
+kpublictransport (library for accessing public transport data)
+
+A library for accessing realtime public transport data and for performing public transport journey queries.
+
+kpublictransport (библиотека для доступа к данным об общественном транспорте)
+
+Библиотека для доступа к данным об общественном транспорте в режиме реального времени и для выполнения запросов о поездках на общественном транспорте.

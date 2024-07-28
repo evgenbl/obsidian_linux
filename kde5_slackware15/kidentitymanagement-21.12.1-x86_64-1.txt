@@ -1,0 +1,9 @@
+kidentitymanagement-21.12.1-x86_64-1
+
+kidentitymanagement (Manage PIM identity)
+
+kidentitymanagement contains the KIdentityManagement Library.
+
+kidentitymanagement (Управление идентификатором PIM)
+
+kidentitymanagement содержит библиотеку KIdentityManagement.

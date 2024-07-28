@@ -1,0 +1,13 @@
+xgames-0.3-x86_64-8
+
+xgames (small X games collection)
+
+A few small and historic games and toys for X.
+
+Includes maze, spider, xcolormap, xlander, xminesweep, xroach, xsnow.
+
+xgames (небольшая коллекция X games)
+
+В нее входят несколько небольших исторических игр и игрушек для X.
+
+В том числе лабиринт, паук, цветная карта, посадочный модуль, сапер, таракан, снеговик.

@@ -1,0 +1,9 @@
+ki18n-5.90.0-x86_64-1
+
+ki18n (UI text internationalization)
+
+KI18n provides functionality for internationalizing user interface text in applications, based on the GNU Gettext translation system. It wraps the standard Gettext functionality, so that the programmers and translators can use the familiar Gettext tools and workflows. KI18n also provides argument capturing, customizable markup, and translation scripting.
+
+ki18n (Интернационализация-перевод пользовательского интерфейса)
+
+KI18n предоставляет функциональность для интернационализации-перевода текста пользовательского интерфейса в приложениях, основанную на системе перевода GNU Gettext. Он реализует стандартную функциональность Gettext, так что программисты и переводчики могут использовать знакомые инструменты и рабочие процессы Gettext. KI18n также обеспечивает захват аргументов, настраиваемую разметку и создание сценариев перевода.

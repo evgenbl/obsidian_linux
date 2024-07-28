@@ -1,0 +1,10 @@
+plasma-integration-5.23.5-x86_64-1
+
+plasma-integration (Plasma theme integration plugins)
+
+Plasma Integration is a set of plugins responsible for better integration of Qt applications when running on a KDE Plasma workspace.
+
+
+plasma-integration (Плагины для интеграции с темой Plasma)
+
+Plasma Integration - это набор плагинов, отвечающих за лучшую интеграцию приложений Qt при запуске в KDE Plasma workspace.

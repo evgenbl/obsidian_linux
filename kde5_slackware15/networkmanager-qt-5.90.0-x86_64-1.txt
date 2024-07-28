@@ -1,0 +1,9 @@
+networkmanager-qt-5.90.0-x86_64-1
+
+networkmanager-qt (NetworkManager Qt bindings)
+
+This package contains Qt bindings for NetworkManager.
+
+networkmanager-qt (привязки Qt для NetworkManager)
+
+Этот пакет содержит привязки Qt для NetworkManager.

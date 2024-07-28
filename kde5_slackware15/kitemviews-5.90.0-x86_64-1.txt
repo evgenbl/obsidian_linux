@@ -1,0 +1,10 @@
+kitemviews-5.90.0-x86_64-1
+
+kitemviews (Qt item-view extensions)
+
+KItemViews includes a set of views, which can be used with item models. It includes views for categorizing lists and to add search filters to flat and hierarchical lists.
+
+
+kitemviews ((Расширения для просмотра элементов Qt)
+
+KItemViews включает в себя набор представлений, которые можно использовать с моделями элементов. Он включает в себя представления для категоризации списков и добавления фильтров поиска к плоским и иерархическим спискам.

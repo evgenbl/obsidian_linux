@@ -1,0 +1,3 @@
+- apt-get update ; apt-get install xorg-server xorg-drv-vmmouse xorg-drv-vmware virtualbox-guest-additions xdm xfs xsetup xinit
+- reboot
+- 

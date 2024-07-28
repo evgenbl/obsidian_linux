@@ -1,0 +1,9 @@
+knewstuff-5.90.0-x86_64-1
+
+knewstuff (data sharing framework)
+
+The KNewStuff library implements collaborative data sharing for applications. It uses libattica to support the Open Collaboration Services specification.
+
+knewstuff (платформа совместного использования данных)
+
+Библиотека KNewStuff реализует совместный обмен данными для приложений. Она использует libattica для поддержки спецификации Open Collaboration Services.

@@ -1,0 +1,9 @@
+kirigami2-5.90.0-x86_64-1
+
+kirigami2 (interface components for QtQuick)
+
+Kirigami is a set of user interface components created to enable the creation of pleasant, efficient applications by KDE's Plasma team and the KDE Visual Design Group.
+
+kirigami 2 (компоненты интерфейса для QtQuick)
+
+Kirigami - это набор компонентов пользовательского интерфейса, созданный командой разработчиков KDE Plasma и KDE Visual Design Group для создания удобных и эффективных приложений.

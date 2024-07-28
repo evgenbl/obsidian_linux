@@ -1,0 +1,10 @@
+kalarm-21.12.1-x86_64-1
+
+kalarm (personal alarm scheduler)
+
+Personal alarm scheduler.
+
+kalarm (персональный планировщик)
+
+Персональный планировщик задач.
+

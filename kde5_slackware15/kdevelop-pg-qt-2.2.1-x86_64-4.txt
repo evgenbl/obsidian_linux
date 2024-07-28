@@ -1,0 +1,9 @@
+kdevelop-pg-qt-2.2.1-x86_64-4
+
+kdevelop-pg-qt (KDevelop Parser Generator)
+
+KDevelop Parser Generator used in the PHP language plugin and others.
+
+kdevelop-pg-qt (KDevelop Генератор синтаксических анализаторов)
+
+Генератор синтаксических анализаторов KDevelop, используемый в языковом плагине PHP и других.

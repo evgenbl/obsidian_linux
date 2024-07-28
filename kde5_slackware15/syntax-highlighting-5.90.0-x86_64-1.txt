@@ -1,0 +1,9 @@
+syntax-highlighting-5.90.0-x86_64-1
+
+syntax-highlighting (syntax highlighting for Kate)
+
+Syntax highlighting engine for structured text and code.
+
+syntax-highlighting - подсветка синтаксиса (syntax highlighting for Kate)
+
+Механизм подсветки синтаксиса для структурированного текста и кода.

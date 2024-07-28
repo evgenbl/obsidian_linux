@@ -1,0 +1,16 @@
+nano-6.0-x86_64-1
+
+nano (Nano's ANOther editor, an enhanced free Pico clone)
+
+nano is a small, free, and friendly editor. It aims to copy Pico's look and feel while providing additional (or disabled by default) features that are missing from Pico, such as "search and replace" or "go to line and column number".
+
+Chris Allegretta is Nano's author.
+
+nano (еще один редактор Nano, улучшенный бесплатный клон Pico)
+
+nano - это небольшой, бесплатный и удобный редактор. Он призван скопировать внешний вид Pico, предоставляя при этом дополнительные (или отключенные по умолчанию) функции, которые отсутствуют в Pico, такие как "поиск и замена" или "переход к номеру строки и столбца".
+
+Крис Аллегретта - автор Nano.
+
+Homepage: http://www.nano-editor.org
+

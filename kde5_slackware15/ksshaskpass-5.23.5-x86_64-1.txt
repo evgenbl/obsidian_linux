@@ -1,0 +1,10 @@
+ksshaskpass-5.23.5-x86_64-1
+
+ksshaskpass (GUI for entering ssh key passwords)
+
+If you access computers with ssh keys but those keys have passwords this module will give you a graphical UI to enter those passwords.
+
+ksshaskpass (графический интерфейс для ввода паролей с помощью ssh-ключей)
+
+Если вы получаете доступ к компьютерам с помощью ssh-ключей, но у этих ключей есть пароли, этот модуль предоставит вам графический интерфейс для ввода этих паролей.
+

@@ -1,0 +1,12 @@
+kstars-3.5.7-x86_64-1
+
+kstars (a desktop planetarium)
+
+KStars is free, open source, cross-platform Astronomy Software. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects, all 8 planets, the Sun and Moon, and thousands of comets, asteroids, supernovae, and satellites.
+
+kstars (настольный планетарий)
+
+KStars - это бесплатное кроссплатформенное астрономическое программное обеспечение с открытым исходным кодом. Оно обеспечивает точное графическое моделирование ночного неба из любого места на Земле, в любую дату и время. На дисплее представлено до 100 миллионов звезд, 13 000 объектов дальнего космоса, все 8 планет, Солнце и Луна, а также тысячи комет, астероидов, сверхновых и спутников.
+
+Homepage: https://edu.kde.org/kstars
+

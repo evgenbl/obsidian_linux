@@ -1,0 +1,9 @@
+kdesdk-thumbnailers-21.12.1-x86_64-1
+
+kdesdk-thumbnailers (thumbnailers for KDE)
+
+Thumbnailers for KDE, including gnu gettext po translation files an gettext translation templates.
+
+kdesdk-thumbnailers - создания миниатюр (thumbnailers for KDE)
+
+Средства создания миниатюр для KDE, включая файлы перевода gnu gettext po и шаблоны перевода gettext.

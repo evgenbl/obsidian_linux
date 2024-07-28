@@ -1,0 +1,12 @@
+powertop-2.13-x86_64-3
+
+powertop (tool for analyzing system power usage)
+
+PowerTOP is a utility that collects data from your system and presents an overview to help optimize power savings. PowerTOP will identify which tunables and software components are the biggest offenders in slurping up your battery time. PowerTOP updates its display frequently so that you can directly see the impact of any changes you are making.
+
+powertop (инструмент для анализа энергопотребления системы)
+
+PowerTOP - это утилита, которая собирает данные из вашей системы и предоставляет обзор, помогающий оптимизировать экономию электроэнергии. PowerTOP определит, какие настраиваемые устройства и программные компоненты являются основными виновниками увеличения времени автономной работы. PowerTOP часто обновляет свой дисплей, чтобы вы могли непосредственно видеть влияние любых вносимых вами изменений.
+
+Homepage: http://01.org/powertop/
+

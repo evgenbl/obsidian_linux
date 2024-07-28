@@ -1,0 +1,12 @@
+sweeper-21.12.1-x86_64-1
+
+sweeper (remove traces of your activities)
+
+Sweeper helps to clean unwanted traces the user leaves on the system.
+
+sweeper (удаляет следы вашей деятельности)
+
+Sweeper помогает убрать нежелательные следы, которые пользователь оставляет в системе.
+
+Homepage: https://projects.kde.org/projects/kde/kdeutils/sweeper
+

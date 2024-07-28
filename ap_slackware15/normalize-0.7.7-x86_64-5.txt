@@ -1,0 +1,14 @@
+normalize-0.7.7-x86_64-5
+
+normalize (adjusts volume levels of audio files)
+
+normalize is a tool for adjusting the volume of audio files to a standard level. This is useful for things like creating mix CDs from mp3 collections, where different recording levels on different albums can cause the volume to vary greatly from song to song. The package also contains an XMMS plugin.
+
+Chris Vaill is the author of normalize.
+
+normalize (настройка уровня громкости аудиофайлов)
+
+normalize - это инструмент для настройки громкости аудиофайлов до стандартного уровня. Это полезно для таких задач, как создание миксов компакт-дисков из коллекций mp3, где разные уровни записи на разных альбомах могут привести к значительному изменению громкости от песни к песне. Пакет также содержит плагин XMMS.
+
+Крис Вейлл - автор normalize.
+

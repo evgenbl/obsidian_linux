@@ -1,0 +1,10 @@
+kaddressbook-21.12.1-x86_64-1
+
+kaddressbook (KDE contact manager)
+
+KDE contact manager.
+
+kaddressbook (менеджер контактов KDE)
+
+Менеджер контактов KDE. Адресная книга.
+

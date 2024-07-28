@@ -1,0 +1,12 @@
+krfb-21.12.1-x86_64-1
+
+krfb (desktop sharing)
+
+Krfb Desktop Sharing is a server application that allows you to share your current session with a user on another machine, who can use a NC client to view or even control the desktop.
+
+krfb (общий доступ к рабочему столу)
+
+Krfb Desktop Sharing - это серверное приложение, которое позволяет вам делиться текущим сеансом с пользователем на другом компьютере, который может использовать клиент NC для просмотра рабочего стола или даже управления им.
+
+Homepage: https://www.kde.org/applications/system/krfb/
+

@@ -1,0 +1,12 @@
+mozilla-firefox-91.5.1esr-x86_64-1
+
+mozilla-firefox (Mozilla Firefox Web browser)
+
+Firefox is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. It has lots of great features including popup blocking, tabbed browsing, integrated search, improved privacy features (such as enhanced tracking protection), and more.
+
+mozilla-firefox (веб-браузер Mozilla Firefox)
+
+Firefox - это бесплатный веб-браузер с открытым исходным кодом, разработанный Mozilla Foundation и ее дочерней компанией Mozilla Corporation. Он обладает множеством замечательных функций, включая блокировку всплывающих окон, просмотр с вкладками, интегрированный поиск, улучшенные функции конфиденциальности (такие как улучшенная защита от отслеживания) и многое другое.
+
+Homepage: https://www.mozilla.org/firefox
+

@@ -1,0 +1,9 @@
+kguiaddons-5.90.0-x86_64-1
+
+kguiaddons (KDE GUI Addons)
+
+The KDE GUI addons provide utilities for graphical user interfaces in the areas of colors, fonts, text, images, and keyboard input.
+
+kguiaddons - дополнения (KDE GUI Addons)
+
+Дополнения KDEGUI предоставляют утилиты для графического интерфейса пользователя в области цветов, шрифтов, текста, изображений и ввода с клавиатуры.

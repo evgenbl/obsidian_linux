@@ -1,0 +1,16 @@
+vbetool-1.2.2-x86_64-4
+
+vbetool (video bios execution tool)
+ 
+vbetool is a small application that executes code from the BIOS of your video card. 
+ 
+This is mostly useful for reinitializing the hardware, for instance after ACPI suspend/resuming. 
+
+vbetool (инструмент для запуска видео bios)
+ 
+vbetool - это небольшое приложение, которое выполняет код из BIOS вашей видеокарты. 
+ 
+В основном это полезно для повторной инициализации оборудования, например, после приостановки/возобновления работы ACPI.
+
+Homepage: http://www.codon.org.uk/~mjg59/vbetool/
+ 

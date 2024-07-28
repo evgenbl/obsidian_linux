@@ -1,0 +1,10 @@
+plasma-workspace-wallpapers-5.23.5-x86_64-1
+
+plasma-workspace-wallpapers (Wallpapers for Plasma)
+
+Additional wallpapers for the KDE Plasma Workspace.
+
+
+plasma-workspace-wallpapers (Обои для рабочего пространства Plasma)
+
+Дополнительные обои для рабочего пространства KDE Plasma.

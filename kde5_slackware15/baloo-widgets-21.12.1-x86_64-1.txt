@@ -1,0 +1,15 @@
+baloo-widgets-21.12.1-x86_64-1
+
+
+baloo-widgets (widgets for baloo)
+
+Baloo is a framework for searching and managing metadata.
+
+Baloo-widgets contains widgets for use with Baloo.
+
+
+baloo-widgets (виджеты для baloo)
+
+Baloo - это платформа для поиска и управления метаданными(индексация, поиск данных).
+
+Baloo-widgets содержит виджеты для использования с Baloo.

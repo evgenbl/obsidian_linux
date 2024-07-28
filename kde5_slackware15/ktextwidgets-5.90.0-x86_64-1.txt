@@ -1,0 +1,9 @@
+ktextwidgets-5.90.0-x86_64-1
+
+ktextwidgets (text editing widgets)
+
+KTextWidgets provides widgets for displaying and editing text. It supports rich text as well as plain text.
+
+ktextwidgets (виджеты для редактирования текста)
+
+KTextWidgets предоставляет виджеты для отображения и редактирования текста. Он поддерживает как форматированный, так и обычный текст.

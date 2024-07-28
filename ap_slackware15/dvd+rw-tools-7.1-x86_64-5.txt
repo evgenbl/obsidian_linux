@@ -1,0 +1,14 @@
+dvd+rw-tools-7.1-x86_64-5
+
+dvd+rw-tools (DVD+-RW tools)
+
+A collection of tools to master DVD+RW/+R/-R/-RW media. For further information see http://fy.chalmers.se/~appro/linux/DVD+RW/.
+
+The DVD+RW tools were written by Andy Polyakov.
+
+
+dvd+rw-инструменты (DVD+-RW tools)
+
+Набор инструментов для настройки DVD+RW/+R/-R/-RW-носителей. Дополнительную информацию смотрите в разделе http://fy.chalmers.se/~appro/linux/DVD+RW/.
+
+Инструменты для DVD+RW были написаны Энди Поляковым.

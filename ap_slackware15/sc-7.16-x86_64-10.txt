@@ -1,0 +1,10 @@
+sc-7.16-x86_64-10
+
+sc (spreadsheet calculator)
+
+This is a simple curses-based spreadsheet program.
+
+sc (калькулятор электронных таблиц)
+
+Это простая программа для работы с электронными таблицами, основанная на curses.
+

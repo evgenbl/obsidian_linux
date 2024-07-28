@@ -1,0 +1,10 @@
+plasma-browser-integration-5.23.5-x86_64-1
+
+plasma-browser-integration (integrate browsers into Plasma)
+
+The plasma-browser-integration package contains components necessary to integrate browsers into the Plasma Desktop
+
+
+plasma-browser-integration (интеграция браузеров в Plasma)
+
+Пакет plasma-browser-integration содержит компоненты, необходимые для интеграции браузеров в рабочий стол Plasma

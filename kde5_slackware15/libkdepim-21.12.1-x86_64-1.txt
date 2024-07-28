@@ -1,0 +1,9 @@
+libkdepim-21.12.1-x86_64-1
+
+libkdepim (KDE PIM libraries)
+
+The package contains libraries for KDE PIM applications.
+
+libkdepim (Библиотеки KDE PIM)
+
+Пакет содержит библиотеки для приложений KDE PIM.

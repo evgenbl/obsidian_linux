@@ -1,0 +1,9 @@
+kmouth-21.12.1-x86_64-1
+
+kmouth (Speech synthesis frontend)
+
+The computer speaks the entered text for talking with people.
+
+kmouth (интерфейс для синтеза речи)
+
+Компьютер произносит введенный текст для общения с людьми.

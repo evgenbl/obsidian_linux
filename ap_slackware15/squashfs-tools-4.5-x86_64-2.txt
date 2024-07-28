@@ -1,0 +1,12 @@
+squashfs-tools-4.5-x86_64-2
+
+squashfs-tools (squashed read-only filesystem for Linux)
+
+Squashfs is a highly compressed read-only filesystem for Linux. Squashfs compresses both files, inodes and directories, and supports block sizes up to 1Mbytes for greater compression. It is implemented as a kernel module under VFS. The package contains tools for manipulation of squashfs bundles.
+
+squashfs-инструменты (сжатая файловая система только для чтения для Linux)
+
+Squashfs - это сильно сжатая файловая система только для чтения для Linux. Squashfs сжимает как файлы, так и индексные индексы и каталоги и поддерживает блоки размером до 1 Мбайт для большего сжатия. Он реализован в виде модуля ядра под управлением VFS. Пакет содержит инструменты для работы с пакетами squashfs.
+
+Homepage: https://github.com/plougher/squashfs-tools/
+

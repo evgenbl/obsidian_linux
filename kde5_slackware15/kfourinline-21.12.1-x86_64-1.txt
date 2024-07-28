@@ -1,0 +1,9 @@
+kfourinline-21.12.1-x86_64-1
+
+kfourinline (four-in-a-row board game)
+
+KFourInLine is a board game for two players based on the Connect-Four game. The players try to build up a row of four pieces using different strategies.
+
+kfourinline (настольная игра "четыре в ряд")
+
+KFourInLine - это настольная игра для двух игроков, основанная на игре "Соедини четыре". Игроки пытаются выстроить ряд из четырех фигур, используя разные стратегии.

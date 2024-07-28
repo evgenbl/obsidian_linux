@@ -1,0 +1,9 @@
+khelpcenter-21.12.1-x86_64-1
+
+khelpcenter (KDE help center)
+
+The KDE Help Center displays documentation on how to use the KDE plasma workspaces and applications, as well as man and info pages. It can search through documentation using the 'htdig' package.
+
+khelpcenter (справочный центр KDE)
+
+В справочном центре KDE отображается документация по использованию рабочих пространств и приложений KDE plasma, а также страницы руководства и информации. В нем можно выполнять поиск по документации с помощью пакета htdig.

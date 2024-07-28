@@ -1,0 +1,13 @@
+grantlee-editor-21.12.1-x86_64-1
+
+grantlee-editor (editor for Grantlee themes)
+
+Editor for Grantlee themes.
+
+grantlee-editor (редактор тем для Grantlee)
+
+Редактор тем для Grantlee.
+
+Grantlee — это набор библиотек свободного программного обеспечения, написанных с использованием
+Qt framework.
+

@@ -1,0 +1,111 @@
+#+STARTUP: content
+
+* alt
+** Nautilus
+sudo apt install nautilus-image-converter
+Масштабировать изображения
+
+скрипт water.sh копировать в каталог bin
+и вызвать в терминале командой water.sh
+
+администратор
+
+вы можете, выполнить несколько команд в  терминале. Добавьте PPA в систему:
+ sudo add-apt-repository ppa:noobslab/apps
+Обновите списки пакетов из репозиториев:
+ sudo apt-get update
+Установите пакет nautilus-admin:
+ sudo apt-get install -y nautilus-admin
+Теперь перезагрузите Nautilus, и в меню появится пункт Открыть как администратор:
+
+Добавляем в контекстное меню опцию создания документов
+
+Команды в терминале:
+
+XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES)
+cd "$XDG_TEMPLATES_DIR"
+touch 'New Text File.txt' && touch 'New Word File.doc' && touch 'New Excel Spreadsheet.xls'
+
+** alt_grub
+Для восстановления загрузчика LILO достаточно любым доступным способом загрузить Linux и получить доступ к тому жёсткому диску, на котором находится повреждённый загрузчик. Для этого проще всего воспользоваться восстановительным режимом, который предусмотрен на загрузочном диске дистрибутива. В ALT Linux к нему можно получить доступ, загрузившись с CD-ROM и выбрав в меню пункт «Спасательная система».
+
+Загрузка восстановительного режима заканчивается приглашением командной строки: [root@localhost /]#. Начиная с этого момента система готова к вводу команд.
+
+Чтобы восстановить загрузчик, нужно выполнить следующие действия:
+
+    Смонтировать корневой раздел Linux (“/”) командой mount /dev/hda1 /mnt (На месте /dev/hda1 должен быть указан тот раздел диска, на котором у вас находится корневая файловая система Linux).1
+    Смонтировать необходимые для восстановления загрузчика файловые системы:
+        mount /proc /mnt/proc -o bind
+        mount /dev /mnt/dev -o bind
+        mount /sys /mnt/sys -o bind
+    Объявить файловую систему на этом разделе корневой:
+        chroot /mnt.
+    Если на диске ничего не менялось (не установлено новых систем), восстановить загрузчик можно одной командой — lilo. В результате загрузчик будет восстановлен в той же конфигурации, что и перед повреждением.
+
+Если на диске произошли изменения, которые должны затронуть список загружаемых систем (добавлены/удалены ОС), перед выполнением команды lilo потребуется обновить конфигурацию загрузчика: с помощью любого текстового редактора (например mcedit) отредактировать файл lilo.conf.
+** sudo in alt
+$ su
+# nano /etc/sudoers
+В указанном файле отыскивается строка
+# WHEEL_USERS ALL=(ALL) ALL
+С коей и снимается символ комментария. При желании совсем облегчить себе жизнь та же процедура проделывается со строкой
+# WHEEL_USERS ALL=(ALL) ALL NOPASSWD: ALL
+** for_paromtv_in_alt 
+sudo apt-get install libqt4-declarative
+sudo apt-get install libqt4-dbus
+** caja-open-terminal
+Пакет:  (1.22.1-1 и другие)
+sudo apt install caja-open-terminal 
+** mirror ALT9
+rsync
+
+Наименее затратным по времени и трафику является использование для зеркалирования rsync. Хотя возможно и ручное зеркалирование, удобнее воспользоваться инструментом, который называется sisyphus-mirror; существует также веб-интерфейс в виде alterator-mirror.
+
+Для исключения части пакетов из зеркалирования (например, игрушек, которые часто весьма объёмны) можно воспользоваться сервисом, позволяющим отфильтровать пакеты по RPM-группе. Полученный список можно добавить в аргумент --exclude-from к rsync или в exclude-файл sisyphus-mirror.
+
+Перед собственно зеркалированием можно запустить rsync с ключом -n для оценки трафика.
+sisyphus-mirror
+
+Смотри sisyphus-mirror
+Ручное зеркалирование
+
+Пример:
+
+rsync -va --stats --delete-after rsync.altlinux.org::ALTLinux/Sisyphus/ /srv/public/mirror/Sisyphus/
+
+Также можно сформировать exclude-file, позволяющий не зеркалировать ненужные пакеты.
+
+rsync -va --stats --delete-after --exclude-from=/path/to/exclude-file \
+  rsync.altlinux.org::ALTLinux/Sisyphus/ /srv/public/mirror/Sisyphus/
+
+Для зеркалирования стабильной ветки замените Sisyphus на, например, p9/branch/
+
+итог: rsync -va --stats --delete-after rsync.altlinux.org::ALTLinux/p9/branch/ /srv/public/mirror/p9/branch/
+
+or:rsync -va --stats --delete-after rsync.altlinux.org::ALTLinux/p9/branch/ /home/jenit/mirror/p9/
+** добавить репозиторий alt
+Так-же мы можем вручную добавить наш локальный репозиторий, лишь отредактировав один файл: /etc/apt/sources.list
+
+Код: Выделить всё
+
+cat > /etc/apt/sources.list
+rpm file:///home/shared/LocRep/ i586 classic
+ctrl + c
+
+ Команда cat перезапишет файл оставив там лишь строчку . Затем мы закрываем работу утилиты «cat» сочетанием клавиш ctrl + c
+** Как удалить все значки с рабочего стола ALT
+dconf write /org/mate/desktop/background/show-desktop-icons false
+или установить mate tweak
+** Проигрывание аудио при наведении мыши в Caja_alt
+ Проигрывание аудио при наведении мыши в Caja
+su >
+pass >
+ln -s /usr/bin/cvlc /usr/bin/totem-audio-preview
+or:
+sudo ln -s /usr/bin/cvlc /usr/bin/totem-audio-preview
+** Поиск логов
+ journalctl -p5 | grep "timed out" - поиск логов 
+** Какая ОС линукс установлена
+cat /etc/os-release
+cat /etc/*-release
+cat /proc/version

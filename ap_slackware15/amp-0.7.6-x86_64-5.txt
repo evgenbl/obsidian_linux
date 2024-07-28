@@ -1,0 +1,9 @@
+amp-0.7.6-x86_64-5
+
+amp (An MP3 player)
+
+amp (Audio Mpeg Player) is a command-line MPEG audio decoder (MP3 player). It works with both MPEG1 and MPEG2 audio streams (except for the multichannel extensions defined in MPEG2), layers 2 and 3.
+
+amp (MP3-плеер)
+
+amp (Audio Mpeg Player) - это MPEG-аудиодекодер командной строки (MP3-плеер). Он работает как с аудиопотоками MPEG1, так и с аудиопотоками MPEG2 (за исключением многоканальных расширений, определенных в MPEG 2), на уровнях 2 и 3.

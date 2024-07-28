@@ -1,0 +1,9 @@
+kdenetwork-filesharing-21.12.1-x86_64-1
+
+kdenetwork-filesharing (share a directory with the local network)
+
+Konqueror properties dialog plugin to share a directory with the local network.
+
+kdenetwork-filesharing (предоставление общего доступа к каталогу в локальной сети)
+
+Подключаемый модуль диалога свойств Konqueror для предоставления общего доступа к каталогу в локальной сети.

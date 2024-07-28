@@ -1,0 +1,13 @@
+itstool-2.0.7-x86_64-2
+
+itstool (Translate XML documents with PO files)
+
+ITS Tool allows you to translate your XML documents with PO files, using rules from the W3C Internationalization Tag Set (ITS) to determine what to translate and how to separate it into PO file messages.
+
+
+itstool (Перевод XML-документов с помощью PO-файлов)
+
+Этот инструмент позволяет вам переводить ваши XML-документы с помощью PO-файлов, используя правила из набора тегов интернационализации W3C (ITS), чтобы определить, что переводить и как разделить это на сообщения в PO-файлах
+
+Homepage: http://itstool.org/
+

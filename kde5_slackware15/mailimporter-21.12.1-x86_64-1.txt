@@ -1,0 +1,9 @@
+mailimporter-21.12.1-x86_64-1
+
+mailimporter (mail importer library)
+
+A mail importer library.
+
+mailimporter (библиотека почтового импортера)
+
+Библиотека почтового импортера.

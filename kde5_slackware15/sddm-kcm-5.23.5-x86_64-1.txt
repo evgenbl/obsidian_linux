@@ -1,0 +1,12 @@
+sddm-kcm-5.23.5-x86_64-1
+
+sddm-kcm (configure SDDM in kde)
+
+KCM module for SDDM. This module allows for configuring SDDM in the KDE System Settings.
+
+sddm-kcm (настройка SDDM в kde)
+
+Модуль KCM для SDDM. Этот модуль позволяет настроить SDDM в системных настройках KDE.
+
+Homepage: https://github.com/sddm/sddm-kcm
+

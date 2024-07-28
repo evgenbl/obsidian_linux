@@ -1,0 +1,9 @@
+kmime-21.12.1-x86_64-1
+
+kmime (API for the handling of MIME data)
+
+The kmime library contains an API for the handling of MIME data.
+
+kmime (API для обработки MIME-данных)
+
+Библиотека kmime содержит API для обработки MIME-данных.

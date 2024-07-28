@@ -1,0 +1,11 @@
+kcachegrind-21.12.1-x86_64-1
+
+kcachegrind (GUI to profilers such as Valgrind)
+
+kcachegrind is a graphical browser for data produced by profiling tools such as Valgrind.
+
+kcachegrind (графический интерфейс для профилировщиков, таких как Valgrind)
+
+kcachegrind - это графический браузер для данных, полученных с помощью инструментов профилирования, таких как Valgrind.
+
+Valgrind — инструментальное программное обеспечение, предназначенное для отладки использования памяти, обнаружения утечек памяти, а также профилирования.

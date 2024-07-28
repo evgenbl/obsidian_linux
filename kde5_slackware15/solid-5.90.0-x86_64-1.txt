@@ -1,0 +1,12 @@
+solid-5.90.0-x86_64-1
+
+solid (Desktop hardware abstraction)
+
+Solid is a device integration framework. It provides a way of querying and interacting with hardware independently of the underlying operating system. It provides hardware discovery, power management, and network management features.
+
+solid (абстракция аппаратного обеспечения настольного компьютера)
+
+Solid - это платформа для интеграции устройств. Она предоставляет способ запроса и взаимодействия с оборудованием независимо от базовой операционной системы. Она обеспечивает обнаружение оборудования, управление питанием и сетью.
+
+Homepage: https://api.kde.org/frameworks/solid/html/
+

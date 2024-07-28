@@ -1,0 +1,9 @@
+kparts-5.90.0-x86_64-1
+
+kparts (UI framework)
+
+The KParts library implements the framework for KDE parts, which are elaborate widgets with a user-interface defined in terms of actions (menu items, toolbar icons).
+
+kparts (фреймворк пользовательского интерфейса)
+
+Библиотека KParts реализует фреймворк для компонентов KDE, которые представляют собой сложные виджеты с пользовательским интерфейсом, определенным в терминах действий (пункты меню, значки на панели инструментов).

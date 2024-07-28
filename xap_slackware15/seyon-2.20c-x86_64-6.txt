@@ -1,0 +1,10 @@
+seyon-2.20c-x86_64-6
+
+seyon (telecommunications package)
+
+Seyon is a complete full-featured telecommunications package for the X Window System. Some of its features are: Dialing directory that supports an unlimited number of entries. Terminal emulation window supporting DEC VT02, Tektronix 4014, and ANSI. Script language to automate tedious tasks such as logging into remote hosts. Unlimited number of slots for external file transfer protocols. Support for zmodem auto-download. Seyon is intended to be both simple and extensively configurable.
+
+
+seyon (телекоммуникационный пакет)
+
+Seyon - это полноценный телекоммуникационный пакет для системы X Window. Вот некоторые из его возможностей: Телефонный справочник, поддерживающий неограниченное количество записей. Окно эмуляции терминала, поддерживающее DEC VT02, Tektronix 4014 и ANSI. Язык сценариев для автоматизации утомительных задач, таких как вход на удаленные хосты. Неограниченное количество слотов для внешних протоколов передачи файлов. Поддержка автоматической загрузки zmodem. Seyon должен быть одновременно простым и широко настраиваемым.

@@ -1,0 +1,12 @@
+xscreensaver-6.02-x86_64-1
+
+xscreensaver (a screen saver and locker for X)
+
+A modular screen saver and locker for the X Window System. Highly customizable: allows the use of any program that can draw on the root window as a display mode. More than 100 display modes areincluded in this package.
+
+xscreensaver (экранная заставка и блокировка для X)
+
+Модульная экранная заставка и блокировка для X Window System. Легко настраиваемый интерфейс: позволяет использовать любую программу, которая может рисовать в корневом окне, в качестве режима отображения. В этот пакет включено более 100 режимов отображения.
+
+Homepage: http://www.jwz.org/xscreensaver
+

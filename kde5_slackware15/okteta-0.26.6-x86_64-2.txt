@@ -1,0 +1,9 @@
+okteta-0.26.6-x86_64-2
+
+okteta (hex editor for KDE)
+
+A KDE hex editor for viewing and editing the raw data of files.
+
+okteta (шестнадцатеричный редактор для KDE)
+
+Шестнадцатеричный редактор KDE для просмотра и редактирования исходных данных файлов.

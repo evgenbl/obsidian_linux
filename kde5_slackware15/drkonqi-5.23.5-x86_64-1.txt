@@ -1,0 +1,10 @@
+drkonqi-5.23.5-x86_64-1
+
+drkonqi (crash handler for plasma5)
+
+Drkonqi is the crash handler for KDE Frameworks 5 / Plasma5.
+
+drkonqi (обработчик сбоев для plasma5)
+
+Drkonqi - это обработчик сбоев для KDE Frameworks 5 / Plasma 5.
+

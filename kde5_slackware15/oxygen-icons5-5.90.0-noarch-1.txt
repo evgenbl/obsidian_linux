@@ -1,0 +1,9 @@
+oxygen-icons5-5.90.0-noarch-1
+
+oxygen-icons5 (Oxygen theme for KDE)
+
+Oxygen provides a complete and modern icon theme for KDE.
+
+oxygen-icons 5 (тема Oxygen для KDE)
+
+Oxygen предоставляет полную и современную тему значков для KDE.

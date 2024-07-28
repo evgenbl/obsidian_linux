@@ -1,0 +1,20 @@
+kolourpaint-21.12.1-x86_64-1
+
+kolourpaint (easy to use paint program)
+
+KolourPaint is a easy-to-use paint program for KDE. It aims to be conceptually simply to understand; providing a level of functionality argeted towards the average user. It's designed for tasks like:
+* Painting - drawing diagrams and "finger painting"
+* Image Manipulation - editing photos and applying effects
+* Icon Editing - drawing clipart and logos with transparency
+
+kolourpaint (простая в использовании программа для рисования)
+
+KolourPaint - это простая в использовании программа для рисования для KDE. Она концептуально проста для понимания и обеспечивает уровень функциональности, ориентированный на обычного пользователя.
+
+Она предназначена для таких задач, как:
+
+* Рисование - рисование диаграмм и "рисование пальцами"
+
+* Обработка изображений - редактирование фотографий и применение эффектов
+
+* Редактирование значков - создание прозрачных клипартов и логотипов

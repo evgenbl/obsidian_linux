@@ -1,0 +1,9 @@
+kgoldrunner-21.12.1-x86_64-1
+
+kgoldrunner (Hunt gold, dodge enemies and solve puzzles)
+
+KGoldrunner is a maze-threading game with a puzzle flavor. It has hundreds of levels where pieces of gold must be collected, with enemies in hot pursuit.
+
+kgoldrunner (Охотьтесь за золотом, уклоняйтесь от врагов и решайте головоломки)
+
+KGoldrunner - это игра в жанре лабиринта с элементами головоломки. В ней сотни уровней, на которых необходимо собирать кусочки золота, а враги преследуют вас по пятам.

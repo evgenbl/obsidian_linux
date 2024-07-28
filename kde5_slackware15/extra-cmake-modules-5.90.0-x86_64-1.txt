@@ -1,0 +1,10 @@
+extra-cmake-modules-5.90.0-x86_64-1
+
+extra-cmake-modules (extra KDE CMake modules)
+
+This package contains additional CMake modules required for compiling KDE Frameworks 5.
+
+extra-cmake-modules (дополнительные модули KDE CMake)
+
+Этот пакет содержит дополнительные модули CMake, необходимые для компиляции KDE Frameworks 5.
+

@@ -1,0 +1,12 @@
+kdenlive-21.12.1-x86_64-1
+
+kdenlive (non-linear video editor)
+
+A non-linear video editor for Linux using the MLT video framework.
+
+kdenlive (нелинейный видеоредактор)
+
+Нелинейный видеоредактор для Linux, использующий платформу MLT video framework.
+
+Homepage: http://www.kdenlive.org
+

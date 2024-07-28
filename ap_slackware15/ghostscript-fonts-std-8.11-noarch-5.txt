@@ -1,0 +1,9 @@
+ghostscript-fonts-std-8.11-noarch-5
+
+ghostscript-fonts-std (fonts for the Ghostscript interpreter)
+
+These fonts are used by the GhostScript interpreter.
+
+ghostscript-fonts-std (шрифты для интерпретатора Ghostscript)
+
+Эти шрифты используются интерпретатором GhostScript.

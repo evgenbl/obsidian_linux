@@ -1,0 +1,14 @@
+yakuake-21.12.1-x86_64-1
+
+yakuake (drop-down terminal)
+
+Yakuake is a drop-down terminal emulator based on KDE Konsole.
+
+Some of the features of Yakuake include: Smoothly rolls down from the top of your screen Tabbed, skinnable interface, Configurable dimensions and animation speed, Sophisticated D-Bus interface
+
+
+yakuake (выпадающий терминал)
+
+Yakuake - это эмулятор выпадающего терминала, основанный на KDE Konsole.
+
+Некоторые из особенностей Yakuake включают в себя: Плавный переход от верхней части экрана к вкладкам, настраиваемый интерфейс, настраиваемые размеры и скорость анимации, сложный интерфейс D-Bus

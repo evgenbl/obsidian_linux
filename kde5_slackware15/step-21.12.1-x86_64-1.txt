@@ -1,0 +1,10 @@
+step-21.12.1-x86_64-1
+
+step (interactive physics simulator)
+
+Step is an interactive physical simulator. It works like this: you place some bodies on the scene, add some forces such as gravity or springs, then click "Simulate" and Step shows you how your scene will evolve according to the laws of physics. With Step you can not only learn but feel how physics works!
+
+step (интерактивный физический симулятор)
+
+Step - это интерактивный физический симулятор. Он работает следующим образом: вы размещаете на сцене несколько тел, добавляете некоторые силы, такие как гравитация или пружины, затем нажимаете "Имитировать", и Step показывает вам, как ваша сцена будет развиваться в соответствии с законами физики. С помощью Step вы сможете не только узнать, но и почувствовать, как работает физика!
+

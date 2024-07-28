@@ -1,0 +1,12 @@
+audacious-plugins-4.1-x86_64-3
+
+audacious-plugins (Plugins used by the Audacious media player)
+
+This is a collection of plugins for Audacious to support additionalmedia formats.
+
+audacious-plugins (плагины, используемые медиаплеером Audacious)
+
+Это набор плагинов для Audacious для поддержки дополнительных медиаформатов.
+
+Homepage: http://www.audacious-media-player.org
+

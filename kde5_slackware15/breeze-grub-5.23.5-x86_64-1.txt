@@ -1,0 +1,10 @@
+breeze-grub-5.23.5-x86_64-1
+
+breeze-grub (Breeze theme for GRUB)
+
+Breeze theme for GRUB.
+
+breeze-grub (тема Breeze для GRUB)
+
+Тема Breeze для GRUB.
+

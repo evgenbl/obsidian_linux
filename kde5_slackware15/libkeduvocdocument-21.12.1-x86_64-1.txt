@@ -1,0 +1,9 @@
+libkeduvocdocument-21.12.1-x86_64-1
+
+libkeduvocdocument (KVTML library)
+
+A library (formerly part of kdeedu) for reading from/writing to the KVTML format (and others too).
+
+libkeduvocdocument (библиотека KVTML)
+
+Библиотека (ранее входившая в состав kdeedu) для чтения из/записи в формат KVTML (и другие).

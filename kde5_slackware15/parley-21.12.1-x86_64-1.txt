@@ -1,0 +1,10 @@
+parley-21.12.1-x86_64-1
+
+parley (vocabulary trainer)
+
+Parley is a vocabulary trainer for KDE.
+
+
+parley (словарный тренажер)
+
+Parley - это словарный тренажер для KDE.

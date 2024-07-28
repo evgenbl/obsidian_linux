@@ -1,0 +1,12 @@
+soma-3.3.7-noarch-2
+
+soma (a dialog/MPlayer internet radio player and recorder)
+
+Soma handles playing any internet audio stream supported by MPlayer. It also supports playlists such as pls,m3u and ram.
+
+soma (проигрыватель и рекордер интернет-радио dialog/MPlayer)
+
+Soma поддерживает воспроизведение любого интернет-аудиопотока, поддерживаемого MPlayer. Он также поддерживает такие плейлисты, как pls, m3u и ram.
+
+Homepage: http://tty1.uk/slackbuilds/noversion/soma
+

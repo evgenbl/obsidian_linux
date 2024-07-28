@@ -1,0 +1,9 @@
+oxygen-5.23.5-x86_64-1
+
+oxygen (KDE window manager theme)
+
+Oxygen KDE window manager theme.
+
+oxygen (тема для оконного менеджера KDE)
+
+Тема для оконного менеджера KDE Oxygen.

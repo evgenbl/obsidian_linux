@@ -1,0 +1,12 @@
+hplip-3.20.5-x86_64-6
+
+hplip (HP print/scan/fax support)
+
+HPLIP is an HP developed solution for printing, scanning, and faxing with HP inkjet and laser based printers in Linux. The HPLIP project provides printing support for more than 1400 HP printer models, including Deskjet, Officejet, Photosmart, PSC (Print Scan Copy), Business Inkjet, LaserJet, and LaserJet MFP.
+
+hplip (поддержка HP print/scan/fax)
+
+HPLIP - это разработанное HP решение для печати, сканирования и отправки факсов с помощью струйных и лазерных принтеров HP на базе Linux. Проект HPLIP обеспечивает поддержку печати для более чем 1400 моделей принтеров HP, включая Deskjet, Officejet, Photosmart, PSC (печать скан-копий), Business Inkjet, LaserJet и МФУ LaserJet.
+
+Homepage: http://hplipopensource.com
+

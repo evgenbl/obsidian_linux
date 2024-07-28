@@ -1,0 +1,10 @@
+pim-sieve-editor-21.12.1-x86_64-1
+
+pim-sieve-editor (Sieve script editor)
+
+pim-sieve-editor is an editor for Sieve scripts used for email filtering on a mail server.
+
+
+pim-sieve-editor (редактор скриптов Sieve)
+
+pim-sieveeditor - это редактор скриптов Sieve, используемый для фильтрации электронной почты на почтовом сервере.

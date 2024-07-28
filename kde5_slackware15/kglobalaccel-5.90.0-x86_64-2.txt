@@ -1,0 +1,9 @@
+kglobalaccel-5.90.0-x86_64-2
+
+kglobalaccel (Global desktop keyboard shortcuts)
+
+KGlobalAccel allows you to have global accelerators that are independent of the focused window. Unlike regular shortcuts, the application's window does not need focus for them to be activated.
+
+kglobalaccel (Глобальные сочетания клавиш на рабочем столе)
+
+KGlobalAccel позволяет использовать глобальные ускорители, которые не зависят от сфокусированного окна. В отличие от обычных сочетаний клавиш, для их активации не требуется фокусировка окна приложения.

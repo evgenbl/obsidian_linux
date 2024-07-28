@@ -1,0 +1,9 @@
+kwayland-server-5.23.5-x86_64-2
+
+kwayland-server (wayland server components)
+
+Wayland server components built on KDE Frameworks.
+
+kwayland-server(серверные компоненты wayland)
+
+Серверные компоненты Wayland созданы на платформе KDE.

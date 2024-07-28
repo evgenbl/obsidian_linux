@@ -1,0 +1,12 @@
+gphoto2-2.5.28-x86_64-1
+
+gphoto2 (A command-line frontend to libgphoto2)
+
+libgphoto2 is a cross-platform digital camera library, and gphoto2 is a command-line client for it.
+
+gphoto2 (интерфейс командной строки для libgphoto2)
+
+libgphoto2 - это кроссплатформенная библиотека цифровых камер, а gphoto2 - это клиент командной строки для нее.
+
+Homepage: http://www.gphoto.org
+

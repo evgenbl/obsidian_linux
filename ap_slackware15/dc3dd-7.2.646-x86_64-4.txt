@@ -1,0 +1,19 @@
+dc3dd-7.2.646-x86_64-4
+
+dc3dd (version of dd designed for computer forensics)
+
+dc3dd is a patched version of GNU dd to include a number of features useful for computer forensics. Many of these features were inspired by dcfldd, but were rewritten for dc3dd. Added features include robust error handling, logging, progress meter, image verification, split output and more.
+
+dc3dd (версия dd, предназначенная для компьютерной криминалистики)
+
+dc3dd - это исправленная версия GNU dd, включающая ряд функций, полезных для компьютерной криминалистики. Многие из этих функций были вдохновлены dcfldd, но были переписаны для dc3dd. Добавлены такие функции, как надежная обработка ошибок, ведение журнала, индикатор выполнения, проверка изображений, раздельный вывод и многое другое.
+
+Команда dcfldd
+
+Если хотите видеть процесс создания флешки для этого нужно будет установить улучшенную версию dd, которая носит название dcfldd.
+
+Сотрудники лаборатории DoD Computer Forensics Laboratory (DCFL) внесли некоторые изменения в команду dd, тем самым улучшив ее и применяя в своих исследовательских работах. В итоге на свет появилась команда dcfldd, которая обеспечивает хеширование копируемых данных через некоторые промежутки времени для их аутентификации. Более того, dcfldd работает гораздо быстрее, чем dd.
+
+
+http://sourceforge.net/projects/dc3dd/
+

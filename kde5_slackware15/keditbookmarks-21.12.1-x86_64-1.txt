@@ -1,0 +1,10 @@
+keditbookmarks-21.12.1-x86_64-1
+
+keditbookmarks (Bookmark organizer and editor)
+
+Bookmark organizer and editor.
+
+keditbookmarks (Органайзер и редактор закладок)
+
+Органайзер и редактор закладок.
+

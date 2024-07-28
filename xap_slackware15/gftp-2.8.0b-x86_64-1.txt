@@ -1,0 +1,9 @@
+gftp-2.8.0b-x86_64-1
+
+gftp (FTP client for X)
+
+gFTP is a multithreaded FTP client for X written using GTK+. It features simultaneous downloads, resuming of interrupted file transfers, file transfer queues, downloading of entire directories, ftp proxy support, remote directory caching, passive and non-passive file transfers, drag-n-drop support, bookmarks menu, stop button, and many more features.
+
+ftp (FTP-клиент для X)
+
+gFTP - это многопоточный FTP-клиент для X, написанный с использованием GTK+. Он поддерживает одновременную загрузку, возобновление прерванной передачи файлов, очереди передачи файлов, загрузку целых каталогов, поддержку ftp-прокси, удаленное кэширование каталогов, пассивную и непассивную передачу файлов, поддержку перетаскивания, меню закладок, кнопку остановки и многие другие функции.

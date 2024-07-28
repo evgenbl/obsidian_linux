@@ -1,0 +1,10 @@
+kio-5.90.0-x86_64-1
+
+kio (network transparent file library)
+
+This framework implements almost all the file management functions you will ever need. In fact, the KDE file manager (Dolphin) and the KDE file dialog also use this to provide network-enabled file management. It supports accessing files locally as well as via HTTP and FTP out of the box and can be extended by plugins to support other protocols as well. There are a variety of plugins available, e.g. to support access via SSH.
+
+
+kio (сетевая прозрачная файловая библиотека)
+
+Этот фреймворк реализует практически все функции управления файлами, которые вам когда-либо понадобятся. На самом деле, файловый менеджер KDE (Dolphin) и диалоговое окно KDE file dialog также используют его для обеспечения сетевого управления файлами. Он поддерживает доступ к файлам локально, а также через HTTP и FTP "из коробки" и может быть расширен с помощью плагинов для поддержки других протоколов. Существует множество доступных плагинов, например, для поддержки доступа по SSH.

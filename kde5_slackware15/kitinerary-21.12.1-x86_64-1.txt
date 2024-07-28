@@ -1,0 +1,12 @@
+kitinerary-21.12.1-x86_64-1
+
+kitinerary (library for itinerary data)
+
+Data model and extraction system for travel reservation information.
+
+kitinerary (библиотека маршрутных данных)
+
+Модель данных и система извлечения информации о бронировании поездки
+
+Homepage: https://api.kde.org/kdepim/kitinerary/html/index.html
+

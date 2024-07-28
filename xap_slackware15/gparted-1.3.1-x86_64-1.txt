@@ -1,0 +1,20 @@
+gparted-1.3.1-x86_64-1
+
+gparted (Graphical partition editor)
+
+With GParted you can resize, copy, and move partitions without data loss, enabling you to:
+
+* Grow or shrink your C: drive
+* Create space for new operating systems
+* Attempt data rescue from lost partitions
+
+gparted (графический редактор разделов)
+
+С помощью GParted вы можете изменять размер, копировать и перемещать разделы без потери данных, что позволяет:
+
+* Увеличивать или уменьшать размер диска C:
+* Создавать пространство для новых операционных систем
+* Пытаться восстановить данные с потерянных разделов
+
+http://gparted.sourceforge.net/
+

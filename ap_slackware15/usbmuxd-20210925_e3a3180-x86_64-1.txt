@@ -1,0 +1,11 @@
+usbmuxd-20210925_e3a3180-x86_64-1
+
+usbmuxd (iOS USB connection daemon) 
+
+A client daemon to multiplex connections from and to iOS devices. It is used by libgpod.
+
+usbmuxd (демон USB-подключения iOS) 
+
+Клиентский демон для мультиплексирования подключений с устройств iOS и к ним. Он используется libgpod.
+
+The usbmuxd homepage: http://www.libimobiledevice.org/

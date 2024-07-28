@@ -1,0 +1,23 @@
+blueman-2.2.3-x86_64-2
+
+Blueman (Graphical Bluetooth Manager)
+
+Blueman is a GTK+ Bluetooth Manager for tasks such as:
+
+- Connecting to 3G/EDGE/GPRS via DUN profile.
+- Connecting to/Creating bluetooth networks
+- Connecting to input and audio devices
+- Sending/Receiving/Browsing files via OBEX
+- Pairing
+
+Blueman (Графический менеджер Bluetooth)
+
+Blueman - это менеджер Bluetooth с поддержкой GTK + для таких задач, как:
+
+- Подключение к 3G /EDGE /GPRS через профиль DUN.
+- Подключение к сетям Bluetooth и их создание
+- Подключение к входным и аудиоустройствам
+- Отправка/получение/просмотр файлов через OBEX
+- Сопряжение
+
+Homepage: https://github.com/blueman-project/blueman

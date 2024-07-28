@@ -1,0 +1,11 @@
+kiten-21.12.1-x86_64-1
+
+kiten (Japanese reference tool)
+
+Kiten is a Japanese reference tool. Kiten works mainly as a Japanese -> English dictionary, but it works from English -> Japanese too. This means you can write in English, Hiragana, Katakana, or Kanji to search in the dictionaries.
+
+kiten (японский справочник)
+
+Kitten - это японский справочник. Kitten работает в основном как японско -> английский словарь, но он также работает и с английского на японский. Это означает, что вы можете писать на английском, хирагане, катакане или кандзи для поиска в словарях.
+
+Homepage: https://www.kde.org/applications/education/kiten

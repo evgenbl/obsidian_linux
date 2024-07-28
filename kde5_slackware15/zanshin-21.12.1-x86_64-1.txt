@@ -1,0 +1,12 @@
+zanshin-21.12.1-x86_64-1
+
+zanshin (A Getting Things Done application)
+
+Zanshin is a powerful yet simple application to manage your day to day actions. It helps you organize and reduce the cognitive pressure of what you have to do in your job and personal life. You'll never forget anything anymore, getting your mind like water. Zanshin's user interface lets you quickly see an overview of your life and tasks.
+
+zanshin (Приложение для выполнения задач)
+
+Zanshin - это мощное, но простое приложение для управления вашими повседневными действиями. Оно помогает вам организовать и снизить когнитивную нагрузку, связанную с тем, что вам приходится делать на работе и в личной жизни. Вы больше никогда ничего не забудете, благодаря тому, что ваш разум наполнен энергией. Пользовательский интерфейс Zanshin позволяет быстро просмотреть общую информацию о вашей жизни и задачах.
+
+Homepage: https://zanshin.kde.org
+

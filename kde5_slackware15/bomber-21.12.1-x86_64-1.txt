@@ -1,0 +1,11 @@
+bomber-21.12.1-x86_64-1
+
+
+bomber (arcade bombing game for KDE)
+
+Bomber is a single player arcade game. The player is invading various cities in a plane that is decreasing in height. The goal of the game is to destroy all the buildings and advance to the next level. Each level gets a bit harder by increasing the speed of the plane and the height of the buildings.
+
+
+bomber (аркадная игра-бомбер для KDE)
+
+Bomber - это аркадная игра для одиночной игры. Игрок вторгается в различные города на самолете, который снижается по высоте. Цель игры - разрушить все здания и перейти на следующий уровень. Каждый уровень становится немного сложнее за счет увеличения скорости самолета и высоты зданий.

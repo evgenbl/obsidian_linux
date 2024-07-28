@@ -1,0 +1,10 @@
+kamera-21.12.1-x86_64-1
+
+kamera (digital camera support for KDE)
+
+Digital camera support for KDE.
+
+kamera (поддержка цифровых камер в KDE)
+
+Поддержка цифровых камер в KDE.
+

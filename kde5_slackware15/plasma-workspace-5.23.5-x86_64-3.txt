@@ -1,0 +1,10 @@
+plasma-workspace-5.23.5-x86_64-3
+
+plasma-workspace (KDE Plasma Workspace)
+
+The Plasma Workspace provides support for KDE Plasma Widgets, integrated search, hardware management, and a high degree of customizability.
+
+
+plasma-workspace (Рабочее пространство KDE Plasma)
+
+Рабочее пространство Plasma обеспечивает поддержку виджетов KDE Plasma, интегрированный поиск, управление оборудованием и высокую степень настраиваемости.

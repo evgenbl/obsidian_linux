@@ -1,0 +1,9 @@
+screen-4.9.0-x86_64-1
+
+screen (screen manager with VT100/ANSI terminal emulation)
+
+Screen is a full-screen window manager that multiplexes a physical terminal between several processes (typically interactive shells). Each virtual terminal provides the functions of a DEC VT100 terminal and several control functions from the ISO 6492 (ECMA 48, ANSI X3.64) and ISO 2022 standards (e.g. insert/delete line and support for multiple character sets). There is a scrollback history buffer for each virtual terminal and a copy-and-paste mechanism that allows moving text regions between windows.
+
+screen (менеджер экранов с эмуляцией терминала VT100/ANSI)
+
+Screen - это полноэкранный оконный менеджер, который мультиплексирует физический терминал между несколькими процессами (обычно интерактивными оболочками). Каждый виртуальный терминал обеспечивает функции терминала DEC VT100 и несколько функций управления в соответствии со стандартами ISO 6492 (ECMA 48, ANSI X3.64) и ISO 2022 (например, вставка/удаление строки и поддержка нескольких наборов символов). Для каждого виртуального терминала предусмотрен буфер истории обратной прокрутки и механизм копирования и вставки, позволяющий перемещать текстовые области между окнами.

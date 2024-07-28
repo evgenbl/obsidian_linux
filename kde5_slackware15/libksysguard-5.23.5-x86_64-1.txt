@@ -1,0 +1,9 @@
+libksysguard-5.23.5-x86_64-1
+
+libksysguard (system information library)
+
+Library to retrieve information on the current status of your computer hardware.
+
+libksysguard (библиотека системной информации)
+
+Библиотека для получения информации о текущем состоянии аппаратного обеспечения вашего компьютера.

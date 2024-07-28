@@ -1,0 +1,12 @@
+krita-5.0.2-x86_64-2
+
+krita (painting program)
+
+Krita is a professional free and open source painting program. It is made by artists that want to see affordable art tools for everyone.
+
+krita (программа для рисования)
+
+Krita - это профессиональная бесплатная программа для рисования с открытым исходным кодом. Она создана художниками, которые хотят, чтобы инструменты для рисования были доступны каждому.
+
+Homepage: http://www.krita.org/
+

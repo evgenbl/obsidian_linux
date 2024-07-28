@@ -1,0 +1,9 @@
+knetwalk-21.12.1-x86_64-1
+
+knetwalk (single player logic game)
+
+KNetwalk is a single player logic game. Construct the network, connecting all the terminals to the server in the fewest turns possible.
+
+knetwalk (логическая игра для одного игрока)
+
+KNetwalk - это логическая игра для одного игрока. Создайте сеть, подключив все терминалы к серверу за наименьшее количество ходов.

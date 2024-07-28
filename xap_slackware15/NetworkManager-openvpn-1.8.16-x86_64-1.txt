@@ -1,0 +1,12 @@
+NetworkManager-openvpn-1.8.16-x86_64-1
+
+NetworkManager-openvpn (OpenVPN Support for NetworkManager)
+
+NetworkManager attempts to keep an active network connection available at all times. This applet provides OpenVPN Support for NetworkManager.
+
+NetworkManager-openvpn (Поддержка OpenVPN для NetworkManager)
+
+NetworkManager пытается поддерживать активное сетевое соединение доступным в любое время. Этот апплет обеспечивает поддержку OpenVPN для NetworkManager
+
+Homepage: https://github.com/GNOME/NetworkManager-openvpn
+

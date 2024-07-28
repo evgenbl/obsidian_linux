@@ -1,0 +1,9 @@
+kontactinterface-21.12.1-x86_64-1
+
+kontactinterface (kontact plugin interface library)
+
+kontactinterface is a library for embedding KParts in a Kontact component.
+
+kontactinterface (библиотека интерфейса плагина kontact)
+
+kontactinterface - это библиотека для встраивания KParts в компонент Kontact.

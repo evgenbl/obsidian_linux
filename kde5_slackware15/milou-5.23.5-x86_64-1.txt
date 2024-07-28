@@ -1,0 +1,9 @@
+milou-5.23.5-x86_64-1
+
+milou (Plasma search applet)
+
+A Plasma applet that can search files, emails, contacts, events and more data indexed by KDE Desktop Search.
+
+milou (поисковый апплет Plasma)
+
+Плазменный апплет, который может выполнять поиск файлов, электронных писем, контактов, событий и других данных, индексируемых KDEDesktopSearch.

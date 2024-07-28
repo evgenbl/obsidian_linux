@@ -1,0 +1,15 @@
+kde-gtk-config-5.23.5-x86_64-1
+
+kde-gtk-config (configure GTK appearance)
+
+System settings kcm to set GTK application look and feel in KDE.
+
+
+kde-gtk-config (настройка внешнего вида GTK)
+
+Системные настройки kcm позволяют настроить внешний вид приложения GTK в KDE.
+
+Homepage: http://projects.kde.org/kde-gtk-config
+
+
+

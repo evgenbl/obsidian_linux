@@ -1,0 +1,9 @@
+kpeoplevcard-0.1-x86_64-4
+
+kpeoplevcard (library to expose vcards to kpeople)
+
+kpeoplevcard is a library to expose vcards to kpeople.
+
+kpeoplevcard (библиотека, позволяющая показывать людям визитные карточки)
+
+kpeoplevcard - это библиотека, позволяющая показывать людям визитные карточки.

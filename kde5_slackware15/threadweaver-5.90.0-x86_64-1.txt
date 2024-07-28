@@ -1,0 +1,10 @@
+threadweaver-5.90.0-x86_64-1
+
+threadweaver (threaded programming helper)
+
+ThreadWeaver is a helper for multithreaded programming. It uses a job- based interface to queue tasks and execute them in an efficient way. You simply divide the workload into jobs, state the dependencies between the jobs and ThreadWeaver will work out the most efficient way of dividing the work between threads within a set of resource limits.
+
+
+threadweaver (помощник по многопоточному программированию)
+
+ThreadWeaver - это помощник для многопоточного программирования. Он использует интерфейс на основе заданий для постановки задач в очередь и их эффективного выполнения. Вы просто делите рабочую нагрузку на задания, указываете зависимости между заданиями, и ThreadWeaver разработает наиболее эффективный способ распределения работы между потоками в рамках набора ограничений по ресурсам.

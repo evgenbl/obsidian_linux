@@ -1,0 +1,9 @@
+kimageformats-5.90.0-x86_64-1
+
+kimageformats (QImage format plugins)
+
+This framework provides additional image format plugins for QtGui. As such it is not required for the compilation of any other software, but may be a runtime requirement for Qt-based software to support certain image formats.
+
+kimageformats (плагины формата QImage)
+
+Этот фреймворк предоставляет дополнительные плагины формата изображений для QtGui. Как таковой, он не требуется для компиляции какого-либо другого программного обеспечения, но может потребоваться во время выполнения программного обеспечения на базе Qt для поддержки определенных графических форматов.

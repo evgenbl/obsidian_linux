@@ -1,0 +1,10 @@
+akonadi-notes-21.12.1-x86_64-1
+
+akonadi-notes (akonadi note management library)
+
+Akonadi Notes is a library that effectively bridges the type-agnostic API of the Akonadi client libraries and the domain-specific KMime library. It provides a helper class for note attachments and for wrapping notes into KMime::Message objects.
+
+akonadi-notes (библиотека управления заметками akonadi)
+
+Akonadi Notes - это библиотека, которая эффективно объединяет не зависящий от типа данных API клиентских библиотек Akonadi и библиотеки KMime, зависящей от домена. Он предоставляет вспомогательный класс для вложений заметок и для упаковки заметок в объекты KMime::Message.
+

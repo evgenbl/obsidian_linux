@@ -1,0 +1,3 @@
+https://ftp.osuosl.org/pub/slackware-iso/slackware64-15.0-iso/
+
+ftp://ftp.osuosl.org/pub/slackware-iso/slackware64-15.0-iso/

@@ -1,0 +1,9 @@
+kpty-5.90.0-x86_64-1
+
+kpty (pseudo terminal library)
+
+The KPty library provides primitives to interface with pseudo terminal devices as well as a KProcess derived class for running child processes and communicating with them using a pty.
+
+kpty (библиотека псевдотерминалов)
+
+Библиотека KPty предоставляет примитивы для взаимодействия с псевдотерминалами, а также производный класс KProcess для запуска дочерних процессов и взаимодействия с ними с помощью pty.

@@ -1,0 +1,10 @@
+libksieve-21.12.1-x86_64-1
+
+libksieve (sieve mailfilter library)
+
+libksieve is a KDE PIM library for managing sieve mailfilters.
+
+
+libksieve (библиотека сетчатых почтовых фильтров)
+
+libksieve - это библиотека KDE PIM для управления сетчатыми почтовыми фильтрами.

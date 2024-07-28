@@ -1,0 +1,13 @@
+gv-3.7.4-x86_64-5
+
+gv (PS/PDF file viewer)
+
+gv is a PostScript and PDF previewer. It allows users to view and navigate through PostScript and PDF documents on an X display by  providing a user interface for the ghostscript interpreter.
+
+gv was written by Johannes Plass, using the source code for Tim Theisen's ghostview 1.5 as a starting point.
+
+gv (средство просмотра файлов PS/PDF)
+
+gv - это программа для предварительного просмотра PostScript и PDF-файлов. Она позволяет пользователям просматривать документы PostScript и PDF и перемещаться по ним на экране X, предоставляя пользовательский интерфейс для интерпретатора ghostscript.
+
+gv был написан Йоханнесом Плассом, использовавшим исходный код ghostview 1.5 Тима Тейзена в качестве отправной точки.

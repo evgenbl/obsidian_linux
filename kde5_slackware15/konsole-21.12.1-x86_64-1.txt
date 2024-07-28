@@ -1,0 +1,12 @@
+konsole-21.12.1-x86_64-1
+
+konsole (KDE's terminal emulator)
+
+Konsole is a powerful and customizable terminal emulator.
+
+konsole (эмулятор терминала KDE)
+
+Konsole - это мощный и настраиваемый эмулятор терминала.
+
+Homepage: https://konsole.kde.org
+

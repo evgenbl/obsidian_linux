@@ -1,0 +1,9 @@
+minuet-21.12.1-x86_64-1
+
+minuet (software for music education)
+
+Minuet is the KDE software for music education, such as ear training, first-sight reading, solfa, scales, rhythm, harmony, and improvisation. Minuet makes extensive use of MIDI capabilities.
+
+minute (программное обеспечение для музыкального образования)
+
+Minuet - это программное обеспечение KDE для музыкального образования, такого как тренировка слуха, чтение с первого взгляда, сольфа, гаммы, ритм, гармония и импровизация. Minuet широко использует возможности MIDI.

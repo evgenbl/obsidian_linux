@@ -1,0 +1,9 @@
+dolphin-plugins-21.12.1-x86_64-1
+
+dolphin-plugins (dolphin VCS plugins)
+
+This package contains plugins that offer integration of various version control systems in Dolphin.
+
+dolphin-plugins (плагины dolphin VCS)
+
+Этот пакет содержит плагины, которые обеспечивают интеграцию различных систем контроля версий в Dolphin.

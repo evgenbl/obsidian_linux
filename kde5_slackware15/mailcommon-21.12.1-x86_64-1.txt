@@ -1,0 +1,9 @@
+mailcommon-21.12.1-x86_64-1
+
+mailcommon (mail application library)
+
+KDE PIM library providing support for mail applications.
+
+mailcommon (библиотека почтовых приложений)
+
+Библиотека KDE PIM, обеспечивающая поддержку почтовых приложений.

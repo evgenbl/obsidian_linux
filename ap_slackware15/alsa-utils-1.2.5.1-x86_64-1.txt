@@ -1,0 +1,29 @@
+alsa-utils-1.2.5.1-x86_64-1
+
+alsa-utils (Advanced Linux Sound Architecture utilities)
+
+The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI functionality to the Linux operating system. This package contains command line audio utilities for use with ALSA:
+
+alsactl        (manage soundcard settings)
+
+arecord/aplay  (capture and play audio)
+
+amixer         (adjust mixer settings from the command line)
+
+alsamixer      (an ncurses-based console mixer)
+
+For more information, see http://alsa-project.org
+
+alsa-utils (Расширенные утилиты звуковой архитектуры Linux)
+
+Расширенная звуковая архитектура Linux (ALSA) обеспечивает функциональность аудио и MIDI для операционной системы Linux. Этот пакет содержит звуковые утилиты командной строки для использования с ALSA:
+
+alsactl (управление настройками звуковой карты)
+
+arecord/aplay (запись и воспроизведение аудио)
+
+mixer (настройка параметров микшера из командной строки)
+
+alsamixer (консольный микшер на базе ncurses)
+
+Для получения дополнительной информации: http://alsa-project.org

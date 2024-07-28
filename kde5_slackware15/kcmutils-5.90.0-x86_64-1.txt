@@ -1,0 +1,10 @@
+kcmutils-5.90.0-x86_64-1
+
+kcmutils (KDE System Settings utilities)
+
+KCMUtils provides various classes to work with KCModules. KCModules can be created with the KConfigWidgets framework.
+
+kcmutils (Утилиты системных настроек KDE)
+
+KCMUtils предоставляет различные классы для работы с KCModules. KCModules можно создавать с помощью платформы KConfigWidgets framework.
+

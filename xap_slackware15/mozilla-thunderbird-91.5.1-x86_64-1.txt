@@ -1,0 +1,12 @@
+mozilla-thunderbird-91.5.1-x86_64-1
+
+mozilla-thunderbird (Mozilla Thunderbird mail application)
+
+Mozilla Thunderbird is a redesign of the Mozilla mail component written using the XUL user interface language. Thunderbird makes emailing safer, faster, and easier than ever before with the industry's best implementations of features such as intelligent spam filters, built-in RSS reader, quick search, and much more.
+
+mozilla-thunderbird (почтовое приложение Mozilla Thunderbird)
+
+Mozilla Thunderbird - это редизайн почтового компонента Mozilla, написанный с использованием языка пользовательского интерфейса XUL. Thunderbird делает отправку электронной почты безопаснее, быстрее и проще, чем когда-либо прежде, благодаря лучшим в отрасли функциям, таким как интеллектуальные фильтры нежелательной почты, встроенный RSS-ридер, быстрый поиск и многому другому.
+
+Homepage: http://www.mozilla.org/projects/thunderbird/
+

@@ -1,0 +1,9 @@
+libkscreen-5.23.5-x86_64-1
+
+libkscreen (screen management library)
+
+LibKScreen is a library that provides access to current configuration of connected displays and ways to change the configuration.
+
+libkscreen (библиотека управления экраном)
+
+LibKScreen - это библиотека, которая предоставляет доступ к текущей конфигурации подключенных дисплеев и способам изменения конфигурации.

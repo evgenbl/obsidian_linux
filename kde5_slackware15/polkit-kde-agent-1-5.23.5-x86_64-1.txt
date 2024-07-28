@@ -1,0 +1,12 @@
+polkit-kde-agent-1-5.23.5-x86_64-1
+
+polkit-kde-agent-1 (KDE polkit authenticator)
+
+This daemon provides a polkit authenticator UI for KDE.
+
+polkit-kde-agent-1 (средство проверки подлинности KDE polkit)
+
+Этот демон предоставляет пользовательский интерфейс polkit authenticator для KDE.
+
+See also: https://projects.kde.org/projects/kde/workspace/polkit-kde-agent-1
+

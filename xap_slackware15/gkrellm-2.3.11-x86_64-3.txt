@@ -1,0 +1,17 @@
+gkrellm-2.3.11-x86_64-3
+
+gkrellm (GNU Krell Monitors)
+
+GKrellM charts SMP CPU, load, Disk, and all active net interfaces automatically. An on/off button and online timer for the PPP interface is provided. Monitors for memory and swap usage, file system, internet connections, APM laptop battery, mbox style mailboxes, and cpu temps. Also includes an uptime monitor, hostname label, and clock/calendar.
+
+Bill Wilson is the author of GKrellM.
+
+gkrellm (Мониторы GNU Krell)
+
+GKrellM автоматически отображает данные о процессоре SMP, загрузке, диске и всех активных сетевых интерфейсах. Предусмотрена кнопка включения/выключения и онлайн-таймер для интерфейса PPP. Отслеживает использование памяти и подкачки, файловую систему, подключения к Интернету, аккумулятор ноутбука APM, почтовые ящики в стиле mbox и температуру процессора. Также включает монитор времени безотказной работы, метку имени хоста и часы /календарь.
+
+Мониторы GNU Krell ( GKrellM ) — это программное обеспечение для системного мониторинга , основанное на наборе инструментов GTK+ , которое создает единый стек процессов системных мониторов. Его можно использовать для мониторинга состояния процессоров , основной памяти , жестких дисков , сетевых интерфейсов , локальных и удаленных почтовых ящиков и многого другого. Доступны плагины для множества задач, например, для управления XMMS медиаплеером или клиентом SETI@home из встроенного монитора.
+
+GKrellM , выпущенный на условиях GNU General Public License , является свободным программным обеспечением .
+
+Билл Уилсон - автор GKrellM.

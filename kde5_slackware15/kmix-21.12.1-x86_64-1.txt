@@ -1,0 +1,9 @@
+kmix-21.12.1-x86_64-1
+
+kmix (sound mixer)
+
+KMix is an application to allow you to change the volume of your sound card. Though small, it is full-featured, and it supports several platforms and sound drivers.
+
+kmix (звуковой микшер)
+
+KMix - это приложение, позволяющее изменять громкость вашей звуковой карты. Несмотря на небольшой размер, оно полнофункционально и поддерживает несколько платформ и звуковых драйверов.

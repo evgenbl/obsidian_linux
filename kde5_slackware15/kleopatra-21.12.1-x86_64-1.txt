@@ -1,0 +1,9 @@
+kleopatra-21.12.1-x86_64-1
+
+kleopatra (KDE Crypto Certificate manager)
+
+Certificate Manager and Unified Crypto GUI.
+
+kleopatra (Менеджер крипто-сертификатов KDE)
+
+Менеджер сертификатов и унифицированный графический интерфейс для криптографии.

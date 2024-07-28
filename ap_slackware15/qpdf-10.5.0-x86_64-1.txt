@@ -1,0 +1,12 @@
+qpdf-10.5.0-x86_64-1
+
+qpdf (Command-line tools and library for transforming PDF files)
+
+QPDF is a program that does structural, content-preserving transformations on PDF files. It could have been called something like pdf-to-pdf. It also provides many useful capabilities to developers of PDF-producing software or for people who just want to look at the innards of a PDF file to learn more about how they work.
+
+qpdf (Инструменты командной строки и библиотека для преобразования PDF-файлов)
+
+QPDF - это программа, которая выполняет структурные преобразования PDF-файлов с сохранением содержимого. Ее можно было бы назвать как-то вроде pdf-to-pdf. Он также предоставляет множество полезных возможностей разработчикам программного обеспечения для создания PDF-файлов или людям, которые просто хотят ознакомиться с внутренностями PDF-файла, чтобы узнать больше о том, как они работают.
+
+Homepage: http://qpdf.sourceforge.net/
+

@@ -1,0 +1,12 @@
+sudo-1.9.9-x86_64-1
+
+sudo (give limited root privileges to certain users)
+
+'sudo' is a command that allows users to execute some commands as root. The /etc/sudoers file (edited with 'visudo') specifies which users have access to sudo and which commands they can run. 'sudo' logs all its activities to /var/log/ so the system administrator can keep an eye on things.
+
+sudo (предоставляет ограниченные права суперпользователя определенным пользователям)
+
+"sudo" - это команда, которая позволяет пользователям выполнять некоторые команды от имени пользователя root. Файл /etc/sudoers (отредактированный с помощью "visudo") указывает, какие пользователи имеют доступ к sudo и какие команды они могут выполнять. "sudo" регистрирует все свои действия в /var/log/, чтобы системный администратор мог следить за происходящим.
+
+Homepage: https://www.sudo.ws
+

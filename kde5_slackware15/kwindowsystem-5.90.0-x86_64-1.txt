@@ -1,0 +1,9 @@
+kwindowsystem-5.90.0-x86_64-1
+
+kwindowsystem (windowing system access)
+
+KWindowSystem provides information about the windowing system andallows interaction with the windowing system. It provides a high level API which is windowing system independent and has platform specific implementations. This API is inspired by X11 and thus not all functionality is available on all windowing systems.
+
+kwindowsystem (доступ к оконной системе)
+
+KWindowSystem предоставляет информацию об оконной системе и позволяет взаимодействовать с оконной системой. Он предоставляет высокоуровневый API, который не зависит от оконной системы и имеет реализации для конкретной платформы. Этот API основан на X11, и поэтому не все функциональные возможности доступны во всех оконных системах.

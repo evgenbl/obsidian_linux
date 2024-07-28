@@ -1,0 +1,16 @@
+kgeography-21.12.1-x86_64-1
+
+kgeography (a geography learning tool)
+
+KGeography is a geography learning tool with three usage modes:
+
+Browse the maps clicking in a map division to see it's name. The game tells you a map division name and you have to click on it. The game shows you a map division flag and you have to guess its name.
+
+kgeography (инструмент для изучения географии)
+
+KGeography - это инструмент для изучения географии с тремя режимами использования:
+
+Просматривайте карты, нажимая на раздел карты, чтобы увидеть его название. Игра сообщает вам название раздела карты, и вы должны нажать на него. В игре вам показывается флаг страны на карте, и вы должны угадать ее название.
+
+Homepage: http://kgeography.berlios.de/
+

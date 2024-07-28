@@ -1,0 +1,11 @@
+blinken-21.12.1-x86_64-1
+
+blinken (a memory enhancement game)
+
+Blinken is a memory enhancement game for KDE.
+
+
+blinken (игра для улучшения памяти)
+
+Blinken - это игра для KDE, для улучшения памяти.
+

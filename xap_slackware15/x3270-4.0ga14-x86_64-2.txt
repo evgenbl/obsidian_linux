@@ -1,0 +1,10 @@
+x3270-4.0ga14-x86_64-2
+
+x3270 (IBM host access tool for X)
+
+x3270 opens a telnet connection to an IBM host in an X window. Since the window created by x3270 can use its own font for displaying characters, is a fairly accurate representation of an IBM 3278.
+
+x3270 (IBM host access tool для X)
+
+x3270 открывает telnet-соединение с хостом IBM в X-окне. Поскольку окно, созданное x3270, может использовать свой собственный шрифт для отображения символов, оно является довольно точным отображением IBM 3278.
+

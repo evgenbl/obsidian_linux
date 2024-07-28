@@ -1,0 +1,10 @@
+spectacle-21.12.1-x86_64-1
+
+spectacle (screen capture program)
+
+Spectacle is screenshot taking utility for the KDE desktop. Spectacle can also be used in non-KDE X11 desktop environments.
+
+
+spectacle (программа для создания снимков экрана)
+
+Spectacle - это утилита для создания снимков экрана для рабочего стола KDE. Spectacle также может использоваться в настольных средах, отличных от KDE X11.

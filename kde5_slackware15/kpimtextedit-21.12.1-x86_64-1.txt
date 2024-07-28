@@ -1,0 +1,9 @@
+kpimtextedit-21.12.1-x86_64-1
+
+kpimtextedit (textedit with PIM-specific features)
+
+KPIMTextedit is a library that provides an enchanced text edit class, see TextEdit. This text is highlighted with a EMailQuoteHighlighter. It also provides so-called rich text builders, that can convert the formatted text in the text edit to all kinds of markup, like HTML or BBCODE.
+
+kpimtextedit (textedit с функциями, специфичными для PIM)
+
+KPIMTextedit - это библиотека, которая предоставляет расширенный класс редактирования текста, см. TextEdit. Этот текст выделен кавычкой "Email". Он также предоставляет так называемые richtextbuilders, которые могут преобразовывать форматированный текст в текстовом редакторе во все виды разметки, такие как HTML или BBCODE.

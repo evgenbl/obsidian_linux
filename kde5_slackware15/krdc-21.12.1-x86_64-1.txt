@@ -1,0 +1,11 @@
+krdc-21.12.1-x86_64-1
+
+krdc (remote desktop client for KDE)
+
+KRDC is a client application that allows you to view or even control the desktop session on another machine that is running a compatible server. VNC and RDP is supported.
+
+Homepage: https://www.kde.org/applications/internet/krdc/
+
+krdc (клиент удаленного рабочего стола для KDE)
+
+KRDC - это клиентское приложение, которое позволяет просматривать или даже управлять сеансом работы рабочего стола на другом компьютере, на котором установлен совместимый сервер. Поддерживаются VNC и RDP.

@@ -1,0 +1,9 @@
+ksirk-21.12.1-x86_64-1
+
+ksirk (conquer the world board game)
+
+KsirK is a computerized version of the well known strategic board game R***. The goal of the game is simply to conquer the world by attacking your neighbors with your armies.
+
+ksirk (настольная игра "завоюй мир")
+
+KsirK - это компьютеризированная версия хорошо известной стратегической настольной игры R***. Цель игры - просто завоевать мир, нападая на своих соседей с помощью своих армий.

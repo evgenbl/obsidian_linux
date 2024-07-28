@@ -1,0 +1,13 @@
+granatier-21.12.1-x86_64-1
+
+granatier (bomberman clone for KDE)
+
+Granatier is a clone of the classic Bomberman game, inspired by the work of the Clanbomber clone.
+
+granatier (клон bomberman для KDE)
+
+Granatier - это клон классической игры Bomberman, вдохновленный творчеством клона Clanbomber.
+
+Bomberman (с англ. — «Бомбермен»), в японской версии Bomber Man — видеоигра в жанре аркады, разработанная японской компанией Hudson Soft. Первая игра в одноимённой серии.
+
+ClanBomber — бесплатная (GPL) многопользовательская игра, похожая на Bomberman, для ClanLib, многоплатформенного игрового SDK ( www.clanlib.org ). ). Существует также версия для DirectFB, которая станет основным направлением разработки в будущем.

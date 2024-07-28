@@ -1,0 +1,10 @@
+kbounce-21.12.1-x86_64-1
+
+kbounce (KDE Bounce Ball Game)
+
+KBounce is a single player arcade game with the elements of puzzle. It is played on a field, surrounded by wall, with two or more balls that move about in the field bouncing off of walls. The player can build new walls, decreasing the size of active field.
+
+kbounce (KDE Bounce Ball Game - Игра с отскакивающим мячом)
+
+KBounce - это аркадная игра для одного игрока с элементами головоломки. В нее играют на поле, окруженном стеной, с двумя или более шариками, которые перемещаются по полю, отскакивая от стен. Игрок может строить новые стены, уменьшая размер активного поля.
+

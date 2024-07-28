@@ -1,0 +1,10 @@
+kjobwidgets-5.90.0-x86_64-1
+
+kjobwidgets (job progress widgets)
+
+KJobWIdgets provides widgets for showing progress of asynchronous jobs.
+
+
+kjobwidgets (виджеты хода выполнения заданий)
+
+KJobWIdgets предоставляет виджеты для отображения хода выполнения асинхронных заданий.

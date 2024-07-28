@@ -1,0 +1,12 @@
+undervolt-20210815_e39aea1-x86_64-2
+
+undervolt (undervolt Intel CPUs)
+
+undervolt is a program for undervolting Intel CPUs under Linux. It works in a similar manner to the Windows program *ThrottleStop* (i.e.: MSR 0x150). You can apply a fixed voltage offset to one of 5 voltage planes, and override your systems temperature target (CPU will throttle when this temperature is reached). Use at your own risk.
+
+undervolt (пониженное напряжение процессоров Intel)
+
+undervolt - это программа для пониженного напряжения процессоров Intel под управлением Linux. Она работает аналогично программе для Windows *ThrottleStop* (то есть: MSR 0x150). Вы можете применить фиксированное смещение напряжения к одной из 5 плоскостей напряжения и изменить заданную температуру вашей системы (при достижении этой температуры процессор снизит скорость). Используйте на свой страх и риск.
+
+Homepage: https://github.com/georgewhewell/undervolt
+

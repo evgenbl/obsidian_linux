@@ -1,0 +1,12 @@
+krename-5.0.1-x86_64-4
+
+krename (batch file rename tool)
+
+KRename is a powerful batch renamer for KDE. It allows you to easily rename hundreds or even more files in one go. The filenames can be created by parts of the original filename, numbering the files or accessing information about the file, like creation date or Exif information from an image.
+
+Krename (инструмент пакетного переименования файлов)
+
+KRename - это мощный инструмент пакетного переименования для KDE. Он позволяет вам легко переименовывать сотни или даже больше файлов за один раз. Имена файлов могут быть созданы из частей исходного имени файла, путем нумерации файлов или доступа к информации о файле, такой как дата создания или информация Exif из изображения.
+
+Homepage: http://www.krename.net/
+

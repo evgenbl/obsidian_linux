@@ -1,0 +1,18 @@
+vim-gvim-8.2.4256-x86_64-1
+
+vim-gvim (gvim, the X/GTK3 enabled version of vim)
+
+Gvim is a graphical version of vim. Vim is an almost compatible version of the UNIX editor vi. Many new features have been added, such as multi level undo, command line history, filename completion, block operations, and more.
+
+The main vim package in the AP series is required to use this package.
+
+Vim's development is led by Bram Moolenaar.
+
+vim-gvim (gvim, версия vim с поддержкой X/GTK3)
+
+Gvim - это графическая версия vim. Vim - это практически совместимая версия редактора vi для UNIX. Было добавлено много новых функций, таких как многоуровневая отмена, история командной строки, заполнение имени файла, блокировка операций и многое другое.
+
+Для использования этого пакета требуется основной пакет vim из серии AP.
+
+Разработкой Vim руководит Брэм Муленар.
+

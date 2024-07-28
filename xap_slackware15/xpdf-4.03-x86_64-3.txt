@@ -1,0 +1,14 @@
+xpdf-4.03-x86_64-3
+
+xpdf (PDF viewer for X)
+
+Xpdf is a viewer for Portable Document Format (PDF) files.
+
+xpdf was written by Derek B. Noonburg.
+
+xpdf (программа просмотра PDF для X)
+
+Xpdf - это программа для просмотра файлов в формате Portable Document Format (PDF).
+
+автором xpdf был Дерек Б. Нунбург
+

@@ -1,0 +1,9 @@
+kimagemapeditor-21.12.1-x86_64-1
+
+kimagemapeditor (HTML image map editor)
+
+An HTML image map editor.
+
+kimagemapeditor (Редактор карт изображений в формате HTML)
+
+Редактор карт изображений в формате HTML.

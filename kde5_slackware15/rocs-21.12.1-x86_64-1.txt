@@ -1,0 +1,12 @@
+rocs-21.12.1-x86_64-1
+
+rocs (graph theory IDE)
+
+Rocs is a Graph Theory IDE for everybody interested in designing and analyzing graph algorithms (e.g., lecturers, students, researchers). For all these users, Rocs provides an easy to use visual data structure editor and a powerful scripting engine to execute algorithms. Algorithms are specified in JavaScript.
+
+rocs (среда разработки теории графов)
+
+Rocs - это среда разработки теории графов для всех, кто интересуется разработкой и анализом графовых алгоритмов (например, преподавателей, студентов, исследователей). Для всех этих пользователей Rocs предоставляет простой в использовании визуальный редактор структуры данных и мощный скриптовый движок для выполнения алгоритмов. Алгоритмы задаются на JavaScript
+
+Homepage: https://www.kde.org/applications/education/rocs
+

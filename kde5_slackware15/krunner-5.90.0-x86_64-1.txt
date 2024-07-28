@@ -1,0 +1,9 @@
+krunner-5.90.0-x86_64-1
+
+krunner (KDE plasma launcher)
+
+KRunner is the launcher built into the Plasma desktop. While its basic function is to launch programs from a sort of mini-command-line, its functionality can be extended by runners to assist the user to accomplish a lot of tasks.
+
+krunner (KDE plasma launcher)
+
+KRunner - это программа запуска, встроенная в Plasma Desktop. Хотя ее основной функцией является запуск программ из своего рода мини-командной строки, ее функциональность может быть расширена с помощью runners, чтобы помочь пользователю выполнять множество задач.

@@ -1,0 +1,10 @@
+kalarmcal-21.12.1-x86_64-1
+
+kalarmcal (KAlarm client library)
+
+kalarmcal contains the KAlarm client library.
+
+kalarmcal (клиентская библиотека Kalam)
+
+kalarmcal содержит клиентскую библиотеку Kalam.
+

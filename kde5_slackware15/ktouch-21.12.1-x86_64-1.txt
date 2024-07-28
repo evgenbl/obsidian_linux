@@ -1,0 +1,12 @@
+ktouch-21.12.1-x86_64-1
+
+ktouch (touch typing tutor)
+
+KTouch is a typewriter trainer for learning to touch type. It provides you with text to train on and adjusts to different levels depending on how good you are.
+
+ktouch (обучающий курс по набору текста)
+
+KTouch - это тренажер для обучения сенсорному набору текста на пишущей машинке. Он предоставляет вам текст для тренировки и настраивается на разные уровни в зависимости от того, насколько вы хороши.
+
+Homepage: https://kde.org/applications/en/education/org.kde.ktouch
+

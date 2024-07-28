@@ -1,0 +1,9 @@
+kdesdk-kioslaves-21.12.1-x86_64-1
+
+kdesdk-kioslaves (KIO-slaves for KDE SDK)
+
+This package contains KIO-slaves for KDE SDK.
+
+kdesdk-kioslaves (KIO-slaves для KDE SDK)
+
+Этот пакет содержит KIO-slaves для KDE SDK.

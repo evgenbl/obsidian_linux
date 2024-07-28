@@ -1,0 +1,9 @@
+kxmlgui-5.90.0-x86_64-1
+
+kxmlgui (menu and toolbar framework)
+
+KXMLGUI provides a framework for managing menu and toolbar actions in an abstract way. The actions are configured through an XML description and hooks in the application code. The framework supports merging of multiple description for example for integrating actions from plugins.
+
+kxmlgui (фреймворк меню и панели инструментов)
+
+KXMLGUI предоставляет фреймворк для абстрактного управления действиями меню и панели инструментов. Действия настраиваются с помощью XML-описания и перехватов в коде приложения. Фреймворк поддерживает объединение нескольких описаний, например, для интеграции действий из плагинов.

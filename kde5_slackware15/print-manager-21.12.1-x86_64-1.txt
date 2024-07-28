@@ -1,0 +1,12 @@
+print-manager-21.12.1-x86_64-1
+
+print-manager (manage print jobs and printers)
+
+Print Manager is a system tray utility that shows current print jobs, printer warnings, and errors.
+
+print-manager - диспетчер печати (управление заданиями печати и принтерами)
+
+Print Manager - Диспетчер печати - это утилита в системном трее, которая отображает текущие задания печати, предупреждения принтера и ошибки.
+
+Homepage: https://projects.kde.org/projects/kde/kdeutils/print-manager
+

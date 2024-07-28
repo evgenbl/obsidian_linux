@@ -1,0 +1,12 @@
+libnma-1.8.32-x86_64-2
+
+libnma (NetworkManager GUI client library)
+
+The libnma library provides an API used to create dialogs for NetworkManager clients such as network-manager-applet.
+
+libnm (клиентская библиотека графического интерфейса NetworkManager)
+
+Библиотека libgnome предоставляет API, используемый для создания диалоговых окон для клиентов NetworkManager, таких как network-manager-applet
+
+Homepage: https://wiki.gnome.org/Projects/NetworkManager/
+

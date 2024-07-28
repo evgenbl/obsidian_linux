@@ -1,0 +1,9 @@
+kdialog-21.12.1-x86_64-1
+
+kdialog (shell dialog box utility)
+
+A utility for displaying dialog boxes from shell scripts.
+
+kdialog (утилита shell dialog box utility)
+
+Утилита для отображения диалоговых окон из сценариев оболочки.

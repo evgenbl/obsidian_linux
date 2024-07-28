@@ -1,0 +1,10 @@
+kapman-21.12.1-x86_64-1
+
+kapman (KDE version of dot-eating arcade game)
+
+Kapman is a clone of the well known arcade game where you must run through a maze to eat all pills without being captured by a ghost. By eating an energizer, Kapman gets the ability to eat ghosts for a few seconds. When a stage is cleared of pills and energizers the player is taken to the next stage with slightly increased game speed.
+
+kapman (KDE-версия аркадной игры с поеданием точек)
+
+Kapman - это клон известной аркадной игры, в которой вы должны пробежать по лабиринту, чтобы съесть все таблетки и не попасть в плен к призраку. Съев энерджайзер, Кэпман получает возможность на несколько секунд поедать призраков. Когда на этапе не остается таблеток и энерджайзеров, игрок переходит на следующий этап с немного увеличенной скоростью игры.
+

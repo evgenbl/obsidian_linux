@@ -1,0 +1,14 @@
+lsof-4.94.0-x86_64-3
+
+lsof (list open files)
+
+Lsof is a Unix-specific tool. Its name stands for "LiSt Open Files", and it does just that. It lists information about files that are open by the processes running on the system.
+
+Victor A. Abell of Purdue University is the developer of lsof.
+
+lsof (список открытых файлов)
+
+Lsof - это инструмент, предназначенный для Unix. Его название расшифровывается как "Список открытых файлов", и он выполняет именно это. Он отображает информацию о файлах, открытых процессами, запущенными в системе.
+
+Виктор А. Абелл из Университета Пердью является разработчиком lsof.
+

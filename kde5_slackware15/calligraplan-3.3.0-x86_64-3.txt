@@ -1,0 +1,12 @@
+calligraplan-3.3.0-x86_64-3
+
+calligraplan (project planner)
+
+Calligra Plan is a project management application. It is intended for managing moderately large projects with multiple resources.
+
+calligraplan (планировщик проектов)
+
+Calligra Plan - это приложение для управления проектами. Оно предназначено для управления умеренно крупными проектами с несколькими ресурсами.
+
+Homepage: http://www.calligra-suite.org/
+

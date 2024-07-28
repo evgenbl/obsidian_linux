@@ -1,0 +1,12 @@
+kjots-20211003_4109f07-x86_64-1
+
+kjots (KDE note-taking application)
+
+KJots is a note-taking application that organises all of your notes into separate books.
+
+
+kjots (приложение для создания заметок KDE)
+
+KJots - это приложение для создания заметок, которое объединяет все ваши заметки в отдельные книги.
+
+Homepage:  https://www.kde.org/applications/utilities/kjots/

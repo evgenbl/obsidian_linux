@@ -1,0 +1,9 @@
+kio-extras-21.12.1-x86_64-1
+
+kio-extras (Additional components for KIO)
+
+Additional components to increase the functionality of KIO.
+
+kio-extras (Дополнительные компоненты для KIO)
+
+Дополнительные компоненты для расширения функциональных возможностей KIO.

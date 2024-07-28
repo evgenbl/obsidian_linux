@@ -1,0 +1,52 @@
+* Чтобы нашему юзеру не было грустно, по инерции редактируем /etc/sudoers.
+# nano /etc/sudoers
+ Раскомментируем строку %wheel All=(ALL) ALL в /etc/sudoers 
+* Теперь самое время научиться стартовать сессию Xorg от имени пользователя и делать это автоматически.
+# nano /etc/inittab
+id:4:initdefault   вместо   id:3:initdefault 
+* slackpkg
+Окей, в слакваре есть некоторые подобия пакетных менеджеров. Только ни один из них пока что не научился притягивать нужные зависимости, как это делают другие пакетные менеждеры типа pacman, emerge. Зато они умеют распаковывать и собирать пакеты.
+
+Один из них, slackpkg, я буду настраивать ниже:
+
+Раскомментируем ОДНО зеркало в /etc/slackpkg/mirrors и обновим его.
+
+nano /etc/slackpkg/mirrors 
+* Руссификация Slackware 14
+Те, кто пользуется данным дистрибутивом достаточно долго, знают, что он любит только ручную настройку. Изменение системного языка тоже не в стороне. По факту же, если вы установили дистрибутив полностью, то вам необходимо поменять всего лишь пару строк. А именно, файлы в директории /etc/rc.d/
+
+Изменение локали делают внутри файла nano /etc/profile.d/lang.sh
+
+Пример содежимого. Коментируется строчка импортирующая Английский язык и добавляется строчка для импорта Русского языка
+
+**************************************
+
+#!/bin/sh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+# export LANG=en_US
+export LANG=ru_RU.UTF-8
+
+**************************************
+
+Далее, меняем содержимое файла nano /etc/profile.d/lang.csh
+
+Тут всё так же, как и в примере выше.
+
+***********************************
+
+#!/bin/csh
+# Set the system locale.  (no, we don’t have a menu for this ;-)
+# For a list of locales which are supported by this machine, type:
+#   locale -a
+
+# en_US is the Slackware default locale:
+#setenv LANG en_US
+setenv LANG ru_RU.UTF-8
+
+**********************************
+
+Далее необходимо перезагрузить иксы (CTRL+alt+BACKSPACE) или компьютер (по желанию).

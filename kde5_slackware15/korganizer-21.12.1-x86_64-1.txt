@@ -1,0 +1,9 @@
+korganizer-21.12.1-x86_64-1
+
+korganizer (calendar and scheduling program)
+
+Calendar and scheduling program.
+
+korganizer (программа для составления календарей и расписаний - органайзер)
+
+Программа для составления календарей и расписаний (органайзер)

@@ -1,0 +1,10 @@
+kitemmodels-5.90.0-x86_64-1
+
+kitemmodels (Qt model-view extensions)
+
+KItemModels is a set of item models extending the Qt model-view framework.
+
+
+kitemmodels (расширения Qt model-view)
+
+KItemModels - это набор моделей элементов, расширяющих платформу Qt model-view.

@@ -1,0 +1,13 @@
+acct-6.6.4-x86_64-4
+
+acct (process accounting utilities)
+
+This is a set of utilities which reports and summarizes data about user connect times and process execution statistics. To activate process accounting, create the log file (touch /var/log/pacct), and then use the accton command to start it (accton /var/log/pacct). Be aware that the log file can grow to be quite large.
+
+The GNU process accounting utilities were written by Noel Cragg and the software is currently maintained by Ciaran O'Riordan, Manuel A. Fernandez Montecelo, and Tim Schmielau.
+
+acct (process accounting utilities - утилиты учета процессов)
+
+Это набор утилит, которые предоставляют отчеты и обобщают данные о времени подключения пользователей и статистику выполнения процессов. Чтобы активировать учет процессов, создайте файл журнала (нажмите /var/log/pacct), а затем запустите его с помощью команды accton (accton /var/log/pacct). Имейте в виду, что файл журнала может стать довольно большим.
+
+Утилиты учета процессов GNU были написаны Ноэлем Крэггом, и в настоящее время программное обеспечение поддерживают Киаран О'Риордан, Мануэль А. Фернандес Монтесело и Тим Шмилау.

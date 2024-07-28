@@ -1,0 +1,10 @@
+systemsettings-5.23.5-x86_64-1
+
+systemsettings (system settings utility)
+
+Control center for KDE software and workspaces.
+
+
+systemsettings - системные настройки (утилита системных настроек)
+
+Центр управления программным обеспечением и рабочими пространствами KDE.

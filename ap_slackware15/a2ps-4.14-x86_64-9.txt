@@ -1,0 +1,18 @@
+a2ps-4.14-x86_64-9
+
+a2ps (any to PostScript filter)
+
+GNU a2ps is an Any to PostScript filter. Of course it processes plain text files, but also pretty prints quite a few popular programming languages.
+
+a2ps (фильтр any to PostScript)
+
+GNU a2ps - это фильтр Any to PostScript. Конечно, он обрабатывает обычные текстовые файлы, но также довольно легко печатает на нескольких популярных языках программирования.
+
+ИСПОЛЬЗОВАНИЕ
+
+a2ps выводит текст в формате Postscript на свой стандартный выход. Впоследствии пользователь может перенаправить его в файл, передать непосредственно программе печати (вроде lpr) или произвести дальнейшую обработку с помощью любого другого фильтра.
+
+a2ps file1 > file2
+
+Homepage: https://www.gnu.org/software/a2ps/
+

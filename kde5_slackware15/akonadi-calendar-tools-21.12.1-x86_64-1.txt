@@ -1,0 +1,12 @@
+akonadi-calendar-tools-21.12.1-x86_64-1
+
+
+akonadi-calendar-tools (CLI tools to manage Akonadi calendars)
+
+Console applications and utilities for managing calendars in Akonadi.
+
+
+akonadi-calendar-tools (инструменты CLI для управления календарями Akonadi)
+
+Консольные приложения и утилиты для управления календарями в Akonadi.
+

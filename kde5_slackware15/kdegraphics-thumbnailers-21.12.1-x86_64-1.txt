@@ -1,0 +1,9 @@
+kdegraphics-thumbnailers-21.12.1-x86_64-1
+
+kdegraphics-thumbnailers (image thumbnailers)
+
+These plugins allow KDE software to create thumbnails for several graphic file formats.
+
+kdegraphics-thumbnailers  (image thumbnailers) средства создания миниатюр
+
+Эти плагины позволяют программному обеспечению KDE создавать миниатюры для нескольких форматов графических файлов.

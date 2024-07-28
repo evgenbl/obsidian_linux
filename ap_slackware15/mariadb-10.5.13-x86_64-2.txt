@@ -1,0 +1,12 @@
+mariadb-10.5.13-x86_64-2
+
+mariadb (Drop-in replacement for the MySQL Database Server)
+
+MariaDB is a backward compatible, drop-in replacement branch of the MySQL(R) Database Server. It includes all major open source storage engines, including the Aria storage engine.
+
+mariadb (расширяемая версия сервера баз данных MySQL)
+
+MariaDB - это обратно совместимая расширяемая версия сервера баз данных MySQL(R). Она включает в себя все основные механизмы хранения данных с открытым исходным кодом, включая Aria storage engine.
+
+Homepage: http://mariadb.org/
+

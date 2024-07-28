@@ -1,0 +1,12 @@
+kwave-21.12.1-x86_64-1
+
+kwave (A sound editor for KDE)
+
+Kwave is a sound editor built on the KDE Frameworks 5. With Kwave you can record, play back, import and edit many sorts of audio files including multi channel files. Kwave includes some plugins to transform audio files in several ways and presents a graphical view with zoom and scroll capability.
+
+kwave (звуковой редактор для KDE)
+
+Kwave - это звуковой редактор, созданный на платформе KDE Frameworks 5. С помощью K wave вы можете записывать, воспроизводить, импортировать и редактировать множество видов аудиофайлов, включая многоканальные файлы. Kwave включает в себя несколько плагинов для преобразования аудиофайлов несколькими способами и представляет графический вид с возможностью масштабирования и прокрутки.
+
+Homepage: http://kwave.sourceforge.net
+

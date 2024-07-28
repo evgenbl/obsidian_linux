@@ -1,0 +1,12 @@
+sane-1.0.32-x86_64-1
+
+sane (Scanner Access Now Easy)
+
+SANE is a universal scanner interface that provides standardized access to any raster image scanner hardware, such as flatbed scanners, hand-held scanners, video and still cameras, frame-grabbers, and other similar devices.
+
+sane (Доступ к сканеру теперь прост)
+
+SANE - это универсальный интерфейс сканера, который обеспечивает стандартизированный доступ к любому оборудованию для сканирования растровых изображений, такому как планшетные сканеры, ручные сканеры, видео- и фотокамеры, устройства для захвата кадров и другие подобные устройства.
+
+Homepage: http://www.sane-project.org
+

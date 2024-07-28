@@ -1,0 +1,12 @@
+pidgin-2.14.8-x86_64-1
+
+pidgin (GTK+ instant messaging program)
+
+Pidgin allows you to talk to anyone using a variety of messaging protocols, including AIM (Oscar and TOC), ICQ, IRC, Yahoo!, MSN Messenger, Jabber, Gadu-Gadu, Napster, and Zephyr. These protocols are implemented using a modular, easy to use design. To use a protocol, just load the plugin for it.
+
+pidgin (программа обмена мгновенными сообщениями GTK+)
+
+Pidgin позволяет вам общаться с кем угодно, используя различные протоколы обмена сообщениями, включая AIM (Oscar и TOC), ICQ, IRC, Yahoo!, MSN Messenger, Jabber, Gadu-Gadu, Napster и Zephyr. Эти протоколы реализованы с использованием модульного, простого в использовании дизайна. Чтобы использовать протокол, просто загрузите для него плагин.
+
+Homepage: https://www.pidgin.im
+

@@ -1,0 +1,9 @@
+khotkeys-5.23.5-x86_64-1
+
+khotkeys (custom shortcuts)
+
+The Custom Shortcuts systemsettings module allows you to configure custom keyboard shortcuts and mouse gestures. You can use them to control applications, run specific commands, and more.
+
+khotkeys (пользовательские сочетания горячих клавиш)
+
+Модуль системных настроек пользовательских сочетаний клавиш позволяет настраивать пользовательские сочетания клавиш и жесты мыши. Вы можете использовать их для управления приложениями, выполнения определенных команд и многого другого.

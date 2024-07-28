@@ -1,0 +1,9 @@
+kmailtransport-21.12.1-x86_64-1
+
+kmailtransport (mail transport service)
+
+Mail Transport Service for KMail.
+
+kmailtransport (служба почтового транспорта)
+
+Служба почтового транспорта для KMail.

@@ -1,0 +1,12 @@
+terminus-font-4.49.1-noarch-3
+
+terminus-font (a clean fixed width font)
+
+Terminus Font is designed for long (8 and more hours per day) work with computers. It is a good choice if you run a Unicode-enabled console but the package also contains a non-scalable Unicode-enabled font for use in X terminal applications.
+
+terminus-шрифт (чистый шрифт фиксированной ширины)
+
+Шрифт Terminus предназначен для длительной (8 и более часов в день) работы с компьютерами. Это хороший выбор, если вы используете консоль с поддержкой Unicode, но пакет также содержит немасштабируемый шрифт с поддержкой Unicode для использования в приложениях X terminal.
+
+Homepage: http://terminus-font.sourceforge.net
+

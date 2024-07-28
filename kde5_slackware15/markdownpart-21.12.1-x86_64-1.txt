@@ -1,0 +1,11 @@
+markdownpart-21.12.1-x86_64-1
+
+markdownpart (markdown viewer KPart)
+
+This repository contains a Markdown viewer plugin, which allows KParts-using applications to display files in Markdown format in the target format.
+
+markdownpart (markdown viewer KPart)
+
+Этот репозиторий содержит плагин Markdown viewer, который позволяет приложениям, использующим Parts, отображать файлы в формате Markdown в целевом формате.
+
+KParts — технология, разработанная в рамках проекта KDE с целью позволить программам использовать функциональные возможности других программ вместе с их виджетами (например, окно Konsole в Kate). Такие внедряемые приложения могут использоваться, например, для просмотра файлов PDF или ODT / MS Word прямо в окне браузера, при этом будет запущена соответствующая программа (вероятно, она предоставит также возможность изменения открытого файла).

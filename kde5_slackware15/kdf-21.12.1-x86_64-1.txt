@@ -1,0 +1,12 @@
+kdf-21.12.1-x86_64-1
+
+kdf (show available disk space)
+
+kdf (KDiskFree) displays the available file devices (hard drive partitions, floppy and CD/DVD drives, etc.) along with information on their capacity, free space, type and mount point.
+
+kdf (показывает доступное место на диске)
+
+kdf (KDiskFree) отображает доступные файловые устройства (разделы жесткого диска, дисководы для гибких дисков и CD/DVD и т.д.), а также информацию об их емкости, свободном пространстве, типе и точке подключения.
+
+Homepage: http://utils.kde.org/projects/kdf
+

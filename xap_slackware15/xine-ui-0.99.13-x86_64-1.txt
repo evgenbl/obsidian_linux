@@ -1,0 +1,13 @@
+xine-ui-0.99.13-x86_64-1
+
+xine-ui (xine multimedia playback engine user interface)
+
+Xine is a free multimedia player. It plays back CDs, DVDs, and VCDs, multimedia files, and multimedia streamed over a network.
+
+The xine-ui package contains the graphical user interface for the xine multimedia player.
+
+xine-ui (пользовательский интерфейс xine multimedia playback engine)
+
+Xine - это бесплатный мультимедийный проигрыватель. Он воспроизводит CD, DVD и VCD-диски, мультимедийные файлы и мультимедийные потоки, передаваемые по сети.
+
+Пакет xine-ui содержит графический пользовательский интерфейс для мультимедийного проигрывателя xine.

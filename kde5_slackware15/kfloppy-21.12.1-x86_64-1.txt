@@ -1,0 +1,12 @@
+kfloppy-21.12.1-x86_64-1
+
+kfloppy (floppy disk formatter)
+
+KFloppy is a utility that provides a straightforward graphical means to format 3.5" and 5.25" floppy disks.
+
+kfloppy (программа для форматирования гибких дисков)
+
+KFloppy - это утилита, которая предоставляет простые графические средства для форматирования гибких дисков 3,5" и 5,25".
+
+Homepage: http://utils.kde.org/projects/kfloppy
+

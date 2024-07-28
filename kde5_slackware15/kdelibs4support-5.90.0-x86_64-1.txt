@@ -1,0 +1,9 @@
+kdelibs4support-5.90.0-x86_64-1
+
+kdelibs4support (KDE 4 support)
+
+kdelibs4support provides legacy support for kdelibs 4 compatibility such as code and utilities to ease the transition from kdelibs 4 to KDE Frameworks 5. This includes CMake macros and C++ classes whose functionality has been replaced by code in CMake, Qt and other frameworks.
+
+kdelibs4support (поддержка KDE 4)
+
+kdelibs4support предоставляет устаревшую поддержку для обеспечения совместимости с kdelibs 4, такую как код и утилиты, для облегчения перехода с kdelibs 4 на KDE Frameworks 5. Сюда входят макросы CMake и классы C++, функциональность которых была заменена кодом в CMake, Qt и других фреймворках.

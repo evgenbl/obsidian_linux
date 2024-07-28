@@ -1,0 +1,12 @@
+frameworkintegration-5.90.0-x86_64-1
+
+frameworkintegration (applications integration with KDE)
+
+Framework providing components to allow applications to integrate with a KDE Workspace.
+
+frameworkintegration (интеграция приложений с KDE)
+
+Платформа предоставляет компоненты, позволяющие приложениям интегрироваться с рабочим пространством KDE.
+
+Homepage: https://community.kde.org/Frameworks
+

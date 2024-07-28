@@ -1,0 +1,10 @@
+rpm-4.16.1.3-x86_64-4
+
+rpm (RPM package format tool)
+
+RPM is a tool from Red Hat Software used to install and remove packages in the .rpm format. When installing RPM packages on Slackware, you may need to use the --nodeps and --force options. Before installing any binary package, it's wise to examine it to see what it's going to do, and if it will overwrite any files. Youcan use rpm2tgz to convert .rpm packages to .tgz packages so you can look them over.
+
+rpm (Инструмент для форматирования пакетов RPM)
+
+RPM - это инструмент от Red Hat Software, используемый для установки и удаления пакетов в формате .rpm. При установке пакетов RPM в Slackware вам может потребоваться использовать опции --nodeps и --force. Перед установкой любого двоичного пакета рекомендуется изучить его, чтобы понять, что он собирается делать и не перезапишет ли он какие-либо файлы. Вы можете использовать rpm2tgz для преобразования пакетов .rpm в пакеты .tgz, чтобы вы могли их просмотреть.
+

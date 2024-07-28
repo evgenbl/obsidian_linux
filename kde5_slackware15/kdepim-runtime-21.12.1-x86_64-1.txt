@@ -1,0 +1,13 @@
+kdepim-runtime-21.12.1-x86_64-1
+
+kdepim-runtime (KDE Personal Information Management runtime)
+
+The KDE-PIM project aims to bring together those who wish to help design, implement, test, etc. anything that's to do with personal information management.
+
+This rather broad scope encompasses mail clients, addressbooks,usenet news, scheduling, and even sticky notes.
+
+kdepim-runtime  (среда выполнения KDE Personal Information Management runtime)
+
+Проект KDE-PIM призван объединить тех, кто хочет помочь в разработке, внедрении, тестировании и т.д. всего, что связано с управлением персональной информацией.
+
+Эта довольно широкая область применения охватывает почтовые клиенты, адресные книги, новости usenet, планирование и даже стикеры для заметок.

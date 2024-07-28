@@ -1,0 +1,9 @@
+aaa_base-15.0-x86_64-3
+
+aaa_base (Basic Linux filesystem package)
+
+Sets up the empty directory tree for Slackware and adds an email to root's mailbox welcoming them to Linux. :)  This package should be installed first, and never uninstalled.
+
+aaa_base (Базовый пакет для файловой системы Linux)
+
+Устанавливает пустое дерево каталогов для Slackware и добавляет в почтовый ящик root-пользователей электронное письмо с приветствием в Linux. :) Этот пакет следует сначала установить, а не удалять.

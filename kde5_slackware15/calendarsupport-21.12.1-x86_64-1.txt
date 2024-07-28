@@ -1,0 +1,10 @@
+calendarsupport-21.12.1-x86_64-1
+
+calendarsupport (KDE PIM calendar support library)
+
+The package contains KDE PIM calendar support library.
+
+calendarsupport (библиотека поддержки календаря KDE PIM)
+
+Пакет содержит библиотеку поддержки календаря KDE PIM
+

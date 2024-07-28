@@ -1,0 +1,12 @@
+kbackup-21.12.1-x86_64-1
+
+kbackup (KDE backup program)
+
+KBackup is an application that lets you back up any folders or files in a tar archive to a local folder, e.g. a locally mounted device like a ZIP drive, USB stick, etc. or a remote URL. KBackup can also run automated backups without using a graphical user interface.
+
+KBackup (программа резервного копирования KDE)
+
+KBackup - это приложение, которое позволяет создавать резервные копии любых папок или файлов из архива tar в локальную папку, например, на локально подключенное устройство, такое как ZIP-накопитель, USB-накопитель и т.д., или на удаленный URL-адрес. Backup также может выполнять автоматическое резервное копирование без использования графического интерфейса пользователя.
+
+Homepage: https://www.kde.org/applications/utilities/kbackup/
+

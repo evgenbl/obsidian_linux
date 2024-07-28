@@ -1,0 +1,9 @@
+kmenuedit-5.23.5-x86_64-1
+
+kmenuedit (XDG menu editor)
+
+This package provides a menu editor which may be used to edit the KDE Plasma workspaces menu or any other XDG menu.
+
+kmenuedit (редактор меню XDG)
+
+Этот пакет предоставляет редактор меню, который можно использовать для редактирования меню KDE Plasma workspaces или любого другого меню XDG.

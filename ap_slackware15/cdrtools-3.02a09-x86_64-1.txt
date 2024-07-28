@@ -1,0 +1,22 @@
+cdrtools-3.02a09-x86_64-1
+
+cdrtools (CD-R, ISO and related tools)
+
+Tools for mastering and writing compact discs.
+
+cdda2wav - CD audio sampling utility.
+cdrecord - burn discs in most ATAPI and SCSI CD-R drives.
+mkisofs  - create ISO9660/HFS/Joliet CD-ROM images.
+mkzftree - compress a file tree to make a compressed CD-ROM.
+
+cdrtools (CD-R, ISO и сопутствующие инструменты)
+
+Инструменты для мастеринга и записи компакт-дисков.
+
+cdda2wav - утилита для записи аудио с компакт-дисков.
+
+cdrecord - записывает диски в большинстве ATAPI и SCSI CD-R приводов.
+
+mkisofs - создание образов компакт-дисков ISO9660/HFS/Joliet.
+
+mkzftree - сжатие дерева файлов для создания компакт-диска в сжатом виде.

@@ -1,0 +1,10 @@
+akregator-21.12.1-x86_64-1
+
+akregator (KDE feed reader)
+
+KDE feed reader.
+
+
+akregator (программа для чтения каналов KDE)
+
+Программа для чтения каналов KDE.

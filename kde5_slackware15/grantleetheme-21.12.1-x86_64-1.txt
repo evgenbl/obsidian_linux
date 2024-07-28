@@ -1,0 +1,11 @@
+grantleetheme-21.12.1-x86_64-1
+
+grantleetheme (Grantlee theming support)
+
+grantleetheme is a library for Grantlee theming support.
+
+grantleetheme (тематическая поддержка Grantlee)
+
+grantleetheme - это библиотека для тематической поддержки Grantlee.
+
+Grantlee — это набор библиотек свободного программного обеспечения, написанных с использованием Qt framework.

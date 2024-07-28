@@ -1,0 +1,9 @@
+kwayland-5.90.0-x86_64-1
+
+kwayland (wayland wrapper library for KDE)
+
+Kwayland is a KDE Frameworks 5 library that wraps Client and Server Wayland libraries.
+
+kwayland (библиотека-оболочка wayland для KDE)
+
+Kwayland - это библиотека KDE Frameworks 5, которая объединяет клиентские и серверные библиотеки Wayland.

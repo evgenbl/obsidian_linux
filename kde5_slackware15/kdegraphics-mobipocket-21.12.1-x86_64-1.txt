@@ -1,0 +1,11 @@
+kdegraphics-mobipocket-21.12.1-x86_64-1
+
+kdegraphics-mobipocket (Mobipocket support for Okular)
+
+Mobipocket support for Okular.
+
+kdegraphics-mobipocket (поддержка Mobipocket для Okular)
+
+Поддержка Mobipocket для Okular.
+
+Mobipocket (англ. mobile — мобильный и pocket — карманный) — французская компания, принадлежащая amazon.com. Производит бесплатный проприетарный Mobipocket Reader — программу для чтения электронных книг.

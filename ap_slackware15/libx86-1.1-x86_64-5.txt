@@ -1,0 +1,12 @@
+libx86-1.1-x86_64-5
+
+libx86 (hardware-independent library for x86 code execution)
+
+ibx86 is a hardware-independent library for executing real-mode x86 code, such as bios calls, from userspace.
+
+lib x86 (аппаратно-независимая библиотека для выполнения кода x86)
+
+ibx86 - это аппаратно-независимая библиотека для выполнения кода x86 в реальном режиме, такого как вызовы bios, из пользовательского пространства.
+
+Homepage: http://www.codon.org.uk/~mjg59/libx86/
+

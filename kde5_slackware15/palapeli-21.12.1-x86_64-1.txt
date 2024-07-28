@@ -1,0 +1,10 @@
+palapeli-21.12.1-x86_64-1
+
+palapeli (jigsaw puzzle game)
+
+Palapeli is a single-player jigsaw puzzle game. Unlike other games in that genre, you are not limited to aligning pieces on imaginary grids. The pieces are freely moveable. Also, Palapeli features real persistency, i.e. everything you do is saved immediately.
+
+
+palapeli (игра-головоломка)
+
+Palapeli - это игра-головоломка для одного игрока. В отличие от других игр этого жанра, вы не ограничены в размещении фигур на воображаемых сетках. Фигуры могут свободно перемещаться. Кроме того, Palapeli обладает реальной сохраняемостью, то есть все, что вы делаете, сохраняется немедленно.

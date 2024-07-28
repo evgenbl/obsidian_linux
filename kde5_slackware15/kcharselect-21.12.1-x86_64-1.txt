@@ -1,0 +1,12 @@
+kcharselect-21.12.1-x86_64-1
+
+kcharselect (character picker)
+
+KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
+
+kcharselect (средство выбора символов)
+
+KCharSelect - это инструмент для выбора специальных символов из всех установленных шрифтов и копирования их в буфер обмена.
+
+Homepage: http://utils.kde.org/projects/kcharselect
+

@@ -1,0 +1,9 @@
+kiconthemes-5.90.0-x86_64-1
+
+kiconthemes (Icon GUI utilities)
+
+The KIconThemes library contains classes to improve the handling of icons in applications using the KDE Frameworks.
+
+kiconthemes (утилиты с графическим интерфейсом для работы с иконками)
+
+Библиотека KIconThemes содержит классы для улучшения работы с иконками в приложениях, использующих фреймворки KDE.

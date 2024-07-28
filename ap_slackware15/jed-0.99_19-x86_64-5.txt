@@ -1,0 +1,28 @@
+jed-0.99_19-x86_64-5
+
+jed (programmer's editor)
+
+JED (by John E. Davis) is an extremely powerful but small emacs-like programmer's editor that is extensible in a C-like macro language and can do color syntax highlighting. Among the many features: Emacs, wordstar, EDT emulation; C, Fortran, TeX, text editing modes; Full undo; GNU Emacs compatible info reader, and lots more.
+
+JED is also 8 bit clean, so you can even edit binary files!
+
+
+jed (редактор для программистов)
+
+JED (автор Джон Э. Дэвис) - чрезвычайно мощный, но небольшой редактор для программистов, подобный emacs, который расширяется на макроязык, подобный C, и может выполнять цветовую подсветку синтаксиса. Среди множества функций: эмуляция Emacs, wordstar, EDT; C, Fortran, TeX, режимы редактирования текста; Полная отмена; программа чтения информации, совместимая с GNU Emacs, и многое другое.
+
+JED также 8-разрядный, так что вы можете редактировать даже двоичные файлы!
+
+Варианты:
+
+«jed» — это имя версии консоли, будь то для командного поля Windows или для любой Unix-подобной консоли
+
+«xjed» — это тонкая оболочка для графического интерфейса X
+
+«wjed» — это тонкая оболочка с графическим интерфейсом для MS Windows
+
+Home: https://www.jedsoft.org/jed/
+
+Краткий справочник: https://www.guidogonzato.it/jed/jed-quickref.html
+
+Справочное руководство по внутренним функциям Jed: https://www.jedsoft.org/jed/doc/jedfuns.html

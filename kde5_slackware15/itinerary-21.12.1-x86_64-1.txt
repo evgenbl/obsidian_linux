@@ -1,0 +1,12 @@
+itinerary-21.12.1-x86_64-1
+
+itinerary (Itinerary and boarding pass management app)
+
+KDE Itinerary is a digital travel assistant with a priority on protecting your privacy.
+
+itinerary (приложение для управления маршрутами и посадочными талонами)
+
+KDE Itinerary - это цифровой помощник в путешествиях, приоритетом которого является защита вашей конфиденциальности.
+
+Homepage: https://apps.kde.org/en/itinerary
+

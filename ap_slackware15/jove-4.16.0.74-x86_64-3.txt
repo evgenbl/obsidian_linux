@@ -1,0 +1,23 @@
+jove-4.16.0.74-x86_64-3
+
+jove (Jonathan's Own Version of Emacs)
+
+A mostly Emacs compatible text editor, with man pages and the 'teachjove' tutorial program. If you'd rather have the real thing, the actual Emacs editor/environment is available in series 'E'.
+
+JOVE was written by Jonathan Payne.
+
+jove (собственная версия Emacs, разработанная Джонатаном)
+
+Текстовый редактор, в основном совместимый с Emacs, со справочными страницами и обучающей программой teachjove. Если вы предпочитаете использовать настоящую версию, то настоящий редактор / среда Emacs доступны в серии "E".
+
+В отличие от GNU Emacs , JOVE не поддерживает UTF-8
+
+По состоянию на 2022 год последней разрабатываемой версией JOVE является версия 4.17.4.4; стабильная версия — 4.16.
+
+Jove был создан, чтобы быть похожим на emacs по своему пользовательскому интерфейсу, но с гораздо меньшим программными возможностями, поэтому многие из "горячих клавиш", перечисленных для emacs, также работают для Jove.
+
+ABOUT JOVE: https://ts.vcu.edu/askit/research-math-science/unix-for-researchers-at-vcu/unix-text-editors/jove-a-text-editor/
+
+youtube: https://www.youtube.com/watch?v=MhLu4H3LS-A
+
+"JOVE" был написан Джонатаном Пейном.

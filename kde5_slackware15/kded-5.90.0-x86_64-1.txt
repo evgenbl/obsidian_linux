@@ -1,0 +1,9 @@
+kded-5.90.0-x86_64-1
+
+kded (Central daemon of KDE workspaces)
+
+KDED stands for KDE Daemon. KDED runs in the background and performs a number of small tasks. Some of these tasks are built in, others are started on demand. Examples include checking for newly installed software and checking for newly installed update files.
+
+kded (центральный демон KDE workspaces)
+
+KDED расшифровывается как KDE Daemon. KDE работает в фоновом режиме и выполняет ряд небольших задач. Некоторые из этих задач встроены, другие запускаются по требованию. Примеры включают проверку наличия недавно установленного программного обеспечения и файлов обновлений.

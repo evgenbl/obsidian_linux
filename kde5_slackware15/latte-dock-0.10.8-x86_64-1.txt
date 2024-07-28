@@ -1,0 +1,12 @@
+latte-dock-0.10.8-x86_64-1
+
+latte-dock (alternative dock for Plasma5)
+
+Latte is a dock based on Plasma Frameworks providing an elegant and intuitive experience for your tasks and plasmoids. It animates its contents by using parabolic zoom effect and tries to be there only when it is needed. "Art in Coffee"
+
+latte-dock (альтернативная док-станция для Plasma5)
+
+Latte - это док-станция, основанная на платформе Plasma Frameworks, которая обеспечивает элегантный и интуитивно понятный интерфейс для ваших задач и плазмоидов. Она анимирует содержимое с помощью эффекта параболического масштабирования и появляется только тогда, когда это необходимо.
+
+Homepage: https://github.com/KDE/latte-dock
+

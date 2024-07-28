@@ -1,0 +1,10 @@
+ksudoku-21.12.1-x86_64-1
+
+ksudoku (sudoku game)
+
+KSudoku is a logic-based symbol placement puzzle. The player has to fill a grid so that each column, row as well as each square block on the game field contains only one instance of each symbol.
+
+ksudoku (игра в судоку)
+
+KSudoku - это логическая головоломка с размещением символов. Игрок должен заполнить сетку таким образом, чтобы в каждом столбце, строке, а также в каждом квадратном блоке на игровом поле было только по одному экземпляру каждого символа.
+

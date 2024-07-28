@@ -1,0 +1,10 @@
+partitionmanager-21.12.1-x86_64-1
+
+partitionmanager (Graphical partition manager)
+
+Easily manage disks, partitions and filesystems on your KDE desktop. Create, resize, move, copy, back up, restore or delete partitions.
+
+
+partitionmanager (графический менеджер разделов)
+
+Простое управление дисками, разделами и файловыми системами на рабочем столе KDE. Создавайте, изменяйте размер, перемещайте, копируйте, создавайте резервные копии, восстанавливайте или удаляйте разделы.

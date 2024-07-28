@@ -1,0 +1,12 @@
+kactivitymanagerd-5.23.5-x86_64-1
+
+kactivitymanagerd (manage and track user activities)
+
+System service to manage user activities and track the usage patterns.
+
+kactivitymanagerd (управление и отслеживание действий пользователей)
+
+Системный сервис для управления действиями пользователей и отслеживания шаблонов использования.
+
+Homepage: https://projects.kde.org/projects/kde/workspace/kactivitymanagerd
+

@@ -1,0 +1,10 @@
+kblackbox-21.12.1-x86_64-1
+
+kblackbox (a game of hide and seek)
+
+KBlackbox is a game of hide and seek played on a grid of boxes where the computer has hidden several balls.
+
+kblackbox (игра в прятки)
+
+KBlackbox - это игра в прятки, в которую играют на сетке из ящиков, где компьютер спрятал несколько шариков.
+

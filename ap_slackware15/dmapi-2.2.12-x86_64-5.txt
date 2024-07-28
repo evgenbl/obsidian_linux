@@ -1,0 +1,13 @@
+dmapi-2.2.12-x86_64-5
+
+dmapi (Data Management API library)
+
+A library required to use the Data Management API (DMAPI). This interface is defined in the X/Open document 'Systems Management: Data Storage Management (XDSM) API' dated February 1997.
+
+The DMAPI library is used by the xfsdump utility.
+
+dmapi (Библиотека API управления данными)
+
+Библиотека, необходимая для использования API управления данными (DMAPI). Этот интерфейс определен в документе X/Open "Управление системами: управление хранилищем данных (XDSM) API" от февраля 1997 года.
+
+Библиотека DMAPI используется утилитой xfsdump.

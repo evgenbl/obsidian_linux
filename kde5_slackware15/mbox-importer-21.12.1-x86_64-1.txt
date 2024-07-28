@@ -1,0 +1,9 @@
+mbox-importer-21.12.1-x86_64-1
+
+mbox-importer (import mbox files to KMail)
+
+Import mbox files to KMail.
+
+mbox-importer(импортирует файлы mbox в KMail)
+
+Импортируйте файлы mbox в Gmail.

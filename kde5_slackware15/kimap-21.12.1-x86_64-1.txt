@@ -1,0 +1,9 @@
+kimap-21.12.1-x86_64-1
+
+kimap (API for the handling of IMAP data)
+
+The kimap library contains an API for the handling of IMAP data.
+
+kimap (API для обработки данных IMAP)
+
+Библиотека kimap содержит API для обработки данных IMAP.

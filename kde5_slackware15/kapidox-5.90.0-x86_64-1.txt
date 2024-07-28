@@ -1,0 +1,10 @@
+kapidox-5.90.0-x86_64-1
+
+kapidox (KDE Doxygen Tools)
+
+This framework contains scripts and data for building API documentation (dox) in a standard format and style.
+
+kapidox (KDE Doxygen Tools)
+
+Этот фреймворк содержит скрипты и данные для создания документации API (dox) в стандартном формате и стиле.
+

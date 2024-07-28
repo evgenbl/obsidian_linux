@@ -1,0 +1,21 @@
+kde-dev-utils-21.12.1-x86_64-1
+
+kde-dev-utils (KDE development utilities)
+
+Small utilities for developers using KDE/Qt libs/frameworks such as kmtrace, kpartloader, kprofilemethod, kstartperf, kuiviewer.
+
+kde-dev-utils (утилиты разработки KDE)
+
+Небольшие утилиты для разработчиков, использующих библиотеки/фреймворки KDE/Qt, такие как kmtrace, kpartloader, kprofilemethod, kstartperf, kuiviewer.
+
+
+kmtrace - Инструмент отладки распределения памяти
+
+Это инструмент KDE, помогающий при отладке malloc с использованием библиотеки glibc.
+
+KPartloader — очень простое приложение для проверки загрузки KPart. KPartloader вызывается с простым аргументом, указывающим, какой KPart загружать.
+
+KParts — это базовая технология KDE, позволяющая встраивать компоненты одного приложения в другие приложения. Это приложение используется для тестирования таких компонентов во время разработки.
+
+KUIViewer — средство просмотра и проверки файлов интерфейса пользователя (.ui), созданных в Qt Designer.
+

@@ -1,0 +1,9 @@
+plasma-nm-5.23.5-x86_64-1
+
+plasma-nm (KDE networkmanagement applet)
+
+This package contains the KDE networkmanagement applet for Plasma.
+
+plasma-nm (апплет управления сетью KDE)
+
+Этот пакет содержит апплет управления сетью KDE для Plasma.

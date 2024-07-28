@@ -1,0 +1,9 @@
+kservice-5.90.0-x86_64-1
+
+kservice (desktop services plugin framework)
+
+KService provides a plugin framework for handling desktop services. Services can be applications or libraries. They can be bound to MIME types or handled by application specific code.
+
+kservice (платформа плагинов для настольных служб)
+
+KService предоставляет платформу плагинов для работы с настольными службами. Службы могут быть приложениями или библиотеками. Они могут быть привязаны к типам MIME или обрабатываться кодом, специфичным для приложения.

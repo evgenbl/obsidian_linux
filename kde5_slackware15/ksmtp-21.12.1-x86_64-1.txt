@@ -1,0 +1,9 @@
+ksmtp-21.12.1-x86_64-1
+
+ksmtp (SMTP library)
+
+ksmtp is a job-based library to send email through an SMTP server.
+
+ksmtp (библиотека SMTP)
+
+ksmtp - это библиотека на основе заданий для отправки электронной почты через SMTP-сервер.

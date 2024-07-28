@@ -1,0 +1,16 @@
+sysstat-12.5.5-x86_64-1
+
+sysstat (System performance monitoring tools)
+
+The sysstat utilities are a collection of performance monitoring tools for Linux. These include the iostat, mpstat, pidstat, sadf, and sar tools.
+
+The sysstat utilities were written by Sebastien Godard.
+
+sysstat (Инструменты мониторинга производительности системы)
+
+Утилиты sysstat представляют собой набор инструментов мониторинга производительности для Linux. К ним относятся инструменты iostat, mpstat, pidstat, sadf и sar.
+
+Утилиты sysstat были написаны Себастьеном Годаром (Sebastien Godard).
+
+Homepage: http://sebastien.godard.pagesperso-orange.fr/
+

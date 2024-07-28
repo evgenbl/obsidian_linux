@@ -1,0 +1,33 @@
+kcm-fcitx-0.5.6-x86_64-4
+
+kcm-fcitx (KDE config module for Fcitx)
+
+kcm-fcitx is a configuration tool that is highly integrated with KDE.
+
+Features:
+
+- Change input method list
+
+- Change global configuration
+
+- Change addon configuration and enable/disable addon.
+
+- Download skin from kde-look.org
+
+kcm-fcitx (модуль настройки KDE для Fcitx)
+
+kcm-fcitx - это инструмент настройки, который полностью интегрирован с KDE.
+
+Особенности:
+
+- Изменить список методов ввода
+
+- Изменить глобальную конфигурацию
+
+- Измените конфигурацию дополнения и включите/выключите его.
+
+- Загрузите скин с kde-look.org
+
+Fcitx — это платформа методов ввода с поддержкой расширений, которая обеспечивает интерфейс для ввода символов разных скриптов в приложениях с использованием различных картографических систем.
+
+Homepage: http://fcitx-im.org/wiki/Kcm

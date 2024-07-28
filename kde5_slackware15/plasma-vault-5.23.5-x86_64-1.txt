@@ -1,0 +1,10 @@
+plasma-vault-5.23.5-x86_64-1
+
+plasma-vault (create encrypted vaults)
+
+Plasma applet and services for creating encrypted vaults. Plasma Vault offers strong encryption features presented in a user-friendly way. Lock and encrypt documents and hide them when the user is logged in. These 'vaults' can be decrypted and opened easily.
+
+
+plasma-vault (создание зашифрованных хранилищ)
+
+Апплет Plasma и сервисы для создания зашифрованных хранилищ. Plasma Vault предлагает надежные функции шифрования, представленные в удобной для пользователя форме. Блокируйте и шифруйте документы, а также скрывайте их при входе пользователя в систему. Эти "хранилища" могут быть легко расшифрованы и открыты.

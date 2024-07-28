@@ -1,0 +1,10 @@
+akonadi-contacts-21.12.1-x86_64-1
+
+akonadi-contacts (contact management for Akonadi)
+
+Akonadi Contacts contains libraries and daemons to implement Contact Management in Akonadi.
+
+
+akonadi-contacts (управление контактами в Akonadi)
+
+Akonadi Contacts содержит библиотеки и демоны для реализации контактов Управление контактами в Akonadi.

@@ -1,0 +1,9 @@
+kfind-21.12.1-x86_64-1
+
+kfind (find files and directories in KDE)
+
+The Find Files tool is a useful method of searching for specific files on your computer, or for searching for files that match a pattern. An example of this could include searching for files of a particular type or with certain letters in the filename, or that contain a certain piece of text in their contents.
+
+kfind (поиск файлов и каталогов в KDE)
+
+Инструмент поиска файлов - это полезный метод поиска определенных файлов на вашем компьютере или файлов, соответствующих шаблону. Примером этого может служить поиск файлов определенного типа, или с определенными буквами в названии файла, или которые содержат определенный фрагмент текста в своем содержимом.

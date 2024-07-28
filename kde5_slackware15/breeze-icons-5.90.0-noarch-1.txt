@@ -1,0 +1,12 @@
+breeze-icons-5.90.0-noarch-1
+
+breeze-icons (Breeze icon themes for KDE Plasma)
+
+Breeze icon themes for KDE Plasma.
+
+breeze icon (темы значков Breeze для KDE Plasma)
+
+Темы значков Breeze для KDE Plasma.
+
+Homepage: https://projects.kde.org/projects/kde/workspace/breeze
+

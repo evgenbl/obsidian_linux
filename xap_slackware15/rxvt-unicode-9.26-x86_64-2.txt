@@ -1,0 +1,13 @@
+rxvt-unicode-9.26-x86_64-2
+
+rxvt-unicode (terminal emulator)
+
+rxvt-unicode is a color vt102 terminal emulator based on rxvt. Features of rxvt-unicode include international language support through Unicode, transparency, the ability to display multiple font types and support for Perl extensions.
+
+rxvt-unicode (эмулятор терминала)
+
+rxvt-unicode - это цветной эмулятор терминала vt102, основанный на rxvt. Особенности rxvt-unicode включают поддержку международных языков с помощью Unicode, прозрачность, возможность отображения нескольких типов шрифтов и поддержку расширений Perl.
+
+Homepage: http://software.schmorp.de/pkg/rxvt-unicode.html
+
+

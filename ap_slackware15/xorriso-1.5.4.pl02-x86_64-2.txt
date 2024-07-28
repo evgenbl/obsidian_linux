@@ -1,0 +1,11 @@
+xorriso-1.5.4.pl02-x86_64-2
+
+xorriso (ISO-9660 and Rock Ridge manipulation tool)
+
+GNU xorriso is a command line and dialog application, which creates, loads, manipulates, and writes ISO-9660 file system images with Rock Ridge extensions. It can load the management information of existing ISO images and it writes the session results to optical media or to filesystem objects. Vice versa xorriso is able to copy file objects out of ISO 9660 filesystems.
+
+xorriso (инструмент управления ISO-9660 и Rock Ridge)
+
+GNU xorriso - это приложение командной строки и диалогового окна, которое создает, загружает, обрабатывает и записывает образы файловой системы ISO-9660 с расширениями Rock Ridge. Он может загружать управляющую информацию из существующих ISO-образов и записывать результаты сеанса на оптические носители или в объекты файловой системы. И наоборот, xorriso может копировать файловые объекты из файловых систем ISO 9660.
+
+Homepage: https://www.gnu.org/software/xorriso

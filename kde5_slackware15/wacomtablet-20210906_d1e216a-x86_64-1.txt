@@ -1,0 +1,11 @@
+wacomtablet-20210906_d1e216a-x86_64-1
+
+wacomtablet (kcm for Wacom tablets)
+
+This module implements a GUI for the Wacom Linux Drivers and extends it with profile support to handle different button / pen layouts per profile.
+
+wacom tablet (kcm для планшетов Wacom)
+
+Этот модуль реализует графический интерфейс для драйверов Wacom Linux и расширяет его поддержкой профилей для работы с различными расположениями кнопок / перьев для каждого профиля.
+
+Homepage: https://github.com/KDE/wacomtablet

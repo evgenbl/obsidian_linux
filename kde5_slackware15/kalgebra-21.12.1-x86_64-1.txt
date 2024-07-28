@@ -1,0 +1,11 @@
+kalgebra-21.12.1-x86_64-1
+
+kalgebra (a graph calculator)
+
+KAlgebra is a MathML-based graph calculator. It was initially MathML oriented, but now it can be used by anyone with a little mathematical knowledge.
+
+KAlgebra (графический калькулятор)
+
+KAlgebra - это графический калькулятор на основе MathML. Изначально он был ориентирован на MathML, но теперь его может использовать любой, кто хоть немного разбирается в математике.
+
+MathML (от англ. Mathematical Markup Language — язык математической разметки) — язык разметки на основе XML для представления математических символов и формул в веб-документах. Разрабатывается и пропагандируется математической группой W3C.

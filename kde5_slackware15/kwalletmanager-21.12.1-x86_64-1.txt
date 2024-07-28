@@ -1,0 +1,12 @@
+kwalletmanager-21.12.1-x86_64-1
+
+kwalletmanager (KDE wallet manager)
+
+KDE Wallet Manager is a tool to manage your passwords under KDE.
+
+kwalletmanager (менеджер кошельков KDE)
+
+Менеджер кошельков KDE - это инструмент для управления вашими паролями в KDE.
+
+Homepage: https://projects.kde.org/projects/kde/kdeutils
+

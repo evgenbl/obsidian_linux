@@ -1,0 +1,9 @@
+network-manager-applet-1.24.0-x86_64-2
+
+network-manager-applet (NetworkManager Applet)
+
+nm-applet is a gui frontend for NetworkManager.
+
+network-manager-applet - апплет сетевого менеджера (NetworkManager Applet)
+
+nm-applet - это интерфейс с графическим интерфейсом для NetworkManager

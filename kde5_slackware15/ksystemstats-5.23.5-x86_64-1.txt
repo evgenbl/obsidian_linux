@@ -1,0 +1,9 @@
+ksystemstats-5.23.5-x86_64-1
+
+ksystemstats (daemon to collect system statistics)
+
+SystemStats is a daemon that collects statistics about the running system.
+
+ksystem stats (демон для сбора системной статистики)
+
+SystemStats - это демон, который собирает статистику о запущенной системе.

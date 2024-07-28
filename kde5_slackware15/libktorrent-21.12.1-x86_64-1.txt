@@ -1,0 +1,11 @@
+libktorrent-21.12.1-x86_64-1
+
+libktorrent (KDE BitTorrent library)
+
+Libktorrent is the BitTorrent protocol library for ktorrent, which contains all the torrent downloading code. Although it is closely related to ktorrent, the goal is to make libktorrent an independent library which can be used by other applications.
+
+libktorrent (библиотека KDE BitTorrent)
+
+Libktorrent - это библиотека протокола BitTorrent для ktorrent, которая содержит весь код для загрузки торрента. Хотя она тесно связана с ktorrent, цель состоит в том, чтобы сделать libktorrent независимой библиотекой, которая может использоваться другими приложениями.
+
+Homepage: https://kde.org/applications/en/internet/org.kde.ktorrent

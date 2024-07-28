@@ -1,0 +1,12 @@
+pulseaudio-qt-1.3-x86_64-2
+
+pulseaudio-qt (PulseAudio Qt bindings)
+
+Pulseaudio Qt allows programs using the Qt library to control volume and react to changes on systems which use PulseAudio.
+
+pulseaudio-qt (привязки PulseAudio Qt)
+
+Pulseaudio Qt позволяет программам, использующим библиотеку Qt, регулировать громкость и реагировать на изменения в системах, использующих PulseAudio.
+
+Homepage: https://cgit.kde.org/pulseaudio-qt.git/
+

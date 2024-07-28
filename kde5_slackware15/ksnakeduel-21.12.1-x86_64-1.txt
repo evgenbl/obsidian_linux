@@ -1,0 +1,10 @@
+ksnakeduel-21.12.1-x86_64-1
+
+ksnakeduel (simple snake duel game)
+
+KSnakeDuel is a simple snake duel game for KDE. You can play KSnakeDuel against the computer or a friend. The aim of the game is to live longer than your opponent. To do that, avoid running into a wall, your own tail, or that of your opponent.
+
+ksnakeduel (простая игра-змеиная дуэль)
+
+KSnakeDuel - это простая игра-змеиная дуэль для KDE. Вы можете играть в KSnakeDuel против компьютера или друга. Цель игры - прожить дольше, чем ваш противник. Чтобы сделать это, избегайте столкновения со стеной, собственным хвостом или хвостом вашего противника.
+

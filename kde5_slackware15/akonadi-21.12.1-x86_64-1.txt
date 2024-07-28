@@ -1,0 +1,13 @@
+akonadi-21.12.1-x86_64-1
+
+akonadi (PIM storage service)
+
+Akonadi is an extensible cross-desktop storage service for PIM data and meta data providing concurrent read, write, and query access. It will provide a unique desktop wide object identification and retrieval.
+
+akonadi (служба хранения PIM)
+
+Akonadi - это расширяемая служба хранения данных PIM и метаданных на разных рабочих столах, обеспечивающая одновременный доступ к чтению, записи и запросам. Она обеспечивает уникальную идентификацию объектов на рабочем столе и поиск по ним.
+
+Homepage: http://www.kdepim.org/akonadi/
+
+

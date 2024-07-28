@@ -1,0 +1,9 @@
+kinit-5.90.0-x86_64-1
+
+kinit (startup helper library)
+
+kdeinit is a process launcher somewhat similar to the famous init use for booting. It launches processes by forking and then loading a dynamic library which should contain a 'kdemain(...)' function. Using kdeinit to launch KDE applications makes starting a typical KDE application 2.5 times faster and reduces memory consumption.
+
+kinit (вспомогательная библиотека при запуске)
+
+kdeinit - это программа запуска процессов, в чем-то похожая на известную программу init, используемую для загрузки. Она запускает процессы путем разветвления и последующей загрузки динамической библиотеки, которая должна содержать функцию 'kdemain(...)'. Использование kdeinit для запуска приложений KDE ускоряет запуск обычного приложения KDE в 2,5 раза и снижает потребление памяти.

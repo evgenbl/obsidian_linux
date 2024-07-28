@@ -1,0 +1,9 @@
+plasma-firewall-5.23.5-x86_64-1
+
+plasma-firewall (Plasma firewall KCM)
+
+Plasma KConfig Modules for configuring a firewall.
+
+plasma-firewall (Plasma брандмауэр KCM)
+
+Модули Plasma KConfig для настройки брандмауэра.

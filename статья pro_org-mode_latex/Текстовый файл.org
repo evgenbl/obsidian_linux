@@ -1,0 +1,6 @@
+В org emacs с созданим файла pdf хлопот будет больше.Нужно будет установить LaTeX, а именно texlive-extra,чтобы все работало.Установка зависит от вашего дистрибутива.Я приложил ссылки где все можно посмотреть,скопировать конфиги.Правда все на английском.Ну думаю проблем спереводом не будет.
+Так будет выглядеть просмотр созданного pdf в emacs.Сам файл pdf будет создан там где открыли ***.org.
+
+Ссылки:
+Org Mode Exports to LaTeX: https://www.youtube.com/watch?v=0qHloGTT8XE&list=PLSxeivFT4JIrx6rwQB8VpSs3YeyTFuSwk&index=4
+Org Mode Exports to HTML: https://www.youtube.com/watch?v=8Gw4Y2EpcOY&list=PLSxeivFT4JIrx6rwQB8VpSs3YeyTFuSwk&index=3

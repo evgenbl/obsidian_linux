@@ -1,0 +1,9 @@
+kmousetool-21.12.1-x86_64-1
+
+kmousetool (Automatic mouse clicks)
+
+Clicks the mouse for you, reducing hand strain.
+
+kmousetool (Автоматические щелчки мышью)
+
+Выполняет щелчки мышью за вас, уменьшая нагрузку на руки.

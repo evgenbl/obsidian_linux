@@ -1,0 +1,9 @@
+kolf-21.12.1-x86_64-1
+
+kolf (miniature golf game for KDE)
+
+Kolf is a miniature golf game. The game is played from an overhead view, with a short bar representing the golf club. Kolf features many different types of objects, such water hazards, slopes, sand traps, and black holes (warps), among others.
+
+kolf (игра в мини-гольф для KDE)
+
+Kolf - это игра в мини-гольф. В игру можно играть с высоты птичьего полета, а короткая полоса представляет собой клюшку для гольфа. В Kolf есть множество различных типов объектов, таких как водные преграды, склоны, песчаные ловушки, черные дыры (искривления) и другие.

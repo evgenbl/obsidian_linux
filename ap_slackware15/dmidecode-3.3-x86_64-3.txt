@@ -1,0 +1,13 @@
+dmidecode-3.3-x86_64-3
+
+dmidecode (DMI table decoder)
+
+dmidecode is a tool for dumping a computer's DMI table (some say SMBIOS) contents in a human-readable format. This table contains a description of the system's hardware components, as well as other useful pieces of information such as serial numbers and BIOS revision.
+
+dmidecode was written by Alan Cox and Jean Delvare.
+
+dmidecode (DMI table decoder)
+
+dmidecode - это инструмент для вывода содержимого компьютерной таблицы DMI (некоторые называют ее SMBIOS) в удобочитаемый формат. Эта таблица содержит описание аппаратных компонентов системы, а также другую полезную информацию, такую как серийные номера и версия BIOS.
+
+Код dmidecode был написан Аланом Коксом и Джин Дельвар.

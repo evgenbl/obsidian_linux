@@ -1,0 +1,13 @@
+kdiagram-2.8.0-x86_64-4
+
+kdiagram (libraries for creating business diagrams)
+
+Powerful libraries (KChart, KGantt) for creating business diagrams.
+
+
+kdiagram (библиотеки для создания бизнес-диаграмм)
+
+Мощные библиотеки (Chart, Gantt) для создания бизнес-диаграмм.
+
+Homepage: https://github.com/KDE/kdiagram
+

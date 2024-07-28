@@ -1,0 +1,12 @@
+elisa-21.12.1-x86_64-1
+
+elisa (music player)
+
+Elisa is a simple music player that should be easy to use. It does not require any configuration before one can use it.
+
+elisa (музыкальный проигрыватель)
+
+Elisa - это простой музыкальный проигрыватель, прост в использовании. Для его использования не требуется никакой настройки.
+
+Homepage: https://community.kde.org/Elisa
+

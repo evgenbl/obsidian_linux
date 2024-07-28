@@ -1,0 +1,10 @@
+bovo-21.12.1-x86_64-1
+
+bovo (five-in-a-row board game)
+
+Bovo is a Gomoku ("five points" in Japanese) like game for two players, where the opponents alternate in placing their respective pictogram on the game board. Also known as: Connect Five, Five in a row, X and O, Naughts and Crosses.
+
+
+bovo (настольная игра "пять в ряд")
+
+Bovo - это игра, похожая на гомоку ("пять очков" в переводе с японского) для двух игроков, в которой противники поочередно размещают соответствующие пиктограммы на игровом поле. Также известен как: Соедини пятерку, Пять в ряд, крестики-нолики.

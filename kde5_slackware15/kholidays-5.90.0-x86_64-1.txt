@@ -1,0 +1,9 @@
+kholidays-5.90.0-x86_64-1
+
+kholidays (KDE library for regional holiday information)
+
+The KHolidays library in kdepimlibs provides details on public holidays for a given country and date range. A separate library and file format is required as iCalendar is not capable of expressing recurrence rules for all possible holidays.
+
+kholidays (библиотека KDE для получения информации о региональных праздниках)
+
+Библиотека KHolidays в kdepimlibs предоставляет подробную информацию о государственных праздниках для данной страны и диапазона дат. Требуется отдельная библиотека и формат файла, поскольку iCalendar не способен выразить правила повторения для всех возможных праздников.

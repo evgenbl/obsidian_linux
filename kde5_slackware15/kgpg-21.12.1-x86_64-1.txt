@@ -1,0 +1,12 @@
+kgpg-21.12.1-x86_64-1
+
+kgpg (KDE GUI for GnuPG)
+
+KGpg is a simple interface for GnuPG, a powerful encryption utility.
+
+kgpg (графический интерфейс KDE для GnuPG)
+
+KGpg - это простой интерфейс для GnuPG, мощной утилиты шифрования.s
+
+kgpg: Homepage: http://utils.kde.org/projects/kgpg
+

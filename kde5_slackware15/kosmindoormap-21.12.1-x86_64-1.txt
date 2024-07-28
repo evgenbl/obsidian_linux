@@ -1,0 +1,12 @@
+kosmindoormap-21.12.1-x86_64-1
+
+kosmindoormap (library for rendering OSM indoor maps)
+
+A library and QML component for rendering multi-level OSM indoor maps of for example a (large) train station.
+
+kosmindoormap (библиотека для отображения внутренних карт OSM)
+
+Библиотека и QML-компонент для отображения многоуровневых внутренних карт OSM, например, (большой) железнодорожной станции.
+
+Homepage: https://commits.kde.org/kosmindoormap
+

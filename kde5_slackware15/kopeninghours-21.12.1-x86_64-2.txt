@@ -1,0 +1,12 @@
+kopeninghours-21.12.1-x86_64-2
+
+kopeninghours (OSM opening hours expressions library)
+
+A library for parsing and evaluating OSM opening hours expressions. OSM opening hours expressions are used to describe when a feature is open/available or closed. This format is not only used in OpenStreetMap itself, but in various other data sources or APIs needing such a description as well.
+
+kopeninghours (библиотека выражений часов работы OSM)
+
+Библиотека для анализа и оценки выражений часов работы OSM. Выражения часов работы OSM используются для описания того, когда функция открыта /доступна или закрыта. Этот формат используется не только в самой OpenStreetMap, но и в различных других источниках данных или API, которые также нуждаются в таком описании.
+
+Homepage: https://github.com/KDE/kopeninghours
+

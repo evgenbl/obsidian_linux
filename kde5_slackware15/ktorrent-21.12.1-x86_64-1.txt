@@ -1,0 +1,11 @@
+ktorrent-21.12.1-x86_64-1
+
+ktorrent (KDE BitTorrent program)
+
+KTorrent is a BitTorrent program with many features: Download torrent files (of course :-), upload and download speed capping, Internet searching, UDP trackers, port forwarding with UPnP, IP blocking, importing of partially or fully downloaded files, support for distributed hash tables, protocol encryption, bandwidth scheduling, and much more. KTorrent's developers are Joris Guisson and Ivan Vasic.
+
+ktorrent (программа KDE BitTorrent)
+
+KTorrent - это программа BitTorrent с множеством функций: Загрузка торрент-файлов (конечно же:-), ограничение скорости загрузки, поиск в Интернете, UDP-трекеры, переадресация портов с помощью UPnP, блокировка IP-адресов, импорт частично или полностью загруженных файлов, поддержка распределенных хэш-таблиц, шифрование протоколов, планирование пропускной способности и многое другое. гораздо больше. Разработчиками KTorrent являются Йорис Гиссон и Иван Васич.
+
+Homepage: https://kde.org/applications/en/internet/org.kde.ktorrent

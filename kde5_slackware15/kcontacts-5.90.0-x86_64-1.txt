@@ -1,0 +1,9 @@
+kcontacts-5.90.0-x86_64-1
+
+kcontacts (address book API for KDE)
+
+kcontacts contains an address book API for KDE. This can be used by all KDE applications using data of this type, e.g. KAddressBook, KMail, KOrganizer, KPilot etc.
+
+kcontacts (API адресной книги для KDE)
+
+kcontacts содержит API адресной книги для KDE. Это может использоваться всеми приложениями KDE, использующими данные этого типа, например, KAddressBook, KMail, KOrganizer, KPilot и т.д.

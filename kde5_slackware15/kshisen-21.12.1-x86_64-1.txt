@@ -1,0 +1,10 @@
+kshisen-21.12.1-x86_64-1
+
+kshisen (Shisen-Sho Mahjongg-like tile game)
+
+KShisen is a solitaire-like game played using the standard set of Mahjong tiles. Unlike Mahjong however, KShisen has only one layer of scrambled tiles.
+
+kshisen (игра, похожая на Шисен-Се маджонг)
+
+KShisen  - это игра, похожая на пасьянс, в которую играют с использованием стандартного набора фишек маджонга. Однако, в отличие от маджонга, в KShisen есть только один слой скремблированных фишек.
+

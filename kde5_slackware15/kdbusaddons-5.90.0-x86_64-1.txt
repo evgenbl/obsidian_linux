@@ -1,0 +1,9 @@
+kdbusaddons-5.90.0-x86_64-1
+
+kdbusaddons (Convenience classes for D-Bus)
+
+KDBusAddons provides convenience classes on top of QtDBus, as well as an API to create KDED modules.
+
+kdbusaddons (Классы удобства для D-Bus)
+
+KDBusAddons предоставляет классы удобства поверх QtDBus, а также API для создания модулей KDED.

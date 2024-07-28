@@ -1,0 +1,10 @@
+ksquares-21.12.1-x86_64-1
+
+ksquares (connect the dots to create squares)
+
+KSquares is a fun and exciting game for the desktop environment. The game is modeled after the well known pen and paper based game of Dots and Boxes.
+
+ksquares (соединяй точки, чтобы получились квадраты)
+
+KSquares - это веселая и увлекательная игра для настольных компьютеров. Игра создана по образцу хорошо известной игры в точки и квадратики на бумаге.
+

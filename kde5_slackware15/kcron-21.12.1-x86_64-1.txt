@@ -1,0 +1,10 @@
+kcron-21.12.1-x86_64-1
+
+kcron (task scheduler)
+
+kcron is a module for scheduling programs to run in the background. It is a graphical user interface to cron, the UNIX system scheduler.
+
+kcron (планировщик задач)
+
+kcron - это модуль для планирования запуска программ в фоновом режиме. Это графический пользовательский интерфейс cron, системного планировщика UNIX.
+

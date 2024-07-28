@@ -1,0 +1,19 @@
+windowmaker-0.95.9-x86_64-3
+
+windowmaker (a fast and elegant window manager)
+
+Window Maker is a window manager for the X Window System that is relatively fast and small, feature rich, easy to use, with a simple and elegant appearance reminiscent of the NeXTSTEP(tm) graphical user interface.
+
+Window Maker is part of the official GNU project.
+
+windowmaker (быстрый и элегантный оконный менеджер)
+
+Windowmaker - это оконный менеджер для X Window System, который является относительно быстрым и небольшим, многофункциональным, простым в использовании, с простым и элегантным внешним видом, напоминающим графический пользовательский интерфейс NeXTSTEP (tm).
+
+NeXTSTEP — объектно-ориентированная многозадачная операционная система основанная на UNIX, разработанная компанией NeXT для собственных компьютеров, таких как NeXTSTATION и NeXTCUBE (также известный как "Black box".)
+
+NeXTSTEP 1.0 была выпущена 18 сентября 1989 года. Последняя версия системы 3.3 был выпущена в 1995 году и уже работала не только на процессорах семейства Motorola 68000, но и на IBM PC-совместимых x86/Intel, Sun SPARC и HP PA-RISC. Система поддерживала файловые системы, такие как: UDF, FAT, Macintosh и DOS. Также система имела свою собственную файловую систему "NeXT". Во времена версии 3.2 NeXT объединилась с Sun Microsystems для разработки OpenStep — кросс-платформенного стандарта и инструмента разработки (для Sun Solaris, Microsoft Windows и NeXT-версий ядра Mach), основанного на NeXTSTEP 3.2.
+
+4 февраля 1997 года Apple, купив компанию NeXT, использовала OpenStep как основу для своей новой ОС Mac OS X — выпущенной в мартe 2001 года. Наследие OpenStep в Mac OS X может быть замечено в среде разработки Cocoa, где классы библиотеки Objective-C имеют приставки NS. Также существует свободный вариант OpenStep — GNUstep.
+
+Window Maker является частью официального проекта GNU.

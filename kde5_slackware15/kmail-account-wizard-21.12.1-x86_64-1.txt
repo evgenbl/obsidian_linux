@@ -1,0 +1,9 @@
+kmail-account-wizard-21.12.1-x86_64-1
+
+kmail-account-wizard (KMail account wizard)
+
+This is a setup wizard for KMail that will take you through the  process of creating your email accounts.
+
+kmail-account-wizard (Мастер создания учетной записи электронной почты)
+
+Это мастер настройки KMail, который проведет вас через весь процесс создания учетных записей электронной почты.

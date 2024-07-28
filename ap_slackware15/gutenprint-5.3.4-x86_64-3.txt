@@ -1,0 +1,12 @@
+gutenprint-5.3.4-x86_64-3
+
+gutenprint (IJS printer driver for Ghostscript and CUPS)
+
+Gutenprint (formerly named Gimp-Print) is a suite of printer drivers that may be used with most common print spooling systems, including CUPS, LPRng, or others. These drivers provide high quality printing in many cases equal to or better than proprietary vendor-supplied drivers. Gutenprint also includes an enhanced print plug-in for the GIMP image editor.
+
+gutenprint (драйвер принтера IJS для Ghostscript и CUPS)
+
+Gutenprint (ранее называвшийся Gimp-Print) - это набор драйверов для принтеров, который может использоваться с наиболее распространенными системами буферизации печати, включая CUPS, LPRng и другие. Эти драйверы обеспечивают высокое качество печати, во многих случаях не уступающее или превосходящее качество драйверов, поставляемых фирменными поставщиками. Gutenprint также включает расширенный модуль печати для графического редактора GIMP.
+
+Homepage: http://gimp-print.sourceforge.net/
+

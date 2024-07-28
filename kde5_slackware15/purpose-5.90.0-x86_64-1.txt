@@ -1,0 +1,9 @@
+purpose-5.90.0-x86_64-1
+
+purpose (offers actions for a specific purpose)
+
+This framework offers the possibility to create integrate services and actions on any application without having to implement them specifically. Purpose will offer them mechanisms to list the different alternatives to execute given the requested action type and will facilitate components so that all the plugins can receive all the information they need.
+
+purpose - назначение (предлагает действия для определенной цели)
+
+Этот фреймворк предоставляет возможность создавать интегрированные сервисы и действия в любом приложении без необходимости их специальной реализации. Purpose предложит им механизмы для составления списка различных альтернатив для выполнения с учетом запрашиваемого типа действия и упростит компоненты, чтобы все плагины могли получать всю необходимую им информацию.

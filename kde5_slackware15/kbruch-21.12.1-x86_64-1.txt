@@ -1,0 +1,7 @@
+kbruch-21.12.1-x86_64-1
+
+kbruch (calculate fractions - вычислять дроби)
+
+KBruch is a small program to practice calculating with fractions.
+
+KBruch - это небольшая программа для практики вычисления с дробями.

@@ -1,0 +1,12 @@
+ssr-0.4.3-x86_64-1
+
+ssr (Simple Screen Recorder)
+
+SimpleScreenRecorder is a screen recorder for Linux. Despite the name, this program is actually quite complex. It's 'simple' in the sense that it's easier to use than ffmpeg/avconv or VLC :).
+
+ssr (Simple Screen Recorder)
+
+SimpleScreenRecorder - это программа для записи экрана для Linux. Несмотря на название, эта программа на самом деле довольно сложная. Это "просто" в том смысле, что его проще использовать, чем ffmpeg/avconv или VLC :).
+
+Homepage: https://github.com/MaartenBaert/ssr
+

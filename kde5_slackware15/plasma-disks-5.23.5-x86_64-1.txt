@@ -1,0 +1,9 @@
+plasma-disks-5.23.5-x86_64-1
+
+plasma-disks (disk health monitor)
+
+Plasma Disks monitors S.M.A.R.T. data of disks and alerts the user when signs of imminent failure appear.
+
+plasma-disks (монитор работоспособности дисков)
+
+Plasma Disks отслеживает данные SSD на дисках и предупреждает пользователя о появлении признаков неминуемого сбоя.

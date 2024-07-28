@@ -1,0 +1,12 @@
+kcalc-21.12.1-x86_64-1
+
+kcalc (KDE calculator)
+
+KCalc is a calculator which offers many more mathematical functions than meet the eye on a first glance.
+
+kcalc (калькулятор KDE)
+
+KCalc - это калькулятор, который предлагает гораздо больше математических функций, чем кажется на первый взгляд.
+
+Homepage: http://utils.kde.org/projects/kcalc
+

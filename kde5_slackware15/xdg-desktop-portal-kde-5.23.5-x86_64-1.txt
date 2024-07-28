@@ -1,0 +1,10 @@
+xdg-desktop-portal-kde-5.23.5-x86_64-1
+
+xdg-desktop-portal-kde (implementation for xdg-desktop-portal)
+
+A backend implementation for xdg-desktop-portal using Qt/KF5.
+
+
+xdg-desktop-portal-kde (реализация для xdg-desktop-portal)
+
+Серверная реализация для xdg-desktop-portal с использованием Qt/KF5.

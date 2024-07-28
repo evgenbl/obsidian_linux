@@ -1,0 +1,10 @@
+breeze-gtk-5.23.5-x86_64-1
+
+breeze-gtk (Breeze widget theme for GTK 2 and 3)
+
+Breeze widget theme for GTK 2 and 3.
+
+breeze-gtk (тема виджета Breeze для GTK 2 и 3)
+
+Тема виджета Breeze для GTK 2 и 3.
+

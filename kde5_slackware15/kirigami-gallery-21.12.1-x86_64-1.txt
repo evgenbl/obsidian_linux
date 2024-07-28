@@ -1,0 +1,12 @@
+kirigami-gallery-21.12.1-x86_64-1
+
+kirigami-gallery (Gallery application built using Kirigami)
+
+Kirigami-gallery is an example gallery application built using Kirigami.
+
+kirigami-gallery (приложение для создания галерей, созданное с использованием Kirigami)
+
+Kirigami — набор компонентов QtQuick для создания адаптируемых пользовательских интерфейсов на основе QtQuick Controls 2 .
+
+Homepage: https://www.kde.org/products/kirigami/
+

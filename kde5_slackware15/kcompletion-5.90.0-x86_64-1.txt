@@ -1,0 +1,9 @@
+kcompletion-5.90.0-x86_64-1
+
+kcompletion (Powerful completion framework)
+
+When typing filenames, email addresses and other text where the user often wants to select from existing data (including what they previously typed) rather than enter anything wholly original, users often find it helpful if they only need to type the first few characters, and then have the application offer them a set of choices or attempt to finish off what they were typing. This framework helps implement this in Qt-based applications.
+
+kcompletion (мощная платформа завершения)
+
+При вводе имен файлов, адресов электронной почты и другого текста, когда пользователь часто хочет выбрать из существующих данных (включая те, которые он вводил ранее), а не вводить что-то полностью оригинальное, пользователи часто считают полезным, если им нужно ввести только первые несколько символов, а затем приложение предложит им набор вариантов или попытается закончить то, что они печатали. Этот фреймворк помогает реализовать это в приложениях на базе Qt.
