@@ -1,1 +1,0 @@
-<img src="/img/vk64.png">
