@@ -13,14 +13,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BSD/Links_Video.md",
-                "mode": "preview",
+                "file": "Alt/Obsidian.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "509e23cb09dcbb27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alt/Грубая настройка sudo.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b5a58e5989fb95d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alt/GNU R (пакет R-base, R-full, R-devel).md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BSD/Links_Video.md",
+                "file": "Alt/GNU R (пакет R-base, R-full, R-devel).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BSD/Links_Video.md",
+                "file": "Alt/GNU R (пакет R-base, R-full, R-devel).md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BSD/Links_Video.md"
+                "file": "Alt/GNU R (пакет R-base, R-full, R-devel).md"
               }
             }
           },
@@ -141,13 +168,21 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "3ece086987aa4c6f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 358.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,10 +196,18 @@
       "audio-recorder:Начать/остановить запись": false
     }
   },
-  "active": "7411d12d8c6beac2",
+  "active": "4b5a58e5989fb95d",
   "lastOpenFiles": [
-    "install_bsd.mp4/install_bsd.mp4 1.md",
+    "Daily/2024-08-04.md",
+    "Alt/Simplenote.md",
+    "Alt/Update_p11.md",
+    "Alt/ALT Linux.Последние изменения пакетов,обновления..md",
+    "Alt/Obsidian.md",
+    "Без названия.md",
+    "Alt/Грубая настройка sudo.md",
+    "Daily/2024-08-03 - Alien - утилита преобразования пакетных форматов.md",
     "BSD/Links_Video.md",
+    "install_bsd.mp4/install_bsd.mp4 1.md",
     "install_bsd.mp4/install_bsd.mp4.md",
     "install_bsd.mp4",
     "Daily/2024-07-28.md",
@@ -182,15 +225,7 @@
     "Daily/2024-04-02 - Переключение раскладки.md",
     "Daily/2024-04-02 - strftime.md",
     "Daily/2024-04-13 - Каталог proc в Linux.md",
-    "Win/2023-11-23-Как перейти на другой рабочий стол Windows 11.md",
     "Win",
-    "Win/2024-04-15 - Немного про консоль.md",
-    "Win/2024-04-15 - Шпаргалка по CMD.md",
-    "English/2024-04-13 - English links.md",
-    "arch+dwm/1.4.st - terminal in dwm.md",
-    "arch+dwm/1.3.arch_dwm_install.md",
-    "arch+dwm/1.2.Arch-dwm_install !!!!!!.md",
-    "arch+dwm/xinitrc_dwm.md",
     "Quarto/Markdown2.pdf",
     "Quarto/Использование_Markdown2.pdf",
     "Quarto/Quarto.pdf",
